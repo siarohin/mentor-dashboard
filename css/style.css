@@ -1,0 +1,41 @@
+@import url("normalized.css");
+
+body {
+  background-color: #3c444b;
+  font-size: 16px;
+}
+
+#wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar {
+  display: inline-block;
+  position: fixed;
+  left: 50%;
+  top: 1em;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 60%;
+  height: 2.8em;
+  background: #fff;
+  border-radius: .5em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2.3em;
+  left: 50%;
+  margin: .3em 0 .2em 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
