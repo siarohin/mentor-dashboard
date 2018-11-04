@@ -1,41 +1,131 @@
 @import url("normalized.css");
 
+/* Fonts */
+
+@font-face {
+	font-family: 'Bold';
+	src: url('font/Lato-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Italic';
+	src: url('font/Lato-Italic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Medium';
+	src: url('font/Lato-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Regular';
+	src: url('font/Lato-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
 body {
+  font: 16px 'Regular', 'Myriad Pro', sans-serif;
+	color: #3c444b;
   background-color: #3c444b;
-  font-size: 16px;
 }
 
 #wrapper {
-  margin: 0;
-  padding: 0;
+  min-height: 100%;
+}
+
+header, footer {
+  height: 6.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .search-bar {
-  display: inline-block;
-  position: fixed;
-  left: 50%;
-  top: 1em;
-  transform: translateX(-50%);
-  width: 95%;
-  max-width: 60%;
+  display: flex;
+  margin: 0 auto;
+  width: 65%;
   height: 2.8em;
   background: #fff;
   border-radius: .5em;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
   overflow: hidden;
+  justify-content: center;
 }
 
-input {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+.search-bar > input {
+  width: 90%;
   height: 2.3em;
-  left: 50%;
-  margin: .3em 0 .2em 0;
+  margin: .3em 0 .2em;
   border: 0;
   border-radius: 0;
   outline: 0;
   box-sizing: border-box;
   font-size: 1em;
 }
+
+.content {
+  width: 99.5%;
+  min-height: 100%;
+}
+
+.content .slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 12.5em);
+  overflow: hidden;
+}
+
+.slider > div {
+  margin: 0 1em;
+  height: 100%;
+  width: 280px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.points > a {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 0 .5em;
+  text-align: center;
+  padding-top: .25em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: 1em 'Bold', 'Myriad Pro', sans-serif;
+  color: #fff;
+  border: 2px solid #fff;
+  background: #fff;
+  transition: background 300ms ease-out;
+}
+
+.points > a:hover,
+.points > a.active {
+  background: #c40404;
+}
+
+

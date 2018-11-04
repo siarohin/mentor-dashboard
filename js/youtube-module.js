@@ -1,8 +1,19 @@
-// const header = document.createElement('header');
+// document.body.innerHTML = `<div id="wrapper">
+// <header>
+//   <div class="search-bar">
+//     <input id="search" type="text" name="search" value="" autocomplete="off" placeholder="Search">
+//   </div>
+// </header>
 
-// const form = document.createElement('form');
+// </div>`;
 
-// header.appendChild(form);
+// let onHeader = `<div id="wrapper">
+// <header>
+//   <div class="search-bar">
+//     <input id="search" type="text" name="search" value="" autocomplete="off" placeholder="Search">
+//   </div>
+// </header>
 
-// document.body.appendChild(header);
+// </div>`;
 
+// document.body.insertAdjacentHTML('beforeend', onHeader);
