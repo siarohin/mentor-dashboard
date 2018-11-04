@@ -1,31 +1,25 @@
 @import url("normalized.css");
+@import url("font-awesome.min.css");
 
 /* Fonts */
 
 @font-face {
 	font-family: 'Bold';
-	src: url('font/Lato-Bold.ttf');
+	src: url('fonts/Lato-Bold.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Italic';
-	src: url('font/Lato-Italic.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Medium';
-	src: url('font/Lato-Medium.ttf');
+	src: url('fonts/Lato-Italic.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Regular';
-	src: url('font/Lato-Regular.ttf');
+	src: url('fonts/Lato-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -71,6 +65,15 @@ footer {
   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
   overflow: hidden;
   justify-content: center;
+  position: relative;
+}
+
+.search-bar::before {
+  content: '\f002';
+  font: 1em 'FontAwesome';
+  margin: .9em 0 0 .3em;
+  position: absolute;
+  left: 0;
 }
 
 .search-bar > input {
@@ -100,10 +103,91 @@ footer {
 
 .slider > div {
   margin: 0 1em;
+  padding: 0 .25em;
   height: 100%;
   width: 280px;
   background: #fff;
   border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider > div::before {
+  content: '';
+    display: block;
+    height: 2em;
+    position: relative;
+    top: calc(100vh - 230px);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%);
+}
+
+.slider > div > img {
+  width: inherit;
+  margin: -1em 0 1em;
+  border-radius: 5px;
+}
+
+.slider > div > a {
+  font: 1.25em 'Bold', 'Myriad Pro', sans-serif;
+  line-height: 1.5em;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 3em;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  width: calc(100% + 0.25em);
+  margin-left: -0.25em;
+  padding: 0.45em 0;
+  transition: 300ms ease-out;
+  max-height: 4.4em;
+  overflow: hidden;
+}
+
+.slider > div > a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.slider > div > ul li {
+  font: 1em 'Bold', 'Myriad Pro', sans-serif;
+  line-height: 1.5em;
+  padding: 0.35em 0;
+}
+
+.slider > div > ul li:first-of-type {
+  max-height: 2.5em;
+  overflow: hidden;
+}
+
+.slider > div > ul li:nth-of-type(1)::before {
+  content: '\f007';
+}
+
+.slider > div > ul li:nth-of-type(2)::before {
+  content: '\f073';
+}
+
+.slider > div > ul li:nth-of-type(3)::before {
+  content: '\f06e';
+}
+
+.slider > div > ul li:nth-of-type(1)::before,
+.slider > div > ul li:nth-of-type(2)::before,
+.slider > div > ul li:nth-of-type(3)::before {
+  font: 1em 'FontAwesome';
+  position: absolute;
+  left: 0;
+  margin: .6em 0 0 .5em;
+  font-size: .8em;
+  color: #000;
+}
+
+.slider > div > p {
+  font: 1em 'Italic', 'Myriad Pro', sans-serif;
+  line-height: 1.5em;
+  padding: 0.55em 0; 
 }
 
 .points > a {
@@ -126,6 +210,22 @@ footer {
 .points > a:hover,
 .points > a.active {
   background: #c40404;
+}
+
+/* Mobile phones only */ 
+
+@media only screen and (max-device-width: 720px) {
+  .search-bar > input {
+    width: 80%;
+  }
+  
+  .points > a {
+    color: #3c444b;
+  }
+
+  .points > a.active {
+    color: #fff;
+  }
 }
 
 
