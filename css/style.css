@@ -211,6 +211,10 @@ footer {
   background: #c40404;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Mobile phones only */ 
 
 @media only screen and (max-device-width: 720px) {
