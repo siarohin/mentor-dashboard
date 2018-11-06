@@ -29,24 +29,59 @@
   </footer>
 </div> */
 
-let searchInput = `<form id="search" action="https://www.googleapis.com/youtube/v3/search" method="get">
-<input type="hidden" name="key" value="AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY">
-<input type="hidden" name="type" value="video">
-<input type="hidden" name="part" value="snippet">
-<input type="hidden" name="maxResults" value="15">
-<input type="search" name="q" autofocus="autofocus" autocomplete="off" placeholder="Search">
+const HttpClient = function() {
+  this.get = function(aUrl, aCallback) {
+
+    let anHttpRequest = new XMLHttpRequest();
+
+    anHttpRequest.onreadystatechange = function() {
+      if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+      aCallback(anHttpRequest.responseText);
+    }
+    
+    anHttpRequest.open( "GET", aUrl, true );
+    anHttpRequest.send(null);
+  }
+}
+
+  // let userValue = document.querySelector('input[type=search]').value;
+  let userValue = 'JS';
+
+  let Url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=12&q=' + userValue;
+
+  let client = new HttpClient();
+
+  client.get(Url, function(response) { 
+    
+  let sliderBlock = JSON.parse(response);
+
+// Create Youtube blocks
+
+  for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i++) {
+
+    document.querySelector('.slider').innerHTML += `<div class="">
+    <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
+    <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" title="">${sliderBlock.items[i].snippet.title}</a>
+    <ul>
+      <li>${sliderBlock.items[i].snippet.channelTitle}</li>
+      <li>${sliderBlock.items[i].snippet.publishedAt}</li>
+      <li></li>
+    </ul>
+    <p>${sliderBlock.items[i].snippet.description}</p>
+    </div>`;
+
+  }
+
+});
+
+
+
+
+let searchInput = `<form id="search" method="get">
+<input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
 </form>`;
 
-let sliderBlock = `<div class="">
-<img src="./images/hqdefault.jpg" alt="">
-<a href="" title="">RS School. JavaScript Modules</a>
-<ul>
-  <li>Lorem ipsum dolor sit, amet consectetur</li>
-  <li>24-07-2018</li>
-  <li>1205300</li>
-</ul>
-<p>NodeJS has a really great amount of 3rd party libraries. Anything you can imagine, you can find it in NPM. But the grammar of JavaScript sucks, which make it really hard to maintain a large scale NodeJS application.</p>
-</div>`;
+
 
 let pointsItem = `<a class="active " href="" title="">1</a>`;
 
@@ -60,7 +95,7 @@ wrapper.innerHTML = `<header>
 </header>
 <div class="content">
   <div class="slider">
-    ${sliderBlock}
+    
   </div>
 </div>
 <footer>
