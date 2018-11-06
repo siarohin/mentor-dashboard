@@ -29,7 +29,13 @@
   </footer>
 </div> */
 
-let searchInput = `<input type="search" id="site-search" name="search-name" autofocus="autofocus" autocomplete="off" placeholder="Search" aria-label="Search through youtube">`;
+let searchInput = `<form id="search" action="https://www.googleapis.com/youtube/v3/search" method="get">
+<input type="hidden" name="key" value="AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY">
+<input type="hidden" name="type" value="video">
+<input type="hidden" name="part" value="snippet">
+<input type="hidden" name="maxResults" value="15">
+<input type="search" name="q" autofocus="autofocus" autocomplete="off" placeholder="Search">
+</form>`;
 
 let sliderBlock = `<div class="">
 <img src="./images/hqdefault.jpg" alt="">
@@ -49,9 +55,7 @@ let wrapper = document.createElement('div');
 wrapper.id = 'wrapper';
 wrapper.innerHTML = `<header>
   <div class="search-bar">
-  <form action="" method="post">
     ${searchInput}
-  </form>
   </div>
 </header>
 <div class="content">
