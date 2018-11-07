@@ -7,6 +7,7 @@ function searchResult() {
 
 let valueUser = document.querySelector('#search')[0].value; // get User request from input
 
+
 fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=' + maxResult + '&q=' + valueUser) // get Elements result
 .then(function(response) {
   return response.json();
@@ -14,6 +15,10 @@ fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_P
 .then(function(sliderBlock) {
 
 let arrID = []; // for Elements ID
+
+  for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i++) {
+    document.querySelector('.slider').innerHTML = ''; // Reset Elements
+  }
 
   for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i++) {
 
