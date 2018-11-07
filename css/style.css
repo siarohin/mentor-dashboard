@@ -248,7 +248,11 @@ input[type="search"]::-webkit-search-results-decoration {
   .search-bar > input {
     width: 80%;
   }
-  
+
+  .search-bar input {
+    padding: 0 .8em;
+  }
+
   .points > a {
     color: #3c444b;
   }

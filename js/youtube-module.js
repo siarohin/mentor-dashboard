@@ -1,4 +1,4 @@
-const maxResult = 12; // set max Results of Elements
+const maxResult = 3; // set max Results of Elements
 
 let valueUser;
 
@@ -24,14 +24,24 @@ let arrID = []; // for Elements ID
 
     arrID.push(sliderBlock.items[i].id.videoId); // save Elements ID
     
+    // date Convert
+
+    let dateConvert = sliderBlock.items[i].snippet.publishedAt;
+    dateConvert = dateConvert.substring(0,10);
+
+    // nameConvert
+
+    let nameConvert = sliderBlock.items[i].snippet.title;
+    nameConvert = nameConvert.trim();
+
     // create Elements block
 
     document.querySelector('.slider').innerHTML += `<div class="">
     <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
-    <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" title="">${sliderBlock.items[i].snippet.title}</a>
+    <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${nameConvert}">${nameConvert}</a>
     <ul>
       <li>${sliderBlock.items[i].snippet.channelTitle}</li>
-      <li>${sliderBlock.items[i].snippet.publishedAt}</li>
+      <li>${dateConvert}</li>
     </ul>
     <p>${sliderBlock.items[i].snippet.description}</p>
     </div>`;
