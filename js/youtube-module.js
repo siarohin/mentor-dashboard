@@ -1,35 +1,13 @@
-/* <div id="wrapper">
-  <header>
-    <div class="search-bar">
-      <input id="search" type="text" name="search" value="" autocomplete="off" placeholder="Search">
-    </div>
-  </header>
+const maxResult = 12; // set max Results of Elements
 
-  <div class="content">
-    <div class="slider">
-          
-          <div class="">
-            <img src="./images/hqdefault.jpg" alt="">
-            <a href="" title="">RS School. JavaScript Modules</a>
-            <ul>
-              <li>Lorem ipsum dolor sit, amet consectetur</li>
-              <li>24-07-2018</li>
-              <li>1205300</li>
-            </ul>
-            <p>NodeJS has a really great amount of 3rd party libraries. Anything you can imagine, you can find it in NPM. But the grammar of JavaScript sucks, which make it really hard to maintain a large scale NodeJS application.</p>
-          </div>
-          
-    </div>
-  </div>
+let valueUser;
 
-  <footer>
-    <div class="points">
-      <a class="active hidden" href="" title="">1</a>
-    </div>
-  </footer>
-</div> */
 
-fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=3&q=JAVA') // get Elements result
+function searchResult() {
+
+let valueUser = document.querySelector('#search')[0].value; // get User request from input
+
+fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=' + maxResult + '&q=' + valueUser) // get Elements result
 .then(function(response) {
   return response.json();
 })
@@ -55,7 +33,6 @@ let arrID = []; // for Elements ID
     
   }
 
-
     fetch('https://www.googleapis.com/youtube/v3/videos?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&id=' + [arrID].join(',') + '&part=snippet,statistics') // get Elements statistic
     .then(function(res) {
       return res.json();
@@ -72,16 +49,8 @@ let arrID = []; // for Elements ID
 
 });
 
+}
 
-
-
-
-
-
-
-let searchInput = `<form id="search" method="get">
-<input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
-</form>`;
 
 let pointsItem = `<a class="active " href="" title="">1</a>`;
 
@@ -90,7 +59,9 @@ let wrapper = document.createElement('div');
 wrapper.id = 'wrapper';
 wrapper.innerHTML = `<header>
   <div class="search-bar">
-    ${searchInput}
+    <form id="search" method="get" onsubmit="searchResult(); return false;">
+    <input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
+    </form>
   </div>
 </header>
 <div class="content">
