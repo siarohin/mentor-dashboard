@@ -29,35 +29,19 @@
   </footer>
 </div> */
 
-const HttpClient = function() {
-  this.get = function(aUrl, aCallback) {
+fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=3&q=JAVA') // get Elements result
+.then(function(response) {
+  return response.json();
+})
+.then(function(sliderBlock) {
 
-    let anHttpRequest = new XMLHttpRequest();
-
-    anHttpRequest.onreadystatechange = function() {
-      if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-      aCallback(anHttpRequest.responseText);
-    }
-    
-    anHttpRequest.open( "GET", aUrl, true );
-    anHttpRequest.send(null);
-  }
-}
-
-  // let userValue = document.querySelector('input[type=search]').value;
-  let userValue = 'JS';
-
-  let Url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=12&q=' + userValue;
-
-  let client = new HttpClient();
-
-  client.get(Url, function(response) { 
-    
-  let sliderBlock = JSON.parse(response);
-
-// Create Youtube blocks
+let arrID = []; // for Elements ID
 
   for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i++) {
+
+    arrID.push(sliderBlock.items[i].id.videoId); // save Elements ID
+    
+    // create Elements block
 
     document.querySelector('.slider').innerHTML += `<div class="">
     <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
@@ -65,14 +49,32 @@ const HttpClient = function() {
     <ul>
       <li>${sliderBlock.items[i].snippet.channelTitle}</li>
       <li>${sliderBlock.items[i].snippet.publishedAt}</li>
-      <li></li>
     </ul>
     <p>${sliderBlock.items[i].snippet.description}</p>
     </div>`;
-
+    
   }
 
+
+    fetch('https://www.googleapis.com/youtube/v3/videos?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&id=' + [arrID].join(',') + '&part=snippet,statistics') // get Elements statistic
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(reviewCount) {
+
+      for (let i = 0; i < reviewCount.pageInfo.resultsPerPage; i++) {
+        let li = document.createElement('li');
+        document.querySelector('.slider').getElementsByTagName('ul')[i].append(li);
+        li.innerHTML = reviewCount.items[i].statistics.viewCount; // create Elements statistic
+      }
+
+    });
+
 });
+
+
+
+
 
 
 
@@ -80,8 +82,6 @@ const HttpClient = function() {
 let searchInput = `<form id="search" method="get">
 <input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
 </form>`;
-
-
 
 let pointsItem = `<a class="active " href="" title="">1</a>`;
 
