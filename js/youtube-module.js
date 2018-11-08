@@ -1,7 +1,8 @@
 const maxResult = 12; // set max Results of Elements
 
-let valueUser;
+let valueUser; // user search phrase
 
+const GLOBAL_BLOCK_SETTING = 320; // width of block
 
 function searchResult() {
 
@@ -24,26 +25,16 @@ let arrID = []; // for Elements ID
 
     arrID.push(sliderBlock.items[i].id.videoId); // save Elements ID
 
-    // date Convert
-
-    let dateConvert = sliderBlock.items[i].snippet.publishedAt;
-    dateConvert = dateConvert.substring(0,10);
-
-    // nameConvert
-
-    let nameConvert = sliderBlock.items[i].snippet.title;
-    nameConvert = nameConvert.trim();
-
-    let numberID = i + 1; // set Elements ID
+    let numberID = i + 1; // set ID to block
 
     // create Elements block
 
     document.querySelector('.slider').innerHTML += `<div id="${numberID}">
     <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
-    <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${nameConvert}">${nameConvert}</a>
+    <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${sliderBlock.items[i].snippet.title}">${sliderBlock.items[i].snippet.title}</a>
     <ul>
       <li>${sliderBlock.items[i].snippet.channelTitle}</li>
-      <li>${dateConvert}</li>
+      <li>${(sliderBlock.items[i].snippet.publishedAt).substring(0,10)}</li>
     </ul>
     <p>${sliderBlock.items[i].snippet.description}</p>
     </div>`;
@@ -65,10 +56,54 @@ let arrID = []; // for Elements ID
 
     });
 
+    resetPoints(); // reset points
+    drawPoints(); // drawing points
+
 });
+
+function resetPoints() {
+    document.querySelector('.points').innerHTML = '';
+}
+
+function drawPoints() {
+  let counterOfBlocks = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING); // number of blocks
+
+  let numberOfPoints = Math.ceil(maxResult / counterOfBlocks); // number of points on the page
+
+  resetPoints();
+
+  for (let i = 1; i < numberOfPoints + 1; i++) {
+    let point = `<a class="" onclick="changePoints(this)">${i}</a>`;
+    document.querySelector('.points').innerHTML += point;
+  }
+
+  return false;
+}
+
+
+window.onresize = function() {  // change number of points on resize window
+  drawPoints();
+}
 
 }
 
+
+// click on points
+
+function changePoints(element) {
+  this.element = element;
+
+  // reset all
+  let links = document.querySelectorAll('.active');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove('active');
+  }
+
+  // set active
+  element.className = 'active';
+
+	return false;
+}
 
 
 let wrapper = document.createElement('div');
@@ -76,7 +111,7 @@ let wrapper = document.createElement('div');
 wrapper.id = 'wrapper';
 wrapper.innerHTML = `<header>
   <div class="search-bar">
-    <form id="search" method="get" onsubmit="searchResult(); getPoints(); return false;">
+    <form id="search" method="get" onsubmit="searchResult(); return false;">
     <input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
     </form>
   </div>
@@ -88,34 +123,8 @@ wrapper.innerHTML = `<header>
 </div>
 <footer>
   <div class="points">
-   
+
   </div>
 </footer>`;
 
 document.body.prepend(wrapper);
-
-
-
-
-
-
-function getPoints() {
-  let counterOfBlocks = Math.floor(document.body.querySelector('#wrapper').clientWidth / 320); // number of blocks
-
-  let numberOfPoints = Math.ceil(maxResult / counterOfBlocks); // number of points on the page
-
-
-  for (let i = 1; i < numberOfPoints + 1; i++) {
-    let point = `<a class="active " href="" title="">${i}</a>`;
-    document.querySelector('.points').innerHTML += point;
-  }
-
-}
-
-
-// change number of points on resize window
-
-window.onresize = function() {
-  document.querySelector('.points').innerHTML = '';
-  getPoints();
-}
