@@ -65,11 +65,19 @@ function deletePoints() {
 // draw points
 function drawPoints() {
   calculateNumberOfPoints();
+  calculateOfBlocks();
 
-  for (let i = 0; i < numberOfPoints; i++) {
-    let point = `<a href="#${arrId[i]}" class="" onclick="changePoints(this)">${i+1}</a>`;
-    document.querySelector('.points').innerHTML += point;
+  // set id to points (slice every N id)
+  let arrSliceId = [];
+  for (let i = 0; i < arrId.length; i += counterOfBlocks) {
+    arrSliceId.push(arrId[i]);
   }
+
+  // count points
+  for (let i = 0; i < numberOfPoints; i++) {
+    let point = `<a href="#${arrSliceId[i]}" class="" onclick="changePoints(this)">${i+1}</a>`;
+    document.querySelector('.points').innerHTML += point;
+  };
 
   return false;
 }
