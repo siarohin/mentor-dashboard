@@ -67,7 +67,7 @@ function drawPoints() {
   calculateNumberOfPoints();
   calculateOfBlocks();
 
-  // set id to points (slice every N id)
+  // set id to points
   let arrSliceId = [];
   for (let i = 0; i < arrId.length; i += counterOfBlocks) {
     arrSliceId.push(arrId[i]);
@@ -75,10 +75,11 @@ function drawPoints() {
 
   // count points
   for (let i = 0; i < numberOfPoints; i++) {
-    let point = `<a href="#${arrSliceId[i]}" class="" onclick="changePoints(this)">${i+1}</a>`;
+    let point = `<a href="#${arrSliceId[i]}" onclick="changePoints(this)">${i+1}</a>`;
     document.querySelector('.points').innerHTML += point;
   };
 
+  isVisible();
   return false;
 }
 
@@ -88,7 +89,6 @@ function getSearchValue() {
 }
 
 function searchResult() {
-
   // get user search phrase
   getSearchValue();
 
@@ -100,6 +100,8 @@ function searchResult() {
   .then(function(sliderBlock) {
     // delete all sliders blocks
     deleteSliders();
+    // delete pointers blocks
+    deletePoints();
     // reset video id
     arrId.length = 0;
 
@@ -130,10 +132,7 @@ function searchResult() {
           li.innerHTML = reviewCount.items[i].statistics.viewCount;
         }
       });
-
-      deletePoints();
       drawPoints();
-
   });
 
 }
@@ -142,7 +141,6 @@ function searchResult() {
 window.onresize = function() {
 
   deletePoints();
-
   // if block has been drawed -> draw points
   if (document.querySelector('.slider').children.length > 0) {
     drawPoints();
@@ -162,5 +160,50 @@ function changePoints(element) {
   // set active
   element.className = 'active';
 
-	return false;
+  return false;
+}
+
+
+// Is div visible? set <a class = 'active'>
+function isVisible() {
+  setTimeout(() => {
+
+  const target = document.querySelectorAll('.slider > div');
+
+  // get position of window
+  windowPosition = {
+  top: window.pageYOffset + 200,
+  left: window.pageXOffset,
+  right: window.pageXOffset + document.documentElement.clientWidth,
+  bottom: window.pageYOffset + document.documentElement.clientHeight - 200,
+  };
+
+  for (let i = 0; i < target.length; i++) {
+
+    // get position of element
+    let targetPosition = {
+        top: window.pageYOffset + target[i].getBoundingClientRect().top,
+        left: window.pageXOffset + target[i].getBoundingClientRect().left,
+        right: window.pageXOffset + target[i].getBoundingClientRect().right,
+        bottom: window.pageYOffset + target[i].getBoundingClientRect().bottom,
+      };
+
+    // if element is visible
+    if (targetPosition.bottom > windowPosition.top &&
+      targetPosition.top < windowPosition.bottom &&
+      targetPosition.right > windowPosition.left &&
+      targetPosition.left < windowPosition.right) {
+
+      let active = `#${target[i].id}`;
+      let link = document.querySelectorAll('.points > a');
+      for (let j = 0; j < link.length; j++) {
+        if (link[j].hash === active) {
+          link[j].className="active";
+        }
+      }
+
+    }
+  }
+
+  }, 0);
 }
