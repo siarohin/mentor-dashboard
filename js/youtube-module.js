@@ -149,7 +149,11 @@ window.onresize = function() {
 
 // click on points
 function changePoints(element) {
+  // new active (click now)
   this.element = element;
+
+  // old active (has been active)
+  let current = document.querySelector('.active');
 
   // reset all
   let links = document.querySelectorAll('.active');
@@ -160,9 +164,37 @@ function changePoints(element) {
   // set active
   element.className = 'active';
 
+ // new active > old active? -> set direction (to Left or to Right)
+  if (element.innerText > current.innerText) {
+    transformToLeft(); }
+  if (element.innerText < current.innerText) {
+    transformToRight();
+  }
+
   return false;
 }
 
+// set moving animation to left
+function transformToLeft() {
+  let div = document.querySelector('.slider');
+
+  div.classList.add('moving-left');
+
+  setTimeout(() => {
+    div.classList.remove('moving-left');
+  }, 1000);
+}
+
+// set moving animation to right
+function transformToRight() {
+  let div = document.querySelector('.slider');
+
+  div.classList.add('moving-right');
+
+  setTimeout(() => {
+    div.classList.remove('moving-right');
+  }, 1000);
+}
 
 // Is div visible? set <a class = 'active'>
 function isVisible() {

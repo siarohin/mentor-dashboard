@@ -36,7 +36,8 @@ body {
 }
 
 #wrapper {
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 header, footer {
@@ -115,7 +116,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .content {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 12.5em);
+  overflow: hidden;
 }
 
 .content .slider {
@@ -125,6 +127,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   height: calc(100vh - 12.5em);
   overflow: hidden;
+  transition: 0.5s;
 }
 
 .slider > div {
@@ -136,6 +139,44 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
+}
+
+@keyframes distance-to-left {
+  0%{
+      transform: translateX(0px);
+      }
+  50%{
+      transform: translateX(-4999px);
+      }
+  51%{
+      transform: translateX(4999px);
+      }
+  100%{
+      transform: translateX(0px);
+      }
+}
+
+@keyframes distance-to-right {
+  0%{
+      transform: translateX(0px);
+      }
+  50%{
+      transform: translateX(4999px);
+      }
+  51%{
+      transform: translateX(-4999px);
+      }
+  100%{
+      transform: translateX(0px);
+      }
+}
+
+.moving-left {
+  animation: distance-to-left 1s;
+}
+
+.moving-right {
+  animation: distance-to-right 1s;
 }
 
 .slider > div::before {
@@ -255,8 +296,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .points > a {
     margin: 0 .25em;
-    font: 0.8em 'Bold', 'Myriad Pro', sans-serif;
-    color: #3c444b;
+    font: 0.6em 'Bold', 'Myriad Pro', sans-serif;
   }
 
   .search-bar input {
