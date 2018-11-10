@@ -139,8 +139,8 @@ function searchResult() {
 
 // change number of points on resize window
 window.onresize = function() {
-
   deletePoints();
+  
   // if block has been drawed -> draw points
   if (document.querySelector('.slider').children.length > 0) {
     drawPoints();
@@ -164,7 +164,7 @@ function changePoints(element) {
   // set active
   element.className = 'active';
 
- // new active > old active? -> set direction (to Left or to Right)
+  // new active > old active? -> set direction (to Left or to Right)
   if (element.innerText > current.innerText) {
     transformToLeft(); }
   if (element.innerText < current.innerText) {

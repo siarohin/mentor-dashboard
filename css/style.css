@@ -122,10 +122,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .content .slider {
   display: flex;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
-  height: calc(100vh - 12.5em);
+  height: 100%;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -180,7 +186,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider > div::before {
-  content: '';
+    content: '';
     display: block;
     height: 2em;
     position: relative;
