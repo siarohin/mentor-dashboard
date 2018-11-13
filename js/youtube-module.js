@@ -24,13 +24,13 @@
 })();
 
 // set max Results of Elements
-const maxResult = 12;
+const maxResult = 15;
 
 // search phrase
 let searchValue;
 
 // width of block
-const GLOBAL_BLOCK_SETTING = 320;
+const GLOBAL_BLOCK_SETTING = 340;
 
 // for video id
 let arrId = [];
@@ -89,6 +89,9 @@ function getSearchValue() {
 }
 
 function searchResult() {
+  // clear location hash
+  window.location.hash = '';
+
   // get user search phrase
   getSearchValue();
 
@@ -133,14 +136,14 @@ function searchResult() {
         }
       });
       drawPoints();
+      clickSlider();
   });
-
 }
 
 // change number of points on resize window
 window.onresize = function() {
   deletePoints();
-  
+
   // if block has been drawed -> draw points
   if (document.querySelector('.slider').children.length > 0) {
     drawPoints();
@@ -149,9 +152,6 @@ window.onresize = function() {
 
 // click on points
 function changePoints(element) {
-  // new active (click now)
-  this.element = element;
-
   // old active (has been active)
   let current = document.querySelector('.active');
 
@@ -170,7 +170,6 @@ function changePoints(element) {
   if (element.innerText < current.innerText) {
     transformToRight();
   }
-
   return false;
 }
 
@@ -230,7 +229,7 @@ function isVisible() {
       let link = document.querySelectorAll('.points > a');
       for (let j = 0; j < link.length; j++) {
         if (link[j].hash === active) {
-          link[j].className="active";
+          link[j].className = 'active';
         }
       }
 
@@ -239,3 +238,16 @@ function isVisible() {
 
   }, 0);
 }
+
+
+function clickSlider() {
+  let slider = document.querySelectorAll('.slider > div');
+
+  for (let i = 0; i < slider.length; i++)
+  slider[i].addEventListener('click', function() {
+    calculateOfBlocks();
+    alert('Нажат блок с id ' + this.id);
+    alert('Всего блоков на странице ' + counterOfBlocks);
+  });
+}
+
