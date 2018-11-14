@@ -1,28 +1,5 @@
 @import url("normalized.css");
 
-/* Fonts */
-
-@font-face {
-	font-family: 'Bold';
-	src: url('fonts/Lato-Bold.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Italic';
-	src: url('fonts/Lato-Italic.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Regular';
-	src: url('fonts/Lato-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
 body, html {
   margin: 0 auto;
   padding: 0;
@@ -45,12 +22,6 @@ header, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
 }
 
 .search-bar {
@@ -202,7 +173,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider > div > a {
-  font: 1.25em 'Bold', 'Myriad Pro', sans-serif;
+  font: 1.25em 'Myriad Pro', 'Tahoma', sans-serif;
   line-height: 1.5em;
   text-decoration: none;
   display: block;
@@ -225,7 +196,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider > div > ul li {
-  font: 1em 'Bold', 'Myriad Pro', sans-serif;
+  font: 1em 'Myriad Pro', 'Tahoma', sans-serif;
   line-height: 1.5em;
   padding: 0.35em 0;
 }
@@ -259,22 +230,23 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider > div > p {
-  font: 1em 'Italic', 'Myriad Pro', sans-serif;
+  font: 1em 'Myriad Pro', 'Tahoma', sans-serif;
   line-height: 1.5em;
   padding: 0.55em 0; 
 }
 
 .points > a {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 2em;
   height: 2em;
   border-radius: 50%;
   margin: 0 .5em;
-  text-align: center;
-  padding-top: .25em;
+  padding-top: .2em;
   box-sizing: border-box;
   text-decoration: none;
-  font: 1em 'Bold', 'Myriad Pro', sans-serif;
+  font: 1em 'Myriad Pro', 'Tahoma', sans-serif;
   color: #fff;
   border: 2px solid #fff;
   background: #fff;
@@ -291,9 +263,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none !important;
 }
 
-
-
-
 /* Mobile phones only */ 
 
 @media only screen and (max-device-width: 720px) {
@@ -303,7 +272,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .points > a {
     margin: 0 .25em;
-    font: 0.6em 'Bold', 'Myriad Pro', sans-serif;
+    padding-top: .25em;
+    font: 0.6em 'Myriad Pro', 'Tahoma', sans-serif;
   }
 
   .search-bar input {
