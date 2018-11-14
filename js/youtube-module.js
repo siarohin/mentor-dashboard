@@ -75,12 +75,22 @@ function drawPoints() {
 
   // count points
   for (let i = 0; i < numberOfPoints; i++) {
-    let point = `<a href="#${arrSliceId[i]}" onclick="changePoints(this)">${i+1}</a>`;
+    let point = `<a href="#${arrSliceId[i]}">${i+1}</a>`;
     document.querySelector('.points').innerHTML += point;
   };
 
   isVisible();
+  clickPoint();
   return false;
+}
+
+// pointListener
+function clickPoint() {
+  let a = document.querySelectorAll('.points > a');
+  for (let i = 0; i < a.length; i++)
+  a[i].addEventListener('click', function() {
+    changePoints(this)
+  });
 }
 
 // get user search phrase
