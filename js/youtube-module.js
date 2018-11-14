@@ -175,9 +175,9 @@ function changePoints(element) {
   element.className = 'active';
 
   // new active > old active? -> set direction (to Left or to Right)
-  if (element.innerText > current.innerText) {
+  if (Number(element.innerText) > Number(current.innerText)) {
     transformToLeft(); }
-  if (element.innerText < current.innerText) {
+  if (Number(element.innerText) < Number(current.innerText)) {
     transformToRight();
   }
   return false;
