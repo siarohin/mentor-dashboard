@@ -163,7 +163,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   height: 100%;
   overflow: hidden;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .slider > div {

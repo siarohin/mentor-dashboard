@@ -256,8 +256,11 @@ function clickSlider() {
   for (let i = 0; i < slider.length; i++)
   slider[i].addEventListener('click', function() {
     calculateOfBlocks();
-    alert('Нажат блок с id ' + this.id);
-    alert('Всего блоков на странице ' + counterOfBlocks);
+    // alert('Нажат блок с id ' + this.id);
+    // alert('Всего блоков на странице ' + counterOfBlocks);
+    
+    // click to nextPage
+    document.querySelector('.points > .active').nextSibling.click();
   });
 }
 
