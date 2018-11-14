@@ -146,7 +146,7 @@ function searchResult() {
         }
       });
       drawPoints();
-      clickSlider();
+      moveSlider();
   });
 }
 
@@ -250,17 +250,41 @@ function isVisible() {
 }
 
 
-function clickSlider() {
+function moveSlider() {
   let slider = document.querySelectorAll('.slider > div');
+  let lastX;
 
   for (let i = 0; i < slider.length; i++)
-  slider[i].addEventListener('click', function() {
+  slider[i].addEventListener('mousedown', function(event) {
     calculateOfBlocks();
-    // alert('Нажат блок с id ' + this.id);
-    // alert('Всего блоков на странице ' + counterOfBlocks);
-    
-    // click to nextPage
-    document.querySelector('.points > .active').nextSibling.click();
-  });
-}
 
+    if (event.which === 1) {
+      lastX = event.pageX;
+      addEventListener('mouseup', moved);
+      event.preventDefault();
+    }
+  });
+
+  function moved(event) {
+    if (event.which != 1) {
+      removeEventListener('mouseup', moved);
+    } else {
+      // distance between mousedown and mouseout (X)
+      let dist = event.pageX - lastX;
+
+      // Math.abs(dist) is fixed short distance
+      if (dist < 0 && Math.abs(dist) > 100) {
+        // if nextPage exist
+        if (document.querySelector('.points > .active').nextSibling) {
+        document.querySelector('.points > .active').nextSibling.click();
+        }
+      } if (dist > 0 && Math.abs(dist) > 100)
+      {
+        // if previousPage exist
+        if (document.querySelector('.points > .active').previousSibling) {
+        document.querySelector('.points > .active').previousSibling.click();
+        }
+      }
+    }
+  }
+}
