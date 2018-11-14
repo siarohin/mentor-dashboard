@@ -163,7 +163,6 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   height: 100%;
   overflow: hidden;
-  transition: .5s;
 }
 
 .slider > div {
@@ -186,12 +185,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider > div::before {
-    content: '';
-    display: block;
-    height: 2em;
-    position: relative;
-    top: calc(100vh - 230px);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%);
+  content: '';
+  display: block;
+  height: 2em;
+  position: relative;
+  top: calc(100vh - 230px);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%);
 }
 
 .slider > div > img {
