@@ -1,109 +1,102 @@
+// set max results of blocks
+const maxResult = 15;
+
+// width of slider
+const GLOBAL_BLOCK_SETTING = 340;
+
+// search user phrase
+let searchValue;
+
+// for video id
+let youtubeId = [];
+
+// number of blocks
+let countSlider;
+
+// number of navigation
+let countNavigation;
+
+
+/* Generate Functions */
+
+// show init content
 (function createWrapper() {
   let wrapper = document.createElement('div');
 
   wrapper.id = 'wrapper';
   wrapper.innerHTML = `<header>
     <div class="search-bar">
-      <form id="search" method="get" onsubmit="searchResult(); return false;">
+      <form method="get">
       <input type="search" autofocus="autofocus" autocomplete="off" placeholder="Search">
       </form>
     </div>
   </header>
   <div class="content">
     <div class="slider">
-
     </div>
   </div>
-  <footer>
-    <div class="points">
-
-    </div>
-  </footer>`;
+  <nav class="navigation">
+  </nav>`;
 
   document.body.prepend(wrapper);
+  listenSearchForm();
 })();
 
-// set max Results of Elements
-const maxResult = 15;
+// show navigation
+function generateNavigation() {
+  calculateNavigation();
+  calculateSlider();
 
-// search phrase
-let searchValue;
-
-// width of block
-const GLOBAL_BLOCK_SETTING = 340;
-
-// for video id
-let arrId = [];
-
-// number of blocks
-let counterOfBlocks;
-
-// number of points
-let numberOfPoints;
-
-// calculate number of blocks
-function calculateOfBlocks() {
-  return counterOfBlocks = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
-}
-
-// calculate number of points
-function calculateNumberOfPoints() {
-  calculateOfBlocks();
-  return numberOfPoints = Math.ceil(maxResult / counterOfBlocks);
-}
-
-// delete sliders
-function deleteSliders() {
-  document.querySelector('.slider').innerHTML = '';
-}
-
-// delete points
-function deletePoints() {
-  document.querySelector('.points').innerHTML = '';
-}
-
-// draw points
-function drawPoints() {
-  calculateNumberOfPoints();
-  calculateOfBlocks();
-
-  // set id to points
-  let arrSliceId = [];
-  for (let i = 0; i < arrId.length; i += counterOfBlocks) {
-    arrSliceId.push(arrId[i]);
+  // set id to navigation
+  let navigationId = [];
+  for (let i = 0; i < youtubeId.length; i += countSlider) {
+    navigationId.push(youtubeId[i]);
   }
 
-  // count points
-  for (let i = 0; i < numberOfPoints; i++) {
-    let point = `<a href="#${arrSliceId[i]}">${i+1}</a>`;
-    document.querySelector('.points').innerHTML += point;
+  // count navigation
+  for (let i = 0; i < countNavigation; i++) {
+    let point = `<a href="#${navigationId[i]}">${i+1}</a>`;
+    document.querySelector('.navigation').innerHTML += point;
   };
 
   isVisible();
-  clickPoint();
+  listenNavigation();
   return false;
 }
 
-// pointListener
-function clickPoint() {
-  let a = document.querySelectorAll('.points > a');
-  for (let i = 0; i < a.length; i++)
-  a[i].addEventListener('click', function() {
-    changePoints(this)
-  });
+
+/* Calculate Functions */
+
+// calculate slider
+function calculateSlider() {
+  return countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
 }
 
-// get user search phrase
-function getSearchValue() {
-  return searchValue = document.querySelector('#search')[0].value;
+// calculate navigation
+function calculateNavigation() {
+  calculateSlider();
+  return countNavigation = Math.ceil(maxResult / countSlider);
 }
+
+
+/* Delete Functions */
+
+// delete slider
+function deleteSlider() {
+  document.querySelector('.slider').innerHTML = '';
+}
+
+// delete navigation
+function deleteNavigation() {
+  document.querySelector('.navigation').innerHTML = '';
+}
+
+
+/* Search Functions */
 
 function searchResult() {
-  // clear location hash
-  window.location.hash = '';
-
-  // get user search phrase
-  getSearchValue();
+  // user search phrase
+  let searchValue = document.querySelector('form')[0].value;
 
   // send response to api
   fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=' + maxResult + '&q=' + searchValue) // get Elements result
@@ -111,19 +104,18 @@ function searchResult() {
     return response.json();
   })
   .then(function(sliderBlock) {
-    // delete all sliders blocks
-    deleteSliders();
-    // delete pointers blocks
-    deletePoints();
+
+    deleteSlider();
+    deleteNavigation();
     // reset video id
-    arrId.length = 0;
+    youtubeId.length = 0;
 
     for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i++) {
       // save video id
-      arrId.push(sliderBlock.items[i].id.videoId);
+      youtubeId.push(sliderBlock.items[i].id.videoId);
 
       // create blocks
-      document.querySelector('.slider').innerHTML += `<div id="${arrId[i]}">
+      document.querySelector('.slider').innerHTML += `<div id="${youtubeId[i]}">
       <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
       <a href="https://www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${sliderBlock.items[i].snippet.title}">${sliderBlock.items[i].snippet.title}</a>
       <ul>
@@ -134,7 +126,7 @@ function searchResult() {
       </div>`;
     }
 
-      fetch('https://www.googleapis.com/youtube/v3/videos?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&id=' + [...arrId] + '&part=snippet,statistics') // get Elements statistic
+      fetch('https://www.googleapis.com/youtube/v3/videos?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&id=' + [...youtubeId] + '&part=snippet,statistics') // get Elements statistic
       .then(function(res) {
         return res.json();
       })
@@ -145,67 +137,41 @@ function searchResult() {
           li.innerHTML = reviewCount.items[i].statistics.viewCount;
         }
       });
-      drawPoints();
+      generateNavigation();
       moveSlider();
+  }, false);
+}
+
+
+/* Listener Function */
+
+// listen navigation
+function listenNavigation() {
+  let a = document.querySelectorAll('.navigation > a');
+  for (let i = 0; i < a.length; i++)
+  a[i].addEventListener('click', function() {
+    changePoints(this)
   });
 }
 
-// change number of points on resize window
+// listen search form
+function listenSearchForm() {
+  document.querySelector('form').addEventListener('submit', function() {
+    searchResult();
+  });
+}
+
+// listen on resize window
 window.onresize = function() {
-  deletePoints();
+  deleteNavigation();
 
   // if block has been drawed -> draw points
   if (document.querySelector('.slider').children.length > 0) {
-    drawPoints();
+    generateNavigation();
   }
 }
 
-// click on points
-function changePoints(element) {
-  // old active (has been active)
-  let current = document.querySelector('.active');
-
-  // reset all
-  let links = document.querySelectorAll('.active');
-    for (let i = 0; i < links.length; i++) {
-      links[i].classList.remove('active');
-  }
-
-  // set active
-  element.className = 'active';
-
-  // new active > old active? -> set direction (to Left or to Right)
-  if (Number(element.innerText) > Number(current.innerText)) {
-    transformToLeft(); }
-  if (Number(element.innerText) < Number(current.innerText)) {
-    transformToRight();
-  }
-  return false;
-}
-
-// set moving animation to left
-function transformToLeft() {
-  let div = document.querySelector('.slider');
-
-  div.classList.add('moving-left');
-
-  setTimeout(() => {
-    div.classList.remove('moving-left');
-  }, 1000);
-}
-
-// set moving animation to right
-function transformToRight() {
-  let div = document.querySelector('.slider');
-
-  div.classList.add('moving-right');
-
-  setTimeout(() => {
-    div.classList.remove('moving-right');
-  }, 1000);
-}
-
-// Is div visible? set <a class = 'active'>
+// is div visible? set <a class = 'active'>
 function isVisible() {
   setTimeout(() => {
 
@@ -236,7 +202,7 @@ function isVisible() {
       targetPosition.left < windowPosition.right) {
 
       let active = `#${target[i].id}`;
-      let link = document.querySelectorAll('.points > a');
+      let link = document.querySelectorAll('.navigation > a');
       for (let j = 0; j < link.length; j++) {
         if (link[j].hash === active) {
           link[j].className = 'active';
@@ -250,13 +216,16 @@ function isVisible() {
 }
 
 
+/* Change Functions */
+
+// move slider
 function moveSlider() {
   let slider = document.querySelectorAll('.slider > div');
   let lastX;
 
   for (let i = 0; i < slider.length; i++)
   slider[i].addEventListener('mousedown', function(event) {
-    calculateOfBlocks();
+    calculateSlider();
 
     if (event.which === 1) {
       lastX = event.pageX;
@@ -275,16 +244,60 @@ function moveSlider() {
       // Math.abs(dist) is fixed short distance
       if (dist < 0 && Math.abs(dist) > 100) {
         // if nextPage exist
-        if (document.querySelector('.points > .active').nextSibling) {
-        document.querySelector('.points > .active').nextSibling.click();
+        if (document.querySelector('.navigation > .active').nextSibling) {
+        document.querySelector('.navigation > .active').nextSibling.click();
         }
       } if (dist > 0 && Math.abs(dist) > 100)
       {
         // if previousPage exist
-        if (document.querySelector('.points > .active').previousSibling) {
-        document.querySelector('.points > .active').previousSibling.click();
+        if (document.querySelector('.navigation > .active').previousSibling) {
+        document.querySelector('.navigation > .active').previousSibling.click();
         }
       }
     }
   }
+}
+
+// change navigation
+function changePoints(element) {
+  // old active
+  let current = document.querySelector('.active');
+
+  // reset all
+  let links = document.querySelectorAll('.active');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove('active');
+  }
+
+  // set active
+  element.className = 'active';
+
+  // new active > old active? -> set direction (to Left or to Right)
+  if (Number(element.innerText) > Number(current.innerText)) {
+    transformToLeft(); }
+  if (Number(element.innerText) < Number(current.innerText)) {
+    transformToRight();
+  }
+}
+
+// set animation to left
+function transformToLeft() {
+  let div = document.querySelector('.slider');
+
+  div.classList.add('moving-left');
+
+  setTimeout(() => {
+    div.classList.remove('moving-left');
+  }, 1000);
+}
+
+// set animation to right
+function transformToRight() {
+  let div = document.querySelector('.slider');
+
+  div.classList.add('moving-right');
+
+  setTimeout(() => {
+    div.classList.remove('moving-right');
+  }, 1000);
 }
