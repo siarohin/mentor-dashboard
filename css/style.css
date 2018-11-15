@@ -152,11 +152,11 @@ input[type="search"]::-webkit-search-results-decoration {
   user-select: none;
 }
 
-.moving-left {
+.to-left {
   animation: distance-to-left 1s;
 }
 
-.moving-right {
+.to-right {
   animation: distance-to-right 1s;
 }
 
