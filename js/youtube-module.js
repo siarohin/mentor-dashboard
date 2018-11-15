@@ -42,55 +42,6 @@ let countNavigation;
   listenSearchForm();
 })();
 
-// show navigation
-function generateNavigation() {
-  calculateNavigation();
-  calculateSlider();
-
-  // set id to navigation
-  let navigationId = [];
-  for (let i = 0; i < youtubeId.length; i += countSlider) {
-    navigationId.push(youtubeId[i]);
-  }
-
-  // count navigation
-  for (let i = 0; i < countNavigation; i++) {
-    let point = `<a href="#${navigationId[i]}">${i+1}</a>`;
-    document.querySelector('.navigation').innerHTML += point;
-  };
-
-  isVisible();
-  listenNavigation();
-  return false;
-}
-
-
-/* Calculate Functions */
-
-// calculate slider
-function calculateSlider() {
-  return countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
-}
-
-// calculate navigation
-function calculateNavigation() {
-  calculateSlider();
-  return countNavigation = Math.ceil(maxResult / countSlider);
-}
-
-
-/* Delete Functions */
-
-// delete slider
-function deleteSlider() {
-  document.querySelector('.slider').innerHTML = '';
-}
-
-// delete navigation
-function deleteNavigation() {
-  document.querySelector('.navigation').innerHTML = '';
-}
-
 
 /* Search Functions */
 
@@ -143,6 +94,55 @@ function searchResult() {
 }
 
 
+// show navigation
+function generateNavigation() {
+  calculateNavigation();
+  calculateSlider();
+
+  // set id to navigation
+  let navigationId = [];
+  for (let i = 0; i < youtubeId.length; i += countSlider) {
+    navigationId.push(youtubeId[i]);
+  }
+
+  // count navigation
+  for (let i = 0; i < countNavigation; i++) {
+    let point = `<a href="#${navigationId[i]}">${i+1}</a>`;
+    document.querySelector('.navigation').innerHTML += point;
+  };
+
+  isVisible();
+  listenNavigation();
+}
+
+
+/* Calculate Functions */
+
+// calculate slider
+function calculateSlider() {
+  return countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
+}
+
+// calculate navigation
+function calculateNavigation() {
+  calculateSlider();
+  return countNavigation = Math.ceil(maxResult / countSlider);
+}
+
+
+/* Delete Functions */
+
+// delete slider
+function deleteSlider() {
+  document.querySelector('.slider').innerHTML = '';
+}
+
+// delete navigation
+function deleteNavigation() {
+  document.querySelector('.navigation').innerHTML = '';
+}
+
+
 /* Listener Function */
 
 // listen navigation
@@ -156,7 +156,9 @@ function listenNavigation() {
 
 // listen search form
 function listenSearchForm() {
-  document.querySelector('form').addEventListener('submit', function() {
+  let form = document.querySelector('form');
+  form.addEventListener('submit', function(evt) {
+    evt.preventDefault();
     searchResult();
   });
 }
