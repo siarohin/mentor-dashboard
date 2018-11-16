@@ -80,7 +80,6 @@ function searchResult() {
       generateNavigation();
       listenNavigation();
       moveSlider();
-      // listenHeader();
 
   }, false);
 }
@@ -113,8 +112,6 @@ function generateNavigation() {
   }
 
   setNavigation();
-  // moveSlider();
-
 }
 
 /* Delete Slider */
@@ -122,7 +119,7 @@ function deleteSlider() {
   document.querySelector('.slider').innerHTML = '';
 }
 
-// listen search form
+/* Listen search Form */
 function listenSearchForm() {
   let form = document.querySelector('form');
   form.addEventListener('submit', function(event) {
@@ -131,23 +128,13 @@ function listenSearchForm() {
   });
 }
 
-// listen on resize window
+/* Listen on resize Window */
 window.onresize = () => {
   // if slider generated -> generate navigation
   if (document.querySelector('.slider').children.length > 0) {
     generateNavigation();
   }
 }
-
-// listen header
-// function listenHeader() {
-//   let header = document.querySelector('header');
-//   header.addEventListener('mouseup', moved);
-
-//   function moved(event) {
-//     event.stopPropagation();
-//   }
-// }
 
 
 /* Set Active Navigation without click */
@@ -207,9 +194,9 @@ function setNavigation() {
 function moveSlider() {
   let slider = document.querySelector('.slider');
 
-    slider.onmousedown = function(event) {
-      let startPosition = event.pageX;
-      event.which === 1 ? listenSlider(slider, startPosition) : startPosition = 0;
+  slider.onmousedown = function(event) {
+    let startPosition = event.pageX;
+    listenSlider(slider, startPosition);
   }
 }
 
@@ -219,18 +206,14 @@ function listenSlider(slider, startPosition) {
 
     let finishPosition = event.pageX;
     let distance = finishPosition - startPosition;
-    console.log(startPosition);
-    console.log(finishPosition);
 
-    if (distance < 0 && Math.abs(distance) > 100) {
-
+    if (distance < 0 && Math.abs(distance) > 100 && event.which === 1) {
       if (document.querySelector('nav > .active').nextSibling) {
         document.querySelector('nav > .active').nextSibling.click();
       }
     }
 
-    if (distance > 0 && Math.abs(distance) > 100) {
-
+    if (distance > 0 && Math.abs(distance) > 100 && event.which === 1) {
       if (document.querySelector('nav > .active').previousSibling) {
         document.querySelector('nav > .active').previousSibling.click();
       }
