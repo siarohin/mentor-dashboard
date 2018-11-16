@@ -256,7 +256,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .navigation > a:hover,
 .navigation > .active {
-  background: #c40404;
+  background-color: #c40404;
 }
 
 /* Mobile phones only */ 
@@ -273,10 +273,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .search-bar input {
     padding: 0 1em;
-  }
-
-  .navigation > a.active {
-    color: #fff;
   }
 }
 

@@ -80,6 +80,7 @@ function searchResult() {
       generateNavigation();
       listenNavigation();
       moveSlider();
+      touchSlider();
 
   }, false);
 }
@@ -134,14 +135,14 @@ window.onresize = () => {
   if (document.querySelector('.slider').children.length > 0) {
     generateNavigation();
   }
-}
+};
 
 
 /* Set Active Navigation without click */
 /* is slider visible? --> set active navigation */
 /* use in function generateNavigation */
 function setNavigation() {
-  setTimeout(() => {
+
   const slider = document.querySelectorAll('.slider > div');
 
   // window_controll.height = window.height - header.height - nav.height
@@ -186,7 +187,6 @@ function setNavigation() {
 
   }
 
-  }, 0);
 }
 
 
@@ -195,17 +195,17 @@ function moveSlider() {
   let slider = document.querySelector('.slider');
 
   slider.onmousedown = function(event) {
-    let startPosition = event.pageX;
-    listenSlider(slider, startPosition);
-  }
+    let clickStartLocation = event.pageX;
+    listenSlider(slider, clickStartLocation);
+  };
 }
 
-function listenSlider(slider, startPosition) {
+function listenSlider(slider, clickStartLocation) {
 
   slider.onmouseup = function(event) {
 
-    let finishPosition = event.pageX;
-    let distance = finishPosition - startPosition;
+    let clickEndLocation = event.pageX;
+    let distance = clickEndLocation - clickStartLocation;
 
     if (distance < 0 && Math.abs(distance) > 100 && event.which === 1) {
       if (document.querySelector('nav > .active').nextSibling) {
@@ -220,6 +220,36 @@ function listenSlider(slider, startPosition) {
     }
 
   };
+}
+
+
+/* Transform Slider on touch Slider */
+function touchSlider() {
+  let initialPoint;
+  let FinalPoint;
+
+  let slider = document.querySelector('.slider');
+  slider.addEventListener('touchstart', function(event) {
+    initialPoint = event.changedTouches[0];
+  }, false);
+
+  slider.addEventListener('touchend', function(event) {
+    finalPoint = event.changedTouches[0];
+
+    let distance = Math.abs(initialPoint.pageX - finalPoint.pageX);
+
+    if (distance > 20) {
+      if (finalPoint.pageX < initialPoint.pageX) {
+        if (document.querySelector('nav > .active').nextSibling) {
+          document.querySelector('nav > .active').nextSibling.click();
+        }
+      } else {
+        if (document.querySelector('nav > .active').previousSibling) {
+          document.querySelector('nav > .active').previousSibling.click();
+        }
+      }
+    }
+  });
 }
 
 
@@ -271,4 +301,4 @@ let transformSlider = function(elementNavigation) {
     }, 1000);
   }
 
-}
+};
