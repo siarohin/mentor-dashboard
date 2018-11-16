@@ -4,7 +4,7 @@ const maxResult = 15;
 // width of slider
 const GLOBAL_BLOCK_SETTING = 340;
 
-// for video id
+// video id
 let youtubeId = [];
 
 
@@ -78,6 +78,8 @@ function searchResult() {
       });
 
       generateNavigation();
+      listenNavigation();
+      moveSlider();
       // listenHeader();
 
   }, false);
@@ -88,8 +90,8 @@ function searchResult() {
 function generateNavigation() {
 
   // delete navigation
-  if (document.querySelector('.navigation')) {
-    document.querySelector('.navigation').innerHTML = '';
+  if (document.querySelector('nav')) {
+    document.querySelector('nav').innerHTML = '';
   }
 
   // number of slider
@@ -107,11 +109,10 @@ function generateNavigation() {
   // show navigation
   for (let i = 0; i < countNavigation; i++) {
     let navigation = `<a href="#${navigationId[i]}">${i+1}</a>`;
-    document.querySelector('.navigation').innerHTML += navigation;
+    document.querySelector('nav').innerHTML += navigation;
   }
 
-  isVisible();
-  listenNavigation();
+  setNavigation();
   // moveSlider();
 
 }
@@ -148,16 +149,19 @@ window.onresize = () => {
 //   }
 // }
 
-// is slider visible? --> set active navigation
-function isVisible() {
-  setTimeout(() => {
 
+/* Set Active Navigation without click */
+/* is slider visible? --> set active navigation */
+/* use in function generateNavigation */
+function setNavigation() {
+  setTimeout(() => {
   const slider = document.querySelectorAll('.slider > div');
 
+  // window_controll.height = window.height - header.height - nav.height
   const header = document.querySelector('header');
   const nav = document.querySelector('nav');
 
-  // get position of window
+  // get position of window_controll
   windowPosition = {
     top: window.pageYOffset + header.offsetHeight + nav.offsetHeight,
     left: window.pageXOffset,
@@ -175,7 +179,7 @@ function isVisible() {
       bottom: window.pageYOffset + slider[i].getBoundingClientRect().bottom,
       };
 
-    // if slider is visible
+    // is slider visible? -> it's active navigation
     if (sliderPosition.bottom > windowPosition.top &&
       sliderPosition.top < windowPosition.bottom &&
       sliderPosition.right > windowPosition.left &&
@@ -183,7 +187,7 @@ function isVisible() {
 
     // set navigation.href = slider.id
       let sliderId = `#${slider[i].id}`;
-      let navigation = document.querySelectorAll('.navigation > a');
+      let navigation = document.querySelectorAll('nav > a');
 
       for (let j = 0; j < navigation.length; j++) {
         if (navigation[j].hash === sliderId) {
@@ -192,6 +196,7 @@ function isVisible() {
       }
 
     }
+
   }
 
   }, 0);
@@ -199,55 +204,54 @@ function isVisible() {
 
 
 /* Transform Slider on click Slider */
-// function moveSlider() {
-//   let slider = document.querySelectorAll('.slider > div');
-//   let lastX;
+function moveSlider() {
+  let slider = document.querySelector('.slider');
 
-//   for (let i = 0; i < slider.length; i++) {
-//     slider[i].addEventListener('mousedown', clickSlider);
-//   }
+    slider.onmousedown = function(event) {
+      let startPosition = event.pageX;
+      event.which === 1 ? listenSlider(slider, startPosition) : startPosition = 0;
+  }
+}
 
-//   function clickSlider(event) {
-//     if (event.which === 1) {
-//       lastX = event.pageX;
-//       addEventListener('mouseup', moved);
-//     }
-//   }
+function listenSlider(slider, startPosition) {
 
-//   function moved(event) {
-//     if (event.which != 1) {
-//       removeEventListener('mouseup', moved);
-//     } else {
-//       // distance between mousedown and mouseout (X)
-//       let dist = event.pageX - lastX;
+  slider.onmouseup = function(event) {
 
-//       // Math.abs(dist) is fix short distance
-//       if (dist < 0 && Math.abs(dist) > 100) {
-//         // if nextPage exist
-//         if (document.querySelector('.navigation > .active').nextSibling) {
-//         document.querySelector('.navigation > .active').nextSibling.click();
-//         }
-//       }
-//       if (dist > 0 && Math.abs(dist) > 100) {
-//         // if previousPage exist
-//         if (document.querySelector('.navigation > .active').previousSibling) {
-//         document.querySelector('.navigation > .active').previousSibling.click();
-//         }
-//       }
-//     }
-//   }
-// }
+    let finishPosition = event.pageX;
+    let distance = finishPosition - startPosition;
+    console.log(startPosition);
+    console.log(finishPosition);
+
+    if (distance < 0 && Math.abs(distance) > 100) {
+
+      if (document.querySelector('nav > .active').nextSibling) {
+        document.querySelector('nav > .active').nextSibling.click();
+      }
+    }
+
+    if (distance > 0 && Math.abs(distance) > 100) {
+
+      if (document.querySelector('nav > .active').previousSibling) {
+        document.querySelector('nav > .active').previousSibling.click();
+      }
+    }
+
+  };
+}
 
 
 /* Listen Navigation on click */
 function listenNavigation() {
   let navigation = document.querySelector('nav');
+  if (navigation) {
 
-  navigation.onclick = function(event) {
-    let target = event.target;
-    if (target.tagName != 'A') return;
-    transformSlider(target);
-  };
+    navigation.onclick = function(event) {
+      let elementNavigation = event.target;
+      if (elementNavigation.tagName != 'A') return;
+      transformSlider(elementNavigation);
+    };
+
+  }
 }
 
 
