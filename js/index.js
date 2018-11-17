@@ -73,7 +73,7 @@ function generateNavigation() {
   const countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
 
   // number of navigation
-  const countNavigation = Math.ceil(MAX_RESULT / countSlider);
+  const countNavigation = Math.ceil(youtubeId.length / countSlider);
 
   // set id to navigation
   const navigationId = [];
@@ -241,7 +241,7 @@ function searchResult() {
       moveSlider();
       touchSlider();
 
-      // init navigate position
+      // init navigation position
       if (document.querySelector('nav > a')) {
         document.querySelector('nav > a').click();
       }
