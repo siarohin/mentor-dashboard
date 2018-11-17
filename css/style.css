@@ -1,6 +1,7 @@
-@import url("normalized.css");
+@import url('normalized.css');
 
-body, html {
+body,
+html {
   margin: 0 auto;
   padding: 0;
   height: 100%;
@@ -8,7 +9,7 @@ body, html {
 
 body {
   font: 16px Arial, Helvetica, sans-serif;
-	color: #3c444b;
+  color: #3c444b;
   background-color: #3c444b;
 }
 
@@ -16,7 +17,8 @@ body {
   height: 100%;
 }
 
-header, nav {
+header,
+nav {
   height: 6.25em;
   display: flex;
   align-items: center;
@@ -29,10 +31,10 @@ header, nav {
   width: 65%;
   height: 2.8em;
   background: #fff;
-  border-radius: .5em;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
-  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
   overflow: hidden;
   justify-content: center;
   position: relative;
@@ -41,12 +43,13 @@ header, nav {
 .search-bar::before {
   content: '\f002';
   font: 1em 'FontAwesome';
-  margin: .9em 0 0 .3em;
+  margin: 0.9em 0 0 0.3em;
   position: absolute;
   left: 0;
 }
 
-.search-bar form, .search-bar input {
+.search-bar form,
+.search-bar input {
   height: 2.3em;
   border: 0;
   border-radius: 0;
@@ -62,56 +65,56 @@ header, nav {
 
 .search-bar input {
   width: 90%;
-  margin: .3em 0 .2em;
+  margin: 0.3em 0 0.2em;
 }
 
-input[type=text]::-ms-clear {
+input[type='text']::-ms-clear {
   display: none;
   width: 0;
   height: 0;
 }
 
-input[type=text]::-ms-reveal {
+input[type='text']::-ms-reveal {
   display: none;
-  width : 0;
+  width: 0;
   height: 0;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
 @keyframes distance-to-left {
-  0%{
-      transform: translateX(0px);
-      }
-  50%{
-      transform: translateX(-4999px);
-      }
-  51%{
-      transform: translateX(4999px);
-      }
-  100%{
-      transform: translateX(0px);
-      }
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-4999px);
+  }
+  51% {
+    transform: translateX(4999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 @keyframes distance-to-right {
-  0%{
-      transform: translateX(0px);
-      }
-  50%{
-      transform: translateX(4999px);
-      }
-  51%{
-      transform: translateX(-4999px);
-      }
-  100%{
-      transform: translateX(0px);
-      }
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(4999px);
+  }
+  51% {
+    transform: translateX(-4999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .content {
@@ -137,7 +140,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .slider > div {
   margin: 0 1em;
-  padding: 0 .25em;
+  padding: 0 0.25em;
   height: 100%;
   width: 300px;
   background: #fff;
@@ -204,7 +207,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-bottom: 1px solid #ececec;
 }
 
-.slider > div > ul li:nth-child(2n+1) {
+.slider > div > ul li:nth-child(2n + 1) {
   max-height: 2.5em;
   overflow: hidden;
   font-weight: bold;
@@ -228,14 +231,14 @@ input[type="search"]::-webkit-search-results-decoration {
   font: 1em 'FontAwesome';
   position: absolute;
   left: 0;
-  margin: .2em 0 0 .5em;
+  margin: 0.2em 0 0 0.5em;
   font-size: 1em;
   color: #000;
 }
 
 .slider > div > p {
   line-height: 1.5em;
-  padding: 2em .5em .5em; 
+  padding: 2em 0.5em 0.5em;
 }
 
 .navigation > a {
@@ -245,10 +248,10 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  margin: .5em;
+  margin: 0.5em;
   text-decoration: none;
   color: #fff;
-  border: .125em solid #fff;
+  border: 0.125em solid #fff;
   background: #fff;
   transition: background 300ms ease-out;
   cursor: pointer;
@@ -259,7 +262,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #c40404;
 }
 
-/* Mobile phones only */ 
+/* Mobile phones only */
 
 @media only screen and (max-device-width: 720px) {
   .search-bar > input {
@@ -267,13 +270,11 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .navigation > a {
-    margin: .25em;
-    font-size: .5em;
+    margin: 0.25em;
+    font-size: 0.5em;
   }
 
   .search-bar input {
     padding: 0 1em;
   }
 }
-
-
