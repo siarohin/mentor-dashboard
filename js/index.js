@@ -95,11 +95,6 @@ function generateNavigation() {
 function moveSlider() {
   const slider = document.querySelector('.slider');
 
-  slider.onmousedown = (event) => {
-    const clickStartLocation = event.pageX;
-    listenSlider(clickStartLocation);
-  };
-
   function listenSlider(clickStartLocation) {
     slider.onmouseup = (event) => {
       const clickEndLocation = event.pageX;
@@ -118,6 +113,11 @@ function moveSlider() {
       }
     };
   }
+
+  slider.onmousedown = (event) => {
+    const clickStartLocation = event.pageX;
+    listenSlider(clickStartLocation);
+  };
 }
 
 
@@ -136,7 +136,7 @@ function listenNavigation() {
     }
 
     // new active
-    elementNavigation.className = 'active';
+    elementNavigation.classList.add('active');
     function transformTo(where) {
       const div = document.querySelector('.slider');
       div.classList.add(`to-${where}`);

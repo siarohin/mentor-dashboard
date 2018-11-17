@@ -264,9 +264,16 @@ input[type='search']::-webkit-search-results-decoration {
   user-select: none;
 }
 
-.navigation > a:hover,
 .navigation > .active {
   background-color: #c40404;
+}
+
+/* Fix hover */
+
+@media only screen and (min-device-width: 1024px) {
+  .navigation > a:hover {
+    background-color: #c40404; 
+  }
 }
 
 /* Mobile phones only */
