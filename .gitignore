@@ -1,4 +1,9 @@
 .idea
+node_modules
 *.bundle.js
 *.log
+.vscode
 script
+
+.prettierrc
+package-lock.json
