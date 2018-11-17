@@ -21,6 +21,7 @@ header,
 nav {
   height: 6.25em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -255,6 +256,12 @@ input[type='search']::-webkit-search-results-decoration {
   background: #fff;
   transition: background 300ms ease-out;
   cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navigation > a:hover,

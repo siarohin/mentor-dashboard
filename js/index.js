@@ -1,5 +1,5 @@
 // set max results of blocks
-const maxResult = 15;
+const MAX_RESULT = 50;
 
 // width of slider
 const GLOBAL_BLOCK_SETTING = 340;
@@ -73,7 +73,7 @@ function generateNavigation() {
   const countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / GLOBAL_BLOCK_SETTING);
 
   // number of navigation
-  const countNavigation = Math.ceil(maxResult / countSlider);
+  const countNavigation = Math.ceil(MAX_RESULT / countSlider);
 
   // set id to navigation
   const navigationId = [];
@@ -168,15 +168,15 @@ function listenNavigation() {
 /* Transform Slider on touch Slider */
 function touchSlider() {
   let initialPoint;
-  let finalPoint;
 
   const slider = document.querySelector('.slider');
+
   slider.addEventListener('touchstart', (event) => {
     initialPoint = event.changedTouches[0];
   }, false);
 
   slider.addEventListener('touchend', (event) => {
-    finalPoint = event.changedTouches[0];
+    const finalPoint = event.changedTouches[0];
 
     const distance = Math.abs(initialPoint.pageX - finalPoint.pageX);
 
@@ -199,7 +199,7 @@ function searchResult() {
   const searchValue = document.querySelector('form')[0].value;
 
   // send response to api
-  fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=${maxResult}&q=${searchValue}`)
+  fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY&type=video&part=snippet&maxResults=${MAX_RESULT}&q=${searchValue}`)
     .then(response => response.json())
     .then((sliderBlock) => {
       deleteSlider();
@@ -240,6 +240,11 @@ function searchResult() {
       listenNavigation();
       moveSlider();
       touchSlider();
+
+      // init navigate position
+      if (document.querySelector('nav > a')) {
+        document.querySelector('nav > a').click();
+      }
     }, false);
 }
 
