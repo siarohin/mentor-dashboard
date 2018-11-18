@@ -116,7 +116,8 @@ function dottedNavigation() {
   nextNavigation.classList.remove('hide');
   prevNavigation.classList.remove('hide');
 
-  if (lastNavigation === active || lastNavigation.previousSibling === active
+  if (lastNavigation === active
+    || lastNavigation.previousSibling === active
     || lastNavigation.previousSibling.previousSibling === active) {
     lastNavigation.classList.remove('last-navigation');
   }
@@ -128,22 +129,34 @@ function dottedNavigation() {
 
   if (firstNavigation === active) {
     nextNavigation.classList.remove('hide');
-    nextNavigation.nextSibling.classList.remove('hide');
-    nextNavigation.nextSibling.nextSibling.classList.remove('hide');
+    if (nextNavigation.nextSibling !== null) {
+      nextNavigation.nextSibling.classList.remove('hide');
+      if (nextNavigation.nextSibling.nextSibling !== null) {
+        nextNavigation.nextSibling.nextSibling.classList.remove('hide');
+      }
+    }
   }
 
   if (firstNavigation.nextSibling === active) {
-    nextNavigation.nextSibling.classList.remove('hide');
+    if (nextNavigation.nextSibling !== null) {
+      nextNavigation.nextSibling.classList.remove('hide');
+    }
   }
 
   if (lastNavigation === active) {
     prevNavigation.classList.remove('hide');
-    prevNavigation.previousSibling.classList.remove('hide');
-    prevNavigation.previousSibling.previousSibling.classList.remove('hide');
+    if (prevNavigation.previousSibling !== null) {
+      prevNavigation.previousSibling.classList.remove('hide');
+      if (prevNavigation.previousSibling.previousSibling !== null) {
+        prevNavigation.previousSibling.previousSibling.classList.remove('hide');
+      }
+    }
   }
 
   if (lastNavigation.previousSibling === active) {
-    prevNavigation.previousSibling.classList.remove('hide');
+    if (prevNavigation.previousSibling !== null) {
+      prevNavigation.previousSibling.classList.remove('hide');
+    }
   }
 
   if (navigation.length <= 5) {
