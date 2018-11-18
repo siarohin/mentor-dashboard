@@ -95,13 +95,12 @@ function generateNavigation() {
 function dottedNavigation() {
   const navigation = document.querySelectorAll('nav > a');
   const active = document.querySelector('nav > .active');
-  const dottedText = document.createTextNode('...');
 
   const firstNavigation = document.querySelector('nav').firstChild;
   const lastNavigation = document.querySelector('nav').lastChild;
 
-  let nextNavigation = active.nextSibling || active;
-  let prevNavigation = active.previousSibling || active;
+  const nextNavigation = active.nextSibling || active;
+  const prevNavigation = active.previousSibling || active;
 
   for (let i = 0; i < navigation.length; i += 1) {
     navigation[i].classList.add('hide');
@@ -117,11 +116,13 @@ function dottedNavigation() {
   nextNavigation.classList.remove('hide');
   prevNavigation.classList.remove('hide');
 
-  if (lastNavigation === active || lastNavigation.previousSibling === active || lastNavigation.previousSibling.previousSibling === active) {
+  if (lastNavigation === active || lastNavigation.previousSibling === active
+    || lastNavigation.previousSibling.previousSibling === active) {
     lastNavigation.classList.remove('last-navigation');
   }
 
-  if (firstNavigation === active || firstNavigation.nextSibling === active || firstNavigation.nextSibling.nextSibling === active) {
+  if (firstNavigation === active || firstNavigation.nextSibling === active
+    || firstNavigation.nextSibling.nextSibling === active) {
     firstNavigation.classList.remove('first-navigation');
   }
 
@@ -149,7 +150,6 @@ function dottedNavigation() {
     firstNavigation.classList.remove('first-navigation');
     lastNavigation.classList.remove('last-navigation');
   }
-
 }
 
 
@@ -234,12 +234,12 @@ function touchSlider() {
 
   const slider = document.querySelector('.slider');
 
-  slider.addEventListener('touchstart', (event) => {
+  slider.ontouchstart = (event) => {
     const startPoint = event.changedTouches[0];
     initialPoint = startPoint;
-  }, false);
+  };
 
-  slider.addEventListener('touchend', (event) => {
+  slider.ontouchend = (event) => {
     const finalPoint = event.changedTouches[0];
 
     const distance = Math.abs(initialPoint.pageX - finalPoint.pageX);
@@ -253,7 +253,7 @@ function touchSlider() {
         document.querySelector('nav > .active').previousSibling.click();
       }
     }
-  });
+  };
 }
 
 

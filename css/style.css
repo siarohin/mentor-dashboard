@@ -257,7 +257,7 @@ input[type='search']::-webkit-search-results-decoration {
   border-radius: 50%;
   margin: 0.5em;
   text-decoration: none;
-  color: #fff;
+  color: #3c444b;
   border: 0.125em solid #fff;
   background: #fff;
   transition: background 300ms ease-out;
@@ -269,6 +269,7 @@ input[type='search']::-webkit-search-results-decoration {
   -ms-user-select: none;
   user-select: none;
   position: relative;
+  transition: 0.8s;
 }
 
 .navigation > .hide {
@@ -277,11 +278,14 @@ input[type='search']::-webkit-search-results-decoration {
 
 .navigation > .active {
   background-color: #c40404;
+  color: #fff;
 }
 
 .navigation > .first-navigation,
 .navigation > .last-navigation {
   margin: 2em;
+  font: 0.5em Arial, Helvetica, sans-serif;
+  transition: 0.8s;
 }
 
 .navigation > .first-navigation::after {
@@ -290,6 +294,7 @@ input[type='search']::-webkit-search-results-decoration {
   position: absolute;
   left: 1.5em;
   margin-left: 1.5em;
+  color: #fff;
 }
 
 .navigation > .last-navigation::before {
@@ -298,6 +303,7 @@ input[type='search']::-webkit-search-results-decoration {
   position: absolute;
   right: 1.5em;
   margin-right: 1.5em;
+  color: #fff;
 }
 
 /* Fix hover */
