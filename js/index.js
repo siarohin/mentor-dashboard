@@ -172,7 +172,8 @@ function touchSlider() {
   const slider = document.querySelector('.slider');
 
   slider.addEventListener('touchstart', (event) => {
-    initialPoint = event.changedTouches[0];
+    const startPoint = event.changedTouches[0];
+    initialPoint = startPoint;
   }, false);
 
   slider.addEventListener('touchend', (event) => {
