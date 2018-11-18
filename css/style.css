@@ -306,11 +306,11 @@ input[type='search']::-webkit-search-results-decoration {
   color: #fff;
 }
 
-/* Fix hover */
+/* Fix hover -> Primary input mechanism is a mouse */
 
-@media only screen and (min-device-width: 1024px) {
+@media (pointer: fine) {
   .navigation > a:hover {
-    background-color: #c40404; 
+    background-color: #c40404;
   }
 }
 
@@ -320,7 +320,6 @@ input[type='search']::-webkit-search-results-decoration {
   .search-bar > input {
     width: 80%;
   }
-
   .search-bar input {
     padding: 0 1em;
   }
