@@ -1,5 +1,5 @@
 // set max results of blocks
-const MAX_RESULT = 15;
+const MAX_RESULT = 50;
 
 // width of slider
 const GLOBAL_BLOCK_SETTING = 340;
@@ -270,10 +270,20 @@ function searchResult() {
 
       // reset video id
       youtubeId.length = 0;
+      let range;
 
-      for (let i = 0; i < sliderBlock.pageInfo.resultsPerPage; i += 1) {
+      // if search result < MAX_RESULT
+      if (sliderBlock.pageInfo.totalResults >= MAX_RESULT) {
+        range = MAX_RESULT;
+      } else if (sliderBlock.pageInfo.totalResults < MAX_RESULT) {
+        range = sliderBlock.pageInfo.totalResults;
+      }
+
+      for (let i = 0; i < range; i += 1) {
         // save video id
-        youtubeId.push(sliderBlock.items[i].id.videoId);
+        if (sliderBlock.items[i].id.videoId) {
+          youtubeId.push(sliderBlock.items[i].id.videoId);
+        }
 
         // create blocks
         document.querySelector('.slider').innerHTML += `<div id="${youtubeId[i]}">
