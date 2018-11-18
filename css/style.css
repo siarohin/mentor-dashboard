@@ -20,6 +20,8 @@ body {
 header,
 nav {
   height: 6.25em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,6 +29,8 @@ nav {
 }
 
 .search-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 65%;
@@ -125,6 +129,8 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .content .slider {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
@@ -262,10 +268,36 @@ input[type='search']::-webkit-search-results-decoration {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
+}
+
+.navigation > .hide {
+  display: none;
 }
 
 .navigation > .active {
   background-color: #c40404;
+}
+
+.navigation > .first-navigation,
+.navigation > .last-navigation {
+  margin: 2em;
+}
+
+.navigation > .first-navigation::after {
+  content: '\f141';
+  font: 1em 'FontAwesome';
+  position: absolute;
+  left: 1.5em;
+  margin-left: 1.5em;
+}
+
+.navigation > .last-navigation::before {
+  content: '\f141';
+  font: 1em 'FontAwesome';
+  position: absolute;
+  right: 1.5em;
+  margin-right: 1.5em;
 }
 
 /* Fix hover */
@@ -281,11 +313,6 @@ input[type='search']::-webkit-search-results-decoration {
 @media only screen and (max-device-width: 720px) {
   .search-bar > input {
     width: 80%;
-  }
-
-  .navigation > a {
-    margin: 0.25em;
-    font-size: 0.5em;
   }
 
   .search-bar input {
