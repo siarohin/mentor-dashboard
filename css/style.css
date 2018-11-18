@@ -53,6 +53,24 @@ nav {
   left: 0;
 }
 
+.search-bar__error {
+  border: 1px solid #c40404;
+}
+
+.search-bar__error::after {
+  content: 'Incorrect input';
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #c40404;
+  padding: 0.5em;
+  position: absolute;
+  right: 1.3em;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 .search-bar form,
 .search-bar input {
   height: 2.3em;
