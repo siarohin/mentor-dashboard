@@ -1,9 +1,4 @@
-// set max results of blocks
-const MAX_RESULT = 50;
-
-// width of slider
-const GLOBAL_BLOCK_SETTING = 340;
-
+import { MAX_RESULT, GLOBAL_BLOCK_SETTING } from './js/default_settings';
 // video id
 const youtubeId = [];
 
