@@ -5,7 +5,10 @@ export const MAX_RESULT = 50;
 export const GLOBAL_BLOCK_SETTING = 340;
 
 // video id
-export const youtubeId = [];
+export const youtube = [];
 
 // api key
 export const apiKey = 'AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY';
+
+// url
+export const url = 'https://www.googleapis.com/youtube/v3';
