@@ -41,7 +41,7 @@ function setNavigation() {
       const navigation = document.querySelectorAll('nav > a');
 
       for (let j = 0; j < navigation.length; j += 1) {
-        if (navigation[j].hash === sliderId) {
+        if (navigation[j].dataset.href === sliderId) {
           navigation[j].className = 'active';
         }
       }
@@ -71,7 +71,7 @@ export const generate = function generateNavigation() {
 
   // show navigation
   for (let i = 0; i < countNavigation; i += 1) {
-    const navigation = `<a href="#${navigationId[i]}">${i + 1}</a>`;
+    const navigation = `<a data-href="#${navigationId[i]}">${i + 1}</a>`;
     document.querySelector('nav').innerHTML += navigation;
   }
 
