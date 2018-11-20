@@ -70,6 +70,11 @@ export function clickNavigation() {
       if (elementNavigation.tagName === 'A') {
         transformSlider(elementNavigation);
         navigations.dotted();
+
+        // it's an alternative to use href="#"
+        // we're using attribute data-href="...", so we have a clear window.location.href
+        const id = elementNavigation.dataset.href;
+        document.getElementById(id).scrollIntoView(true);
       }
     };
   }

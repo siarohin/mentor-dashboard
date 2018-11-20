@@ -37,7 +37,7 @@ function setNavigation() {
       && sliderPosition.left < windowPosition.right
     ) {
       // set navigation.href = slider.id
-      const sliderId = `#${slider[i].id}`;
+      const sliderId = `${slider[i].id}`;
       const navigation = document.querySelectorAll('nav > a');
 
       for (let j = 0; j < navigation.length; j += 1) {
@@ -71,7 +71,7 @@ export const generate = function generateNavigation() {
 
   // show navigation
   for (let i = 0; i < countNavigation; i += 1) {
-    const navigation = `<a data-href="#${navigationId[i]}">${i + 1}</a>`;
+    const navigation = `<a data-href="${navigationId[i]}">${i + 1}</a>`;
     document.querySelector('nav').innerHTML += navigation;
   }
 
