@@ -1,5 +1,5 @@
-import * as navigations from './js/navigations';
 import * as search from './js/search';
+import * as page from './js/resize';
 
 
 /* Init Content */
@@ -22,15 +22,7 @@ import * as search from './js/search';
   </nav>`;
 
   document.body.prepend(wrapper);
-  search.listen();
 }());
 
-
-/* Listen on resize Window */
-window.onresize = () => {
-  // if slider generated -> generate navigation
-  if (document.querySelector('.slider').children.length > 0) {
-    navigations.generate();
-    navigations.dotted();
-  }
-};
+search.listen();
+page.resize();
