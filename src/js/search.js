@@ -13,7 +13,8 @@ export function listen() {
     } else {
       document.querySelector('.search-bar').classList.remove('search-bar__error');
       sliders.remove();
-      sliders.searchResult();
+      sliders.youtube.length = 0;
+      sliders.render();
     }
   });
 }

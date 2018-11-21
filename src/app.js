@@ -15,8 +15,7 @@ import * as page from './js/resize';
     </div>
   </header>
   <div class="content">
-    <div class="slider">
-    </div>
+    <div class="slider"></div>
   </div>
   <nav class="navigation">
   </nav>`;

@@ -1,4 +1,6 @@
 import * as settings from './settings';
+import * as sliders from './sliders';
+import { isContinue } from './transform';
 
 
 /* Set Active Navigation without click */
@@ -45,6 +47,8 @@ function setNavigation() {
           navigation[j].className = 'active';
         }
       }
+
+      document.querySelector('.active').click();
     }
   }
 }
@@ -61,12 +65,12 @@ export const generate = function generateNavigation() {
   const countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / settings.GLOBAL_BLOCK_SETTING);
 
   // number of navigation
-  const countNavigation = Math.ceil(settings.youtube.length / countSlider);
+  const countNavigation = Math.ceil(sliders.youtube.length / countSlider);
 
   // set id to navigation
   const navigationId = [];
-  for (let i = 0; i < settings.youtube.length; i += countSlider) {
-    navigationId.push(settings.youtube[i]);
+  for (let i = 0; i < sliders.youtube.length; i += countSlider) {
+    navigationId.push(sliders.youtube[i]);
   }
 
   // show navigation
@@ -75,7 +79,17 @@ export const generate = function generateNavigation() {
     document.querySelector('nav').innerHTML += navigation;
   }
 
+  // set active navigation when we click on the last buttom
+  if (isContinue.continue === true) {
+    const dataHref = isContinue.position.dataset.href;
+    const navigation = document.querySelector(`a[data-href="${dataHref}"]`);
+    navigation.className = 'active';
+  }
+
   setNavigation();
+
+  navigationId.length = 0;
+  isContinue.continue = false;
 };
 
 

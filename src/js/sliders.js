@@ -2,9 +2,11 @@ import * as settings from './settings';
 import * as navigations from './navigations';
 import * as transform from './transform';
 
+export const youtube = [];
+
 
 /* Search Result */
-export function searchResult() {
+export function render() {
   // user search phrase
   const searchValue = document.querySelector('form')[0].value;
 
@@ -12,10 +14,8 @@ export function searchResult() {
   fetch(`${settings.url}/search?key=${settings.apiKey}&type=video&part=snippet&maxResults=${settings.MAX_RESULT}&q=${searchValue}`)
     .then(response => response.json())
     .then((sliderBlock) => {
-      // reset video id
-      settings.youtube.length = 0;
-
       let range;
+      const localYoutube = [];
 
       // if search result < MAX_RESULT
       if (sliderBlock.pageInfo.totalResults >= settings.MAX_RESULT) {
@@ -27,11 +27,12 @@ export function searchResult() {
       for (let i = 0; i < range; i += 1) {
         // save video id
         if (sliderBlock.items[i].id.videoId) {
-          settings.youtube.push(sliderBlock.items[i].id.videoId);
+          youtube.push(sliderBlock.items[i].id.videoId);
+          localYoutube.push(sliderBlock.items[i].id.videoId); /* It's need to Fix */
         }
 
         // create blocks
-        document.querySelector('.slider').innerHTML += `<div id="${settings.youtube[i]}">
+        document.querySelector('.slider').innerHTML += `<div id="${sliderBlock.items[i].id.videoId}">
       <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
       <a href="//www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${sliderBlock.items[i].snippet.title}">${sliderBlock.items[i].snippet.title}</a>
       <ul>
@@ -42,7 +43,7 @@ export function searchResult() {
       </div>`;
       }
 
-      fetch(`${settings.url}/videos?key=${settings.apiKey}&id=${[...settings.youtube]}&part=snippet,statistics`)
+      fetch(`${settings.url}/videos?key=${settings.apiKey}&id=${[...localYoutube]}&part=snippet,statistics`)
         .then(res => res.json())
         .then((reviewCount) => {
           for (let i = 0; i < reviewCount.pageInfo.resultsPerPage; i += 1) {
@@ -55,15 +56,16 @@ export function searchResult() {
           }
         });
 
+      localYoutube.length = 0;
+
       navigations.generate();
       transform.clickNavigation();
       transform.clickSlider();
       transform.touchSlider();
 
-      // init navigation position
-      if (document.querySelector('nav > a')) {
-        document.querySelector('nav > a').click();
-      }
+      // if (document.querySelector('nav > a')) {
+      //   document.querySelector('nav > a').click();
+      // }
     }, false);
 }
 
