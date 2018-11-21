@@ -65,12 +65,12 @@ export const generate = function generateNavigation() {
   const countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / settings.GLOBAL_BLOCK_SETTING);
 
   // number of navigation
-  const countNavigation = Math.ceil(sliders.youtube.length / countSlider);
+  const countNavigation = Math.ceil(sliders.idStorage.length / countSlider);
 
   // set id to navigation
   const navigationId = [];
-  for (let i = 0; i < sliders.youtube.length; i += countSlider) {
-    navigationId.push(sliders.youtube[i]);
+  for (let i = 0; i < sliders.idStorage.length; i += countSlider) {
+    navigationId.push(sliders.idStorage[i]);
   }
 
   // show navigation

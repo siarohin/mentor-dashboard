@@ -4,7 +4,6 @@ export const MAX_RESULT = 15;
 // width of slider
 export const GLOBAL_BLOCK_SETTING = 340;
 
-
 // api key
 export const apiKey = 'AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY';
 

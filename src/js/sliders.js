@@ -2,7 +2,7 @@ import * as settings from './settings';
 import * as navigations from './navigations';
 import * as transform from './transform';
 
-export const youtube = [];
+export const idStorage = [];
 
 
 /* Search Result */
@@ -15,59 +15,54 @@ export function render() {
     .then(response => response.json())
     .then((sliderBlock) => {
       let range;
-      const localYoutube = [];
+
+      // temporary id storage for the current request
+      const temporaryIdStorage = [];
+
 
       // if search result < MAX_RESULT
       if (sliderBlock.pageInfo.totalResults >= settings.MAX_RESULT) {
         range = settings.MAX_RESULT;
-      } else if (sliderBlock.pageInfo.totalResults < settings.MAX_RESULT) {
+      } else {
         range = sliderBlock.pageInfo.totalResults;
       }
 
       for (let i = 0; i < range; i += 1) {
-        // save video id
         if (sliderBlock.items[i].id.videoId) {
-          youtube.push(sliderBlock.items[i].id.videoId);
-          localYoutube.push(sliderBlock.items[i].id.videoId); /* It's need to Fix */
+          idStorage.push(sliderBlock.items[i].id.videoId);
+          temporaryIdStorage.push(sliderBlock.items[i].id.videoId);
         }
-
-        // create blocks
-        document.querySelector('.slider').innerHTML += `<div id="${sliderBlock.items[i].id.videoId}">
-      <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
-      <a href="//www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${sliderBlock.items[i].snippet.title}">${sliderBlock.items[i].snippet.title}</a>
-      <ul>
-        <li>${sliderBlock.items[i].snippet.channelTitle}</li>
-        <li>${sliderBlock.items[i].snippet.publishedAt.substring(0, 10)}</li>
-      </ul>
-      <p>${sliderBlock.items[i].snippet.description}</p>
-      </div>`;
       }
 
-      fetch(`${settings.url}/videos?key=${settings.apiKey}&id=${[...localYoutube]}&part=snippet,statistics`)
+
+      fetch(`${settings.url}/videos?key=${settings.apiKey}&id=${[...temporaryIdStorage]}&part=snippet,statistics`)
         .then(res => res.json())
         .then((reviewCount) => {
-          for (let i = 0; i < reviewCount.pageInfo.resultsPerPage; i += 1) {
-            const li = document.createElement('li');
-            document
-              .querySelector('.slider')
-              .getElementsByTagName('ul')[i]
-              .append(li);
-            li.innerHTML = reviewCount.items[i].statistics.viewCount;
+          for (let i = 0; i < range; i += 1) {
+            // create blocks
+            document.querySelector('.slider').innerHTML += `<div id="${sliderBlock.items[i].id.videoId}">
+        <img src="${sliderBlock.items[i].snippet.thumbnails.high.url}" alt="">
+        <a href="//www.youtube.com/watch?v=${sliderBlock.items[i].id.videoId}" target="_blank" title="${sliderBlock.items[i].snippet.title}">${sliderBlock.items[i].snippet.title}</a>
+        <ul>
+          <li>${sliderBlock.items[i].snippet.channelTitle}</li>
+          <li>${sliderBlock.items[i].snippet.publishedAt.substring(0, 10)}</li>
+          <li>${reviewCount.items[i].statistics.viewCount}</li>
+        </ul>
+        <p>${sliderBlock.items[i].snippet.description}</p>
+        </div>`;
           }
+
+          // clear temporary storage after we used render
+          // our id saved in the idStorage --> using in navigation etc.
+          temporaryIdStorage.length = 0;
+
+          navigations.generate();
+          transform.clickNavigation();
+          transform.clickSlider();
+          transform.touchSlider();
+          navigations.dotted();
         });
-
-      localYoutube.length = 0;
-
-      navigations.generate();
-      transform.clickNavigation();
-      transform.clickSlider();
-      transform.touchSlider();
-      navigations.dotted();
-
-      // if (document.querySelector('nav > a')) {
-      //   document.querySelector('nav > a').click();
-      // }
-    }, false);
+    });
 }
 
 
