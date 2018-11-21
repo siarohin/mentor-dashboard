@@ -62,6 +62,7 @@ export function render() {
       transform.clickNavigation();
       transform.clickSlider();
       transform.touchSlider();
+      navigations.dotted();
 
       // if (document.querySelector('nav > a')) {
       //   document.querySelector('nav > a').click();

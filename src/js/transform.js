@@ -27,6 +27,8 @@ export function clickSlider() {
           document.querySelector('nav > .active').previousSibling.click();
         }
       }
+
+      navigations.dotted();
     };
   }
 
@@ -75,6 +77,7 @@ export function clickNavigation() {
       const elementNavigation = event.target;
       if (elementNavigation.tagName === 'A') {
         transformSlider(elementNavigation);
+        navigations.dotted();
 
         // it's an alternative to use href="#"
         // we're using attribute data-href="...", so we have a clear window.location.href
