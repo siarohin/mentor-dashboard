@@ -1,5 +1,4 @@
 import * as settings from './settings';
-import * as sliders from './sliders';
 import { isContinue } from './transform';
 
 
@@ -38,7 +37,7 @@ function setNavigation() {
       && sliderPosition.right > windowPosition.left
       && sliderPosition.left < windowPosition.right
     ) {
-      // set navigation.href = slider.id
+      // set navigation.data-href = slider.id
       const sliderId = `${slider[i].id}`;
       const navigation = document.querySelectorAll('nav > a');
 
@@ -65,12 +64,12 @@ export const generate = function generateNavigation() {
   const countSlider = Math.floor(document.body.querySelector('#wrapper').clientWidth / settings.GLOBAL_BLOCK_SETTING);
 
   // number of navigation
-  const countNavigation = Math.ceil(sliders.idStorage.length / countSlider);
+  const countNavigation = Math.ceil(settings.idStorage.length / countSlider);
 
   // set id to navigation
   const navigationId = [];
-  for (let i = 0; i < sliders.idStorage.length; i += countSlider) {
-    navigationId.push(sliders.idStorage[i]);
+  for (let i = 0; i < settings.idStorage.length; i += countSlider) {
+    navigationId.push(settings.idStorage[i]);
   }
 
   // show navigation

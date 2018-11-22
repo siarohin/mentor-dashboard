@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import * as sliders from './sliders';
+import * as settings from './settings';
 
 
 /* Listen search Form */
@@ -13,8 +14,8 @@ export function listen() {
     } else {
       document.querySelector('.search-bar').classList.remove('search-bar__error');
       sliders.remove();
-      sliders.idStorage.length = 0;
-      sliders.render();
+      settings.idStorage.length = 0;
+      settings.nextToken.length = 1;
     }
   });
 }

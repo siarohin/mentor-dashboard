@@ -9,3 +9,9 @@ export const apiKey = 'AIzaSyCAznfTwZKs8R47J-_PkpBrHYaRvcCmKwY';
 
 // url
 export const url = 'https://www.googleapis.com/youtube/v3';
+
+// id saved in the idStorage --> using in navigation etc.
+export const idStorage = [];
+
+// nextToken
+export const nextToken = [''];

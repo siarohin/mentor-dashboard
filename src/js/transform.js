@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import * as navigations from './navigations';
 import * as sliders from './sliders';
 
