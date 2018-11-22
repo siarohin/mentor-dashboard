@@ -4,10 +4,9 @@ import * as transform from './transform';
 
 /* Search Result */
 export function render() {
-  // next Tokken
   const next = settings.nextToken;
   const nextPage = next[next.length - 1];
-
+  console.log(next);
   // user search phrase
   const searchValue = document.querySelector('form')[0].value;
 

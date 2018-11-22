@@ -16,6 +16,7 @@ export function listen() {
       sliders.remove();
       settings.idStorage.length = 0;
       settings.nextToken.length = 1;
+      sliders.render();
     }
   });
 }
