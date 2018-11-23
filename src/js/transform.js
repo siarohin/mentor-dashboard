@@ -1,12 +1,8 @@
-/* eslint-disable import/no-cycle */
 import * as navigations from './navigations';
+// eslint-disable-next-line import/no-cycle
 import * as sliders from './sliders';
+import { isContinue } from './settings';
 
-
-export const isContinue = {
-  continue: false,
-  position: '',
-};
 
 /* Transform Slider on click Slider */
 export function clickSlider() {

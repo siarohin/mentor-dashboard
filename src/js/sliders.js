@@ -1,6 +1,8 @@
 import * as settings from './settings';
 import * as navigations from './navigations';
+// eslint-disable-next-line import/no-cycle
 import * as transform from './transform';
+
 
 /* Search Result */
 export function render() {

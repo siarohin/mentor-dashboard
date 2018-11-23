@@ -15,3 +15,8 @@ export const idStorage = [];
 
 // nextToken
 export const nextToken = [''];
+
+export const isContinue = {
+  continue: false,
+  position: '',
+};

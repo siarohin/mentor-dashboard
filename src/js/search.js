@@ -1,6 +1,13 @@
-/* eslint-disable import/prefer-default-export */
 import * as sliders from './sliders';
 import * as settings from './settings';
+
+
+/* Reset slider, idStorage, nextToken */
+export function reset() {
+  sliders.remove();
+  settings.idStorage.length = 0;
+  settings.nextToken.length = 1;
+}
 
 
 /* Listen search Form */
@@ -13,9 +20,7 @@ export function listen() {
       document.querySelector('.search-bar').classList.add('search-bar__error');
     } else {
       document.querySelector('.search-bar').classList.remove('search-bar__error');
-      sliders.remove();
-      settings.idStorage.length = 0;
-      settings.nextToken.length = 1;
+      reset();
       sliders.render();
     }
   });

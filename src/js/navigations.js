@@ -1,6 +1,4 @@
-/* eslint-disable import/no-cycle */
 import * as settings from './settings';
-import { isContinue } from './transform';
 
 
 /* Set Active Navigation without click */
@@ -80,8 +78,8 @@ export const generate = function generateNavigation() {
   }
 
   // set active navigation when we click on the last buttom
-  if (isContinue.continue === true) {
-    const dataHref = isContinue.position.dataset.href;
+  if (settings.isContinue.continue === true) {
+    const dataHref = settings.isContinue.position.dataset.href;
     const navigation = document.querySelector(`a[data-href="${dataHref}"]`);
     navigation.className = 'active';
   }
@@ -89,7 +87,7 @@ export const generate = function generateNavigation() {
   setNavigation();
 
   navigationId.length = 0;
-  isContinue.continue = false;
+  settings.isContinue.continue = false;
 };
 
 
