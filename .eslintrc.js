@@ -5,6 +5,6 @@ module.exports = {
     "window": true,
      "document": true,
      "localStorage": true,
-      "fetch": true
+      "fetch": true,
   },
 };

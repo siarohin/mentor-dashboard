@@ -6,13 +6,14 @@ import * as transform from './transform';
 export function render() {
   const next = settings.nextToken;
   const nextPage = next[next.length - 1];
-  console.log(next);
+
   // user search phrase
   const searchValue = document.querySelector('form')[0].value;
 
   // send response to api
   fetch(`${settings.url}/search?key=${settings.apiKey}&type=video&part=snippet&maxResults=${settings.MAX_RESULT}&pageToken=${nextPage}&q=${searchValue}`)
     .then(response => response.json())
+
     .then((sliderBlock) => {
       let range;
 

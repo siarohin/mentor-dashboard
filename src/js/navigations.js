@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import * as settings from './settings';
 import { isContinue } from './transform';
 

@@ -1,5 +1,6 @@
-import * as search from './js/search';
-import * as page from './js/resize';
+import '../css/style.css';
+import * as search from './search';
+import * as page from './resize';
 
 
 /* Init Content */
