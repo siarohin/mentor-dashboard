@@ -1,10 +1,10 @@
 .idea
+.vscode
 node_modules
 *.bundle.js
 *.log
-.vscode
-script
-
+.editorconfig
 .prettierrc
 package-lock.json
-.index.html
+webpack.dev.config.js
+webpack.prod.config.js
