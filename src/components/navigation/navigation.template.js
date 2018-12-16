@@ -1,5 +1,5 @@
 export default `
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -13,10 +13,6 @@ export default `
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
-
-      <li class="nav-item js-call-modal">
-        <button type="button" class="btn btn-primary js-start-game">Start game</button>
       </li>
     </ul>
     <div class="js-show-player-name js-choose-player-name-nav"></div>

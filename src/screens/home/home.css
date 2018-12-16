@@ -19,6 +19,26 @@
   to { background-position: -512px -256px; }
 }
 
+/* Next Monster */
+@-webkit-keyframes changeMonsterNext {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+@-moz-keyframes changeMonsterNext {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+@-o-keyframes changeMonsterNext {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+@keyframes changeMonsterNext {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
 
 /* Animation changePlayer */
 @-webkit-keyframes changePlayer {
@@ -41,19 +61,46 @@
   to { background-position: -1024px 0px; }
 }
 
-.model-monster {
+
+/* Animation leavesButton */
+@keyframes leaves {
+  0% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+}
+
+.model-monster-one,
+.model-monster-two,
+.model-monster-tree {
   width: 256px;
   height: 256px;
   background-image: url('./images/monster.png');
-  margin: -70px auto;
-  -moz-transform: scale(0.7);
-  -webkit-transform: scale(0.7);
-  -o-transform: scale(0.7);
-  transform: scale(0.7);
+}
+
+.model-monster-one {
+  margin: 0 0 -90px 0;
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
   -webkit-animation: changeMonster 0.5s steps(2) infinite;
   -moz-animation: changeMonster 0.5s steps(2) infinite;
   -o-animation: changeMonster 0.5s steps(2) infinite;
   animation: changeMonster 0.5s steps(2) infinite;
+}
+
+.model-monster-two {
+  margin: 0 0 140px 0;
+  z-index: -1;
+  -webkit-animation: changeMonsterNext 0.5s steps(2) infinite;
+  -moz-animation: changeMonsterNext 0.5s steps(2) infinite;
+  -o-animation: changeMonsterNext 0.5s steps(2) infinite;
+  animation: changeMonsterNext 0.5s steps(2) infinite;
 }
 
 .model-player {
@@ -71,8 +118,17 @@
   display: flex;
   flex-flow: row nowrap;
   background-image: url('./images/vectorcity.png');
-  max-width: 1024px;
+  width: 1024px;
   height: 512px;
   align-items: flex-end;
-  border-bottom: 1em solid #000;
+  border-bottom: 0.5em solid #000;
+}
+
+.home-scene-button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  cursor: pointer;
+  animation: leaves 1s ease-in-out infinite alternate;
+  -webkit-animation: leaves 1s ease-in-out infinite alternate;
 }

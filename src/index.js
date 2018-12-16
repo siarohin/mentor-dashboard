@@ -8,7 +8,7 @@ import Nav from './components/navigation/navigation';
 
 import './index.css';
 import ModalDialog from './components/modal-dialog/modal-dialog';
-import Home from './screens/home/home';
+import { Home, homeSound } from './screens/home/home';
 import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
@@ -47,16 +47,18 @@ const startApp = () => {
 
   Nav.draw();
   Home.draw();
+  homeSound.play();
   ModalDialog.draw();
 
-
   $('.js-start-game').on('click', async () => {
+    homeSound.stop();
     await getBattleResult(gameState);
   });
 
   $('.js-choose-player-name-nav').on('click', async (e) => {
     e.preventDefault();
 
+    homeSound.stop();
     await setPlayerName(gameState);
   });
 };
