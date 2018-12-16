@@ -1,8 +1,9 @@
 export default `
 <header class="page-header">
-  <h1>Welcome to SiaMonster game</h1>
+  <h1>The Monster city</h1>
 </header>
-<div class="model-image">
-  <img src="../assets/images/other/model.png" alt="killer">dsfsddf
+<div class="home-scene">
+  <div class="model-player"></div>
+  <div class="model-monster"></div>
 </div>
 `;
