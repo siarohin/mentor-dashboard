@@ -24,7 +24,6 @@ class ChoosePlayerName {
         e.preventDefault();
 
         const playerName = $('#choosePlayerName .js-player-name').val();
-        // console.log('getNewPlayerName - playerName', playerName);
 
         ChoosePlayerName.empty();
 

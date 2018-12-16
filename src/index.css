@@ -1,5 +1,10 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url('//fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
 
-.starter-template {
+.page {
+    font: 16px 'Fira Sans Extra Condensed', Arial, Helvetica, sans-serif;
+}
+
+.main-template {
     padding-top: 5rem;
 }

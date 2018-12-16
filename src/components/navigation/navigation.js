@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-import template from './nav.template';
-import './nav.css';
+import template from './navigation.template';
+import './navigation.css';
 
 class Header {
   static draw() {

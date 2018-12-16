@@ -4,11 +4,11 @@ import $ from 'jquery';
 
 import { GameState, setGameState } from './game';
 
-import Header from './components/header/header';
-import Nav from './components/navigation/nav';
+import Nav from './components/navigation/navigation';
 
 import './index.css';
 import ModalDialog from './components/modal-dialog/modal-dialog';
+import Home from './screens/home/home';
 import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
@@ -17,8 +17,6 @@ import { pause } from './utils';
 
 const setPlayerName = async (gameState) => {
   const playerName = await ChoosePlayerName.getNewPlayerName();
-
-  console.log('playerName', playerName); // eslint-disable-line no-console
   gameState.setPlayerName(playerName);
 
   Nav.update(gameState);
@@ -48,7 +46,7 @@ const startApp = () => {
   setGameState(gameState);
 
   Nav.draw();
-  Header.draw();
+  Home.draw();
   ModalDialog.draw();
 
 
