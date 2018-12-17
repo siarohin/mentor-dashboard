@@ -50,15 +50,22 @@ const startApp = () => {
   homeSound.play();
   ModalDialog.draw();
 
+  $('.nav-sound').on('click', () => {
+    const soundEl = document.querySelector('.nav-sound');
+    if (soundEl.classList.contains('sound-off')) {
+      homeSound.pause();
+    } else {
+      homeSound.play();
+    }
+  });
+
   $('.js-start-game').on('click', async () => {
-    homeSound.stop();
     await getBattleResult(gameState);
   });
 
   $('.js-choose-player-name-nav').on('click', async (e) => {
     e.preventDefault();
 
-    homeSound.stop();
     await setPlayerName(gameState);
   });
 };

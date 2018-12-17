@@ -14,6 +14,10 @@ export default `
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link nav-sound" href="#"></a>
+      </li>
     </ul>
     <div class="js-show-player-name js-choose-player-name-nav"></div>
   </div>
