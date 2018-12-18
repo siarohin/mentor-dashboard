@@ -53,7 +53,6 @@ const startApp = () => {
   $('.nav-sound').on('click', (e) => {
     e.preventDefault();
 
-    const soundEl = document.querySelector('.nav-sound');
     if (soundEl.classList.contains('sound-off')) {
       homeSound.pause();
     } else {
@@ -61,9 +60,22 @@ const startApp = () => {
     }
   });
 
+  const soundEl = document.querySelector('.nav-sound');
+
   $('.js-start-game').on('click', async () => {
     homeSound.stop();
     secondSound.play();
+    $('.nav-sound').on('click', (e) => {
+      e.preventDefault();
+
+      if (soundEl.classList.contains('sound-off')) {
+        secondSound.pause();
+      } else {
+        homeSound.stop();
+        secondSound.play();
+      }
+    });
+
     await getBattleResult(gameState);
   });
 
