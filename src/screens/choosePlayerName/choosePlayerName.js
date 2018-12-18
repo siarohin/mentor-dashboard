@@ -1,9 +1,17 @@
 import $ from 'jquery';
+import { Howl } from 'howler';
 
 import template from './choosePlayerName.template';
+import './choosePlayerName.css';
 
+export const secondSound = new Howl({
+  src: ['./music/select-name.wav'],
+  autoplay: false,
+  loop: true,
+  volume: 0.5,
+});
 
-class ChoosePlayerName {
+export class ChoosePlayerName {
   static draw() {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
@@ -32,5 +40,3 @@ class ChoosePlayerName {
     });
   }
 }
-
-export default ChoosePlayerName;

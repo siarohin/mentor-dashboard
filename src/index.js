@@ -9,7 +9,7 @@ import Nav from './components/navigation/navigation';
 import './index.css';
 import ModalDialog from './components/modal-dialog/modal-dialog';
 import { Home, homeSound } from './screens/home/home';
-import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
+import { ChoosePlayerName, secondSound } from './screens/choosePlayerName/choosePlayerName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
 
@@ -50,7 +50,9 @@ const startApp = () => {
   homeSound.play();
   ModalDialog.draw();
 
-  $('.nav-sound').on('click', () => {
+  $('.nav-sound').on('click', (e) => {
+    e.preventDefault();
+
     const soundEl = document.querySelector('.nav-sound');
     if (soundEl.classList.contains('sound-off')) {
       homeSound.pause();
@@ -60,6 +62,8 @@ const startApp = () => {
   });
 
   $('.js-start-game').on('click', async () => {
+    homeSound.stop();
+    secondSound.play();
     await getBattleResult(gameState);
   });
 

@@ -1,0 +1,63 @@
+/* Animation changePlayer */
+@-webkit-keyframes changePlayer__select-name {
+  from { background-position: 0px 0px; }
+  to { background-position:  1024px 0px; }
+}
+
+@-moz-keyframes changePlayer__select-name {
+  from { background-position: 0px 256px; }
+  to { background-position: 1024px 0px; }
+}
+
+@-o-keyframes changePlayer__select-name {
+  from { background-position: 0px 256px; }
+  to { background-position: 1024px 0px; }
+}
+
+@keyframes changePlayer__select-name {
+  from { background-position: 0px -256px; }
+  to { background-position: -1024px -256px; }
+}
+
+
+/* Animation vectorCity */
+@keyframes moves {
+  0% {
+    background-position: 0px 0px;
+    }
+  100% {
+    background-position: -2048px 0px;
+  }
+}
+
+.model-player__select-name {
+  width: 256px;
+  height: 256px;
+  background-image: url('/src/assets/images/player.png');
+  margin: -20px auto;
+  -webkit-animation: changePlayer__select-name 0.7s steps() infinite;
+  -moz-animation: changePlayer__select-name 0.7s steps(3) infinite;
+  -o-animation: changePlayer__select-name 0.7s steps(3) infinite;
+  animation: changePlayer__select-name 0.7s steps(4) infinite;
+}
+
+.select-name {
+  display: flex;
+  flex-flow: row nowrap;
+  background: url('/src/assets/images/vectorcity.png');
+  width: 1024px;
+  height: 512px;
+  align-items: flex-end;
+  border-bottom: 0.5em solid #000;
+  animation: moves 1s steps(60) infinite;
+  margin-top: -100px;
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.js-form .button {
+  margin-top: 1rem;
+}

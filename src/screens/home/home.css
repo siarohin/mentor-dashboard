@@ -42,23 +42,23 @@
 
 /* Animation changePlayer */
 @-webkit-keyframes changePlayer {
-  from { background-position: 0px 0px; }
-  to { background-position: -1024px 0px; }
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
 }
 
 @-moz-keyframes changePlayer {
-  from { background-position: 0px 0px; }
-  to { background-position: -1024px 0px; }
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
 }
 
 @-o-keyframes changePlayer {
-  from { background-position: 0px 0px; }
-  to { background-position: -1024px 0px; }
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
 }
 
 @keyframes changePlayer {
-  from { background-position: 0px 0px; }
-  to { background-position: -1024px 0px; }
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
 }
 
 
@@ -79,7 +79,7 @@
 .model-monster-tree {
   width: 256px;
   height: 256px;
-  background-image: url('./images/monster.png');
+  background-image: url('/src/assets/images/monster.png');
 }
 
 .model-monster-one {
@@ -106,18 +106,18 @@
 .model-player {
   width: 256px;
   height: 256px;
-  background-image: url('./images/player.png');
+  background-image: url('/src/assets/images/player.png');
   margin: -20px auto;
-  -webkit-animation: changePlayer 0.5s steps(4) infinite;
-  -moz-animation: changePlayer 0.5s steps(4) infinite;
-  -o-animation: changePlayer 0.5s steps(4) infinite;
-  animation: changePlayer 0.5s steps(4) infinite;
+  -webkit-animation: changePlayer 0.6s steps(4) infinite;
+  -moz-animation: changePlayer 0.6s steps(4) infinite;
+  -o-animation: changePlayer 0.6s steps(4) infinite;
+  animation: changePlayer 0.6s steps(4) infinite;
 }
 
 .home-scene {
   display: flex;
   flex-flow: row nowrap;
-  background-image: url('./images/vectorcity.png');
+  background-image: url('/src/assets/images/vectorcity.png');
   width: 1024px;
   height: 512px;
   align-items: flex-end;
