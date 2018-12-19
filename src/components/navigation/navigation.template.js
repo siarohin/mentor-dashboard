@@ -9,7 +9,6 @@ export default `
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <button type="button" class="dropdown-item  btn btn-primary js-choose-player-name-nav">Select name</button>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>

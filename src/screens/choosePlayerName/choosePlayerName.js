@@ -4,17 +4,24 @@ import { Howl } from 'howler';
 import template from './choosePlayerName.template';
 import './choosePlayerName.css';
 
-export const secondSound = new Howl({
+const choosePlayerName = new Howl({
   src: ['./music/select-name.wav'],
   autoplay: false,
   loop: true,
   volume: 0.5,
 });
-
-export class ChoosePlayerName {
+export default class ChoosePlayerName {
   static draw() {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
+  }
+
+  static play() {
+    return choosePlayerName.play();
+  }
+
+  static stop() {
+    return choosePlayerName.stop();
   }
 
   static empty() {

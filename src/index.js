@@ -8,8 +8,8 @@ import Nav from './components/navigation/navigation';
 
 import './index.css';
 import ModalDialog from './components/modal-dialog/modal-dialog';
-import { Home, homeSound } from './screens/home/home';
-import { ChoosePlayerName, secondSound } from './screens/choosePlayerName/choosePlayerName';
+import Home from './screens/home/home';
+import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
 
@@ -47,32 +47,34 @@ const startApp = () => {
 
   Nav.draw();
   Home.draw();
-  homeSound.play();
+  Home.play();
   ModalDialog.draw();
 
   $('.nav-sound').on('click', (e) => {
     e.preventDefault();
-
     if (soundEl.classList.contains('sound-off')) {
-      homeSound.pause();
+      Home.stop();
     } else {
-      homeSound.play();
+      Home.play();
     }
   });
 
   const soundEl = document.querySelector('.nav-sound');
 
   $('.js-start-game').on('click', async () => {
-    homeSound.stop();
-    secondSound.play();
+    Home.stop();
+    ChoosePlayerName.play();
+    if (soundEl.classList.contains('sound-off')) {
+      ChoosePlayerName.stop();
+    }
     $('.nav-sound').on('click', (e) => {
       e.preventDefault();
 
       if (soundEl.classList.contains('sound-off')) {
-        secondSound.pause();
+        ChoosePlayerName.stop();
       } else {
-        homeSound.stop();
-        secondSound.play();
+        Home.stop();
+        ChoosePlayerName.play();
       }
     });
 
