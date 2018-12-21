@@ -21,7 +21,8 @@ class Header {
   }
 
   static update(gameState) {
-    $('.js-show-player-name').text(gameState.playerName);
+    $('.js-show-player-name')
+      .text(`${gameState.playerName} vs ${gameState.monsterName}`);
   }
 }
 

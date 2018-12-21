@@ -27,6 +27,8 @@ const setPlayerName = async (gameState) => {
 const setMonsterName = async (gameState) => {
   const monsterName = await ChooseMonsterName.getNewMonsterName();
   gameState.setMonsterName(monsterName);
+
+  Navigation.update(gameState);
 };
 
 const getBattleResult = async (gameState) => {
@@ -93,11 +95,11 @@ const startApp = () => {
     await getBattleResult(gameState);
   });
 
-  $('.js-choose-player-name-nav').on('click', async (e) => {
-    e.preventDefault();
+  // $('.js-choose-player-name-nav').on('click', async (e) => {
+  //   e.preventDefault();
 
-    await setPlayerName(gameState);
-  });
+  //   await setPlayerName(gameState);
+  // });
 };
 
 startApp();
