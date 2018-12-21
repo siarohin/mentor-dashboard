@@ -4,7 +4,7 @@ import { Howl } from 'howler';
 import template from './choosePlayerName.template';
 import './choosePlayerName.css';
 
-const choosePlayerName = new Howl({
+const music = new Howl({
   src: ['./music/select-name.wav'],
   autoplay: false,
   loop: true,
@@ -17,11 +17,11 @@ export default class ChoosePlayerName {
   }
 
   static play() {
-    return choosePlayerName.play();
+    return music.play();
   }
 
   static stop() {
-    return choosePlayerName.stop();
+    return music.stop();
   }
 
   static empty() {

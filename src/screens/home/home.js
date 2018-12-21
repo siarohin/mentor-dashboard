@@ -3,7 +3,7 @@ import { Howl } from 'howler';
 import template from './home.template';
 import './home.css';
 
-const home = new Howl({
+const music = new Howl({
   src: ['./music/intro.wav'],
   autoplay: false,
   loop: true,
@@ -16,10 +16,10 @@ export default class Home {
   }
 
   static play() {
-    return home.play();
+    return music.play();
   }
 
   static stop() {
-    return home.stop();
+    return music.stop();
   }
 }

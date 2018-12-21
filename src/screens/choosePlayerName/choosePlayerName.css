@@ -1,17 +1,17 @@
 /* Animation changePlayer */
 @-webkit-keyframes changePlayer__select-name {
-  from { background-position: 0px 0px; }
-  to { background-position:  1024px 0px; }
+  from { background-position: 0px -256px; }
+  to { background-position:  -1024px -256px; }
 }
 
 @-moz-keyframes changePlayer__select-name {
-  from { background-position: 0px 256px; }
-  to { background-position: 1024px 0px; }
+  from { background-position: 0px -256px; }
+  to { background-position: -1024px -256px; }
 }
 
 @-o-keyframes changePlayer__select-name {
-  from { background-position: 0px 256px; }
-  to { background-position: 1024px 0px; }
+  from { background-position: 0px -256px; }
+  to { background-position: -1024px -256px; }
 }
 
 @keyframes changePlayer__select-name {

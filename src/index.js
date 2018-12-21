@@ -4,26 +4,34 @@ import $ from 'jquery';
 
 import { GameState, setGameState } from './game';
 
-import Nav from './components/navigation/navigation';
+import Navigation from './components/navigation/navigation';
 
 import './index.css';
 import ModalDialog from './components/modal-dialog/modal-dialog';
 import Home from './screens/home/home';
 import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
+import ChooseMonsterName from './screens/chooseMonsterName/chooseMonsterName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
 
 import { pause } from './utils';
 
+
 const setPlayerName = async (gameState) => {
   const playerName = await ChoosePlayerName.getNewPlayerName();
   gameState.setPlayerName(playerName);
 
-  Nav.update(gameState);
+  Navigation.update(gameState);
+};
+
+const setMonsterName = async (gameState) => {
+  const monsterName = await ChooseMonsterName.getNewMonsterName();
+  gameState.setMonsterName(monsterName);
 };
 
 const getBattleResult = async (gameState) => {
   await setPlayerName(gameState);
+  await setMonsterName(gameState);
 
   Battle.draw(gameState);
 
@@ -45,37 +53,41 @@ const startApp = () => {
   window.gameState = gameState; // antipatter - need use carefully!
   setGameState(gameState);
 
-  Nav.draw();
+  Navigation.draw();
   Home.draw();
   Home.play();
   ModalDialog.draw();
 
-  $('.nav-sound').on('click', (e) => {
-    e.preventDefault();
+
+  const soundEl = document.querySelector('.nav-sound');
+  function playMusicFirst() {
     if (soundEl.classList.contains('sound-off')) {
       Home.stop();
     } else {
       Home.play();
     }
-  });
+  }
 
-  const soundEl = document.querySelector('.nav-sound');
-
-  $('.js-start-game').on('click', async () => {
+  function playMusicNext() {
     Home.stop();
     ChoosePlayerName.play();
     if (soundEl.classList.contains('sound-off')) {
       ChoosePlayerName.stop();
     }
+  }
+
+
+  $('.nav-sound').on('click', (e) => {
+    e.preventDefault();
+    playMusicFirst();
+  });
+
+  $('.js-start-game').on('click', async () => {
+    playMusicNext();
+
     $('.nav-sound').on('click', (e) => {
       e.preventDefault();
-
-      if (soundEl.classList.contains('sound-off')) {
-        ChoosePlayerName.stop();
-      } else {
-        Home.stop();
-        ChoosePlayerName.play();
-      }
+      playMusicNext();
     });
 
     await getBattleResult(gameState);

@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
 import template from './battle.template';
+import './battle.css';
 
 
 class Battle {
@@ -8,7 +9,8 @@ class Battle {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 
-    $('.js-player-card .js-name').text(gameState.playerName);
+    $('.player-name').text(gameState.playerName);
+    $('.monster-name').text(gameState.monsterName);
   }
 
   static empty() {

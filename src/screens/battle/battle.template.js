@@ -1,29 +1,26 @@
 export default `
-<section id="battle" class="container">
-<div class="row">
+<section id="battle">
+<div class="row home-scene">
+
+    <h2 class="card-title player-name"></h2>
     <div class="col-sm">
       <div id="player">
-        <div class="player-card js-player-card" style="width: 18rem;">
-          <img class="card-img-top" src="https://img.craftpix.net/2018/05/Raccoon-Sheep-and-Cat-2D-Game-Sprites.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title js-name">Player</h5>
+        <div class="player-card js-player-card">
+          <div class="card-body model-player__battle">
           </div>
         </div>
       </div>
     </div>
-    <div class="col-sm">
-      space for animations
-    </div>
+
+    <h2 class="card-title monster-name"></h2>
     <div class="col-sm">
       <div id="monster">
-        <div class="monster-card" style="width: 18rem;">
-          <img class="card-img-top" src=https://img.craftpix.net/2018/10/Free-Orc-Ogre-and-Goblin-Chibi-2D-Game-Sprites1.gif alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Monster</h5>
+        <div class="monster-card">
+          <div class="card-body model-monster__battle">
           </div>
         </div>
       </div>
     </div>
-  </div>
+</div>
 </section>
 `;

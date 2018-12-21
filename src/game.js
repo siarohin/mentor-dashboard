@@ -6,6 +6,10 @@ export class GameState {
   setPlayerName(name = '') {
     this.playerName = name;
   }
+
+  setMonsterName(name = '') {
+    this.monsterName = name;
+  }
 }
 
 let gameState = null;

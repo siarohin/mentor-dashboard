@@ -1,0 +1,70 @@
+/* Animation Monster */
+@-webkit-keyframes changeMonster__battle {
+  from { background-position: 0px -512px; }
+  to { background-position: -512px -512px; }
+}
+
+@-moz-keyframes changeMonster__battle {
+  from { background-position: 0px -512px; }
+  to { background-position: -512px -512px; }
+}
+
+@-o-keyframes changeMonster__battle {
+  from { background-position: 0px -512px; }
+  to { background-position: -512px -512px; }
+}
+
+@keyframes changeMonster__battle {
+  from { background-position: 0px -512px; }
+  to { background-position: -512px -512px; }
+}
+
+/* Animation Player */
+@-webkit-keyframes changePlayer__battle {
+  from { background-position: 0px 0px; }
+  to { background-position:  -512px 0px; }
+}
+
+@-moz-keyframes changePlayer__battle {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+@-o-keyframes changePlayer__battle {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+@keyframes changePlayer__battle {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+.model-monster__battle {
+  width: 256px;
+  height: 256px;
+  background: url('/src/assets/images/monster.png');
+}
+
+.model-monster__battle {
+  margin: 0 0 -90px 0;
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-animation: changeMonster__battle 0.5s steps(2) infinite;
+  -moz-animation: changeMonster__battle 0.5s steps(2) infinite;
+  -o-animation: changeMonster__battle 0.5s steps(2) infinite;
+  animation: changeMonster__battle 0.5s steps(2) infinite;
+}
+
+.model-player__battle {
+  width: 256px;
+  height: 256px;
+  background-image: url('/src/assets/images/player.png');
+  margin: -20px auto;
+  -webkit-animation: changePlayer__battle 0.6s steps(2) infinite;
+  -moz-animation: changePlayer__battle 0.6s steps(2) infinite;
+  -o-animation: changePlayer__battle 0.6s steps(2) infinite;
+  animation: changePlayer__battle 0.6s steps(2) infinite;
+}
