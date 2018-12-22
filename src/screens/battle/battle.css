@@ -68,3 +68,25 @@
   -o-animation: changePlayer__battle 0.6s steps(2) infinite;
   animation: changePlayer__battle 0.6s steps(2) infinite;
 }
+
+.battle-scene {
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: url('/src/assets/images/vectorcity.png');
+  width: 1024px;
+  height: 512px;
+  align-items: flex-end;
+  border-bottom: 0.5em solid #000;
+}
+
+.battle-scene .col-sm {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.battle-scene h2 {
+  position: absolute;
+  top: 0;
+}
+
