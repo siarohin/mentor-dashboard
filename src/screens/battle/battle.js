@@ -3,7 +3,6 @@ import $ from 'jquery';
 import template from './battle.template';
 import './battle.css';
 
-
 class Battle {
   static draw(gameState) {
     const contentEl = document.querySelector('#content');

@@ -1,3 +1,11 @@
+import uniqueRandomArray from 'unique-random-array';
+
+const monsterClass = ['random-1', 'random-2', 'random-3'];
+const monsterBody = uniqueRandomArray(monsterClass);
+const monsterEyes = uniqueRandomArray(monsterClass);
+const monsterHair = uniqueRandomArray(monsterClass);
+const monsterMouth = uniqueRandomArray(monsterClass);
+
 export default `
 <section id="battle">
 <div class="row battle-scene">
@@ -18,10 +26,10 @@ export default `
     <div id="monster">
       <div class="monster-card">
         <div class="card-body model-monster__battle">
-          <div class="model-monster__battle monster-body random-1"></div>
-          <div class="model-monster__battle monster-eyes random-1"></div>
-          <div class="model-monster__battle monster-hair random-1"></div>
-          <div class="model-monster__battle monster-mouth random-1"></div>
+          <div class="model-monster__battle monster-body ${monsterBody()}"></div>
+          <div class="model-monster__battle monster-eyes ${monsterEyes()}"></div>
+          <div class="model-monster__battle monster-hair ${monsterHair()}"></div>
+          <div class="model-monster__battle monster-mouth ${monsterMouth()}"></div>
         </div>
       </div>
     </div>

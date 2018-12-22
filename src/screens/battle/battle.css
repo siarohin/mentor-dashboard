@@ -1,59 +1,9 @@
-/* Animation Monster */
-/* @-webkit-keyframes changeMonster__battle {
-  from { background-position: 0px -512px; }
-  to { background-position: -512px -512px; }
-}
-
-@-moz-keyframes changeMonster__battle {
-  from { background-position: 0px -512px; }
-  to { background-position: -512px -512px; }
-}
-
-@-o-keyframes changeMonster__battle {
-  from { background-position: 0px -512px; }
-  to { background-position: -512px -512px; }
-}
-
-@keyframes changeMonster__battle {
-  from { background-position: 0px -512px; }
-  to { background-position: -512px -512px; }
-} */
-
-/* Animation Player */
-@-webkit-keyframes changePlayer__battle {
-  from { background-position: 0px 0px; }
-  to { background-position:  -512px 0px; }
-}
-
-@-moz-keyframes changePlayer__battle {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-@-o-keyframes changePlayer__battle {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-@keyframes changePlayer__battle {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
 .model-monster__battle {
   width: 256px;
   height: 256px;
-  /* background: url('/src/assets/images/monster.png'); */
-}
-
-.model-monster__battle {
   position: relative;
   transform: scale(0.8);
   margin-bottom: -40px;
-  /* -webkit-animation: changeMonster__battle 0.5s steps(2) infinite;
-  -moz-animation: changeMonster__battle 0.5s steps(2) infinite;
-  -o-animation: changeMonster__battle 0.5s steps(2) infinite;
-  animation: changeMonster__battle 0.5s steps(2) infinite; */
 }
 
 .monster-body,
@@ -70,21 +20,55 @@
   top: 0;
 }
 
+/* random-1 */
 .monster-body.random-1 {
   background-position: 0px 0px;
 }
-
+.monster-hair.random-1 {
+  background-position: 0px -256px;
+}
 .monster-eyes.random-1 {
   background-position: 0px -512px;
   margin-top: 40px;
 }
-
-.monster-hair.random-1 {
-  background-position: 0px -256px;
-}
-
 .monster-mouth.random-1 {
   background-position: 0px -768px;
+  margin-top: 90px;
+}
+
+/* random-2 */
+.monster-body.random-2 {
+  background-position: -256px 0px;
+}
+.monster-hair.random-2 {
+  margin-top: -40px;
+  margin-left: 30px;
+  background-position: -256px -256px;
+}
+.monster-eyes.random-2 {
+  background-position: -256px -512px;
+  margin-top: 40px;
+}
+.monster-mouth.random-2 {
+  background-position: -256px -768px;
+  margin-top: 90px;
+}
+
+/* random-3 */
+.monster-body.random-3 {
+  background-position: -512px 0px;
+}
+.monster-hair.random-3 {
+  margin-top: -40px;
+  margin-left: 30px;
+  background-position: -512px -256px;
+}
+.monster-eyes.random-3 {
+  background-position: -512px -512px;
+  margin-top: 40px;
+}
+.monster-mouth.random-3 {
+  background-position: -512px -768px;
   margin-top: 90px;
 }
 
