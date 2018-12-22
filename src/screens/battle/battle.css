@@ -1,5 +1,5 @@
 /* Animation Monster */
-@-webkit-keyframes changeMonster__battle {
+/* @-webkit-keyframes changeMonster__battle {
   from { background-position: 0px -512px; }
   to { background-position: -512px -512px; }
 }
@@ -17,7 +17,7 @@
 @keyframes changeMonster__battle {
   from { background-position: 0px -512px; }
   to { background-position: -512px -512px; }
-}
+} */
 
 /* Animation Player */
 @-webkit-keyframes changePlayer__battle {
@@ -43,19 +43,41 @@
 .model-monster__battle {
   width: 256px;
   height: 256px;
-  background: url('/src/assets/images/monster.png');
+  /* background: url('/src/assets/images/monster.png'); */
 }
 
 .model-monster__battle {
-  margin: 0 0 -90px 0;
-  -moz-transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  transform: scale(0.5);
-  -webkit-animation: changeMonster__battle 0.5s steps(2) infinite;
+  position: relative;
+  transform: scale(0.8);
+  margin-bottom: -40px;
+  /* -webkit-animation: changeMonster__battle 0.5s steps(2) infinite;
   -moz-animation: changeMonster__battle 0.5s steps(2) infinite;
   -o-animation: changeMonster__battle 0.5s steps(2) infinite;
-  animation: changeMonster__battle 0.5s steps(2) infinite;
+  animation: changeMonster__battle 0.5s steps(2) infinite; */
+}
+
+.monster-body {
+  background: url('/src/assets/images/ping_monster.png') 0px 0px;
+}
+
+.monster-eyes {
+  background: url('/src/assets/images/ping_monster.png') 0px -512px;
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+}
+
+.monster-hair {
+  background: url('/src/assets/images/ping_monster.png') 0px -256px;
+  position: absolute;
+  top: 0;
+}
+
+.monster-mouth {
+  background: url('/src/assets/images/ping_monster.png') 0px -768px;
+  position: absolute;
+  top: 0;
+  margin-top: 90px;
 }
 
 .model-player__battle {
@@ -88,5 +110,11 @@
 .battle-scene h2 {
   position: absolute;
   top: 0;
+}
+
+.battle-scene .player-health,
+.battle-scene .monster-health {
+  position: absolute;
+  top: 50px;
 }
 

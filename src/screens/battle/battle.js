@@ -11,6 +11,8 @@ class Battle {
 
     $('.player-name').text(gameState.playerName);
     $('.monster-name').text(gameState.monsterName);
+    $('.player-health').text(gameState.playerHealth);
+    $('.monster-health').text(gameState.monsterHealth);
   }
 
   static empty() {

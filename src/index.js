@@ -19,15 +19,13 @@ import { pause } from './utils';
 
 const setPlayerName = async (gameState) => {
   const playerName = await ChoosePlayerName.getNewPlayerName();
-  gameState.setPlayerName(playerName);
-
+  gameState.setPlayer(playerName);
   Navigation.update(gameState);
 };
 
 const setMonsterName = async (gameState) => {
   const monsterName = await ChooseMonsterName.getNewMonsterName();
-  gameState.setMonsterName(monsterName);
-
+  gameState.setMonster(monsterName);
   Navigation.update(gameState);
 };
 
