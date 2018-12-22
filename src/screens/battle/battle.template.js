@@ -18,10 +18,10 @@ export default `
     <div id="monster">
       <div class="monster-card">
         <div class="card-body model-monster__battle">
-          <div class="model-monster__battle monster-body"></div>
-          <div class="model-monster__battle monster-eyes"></div>
-          <div class="model-monster__battle monster-hair"></div>
-          <div class="model-monster__battle monster-mouth"></div>
+          <div class="model-monster__battle monster-body random-1"></div>
+          <div class="model-monster__battle monster-eyes random-1"></div>
+          <div class="model-monster__battle monster-hair random-1"></div>
+          <div class="model-monster__battle monster-mouth random-1"></div>
         </div>
       </div>
     </div>

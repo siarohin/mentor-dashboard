@@ -56,27 +56,35 @@
   animation: changeMonster__battle 0.5s steps(2) infinite; */
 }
 
-.monster-body {
-  background: url('/src/assets/images/ping_monster.png') 0px 0px;
+.monster-body,
+.monster-eyes,
+.monster-hair,
+.monster-mouth {
+  background-image: url('/src/assets/images/ping_monster.png');
 }
 
-.monster-eyes {
-  background: url('/src/assets/images/ping_monster.png') 0px -512px;
+.monster-eyes,
+.monster-hair,
+.monster-mouth {
   position: absolute;
   top: 0;
+}
+
+.monster-body.random-1 {
+  background-position: 0px 0px;
+}
+
+.monster-eyes.random-1 {
+  background-position: 0px -512px;
   margin-top: 40px;
 }
 
-.monster-hair {
-  background: url('/src/assets/images/ping_monster.png') 0px -256px;
-  position: absolute;
-  top: 0;
+.monster-hair.random-1 {
+  background-position: 0px -256px;
 }
 
-.monster-mouth {
-  background: url('/src/assets/images/ping_monster.png') 0px -768px;
-  position: absolute;
-  top: 0;
+.monster-mouth.random-1 {
+  background-position: 0px -768px;
   margin-top: 90px;
 }
 
