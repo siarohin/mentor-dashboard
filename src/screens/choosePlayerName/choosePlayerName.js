@@ -37,6 +37,7 @@ export default class ChoosePlayerName {
     return new Promise((resolve) => {
       $('#choosePlayerName .js-form').on('submit', (e) => {
         e.preventDefault();
+        ChoosePlayerName.stop();
 
         const playerName = $('#choosePlayerName .js-player-name').val();
 

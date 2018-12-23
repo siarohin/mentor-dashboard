@@ -1,42 +1,42 @@
 import $ from 'jquery';
 
-import template from './cast.template';
-import taskMath from './taskMath/taskMath';
+import template from './taskMath.template';
+import Cast from '../cast';
 
 
-class Cast {
+class taskMath {
   static draw() {
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Select the magic task';
+    title.innerHTML = 'MathTask';
 
     $('#spels').modal({
       keyboard: false,
       backdrop: 'static',
     });
+
+    taskMath.selectCast();
   }
 
   static empty() {
-    $('#cast').empty();
+    $('#taskMath').empty();
   }
 
-  static getPlayerCast() {
-    Cast.draw();
-
-    $('#cast').on('click', (e) => {
-      if (e.target.id === 'taskMath') {
+  static selectCast() {
+    $('#taskMath').on('click', (e) => {
+      if (e.target.id === 'io') {
         $('#spels').modal('hide');
       }
     });
 
     return new Promise((resolve) => {
       $('#spels').on('hidden.bs.modal', () => {
-        resolve(taskMath.draw());
+        resolve(Cast.getPlayerCast());
       });
     });
   }
 }
 
-export default Cast;
+export default taskMath;
