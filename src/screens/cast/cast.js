@@ -5,10 +5,13 @@ import template from './cast.template';
 
 class Cast {
   static draw() {
-    const contentEl = document.querySelector('#demoModal .modal-body');
+    const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
-    $('#demoModal').modal({});
+    $('#spels').modal({
+      keyboard: false,
+      backdrop: 'static',
+    });
   }
 
   static empty() {
@@ -20,7 +23,7 @@ class Cast {
     const currentCast = 'only_one_cast';
 
     return new Promise((resolve) => {
-      $('#demoModal').on('hidden.bs.modal', () => {
+      $('#spels').on('hidden.bs.modal', () => {
         resolve(currentCast);
       });
     });

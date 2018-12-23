@@ -10,26 +10,16 @@ class Battle {
 
     $('.player-name').text(gameState.playerName);
     $('.monster-name').text(gameState.monsterName);
+
     $('.player-health').text(gameState.playerHealth);
+    $('.player-health').css('width', `${gameState.playerHealth / 2}%`);
+
     $('.monster-health').text(gameState.monsterHealth);
+    $('.monster-health').css('width', `${gameState.monsterHealth / 2}%`);
   }
 
   static empty() {
     $('#battle').empty();
-  }
-
-  constructor() {
-    this.player = {
-      view: {
-        color: 'red',
-      },
-    };
-    this.monster = {
-      view: {
-        color: 'orange',
-      },
-    };
-    this.currentState = {};
   }
 }
 

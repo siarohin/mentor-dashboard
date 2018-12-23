@@ -12,17 +12,22 @@ export default `
 
   <div class="col-sm">
     <h2 class="card-title player-name"></h2>
-    <div class="player-health"></div>
-      <div id="player">
-        <div class="player-card js-player-card">
-          <div class="card-body model-player__battle">
-          </div>
+    <div class="progress">
+      <div class="player-health progress-bar bg-danger" role="progressbar" style="width: 50%;"></div>
+    </div>
+    <div id="player">
+      <div class="player-card js-player-card">
+        <div class="card-body model-player__battle">
         </div>
       </div>
     </div>
+  </div>
   <div class="col-sm">
     <h2 class="card-title monster-name"></h2>
-    <div class="monster-health"></div>
+    <div class="progress">
+      <div class="monster-health progress-bar bg-danger" role="progressbar" style="width: 50%;"></div>
+    </div>
+    <div class="bombed-animation"></div>
     <div id="monster">
       <div class="monster-card">
         <div class="card-body model-monster__battle">

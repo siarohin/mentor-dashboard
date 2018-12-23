@@ -21,13 +21,21 @@
 
 
 /* Animation vectorCity */
+@-webkit-keyframes moves {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+@-moz-keyframes moves {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+@-o-keyframes moves {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
 @keyframes moves {
-  0% {
-    background-position: 0px 0px;
-    }
-  100% {
-    background-position: -2048px 0px;
-  }
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
 }
 
 .model-player__select-name {
@@ -35,9 +43,9 @@
   height: 256px;
   background-image: url('/src/assets/images/player.png');
   margin: -20px auto;
-  -webkit-animation: changePlayer__select-name 0.7s steps() infinite;
-  -moz-animation: changePlayer__select-name 0.7s steps(3) infinite;
-  -o-animation: changePlayer__select-name 0.7s steps(3) infinite;
+  -webkit-animation: changePlayer__select-name 0.7s steps(4) infinite;
+  -moz-animation: changePlayer__select-name 0.7s steps(4) infinite;
+  -o-animation: changePlayer__select-name 0.7s steps(4) infinite;
   animation: changePlayer__select-name 0.7s steps(4) infinite;
 }
 
@@ -50,12 +58,13 @@
   align-items: flex-end;
   border-bottom: 0.5em solid #000;
   animation: moves 1s steps(60) infinite;
-  margin-top: -100px;
 }
 
 .card {
   width: 100%;
   margin: 0 auto;
+  position: absolute;
+  left: 40%;
 }
 
 .js-form .button {
