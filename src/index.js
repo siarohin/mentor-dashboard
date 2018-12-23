@@ -13,7 +13,6 @@ import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 import ChooseMonsterName from './screens/chooseMonsterName/chooseMonsterName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
-import taskMath from './screens/cast/taskMath/taskMath';
 
 import { pause } from './utils';
 

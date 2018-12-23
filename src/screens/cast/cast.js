@@ -10,7 +10,7 @@ class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Select the magic task';
+    title.innerHTML = 'Like, what\'s your best power?';
 
     $('#spels').modal({
       keyboard: false,
@@ -23,7 +23,7 @@ class Cast {
   }
 
   static getPlayerCast() {
-    Cast.draw();
+    this.draw();
 
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {

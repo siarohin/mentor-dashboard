@@ -1,7 +1,7 @@
 export default `
 <section id="cast" class="d-flex bd-highlight">
   <div class="btn-group-vertical btn-group-lg p-2 flex-fill bd-highlight">
-    <button type="button" id="taskMath" class="btn btn-success">Mathematic</button>
+    <button type="button" id="taskMath" class="btn btn-success">Mathematics</button>
     <button type="button" id="taskTransl" class="disabled btn btn-success">Translate</button>
     <button type="button" id="taskCompare" class="disabled btn btn-success">Compare</button>
   </div>

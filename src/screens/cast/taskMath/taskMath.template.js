@@ -1,14 +1,17 @@
 export default `
-<section id="taskMath" class="d-flex bd-highlight">
-  <div class="btn-group-vertical btn-group-lg p-2 flex-fill bd-highlight">
-    <button type="button" id="io" class="btn btn-success">io</button>
-    <button type="button" id="taskTransl" class="disabled btn btn-success">io</button>
-    <button type="button" id="taskCompare" class="disabled btn btn-success">Compare</button>
-  </div>
-  <div class="btn-group-vertical btn-group-lg p-2 flex-fill bd-highlight">
-    <button type="button" id="taskWriting" class="disabled btn btn-warning">Writing</button>
-    <button type="button" id="taskListen" class="disabled btn btn-warning">Listening</button>
-    <button type="button" id="taskSpeaking" class="disabled btn btn-warning">Speaking</button>
+<section id="taskMath">
+    <div class="alert alert-warning task-body" role="alert">
+      <div class="first-number"></div>
+      <div class="operation"></div>
+      <div class="second-number"></div>
+      <div class="result">=</div>
+    </div>
+
+    <div class="input-group">
+    <input type="text" class="form-control input-answer" placeholder="Your answer" aria-label="Your answer">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary btn-answer" type="button">Submit</button>
+    </div>
   </div>
 </section>
 `;
