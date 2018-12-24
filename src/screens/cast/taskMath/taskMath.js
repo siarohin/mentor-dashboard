@@ -3,11 +3,21 @@ import uniqueRandomArray from 'unique-random-array';
 
 import template from './taskMath.template';
 import './taskMath.css';
-
 import Cast from '../cast';
+import Battle from '../../battle/battle';
 
 
 class taskMath {
+  static init() {
+    this.draw();
+    this.generateRandom();
+    this.selectCast();
+  }
+
+  static get data() {
+    return ['+', '-', '*'];
+  }
+
   static draw() {
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
@@ -19,15 +29,12 @@ class taskMath {
       keyboard: false,
       backdrop: 'static',
     });
-
-    this.generateOperation();
-    this.selectCast();
   }
 
-  static generateOperation() {
-    const dataSource = ['+', '-', '*'];
-    const randomOperation = uniqueRandomArray(dataSource);
-    const operation = randomOperation();
+  static generateRandom() {
+    const dataSource = this.data;
+    const randomDataSource = uniqueRandomArray(dataSource);
+    const operation = randomDataSource();
 
     this.generateMathTask(operation);
   }
@@ -71,16 +78,26 @@ class taskMath {
     $('#taskMath').empty();
   }
 
+  static updateHealt() {
+    if (this.checkResult() === true) {
+      window.gameState.monsterHealth -= 20;
+    } else {
+      window.gameState.playerHealth -= 20;
+    }
+
+    Battle.update(window.gameState);
+  }
+
   static selectCast() {
     $('.btn-answer').on('click', () => {
       $('#spels').modal('hide');
       this.playerAnswer = document.querySelector('.input-answer').value;
-      console.log(this.checkResult()); // for test only
+      this.updateHealt();
     });
 
     return new Promise((resolve) => {
       $('#spels').on('hidden.bs.modal', () => {
-        resolve(taskMath.draw());
+        resolve(Cast.init());
       });
     });
   }

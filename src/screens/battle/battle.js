@@ -4,22 +4,29 @@ import template from './battle.template';
 import './battle.css';
 
 class Battle {
+  static init(gameState) {
+    this.draw(gameState);
+    this.update(gameState);
+  }
+
   static draw(gameState) {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 
     $('.player-name').text(gameState.playerName);
     $('.monster-name').text(gameState.monsterName);
+  }
 
+  static empty() {
+    $('#battle').empty();
+  }
+
+  static update(gameState) {
     $('.player-health').text(gameState.playerHealth);
     $('.player-health').css('width', `${gameState.playerHealth / 2}%`);
 
     $('.monster-health').text(gameState.monsterHealth);
     $('.monster-health').css('width', `${gameState.monsterHealth / 2}%`);
-  }
-
-  static empty() {
-    $('#battle').empty();
   }
 }
 

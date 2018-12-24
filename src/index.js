@@ -33,12 +33,12 @@ const getBattleResult = async (gameState) => {
   await setPlayerName(gameState);
   await setMonsterName(gameState);
 
-  Battle.draw(gameState);
+  Battle.init(gameState);
 
   // start animation
   await pause(3000);
 
-  await Cast.getPlayerCast();
+  await Cast.init();
 
   // for debug - WIP
   // TODO: need to remove
@@ -47,10 +47,8 @@ const getBattleResult = async (gameState) => {
 
 
 const startApp = () => {
-  window.$ = $; // for debug
-
   const gameState = new GameState();
-  window.gameState = gameState; // antipatter - need use carefully!
+  window.gameState = gameState;
   setGameState(gameState);
 
   Navigation.draw();

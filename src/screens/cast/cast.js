@@ -5,6 +5,11 @@ import taskMath from './taskMath/taskMath';
 
 
 class Cast {
+  static init() {
+    this.draw();
+    this.getPlayerCast();
+  }
+
   static draw() {
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
@@ -23,8 +28,6 @@ class Cast {
   }
 
   static getPlayerCast() {
-    this.draw();
-
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {
         $('#spels').modal('hide');
@@ -33,7 +36,7 @@ class Cast {
 
     return new Promise((resolve) => {
       $('#spels').on('hidden.bs.modal', () => {
-        resolve(taskMath.draw());
+        resolve(taskMath.init());
       });
     });
   }
