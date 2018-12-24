@@ -79,10 +79,36 @@
   height: 256px;
   background-image: url('/src/assets/images/player.png');
   margin: -20px auto;
-  -webkit-animation: changePlayer__battle 0.6s steps(2) infinite;
-  -moz-animation: changePlayer__battle 0.6s steps(2) infinite;
-  -o-animation: changePlayer__battle 0.6s steps(2) infinite;
-  animation: changePlayer__battle 0.6s steps(2) infinite;
+}
+
+@-webkit-keyframes player__attack {
+  from { background-position: 0px 0px; }
+  to { background-position: 0px -768px; margin: 60px auto; }
+}
+@-moz-keyframes player__attack {
+  from { background-position: 0px 0px; }
+  to { background-position: 0px -768px; margin: 60px auto; }
+}
+@-o-keyframes player__attack {
+  from { background-position: 0px 0px; }
+  to { background-position: 0px -768px; margin: 60px auto; }
+}
+@keyframes player__attack {
+  from { background-position: 0px 0px; }
+  to { background-position: 0px -768px; margin: 60px auto; }
+}
+
+.model-player__attack {
+  width: 256px;
+  height: 256px;
+  background: url('/src/assets/images/player.png') 0px 0px;
+  margin: 0px auto;
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: player__attack 0.7s steps(3);
+  -moz-animation: player__attack 0.7s steps(3);
+  -o-animation: player__attack 0.7s steps(3);
+  animation: player__attack 1s 1s steps(3);
 }
 
 .battle-scene {
@@ -191,4 +217,9 @@
   -moz-animation: bombed 0.7s steps(7);
   -o-animation: bombed 0.7s steps(7);
   animation: bombed 0.7s steps(7);
+}
+
+.progress-bar {
+  height: 1.5rem;
+  font-size: 1rem;
 }

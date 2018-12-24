@@ -7,7 +7,17 @@ import taskMath from './taskMath/taskMath';
 class Cast {
   static init() {
     this.draw();
+    this.initCast();
     this.getPlayerCast();
+  }
+
+  static initCast() {
+    $('#taskMath').text('Mathematics');
+    $('#taskTransl').text('Translate');
+    $('#taskCompare').text('Compare');
+    $('#taskWriting').text('Writing');
+    $('#taskListen').text('Listening');
+    $('#taskSpeaking').text('Speaking');
   }
 
   static draw() {

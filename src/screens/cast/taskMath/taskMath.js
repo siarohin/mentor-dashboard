@@ -79,7 +79,7 @@ class taskMath {
   }
 
   static updateHealt() {
-    if (this.checkResult() === true) {
+    if (this.checkResult()) {
       window.gameState.monsterHealth -= 20;
     } else {
       window.gameState.playerHealth -= 20;
