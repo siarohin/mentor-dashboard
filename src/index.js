@@ -38,7 +38,7 @@ const getBattleResult = async (gameState) => {
   // start animation
   await pause(3000);
 
-  // await Cast.init();
+  await Cast.init();
 
   // for debug - WIP
   // TODO: need to remove
@@ -47,6 +47,7 @@ const getBattleResult = async (gameState) => {
 
 
 const startApp = () => {
+  window.$ = $;
   const gameState = new GameState();
   window.gameState = gameState;
   setGameState(gameState);

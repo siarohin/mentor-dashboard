@@ -40,14 +40,8 @@ class Cast {
   static getPlayerCast() {
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {
-        $('#spels').modal('hide');
+        taskMath.init();
       }
-    });
-
-    return new Promise((resolve) => {
-      $('#spels').on('hidden.bs.modal', () => {
-        resolve(taskMath.init());
-      });
     });
   }
 }

@@ -17,6 +17,23 @@ class Battle {
     $('.monster-name').text(gameState.monsterName);
   }
 
+  static playerAttack(time) {
+
+    const contentEl = document.querySelector('.js-player-card');
+
+    if ($('.model-player__attack').length < 1) {
+      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player__attack\'></div>');
+    }
+
+    $('.model-player__battle').hide();
+    $('.model-player__attack').show();
+
+    setTimeout(() => {
+      $('.model-player__battle').show();
+      $('.model-player__attack').hide();
+    }, time);
+  }
+
   static empty() {
     $('#battle').empty();
   }

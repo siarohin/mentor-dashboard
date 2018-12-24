@@ -3,15 +3,15 @@ import uniqueRandomArray from 'unique-random-array';
 
 import template from './taskMath.template';
 import './taskMath.css';
-import Cast from '../cast';
 import Battle from '../../battle/battle';
+import Cast from '../cast';
 
 
 class taskMath {
   static init() {
     this.draw();
     this.generateRandom();
-    this.selectCast();
+    this.closeTask();
   }
 
   static get data() {
@@ -69,6 +69,7 @@ class taskMath {
   }
 
   static checkResult() {
+    this.playerAnswer = document.querySelector('.input-answer').value;
     if (+this.playerAnswer === this.answer) {
       return true;
     } return false;
@@ -81,24 +82,25 @@ class taskMath {
   static updateHealt() {
     if (this.checkResult()) {
       window.gameState.monsterHealth -= 20;
+      Battle.playerAttack(3000);
     } else {
       window.gameState.playerHealth -= 20;
     }
 
     Battle.update(window.gameState);
+    Cast.init();
+
+    // TODO: need to fix async
+    setTimeout(() => {
+      $('#spels').modal('show');
+    }, 3000);
   }
 
-  static selectCast() {
+  static closeTask() {
     $('.btn-answer').on('click', () => {
       $('#spels').modal('hide');
-      this.playerAnswer = document.querySelector('.input-answer').value;
-      this.updateHealt();
-    });
 
-    return new Promise((resolve) => {
-      $('#spels').on('hidden.bs.modal', () => {
-        resolve(Cast.init());
-      });
+      this.updateHealt();
     });
   }
 }

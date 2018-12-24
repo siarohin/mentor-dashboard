@@ -83,32 +83,30 @@
 
 @-webkit-keyframes player__attack {
   from { background-position: 0px 0px; }
-  to { background-position: 0px -768px; margin: 60px auto; }
+  to { background-position: 0px -768px; margin: -80px auto; }
 }
 @-moz-keyframes player__attack {
   from { background-position: 0px 0px; }
-  to { background-position: 0px -768px; margin: 60px auto; }
+  to { background-position: 0px -768px; margin: -80px auto; }
 }
 @-o-keyframes player__attack {
   from { background-position: 0px 0px; }
-  to { background-position: 0px -768px; margin: 60px auto; }
+  to { background-position: 0px -768px; margin: -80px auto; }
 }
 @keyframes player__attack {
   from { background-position: 0px 0px; }
-  to { background-position: 0px -768px; margin: 60px auto; }
+  to { background-position: 0px -768px; margin: -80px auto; }
 }
 
 .model-player__attack {
   width: 256px;
   height: 256px;
   background: url('/src/assets/images/player.png') 0px 0px;
-  margin: 0px auto;
-  position: absolute;
-  z-index: 1;
-  -webkit-animation: player__attack 0.7s steps(3);
-  -moz-animation: player__attack 0.7s steps(3);
-  -o-animation: player__attack 0.7s steps(3);
-  animation: player__attack 1s 1s steps(3);
+  margin: -20px auto;
+  -webkit-animation: player__attack 0.7s 1s steps(3);
+  -moz-animation: player__attack 0.7s 1s steps(3);
+  -o-animation: player__attack 0.7s 1s steps(3);
+  animation: player__attack 0.7s 1s steps(3);
 }
 
 .battle-scene {

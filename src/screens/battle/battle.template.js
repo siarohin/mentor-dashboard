@@ -17,7 +17,6 @@ export default `
     </div>
     <div id="player">
       <div class="player-card js-player-card">
-        <div class="card-body model-player__attack"></div>
         <div class="card-body model-player__battle"></div>
       </div>
     </div>
