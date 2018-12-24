@@ -39,10 +39,6 @@ const getBattleResult = async (gameState) => {
   await pause(3000);
 
   await Cast.init();
-
-  // for debug - WIP
-  // TODO: need to remove
-  // alert('round finished!', chosenCast);
 };
 
 
@@ -55,7 +51,7 @@ const startApp = () => {
   Navigation.draw();
   Home.draw();
   Home.play();
-  ModalDialog.draw();
+  // ModalDialog.draw();
 
 
   const soundEl = document.querySelector('.nav-sound');

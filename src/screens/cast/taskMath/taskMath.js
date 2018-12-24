@@ -87,13 +87,20 @@ class taskMath {
       window.gameState.playerHealth -= 20;
     }
 
-    Battle.update(window.gameState);
     Cast.init();
 
     // TODO: need to fix async
     setTimeout(() => {
+      Battle.update(window.gameState);
+    }, 2000);
+
+    setTimeout(() => {
       $('#spels').modal('show');
     }, 3000);
+  }
+
+  static modalShow() {
+    $('#spels').modal('show');
   }
 
   static closeTask() {

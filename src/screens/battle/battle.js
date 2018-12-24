@@ -18,7 +18,6 @@ class Battle {
   }
 
   static playerAttack(time) {
-
     const contentEl = document.querySelector('.js-player-card');
 
     if ($('.model-player__attack').length < 1) {
@@ -27,10 +26,28 @@ class Battle {
 
     $('.model-player__battle').hide();
     $('.model-player__attack').show();
+    $('.model-monster__battle').addClass('model-monster__attacked');
 
     setTimeout(() => {
       $('.model-player__battle').show();
       $('.model-player__attack').hide();
+      $('.model-monster__battle').removeClass('model-monster__attacked');
+    }, time);
+  }
+
+  static monsterAttack(time) {
+    const contentEl = document.querySelector('.js-monster-card');
+
+    if ($('.model-monster__attack').length < 1) {
+      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-monster__attack\'></div>');
+    }
+
+    $('.model-monster__battle').hide();
+    $('.model-monster__attack').show();
+
+    setTimeout(() => {
+      $('.model-monster__battle').show();
+      $('.model-monster__attack').hide();
     }, time);
   }
 
