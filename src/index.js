@@ -13,6 +13,7 @@ import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
 import ChooseMonsterName from './screens/chooseMonsterName/chooseMonsterName';
 import Battle from './screens/battle/battle';
 import Cast from './screens/cast/cast';
+import Sound from './components/sound/sound';
 
 import { pause } from './utils';
 
@@ -50,41 +51,11 @@ const startApp = () => {
 
   Navigation.draw();
   Home.draw();
-  Home.play();
+  Sound.init();
   ModalDialog.draw();
 
-
-  const soundEl = document.querySelector('.nav-sound');
-  function playMusicFirst() {
-    if (soundEl.classList.contains('sound-off')) {
-      Home.stop();
-    } else {
-      Home.play();
-    }
-  }
-
-  function playMusicNext() {
-    Home.stop();
-    ChoosePlayerName.play();
-    if (soundEl.classList.contains('sound-off')) {
-      ChoosePlayerName.stop();
-    }
-  }
-
-
-  $('.nav-sound').on('click', (e) => {
-    e.preventDefault();
-    playMusicFirst();
-  });
-
   $('.js-start-game').on('click', async () => {
-    playMusicNext();
-
-    $('.nav-sound').on('click', (e) => {
-      e.preventDefault();
-      playMusicNext();
-    });
-
+    Sound.play('second');
     await getBattleResult(gameState);
   });
 

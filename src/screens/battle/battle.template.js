@@ -9,7 +9,6 @@ const monsterMouth = uniqueRandomArray(monsterClass);
 export default `
 <section id="battle">
 <div class="row battle-scene">
-
   <div class="col-sm">
     <h2 class="card-title player-name"></h2>
     <div class="progress">

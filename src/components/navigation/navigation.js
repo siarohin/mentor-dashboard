@@ -2,21 +2,26 @@ import $ from 'jquery';
 
 import template from './navigation.template';
 import './navigation.css';
+import Sound from '../sound/sound';
 
 class Header {
   static draw() {
     const contentEl = document.querySelector('body');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
-    const soundEl = document.querySelector('.nav-sound');
-    soundEl.addEventListener('click', (e) => {
+    $('.nav-sound').on('click', (e) => {
       e.preventDefault();
+      let state = 'on';
 
-      if (soundEl.classList.contains('sound-off')) {
-        soundEl.classList.remove('sound-off');
+      if ($('.nav-sound').hasClass('sound-off')) {
+        $('.nav-sound').removeClass('sound-off');
+        state = 'on';
       } else {
-        soundEl.classList.add('sound-off');
+        $('.nav-sound').addClass('sound-off');
+        state = 'off';
       }
+
+      Sound.setState(state);
     });
   }
 

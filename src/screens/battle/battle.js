@@ -7,8 +7,10 @@ import './battle.css';
 const music = new Howl({
   src: ['./music/yeah-ooh.mp3'],
   sprite: {
-    yeah: [0, 2000],
-    ooh: [3000, 5000]
+    yeah: [0, 1500],
+    ooh: [3000, 1500],
+    yep: [5000, 1000],
+    boom: [6000, 1500],
   },
   autoplay: false,
   loop: false,
@@ -39,10 +41,15 @@ class Battle {
   }
 
   static playerAttack(time) {
-    this.play('yeah');
-    if ($('.nav-sound').hasClass('sound-off')) {
-      this.stop();
+    if (!$('.nav-sound').hasClass('sound-off')) {
+      this.play('yeah');
     }
+
+    setTimeout(() => {
+      if (!$('.nav-sound').hasClass('sound-off')) {
+        this.play('yep');
+      }
+    }, 500);
 
     const contentEl = document.querySelector('.js-player-card');
 
@@ -62,10 +69,16 @@ class Battle {
   }
 
   static monsterAttack(time) {
-    this.play('ooh');
-    if ($('.nav-sound').hasClass('sound-off')) {
-      this.stop();
+    if (!$('.nav-sound').hasClass('sound-off')) {
+      this.play('ooh');
     }
+
+    setTimeout(() => {
+      if (!$('.nav-sound').hasClass('sound-off')) {
+        this.play('boom');
+      }
+    }, 800);
+
     const contentEl = document.querySelector('.js-player-card');
 
     if ($('.model-player__attacked').length < 1) {
