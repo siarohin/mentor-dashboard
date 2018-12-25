@@ -107,10 +107,12 @@ class taskMath {
   }
 
   static closeTask() {
-    $('.btn-answer').on('click', () => {
-      $('#spels').modal('hide');
-
-      this.updateHealt();
+    $('.input-group').on('click keypress', (e) => {
+      if ((e.key === 'Enter' && e.type === 'keypress')
+      || (e.target.type === 'button' && e.type === 'click')) {
+        $('#spels').modal('hide');
+        this.updateHealt();
+      }
     });
   }
 }

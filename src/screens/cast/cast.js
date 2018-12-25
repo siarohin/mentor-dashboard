@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
 import template from './cast.template';
+// eslint-disable-next-line import/no-cycle
 import taskMath from './taskMath/taskMath';
 import { pause } from '../../utils';
 
