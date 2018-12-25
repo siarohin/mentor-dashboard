@@ -13,7 +13,7 @@ export default `
   <div class="col-sm">
     <h2 class="card-title player-name"></h2>
     <div class="progress">
-      <div class="player-health progress-bar bg-danger" role="progressbar" style="width: 50%;"></div>
+      <div class="player-health progress-bar bg-danger" role="progressbar"></div>
     </div>
     <div id="player">
       <div class="player-card js-player-card">
@@ -24,11 +24,16 @@ export default `
   <div class="col-sm">
     <h2 class="card-title monster-name"></h2>
     <div class="progress">
-      <div class="monster-health progress-bar bg-danger" role="progressbar" style="width: 50%;"></div>
+      <div class="monster-health progress-bar bg-danger" role="progressbar"></div>
     </div>
     <div class="bombed-animation"></div>
     <div id="monster">
       <div class="monster-card">
+
+      <div class="model-monster__attack-helper">
+        <div class="model-monster__attack"></div>
+      </div>
+
         <div class="card-body model-monster__battle">
           <div class="model-monster__battle monster-body ${monsterBody()}"></div>
           <div class="model-monster__battle monster-eyes ${monsterEyes()}"></div>

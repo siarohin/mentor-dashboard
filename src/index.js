@@ -51,7 +51,7 @@ const startApp = () => {
   Navigation.draw();
   Home.draw();
   Home.play();
-  // ModalDialog.draw();
+  ModalDialog.draw();
 
 
   const soundEl = document.querySelector('.nav-sound');

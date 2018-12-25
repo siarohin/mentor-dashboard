@@ -1,7 +1,20 @@
 import $ from 'jquery';
+import { Howl } from 'howler';
 
 import template from './battle.template';
 import './battle.css';
+
+const music = new Howl({
+  src: ['./music/yeah-ooh.mp3'],
+  sprite: {
+    yeah: [0, 2000],
+    ooh: [3000, 5000]
+  },
+  autoplay: false,
+  loop: false,
+  volume: 0.5,
+});
+
 
 class Battle {
   static init(gameState) {
@@ -17,7 +30,20 @@ class Battle {
     $('.monster-name').text(gameState.monsterName);
   }
 
+  static play(sprite) {
+    return music.play(sprite);
+  }
+
+  static stop() {
+    return music.stop();
+  }
+
   static playerAttack(time) {
+    this.play('yeah');
+    if ($('.nav-sound').hasClass('sound-off')) {
+      this.stop();
+    }
+
     const contentEl = document.querySelector('.js-player-card');
 
     if ($('.model-player__attack').length < 1) {
@@ -36,18 +62,24 @@ class Battle {
   }
 
   static monsterAttack(time) {
-    const contentEl = document.querySelector('.js-monster-card');
+    this.play('ooh');
+    if ($('.nav-sound').hasClass('sound-off')) {
+      this.stop();
+    }
+    const contentEl = document.querySelector('.js-player-card');
 
-    if ($('.model-monster__attack').length < 1) {
-      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-monster__attack\'></div>');
+    if ($('.model-player__attacked').length < 1) {
+      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player__attacked\'></div>');
     }
 
-    $('.model-monster__battle').hide();
-    $('.model-monster__attack').show();
+    $('.model-monster__attack-helper').addClass('active-attack');
+    $('.model-player__battle').hide();
+    $('.model-player__attacked').show();
 
     setTimeout(() => {
-      $('.model-monster__battle').show();
-      $('.model-monster__attack').hide();
+      $('.model-player__battle').show();
+      $('.model-player__attacked').hide();
+      $('.model-monster__attack-helper').removeClass('active-attack');
     }, time);
   }
 

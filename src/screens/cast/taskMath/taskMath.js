@@ -85,6 +85,7 @@ class taskMath {
       Battle.playerAttack(3000);
     } else {
       window.gameState.playerHealth -= 20;
+      Battle.monsterAttack(3000);
     }
 
     Cast.init();
@@ -95,7 +96,7 @@ class taskMath {
     }, 2000);
 
     setTimeout(() => {
-      $('#spels').modal('show');
+      this.modalShow();
     }, 3000);
   }
 
