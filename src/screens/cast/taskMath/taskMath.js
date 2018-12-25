@@ -4,7 +4,9 @@ import uniqueRandomArray from 'unique-random-array';
 import template from './taskMath.template';
 import './taskMath.css';
 import Battle from '../../battle/battle';
+// eslint-disable-next-line import/no-cycle
 import Cast from '../cast';
+import { pause } from '../../../utils';
 
 
 class taskMath {
@@ -80,6 +82,15 @@ class taskMath {
   }
 
   static updateHealt() {
+    const updateState = async () => {
+      await (pause(2000));
+      Battle.update(window.gameState);
+      await (pause(3000));
+      Cast.init();
+      this.modalShow();
+    };
+
+    // if true -> playerAttack, if false -> monsterAttack
     if (this.checkResult()) {
       window.gameState.monsterHealth -= 20;
       Battle.playerAttack(3000);
@@ -88,16 +99,7 @@ class taskMath {
       Battle.monsterAttack(3000);
     }
 
-    Cast.init();
-
-    // TODO: need to fix async
-    setTimeout(() => {
-      Battle.update(window.gameState);
-    }, 2000);
-
-    setTimeout(() => {
-      this.modalShow();
-    }, 3000);
+    updateState();
   }
 
   static modalShow() {

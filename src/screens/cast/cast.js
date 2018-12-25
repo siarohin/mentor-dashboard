@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 import template from './cast.template';
 import taskMath from './taskMath/taskMath';
+import { pause } from '../../utils';
 
 
 class Cast {
@@ -37,10 +38,26 @@ class Cast {
     $('#cast').empty();
   }
 
+  static modalShow() {
+    $('#spels').modal('show');
+  }
+
+  static modalHide() {
+    $('#spels').modal('hide');
+  }
+
   static getPlayerCast() {
+    const getTask = async () => {
+      this.modalHide();
+      await (pause(500));
+
+      taskMath.init();
+      this.modalShow();
+    };
+
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {
-        taskMath.init();
+        getTask();
       }
     });
   }
