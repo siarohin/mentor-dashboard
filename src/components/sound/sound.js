@@ -13,10 +13,6 @@ const music = new Howl({
 });
 
 export default class Sound {
-  constructor(state = '') {
-    this.state = state;
-  }
-
   static init() {
     const sprite = 'first';
     this.state = 'on';

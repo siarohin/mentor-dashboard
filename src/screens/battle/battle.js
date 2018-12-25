@@ -3,6 +3,7 @@ import { Howl } from 'howler';
 
 import template from './battle.template';
 import './battle.css';
+import { pause } from '../../utils';
 
 const music = new Howl({
   src: ['./music/yeah-ooh.mp3'],
@@ -33,23 +34,28 @@ class Battle {
   }
 
   static play(sprite) {
-    return music.play(sprite);
+    music.play(sprite);
   }
 
   static stop() {
-    return music.stop();
+    music.stop();
   }
 
   static playerAttack(time) {
-    if (!$('.nav-sound').hasClass('sound-off')) {
-      this.play('yeah');
-    }
-
-    setTimeout(() => {
+    const playSound = async () => {
       if (!$('.nav-sound').hasClass('sound-off')) {
-        this.play('yep');
+        await this.play('yeah');
+        await (pause(500));
+        await (this.play('yep'));
       }
-    }, 500);
+    };
+
+    const showAnimation = async () => {
+      await (pause(time));
+      $('.model-player__battle').show();
+      $('.model-player__attack').hide();
+      $('.model-monster__battle').removeClass('model-monster__attacked');
+    };
 
     const contentEl = document.querySelector('.js-player-card');
 
@@ -61,23 +67,26 @@ class Battle {
     $('.model-player__attack').show();
     $('.model-monster__battle').addClass('model-monster__attacked');
 
-    setTimeout(() => {
-      $('.model-player__battle').show();
-      $('.model-player__attack').hide();
-      $('.model-monster__battle').removeClass('model-monster__attacked');
-    }, time);
+    playSound();
+    showAnimation(time);
   }
 
-  static monsterAttack(time) {
-    if (!$('.nav-sound').hasClass('sound-off')) {
-      this.play('ooh');
-    }
 
-    setTimeout(() => {
+  static monsterAttack(time) {
+    const playSound = async () => {
       if (!$('.nav-sound').hasClass('sound-off')) {
-        this.play('boom');
+        await this.play('ooh');
+        await (pause(800));
+        await (this.play('boom'));
       }
-    }, 800);
+    };
+
+    const showAnimation = async () => {
+      await (pause(time));
+      $('.model-player__battle').show();
+      $('.model-player__attacked').hide();
+      $('.model-monster__attack-helper').removeClass('active-attack');
+    };
 
     const contentEl = document.querySelector('.js-player-card');
 
@@ -89,11 +98,8 @@ class Battle {
     $('.model-player__battle').hide();
     $('.model-player__attacked').show();
 
-    setTimeout(() => {
-      $('.model-player__battle').show();
-      $('.model-player__attacked').hide();
-      $('.model-monster__attack-helper').removeClass('active-attack');
-    }, time);
+    playSound();
+    showAnimation(time);
   }
 
   static empty() {
