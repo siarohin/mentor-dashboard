@@ -3,9 +3,9 @@ import uniqueRandomArray from 'unique-random-array';
 
 import template from './taskMath.template';
 import './taskMath.css';
-import Battle from '../../battle/battle';
 // eslint-disable-next-line import/no-cycle
-import Cast from '../cast';
+import Battle from '../../battle/battle';
+
 import { pause } from '../../../utils';
 
 
@@ -85,9 +85,8 @@ class taskMath {
     const updateState = async () => {
       await (pause(2000));
       Battle.update(window.gameState);
-      await (pause(3000));
-      Cast.init();
-      this.modalShow();
+
+      Battle.ifGameContinue(window.gameState);
     };
 
     // if true -> playerAttack, if false -> monsterAttack

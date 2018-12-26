@@ -48,17 +48,17 @@ class Cast {
   }
 
   static getPlayerCast() {
-    const getTask = async () => {
+    const getTask = async (task) => {
       this.modalHide();
       await (pause(500));
 
-      taskMath.init();
+      task.init();
       this.modalShow();
     };
 
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {
-        getTask();
+        getTask(taskMath);
       }
     });
   }

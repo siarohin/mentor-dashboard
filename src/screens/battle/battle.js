@@ -5,6 +5,9 @@ import template from './battle.template';
 import './battle.css';
 import { pause } from '../../utils';
 
+// eslint-disable-next-line import/no-cycle
+import Cast from '../cast/cast';
+
 const music = new Howl({
   src: ['./music/yeah-ooh.mp3'],
   sprite: {
@@ -51,52 +54,51 @@ class Battle {
     };
 
     const showAnimation = async () => {
+      const contentEl = document.querySelector('.js-player-card');
+      if ($('.model-player_attack').length < 1) {
+        contentEl.insertAdjacentHTML('afterbegin',
+          '<div class=\'card-body model-player_attack\'></div>');
+      }
+
+      $('.model-player').hide();
+      $('.model-player_attack').show();
+      $('.model-monster').addClass('model-monster_attacked');
+
       await (pause(time));
       $('.model-player').show();
       $('.model-player_attack').hide();
       $('.model-monster').removeClass('model-monster_attacked');
     };
 
-    const contentEl = document.querySelector('.js-player-card');
-
-    if ($('.model-player_attack').length < 1) {
-      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player_attack\'></div>');
-    }
-
-    $('.model-player').hide();
-    $('.model-player_attack').show();
-    $('.model-monster').addClass('model-monster_attacked');
-
     playSound();
     showAnimation(time);
   }
 
-
   static monsterAttack(time) {
     const playSound = async () => {
       if (!$('.nav-sound').hasClass('sound-off')) {
-        await this.play('ooh');
+        this.play('ooh');
         await (pause(800));
-        await (this.play('boom'));
+        this.play('boom');
       }
     };
 
     const showAnimation = async () => {
+      const contentEl = document.querySelector('.js-player-card');
+      if ($('.model-player_attacked').length < 1) {
+        contentEl.insertAdjacentHTML('afterbegin',
+          '<div class=\'card-body model-player_attacked\'></div>');
+      }
+
+      $('.model-monster-bird').addClass('model-monster-bird_attack');
+      $('.model-player').hide();
+      $('.model-player_attacked').show();
+
       await (pause(time));
       $('.model-player').show();
       $('.model-player_attacked').hide();
       $('.model-monster-bird').removeClass('model-monster-bird_attack');
     };
-
-    const contentEl = document.querySelector('.js-player-card');
-
-    if ($('.model-player_attacked').length < 1) {
-      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player_attacked\'></div>');
-    }
-
-    $('.model-monster-bird').addClass('model-monster-bird_attack');
-    $('.model-player').hide();
-    $('.model-player_attacked').show();
 
     playSound();
     showAnimation(time);
@@ -112,6 +114,20 @@ class Battle {
 
     $('.monster-health').text(gameState.monsterHealth);
     $('.monster-health').css('width', `${gameState.monsterHealth / 2}%`);
+  }
+
+  static ifGameContinue(gameState) {
+    const health = async () => {
+      if (gameState.monsterHealth > 0 && gameState.playerHealth > 0) {
+        await (pause(3000));
+        Cast.init();
+        Cast.modalShow();
+      } else {
+        await (pause(1000));
+        console.log('Somebody died');
+      }
+    };
+    health();
   }
 }
 

@@ -36,7 +36,6 @@ const getBattleResult = async (gameState) => {
 
   Battle.init(gameState);
 
-  // start animation
   await pause(3000);
 
   await Cast.init();
