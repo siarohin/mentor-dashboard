@@ -52,20 +52,20 @@ class Battle {
 
     const showAnimation = async () => {
       await (pause(time));
-      $('.model-player__battle').show();
-      $('.model-player__attack').hide();
-      $('.model-monster__battle').removeClass('model-monster__attacked');
+      $('.model-player').show();
+      $('.model-player_attack').hide();
+      $('.model-monster').removeClass('model-monster_attacked');
     };
 
     const contentEl = document.querySelector('.js-player-card');
 
-    if ($('.model-player__attack').length < 1) {
-      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player__attack\'></div>');
+    if ($('.model-player_attack').length < 1) {
+      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player_attack\'></div>');
     }
 
-    $('.model-player__battle').hide();
-    $('.model-player__attack').show();
-    $('.model-monster__battle').addClass('model-monster__attacked');
+    $('.model-player').hide();
+    $('.model-player_attack').show();
+    $('.model-monster').addClass('model-monster_attacked');
 
     playSound();
     showAnimation(time);
@@ -83,20 +83,20 @@ class Battle {
 
     const showAnimation = async () => {
       await (pause(time));
-      $('.model-player__battle').show();
-      $('.model-player__attacked').hide();
-      $('.model-monster__attack-helper').removeClass('active-attack');
+      $('.model-player').show();
+      $('.model-player_attacked').hide();
+      $('.model-monster-bird').removeClass('model-monster-bird_attack');
     };
 
     const contentEl = document.querySelector('.js-player-card');
 
-    if ($('.model-player__attacked').length < 1) {
-      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player__attacked\'></div>');
+    if ($('.model-player_attacked').length < 1) {
+      contentEl.insertAdjacentHTML('afterbegin', '<div class=\'card-body model-player_attacked\'></div>');
     }
 
-    $('.model-monster__attack-helper').addClass('active-attack');
-    $('.model-player__battle').hide();
-    $('.model-player__attacked').show();
+    $('.model-monster-bird').addClass('model-monster-bird_attack');
+    $('.model-player').hide();
+    $('.model-player_attacked').show();
 
     playSound();
     showAnimation(time);

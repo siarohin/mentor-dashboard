@@ -1,25 +1,26 @@
-@-webkit-keyframes monster__wait {
+/* model-monster */
+@-webkit-keyframes monster-wait {
   0% { transform: translate(0,0) scale(0.8); }
   29% { transform: translate(3px,0) scale(0.79); }
   50% { transform: translate(2px,0) scale(0.79); }
   79% { transform: translate(2px,0) scale(0.8); }
   100% { transform: translate(0,0) scale(0.8); }
 }
-@-moz-keyframes monster__wait {
+@-moz-keyframes monster-wait {
   0% { transform: translate(0,0) scale(0.8); }
   29% { transform: translate(3px,0) scale(0.79); }
   50% { transform: translate(2px,0) scale(0.79); }
   79% { transform: translate(2px,0) scale(0.8); }
   100% { transform: translate(0,0) scale(0.8); }
 }
-@-o-keyframes monster__wait {
+@-o-keyframes monster-wait {
   0% { transform: translate(0,0) scale(0.8); }
   29% { transform: translate(3px,0) scale(0.79); }
   50% { transform: translate(2px,0) scale(0.79); }
   79% { transform: translate(2px,0) scale(0.8); }
   100% { transform: translate(0,0) scale(0.8); }
 }
-@keyframes monster__wait {
+@keyframes monster-wait {
   0% { transform: translate(0,0) scale(0.8); }
   29% { transform: translate(3px,0) scale(0.79); }
   50% { transform: translate(2px,0) scale(0.79); }
@@ -27,18 +28,19 @@
   100% { transform: translate(0,0) scale(0.8); }
 }
 
-.model-monster__battle {
+.model-monster {
   width: 256px;
   height: 256px;
   position: relative;
   transform: scale(0.8);
   margin-bottom: -40px;
-  -webkit-animation: monster__wait 0.7s infinite;
-  -moz-animation: monster__wait 0.7s infinite;
-  -o-animation: monster__wait 0.7s infinite;
-  animation: monster__wait 0.7s infinite;
+  -webkit-animation: monster-wait 0.7s infinite;
+  -moz-animation: monster-wait 0.7s infinite;
+  -o-animation: monster-wait 0.7s infinite;
+  animation: monster-wait 0.7s infinite;
 }
 
+/* monster parts */
 .monster-body,
 .monster-eyes,
 .monster-hair,
@@ -53,29 +55,31 @@
   top: 0;
 }
 
-.monster-eyes {
+.monster-eyes_top {
   margin-top: 40px;
+}
+
+.monster-eyes_animation {
   animation: shake 5s infinite;
 }
-.monster-mouth {
+
+.monster-mouth_top {
   margin-top: 90px;
-}
-.monster-hair.random-2,
-.monster-hair.random-3 {
-  margin-top: -40px;
-  margin-left: 30px;
 }
 
 /* random-1 */
 .monster-body.random-1 {
   background-position: 0px 0px;
 }
+
 .monster-hair.random-1 {
   background-position: 0px -256px;
 }
+
 .monster-eyes.random-1 {
   background-position: 0px -512px;
 }
+
 .monster-mouth.random-1 {
   background-position: 0px -768px;
 }
@@ -84,12 +88,16 @@
 .monster-body.random-2 {
   background-position: -256px 0px;
 }
+
 .monster-hair.random-2 {
   background-position: -256px -256px;
+  margin: -40px 0 0 30px;
 }
+
 .monster-eyes.random-2 {
   background-position: -256px -512px;
 }
+
 .monster-mouth.random-2 {
   background-position: -256px -768px;
 }
@@ -98,71 +106,79 @@
 .monster-body.random-3 {
   background-position: -512px 0px;
 }
+
 .monster-hair.random-3 {
   background-position: -512px -256px;
+  margin: -40px 0 0 30px;
 }
+
 .monster-eyes.random-3 {
   background-position: -512px -512px;
 }
+
 .monster-mouth.random-3 {
   background-position: -512px -768px;
 }
-@-webkit-keyframes player__wait {
+
+/* model-player */
+@-webkit-keyframes player-wait {
   from { background-position: 0px 0px; }
   to { background-position: -512px 0px; }
 }
-@-moz-keyframes player__wait {
+@-moz-keyframes player-wait {
   from { background-position: 0px 0px; }
   to { background-position: -512px 0px; }
 }
-@-o-keyframes player__wait {
+@-o-keyframes player-wait {
   from { background-position: 0px 0px; }
   to { background-position: -512px 0px; }
 }
-@keyframes player__wait {
+@keyframes player-wait {
   from { background-position: 0px 0px; }
   to { background-position: -512px 0px; }
 }
 
-.model-player__battle {
+.model-player {
   width: 256px;
   height: 256px;
   background: url('/src/assets/images/player.png') 0px 0px;
   margin: -20px auto;
-  -webkit-animation: player__wait 0.7s steps(2) infinite;
-  -moz-animation: player__wait 0.7s steps(2) infinite;
-  -o-animation: player__wait 0.7s steps(2) infinite;
-  animation: player__wait 0.7s steps(2) infinite;
+  -webkit-animation: player-wait 0.7s steps(2) infinite;
+  -moz-animation: player-wait 0.7s steps(2) infinite;
+  -o-animation: player-wait 0.7s steps(2) infinite;
+  animation: player-wait 0.7s steps(2) infinite;
 }
 
-@-webkit-keyframes player__attack {
+/* model-player_attack */
+@-webkit-keyframes player-attack {
   from { background-position: 0px 0px; }
   to { background-position: 0px -768px; margin: -80px auto; }
 }
-@-moz-keyframes player__attack {
+@-moz-keyframes player-attack {
   from { background-position: 0px 0px; }
   to { background-position: 0px -768px; margin: -80px auto; }
 }
-@-o-keyframes player__attack {
+@-o-keyframes player-attack {
   from { background-position: 0px 0px; }
   to { background-position: 0px -768px; margin: -80px auto; }
 }
-@keyframes player__attack {
+@keyframes player-attack {
   from { background-position: 0px 0px; }
   to { background-position: 0px -768px; margin: -80px auto; }
 }
 
-.model-player__attack {
+.model-player_attack {
   width: 256px;
   height: 256px;
   background: url('/src/assets/images/player.png') 0px 0px;
   margin: -20px auto;
-  -webkit-animation: player__attack 0.7s 1s steps(3);
-  -moz-animation: player__attack 0.7s 1s steps(3);
-  -o-animation: player__attack 0.7s 1s steps(3);
-  animation: player__attack 0.7s 1s steps(3);
+  -webkit-animation: player-attack 0.7s 1s steps(3);
+  -moz-animation: player-attack 0.7s 1s steps(3);
+  -o-animation: player-attack 0.7s 1s steps(3);
+  animation: player-attack 0.7s 1s steps(3);
 }
 
+/* model-monster_attacked */
 @keyframes shake {
   2% { transform: translate(10px, -5px) rotate(-0.5deg) scale(0.8); }
   4% { transform: translate(4px, 1px) rotate(0.5deg) scale(0.8); }
@@ -217,116 +233,121 @@
   100% { transform: translate(0, 0) rotate(0); }
 }
 
-.model-monster__attacked {
+.model-monster_attacked {
   -webkit-animation: shake 1s 1.5s;
   -moz-animation: shake 1s 1.5s;
   -o-animation: shake 1s 1.5s;
   animation: shake 1s 1.5s;
 }
 
-@-webkit-keyframes player__lose {
+/* model-player_attacked */
+@-webkit-keyframes player-attacked {
   from { background-position: -256px -512px; }
   to { background-position: -768px -512px; }
 }
-@-moz-keyframes player__lose {
+@-moz-keyframes player-attacked {
   from { background-position: -256px -512px; }
   to { background-position: -768px -512px; }
 }
-@-o-keyframes player__lose {
+@-o-keyframes player-attacked {
   from { background-position: -256px -512px; }
   to { background-position: -768px -512px; }
 }
-@keyframes player__lose {
+@keyframes player-attacked {
   from { background-position: -256px -512px; }
   to { background-position: -768px -512px; }
 }
 
-.model-player__attacked {
+.model-player_attacked {
   width: 256px;
   height: 256px;
   background: url('/src/assets/images/player.png') -768px -512px;
   margin: -10px auto;
-  -webkit-animation: player__lose 0.3s 1s steps(2) infinite;
-  -moz-animation: player__lose 0.3s 1s steps(2) infinite;
-  -o-animation: player__lose 0.3s 1s steps(2) infinite;
-  animation: player__lose 0.3s 1s steps(2) infinite;
+  -webkit-animation: player-attacked 0.3s 1s steps(2) infinite;
+  -moz-animation: player-attacked 0.3s 1s steps(2) infinite;
+  -o-animation: player-attacked 0.3s 1s steps(2) infinite;
+  animation: player-attacked 0.3s 1s steps(2) infinite;
 }
 
-@-webkit-keyframes monster__attack {
+/* model-monster-bird */
+@-webkit-keyframes monster-bird {
+  0% { transform: translate(1000px, 0px); }
+  100% { transform: translate(0px, 0px) }
+}
+@-moz-keyframes monster-bird {
+  0% { transform: translate(1000px, 0px); }
+  100% { transform: translate(0px, 0px) }
+}
+@-o-keyframes monster-bird {
+  0% { transform: translate(1000px, 0px); }
+  100% { transform: translate(0px, 0px) }
+}
+@keyframes monster-bird {
+  0% { transform: translate(1000px, 0px); }
+  100% { transform: translate(0px, 0px) }
+}
+
+.model-monster-bird {
+  -webkit-animation: monster-bird 5s;
+  -moz-animation: monster-bird 5s;
+  -o-animation: monster-bird 5s;
+  animation: monster-bird 5s;
+}
+
+/* model-monster-bird_attack */
+@-webkit-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@-moz-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@-o-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+
+.model-monster-bird_attack {
+  -webkit-animation: monster-bird_attack 3.5s;
+  -moz-animation: monster-bird_attack 3.5s;
+  -o-animation: monster-bird_attack 3.5s;
+  animation: monster-bird_attack 3.5s;
+}
+
+/* model-monster-bird__fly */
+@-webkit-keyframes monster-bird-fly {
   0% { background-position: 0px 0px; transform: translate(0px, 0px); }
   100% { background-position: -480px 0px; transform: translate(0px, 30px) }
 }
-@-moz-keyframes monster__attack {
+@-moz-keyframes monster-bird-fly {
   0% { background-position: 0px 0px; transform: translate(0px, 0px); }
   100% { background-position: -480px 0px; transform: translate(0px, 30px) }
 }
-@-o-keyframes  monster__attack {
+@-o-keyframes monster-bird-fly {
   0% { background-position: 0px 0px; transform: translate(0px, 0px); }
   100% { background-position: -480px 0px; transform: translate(0px, 30px) }
 }
-@keyframes monster__attack {
+@keyframes monster-bird-fly {
   0% { background-position: 0px 0px; transform: translate(0px, 0px); }
   100% { background-position: -480px 0px; transform: translate(0px, 30px) }
 }
 
-.model-monster__attack {
+.model-monster-bird__fly {
   width: 120px;
   height: 120px;
   background: url('/src/assets/images/fly-monster.png') 0 0;
-  -webkit-animation: monster__attack 0.7s 1s steps(4) infinite;
-  -moz-animation: monster__attack 0.7s 1s steps(4) infinite;
-  -o-animation: monster__attack 0.7s 1s steps(4) infinite;
-  animation: monster__attack 0.7s 1s steps(4) infinite;
+  -webkit-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
+  -moz-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
+  -o-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
+  animation: monster-bird-fly 0.7s 1s steps(4) infinite;
 }
 
-@-webkit-keyframes monster__attack-helper {
-  0% { transform: translate(1000px, 0px); }
-  100% { transform: translate(0px, 0px) }
-}
-@-moz-keyframes monster__attack-helper {
-  0% { transform: translate(1000px, 0px); }
-  100% { transform: translate(0px, 0px) }
-}
-@-o-keyframes monster__attack-helper {
-  0% { transform: translate(1000px, 0px); }
-  100% { transform: translate(0px, 0px) }
-}
-@keyframes monster__attack-helper {
-  0% { transform: translate(1000px, 0px); }
-  100% { transform: translate(0px, 0px) }
-}
-
-.model-monster__attack-helper {
-  -webkit-animation: monster__attack-helper 5s;
-  -moz-animation: monster__attack-helper 5s;
-  -o-animation: monster__attack-helper 5s;
-  animation: monster__attack-helper 5s;
-}
-
-@-webkit-keyframes monster__attack-helper__active-attack {
-  0% { transform: translate(0px, 0px); }
-  100% { transform: translate(-1500px, 40px); }
-}
-@-moz-keyframes monster__attack-helper__active-attack {
-  0% { transform: translate(0px, 0px); }
-  100% { transform: translate(-1500px, 40px); }
-}
-@-o-keyframes monster__attack-helper__active-attack {
-  0% { transform: translate(0px, 0px); }
-  100% { transform: translate(-1500px, 40px); }
-}
-@keyframes monster__attack-helper__active-attack {
-  0% { transform: translate(0px, 0px); }
-  100% { transform: translate(-1500px, 40px); }
-}
-
-.model-monster__attack-helper.active-attack {
-  -webkit-animation: monster__attack-helper__active-attack 3.5s;
-  -moz-animation: monster__attack-helper__active-attack 3.5s;
-  -o-animation: monster__attack-helper__active-attack 3.5s;
-  animation: monster__attack-helper__active-attack 3.5s;
-}
-
+/* battle-scene */
 .battle-scene {
   display: flex;
   flex-flow: row nowrap;
@@ -353,48 +374,56 @@
   border-radius: 5px;
 }
 
-.monster-name,
-.monster-health {
+/* monster-name, player-name, monster-health, player-health */
+.monster-name {
   right: 0;
 }
 
-.player-name,
-.player-health {
+.player-name {
   left: 0;
 }
 
-.battle-scene .player-health,
-.battle-scene .monster-health {
+.monster-health {
+  right: 0;
   position: absolute;
   top: 50px;
 }
 
-@-webkit-keyframes drops_in {
+.player-health {
+  left: 0;
+  position: absolute;
+  top: 50px;
+}
+
+/* monster, player */
+@-webkit-keyframes drops-in {
   0% { opacity: 0; }
   30% { opacity: 0; }
   100% { opacity: 1; }
 }
-@-moz-keyframes drops_in {
+@-moz-keyframes drops-in {
   0% { opacity: 0; }
   30% { opacity: 0; }
   100% { opacity: 1; }
 }
-@-o-keyframes drops_in {
+@-o-keyframes drops-in {
   0% { opacity: 0; }
   30% { opacity: 0; }
   100% { opacity: 1; }
 }
-@keyframes drops_in {
+@keyframes drops-in {
   0% { opacity: 0; }
   30% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 #monster {
-  -webkit-animation: drops_in 1.5s;
-  -moz-animation: drops_in 1.5s;
-  -o-animation: drops_in 1.5s;
-  animation: drops_in 1.5s;
+  position: absolute;
+  right: 0;
+  -webkit-animation: drops-in 1.5s;
+  -moz-animation: drops-in 1.5s;
+  -o-animation: drops-in 1.5s;
+  animation: drops-in 1.5s;
 }
 
 #player {
@@ -402,41 +431,38 @@
   left: 0;
 }
 
-#monster {
-  position: absolute;
-  right: 0;
-}
-
-@-webkit-keyframes bombed {
+/* monster-pregenerate */
+@-webkit-keyframes bombed-sprite {
   from { background-position: 0px 0px; }
   to { background-position:  -1792px 0px; }
 }
-@-moz-keyframes bombed {
+@-moz-keyframes bombed-sprite {
   from { background-position: 0px 0px; }
   to { background-position:  -1792px 0px; }
 }
-@-o-keyframes bombed {
+@-o-keyframes bombed-sprite {
   from { background-position: 0px 0px; }
   to { background-position:  -1792px 0px; }
 }
-@keyframes bombed {
+@keyframes bombed-sprite {
   from { background-position: 0px 0px; }
   to { background-position:  -1792px 0px; }
 }
 
-.bombed-animation {
+.monster-pregenerate {
   width: 256px;
   height: 256px;
   position: absolute;
   right: 0;
   margin-top: 50px;
   background-image: url('/src/assets/images/bombed_sprites.png');
-  -webkit-animation: bombed 0.7s steps(7);
-  -moz-animation: bombed 0.7s  steps(7);
-  -o-animation: bombed 0.7s  steps(7);
-  animation: bombed 0.7s steps(7);
+  -webkit-animation: bombed-sprite 0.7s steps(7);
+  -moz-animation: bombed-sprite 0.7s steps(7);
+  -o-animation: bombed-sprite 0.7s steps(7);
+  animation: bombed-sprite 0.7s steps(7);
 }
 
+/* progress-bar */
 .progress-bar {
   height: 1.5rem;
   font-size: 1rem;

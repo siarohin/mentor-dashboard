@@ -16,7 +16,7 @@ export default `
     </div>
     <div id="player">
       <div class="player-card js-player-card">
-        <div class="card-body model-player__battle"></div>
+        <div class="card-body model-player"></div>
       </div>
     </div>
   </div>
@@ -25,19 +25,19 @@ export default `
     <div class="progress">
       <div class="monster-health progress-bar bg-danger" role="progressbar"></div>
     </div>
-    <div class="bombed-animation"></div>
+    <div class="monster-pregenerate"></div>
     <div id="monster">
       <div class="monster-card">
 
-      <div class="model-monster__attack-helper">
-        <div class="model-monster__attack"></div>
-      </div>
+        <div class="model-monster-bird">
+          <div class="model-monster-bird__fly"></div>
+        </div>
 
-        <div class="card-body model-monster__battle">
-          <div class="model-monster__battle monster-body ${monsterBody()}"></div>
-          <div class="model-monster__battle monster-eyes ${monsterEyes()}"></div>
-          <div class="model-monster__battle monster-hair ${monsterHair()}"></div>
-          <div class="model-monster__battle monster-mouth ${monsterMouth()}"></div>
+        <div class="card-body model-monster">
+          <div class="model-monster monster-body ${monsterBody()}"></div>
+          <div class="model-monster monster-eyes monster-eyes_top monster-eyes_animation ${monsterEyes()}"></div>
+          <div class="model-monster monster-hair ${monsterHair()}"></div>
+          <div class="model-monster monster-mouth monster-mouth_top ${monsterMouth()}"></div>
         </div>
       </div>
     </div>
