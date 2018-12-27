@@ -1,4 +1,13 @@
 /* model-monster */
+.model-monster {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  transform: scale(0.8);
+  margin-bottom: -40px;
+}
+
+/* model-monster_animation */
 @-webkit-keyframes monster-wait {
   0% { transform: translate(0,0) scale(0.8); }
   29% { transform: translate(3px,0) scale(0.79); }
@@ -28,12 +37,7 @@
   100% { transform: translate(0,0) scale(0.8); }
 }
 
-.model-monster {
-  width: 256px;
-  height: 256px;
-  position: relative;
-  transform: scale(0.8);
-  margin-bottom: -40px;
+.model-monster_animation {
   -webkit-animation: monster-wait 0.7s infinite;
   -moz-animation: monster-wait 0.7s infinite;
   -o-animation: monster-wait 0.7s infinite;

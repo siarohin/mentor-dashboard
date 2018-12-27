@@ -38,7 +38,9 @@ class Battle {
   }
 
   static play(sprite) {
-    music.play(sprite);
+    if (!$('.nav-sound').hasClass('sound-off')) {
+      music.play(sprite);
+    }
   }
 
   static stop() {
@@ -47,11 +49,9 @@ class Battle {
 
   static playerAttack(time) {
     const playSound = async () => {
-      if (!$('.nav-sound').hasClass('sound-off')) {
-        await this.play('yeah');
-        await (pause(500));
-        await (this.play('yep'));
-      }
+      await this.play('yeah');
+      await (pause(500));
+      await (this.play('yep'));
     };
 
     const showAnimation = async () => {
@@ -136,7 +136,7 @@ class Battle {
   static gameOver() {
     const dieInit = async () => {
       await (pause(1000));
-      GameOver.whoDied(window.gameState);
+      GameOver.init(window.gameState);
     };
     dieInit();
   }
@@ -153,7 +153,7 @@ class Battle {
       window.gameState.monsterHealth -= 20;
       this.playerAttack(3000);
     } else {
-      window.gameState.playerHealth -= 20;
+      window.gameState.playerHealth -= 100;
       this.monsterAttack(3000);
     }
 

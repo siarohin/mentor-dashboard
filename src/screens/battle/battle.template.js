@@ -33,7 +33,7 @@ export default `
           <div class="model-monster-bird__fly"></div>
         </div>
 
-        <div class="card-body model-monster">
+        <div class="card-body model-monster model-monster_animation">
           <div class="model-monster monster-body ${monsterBody()}"></div>
           <div class="model-monster monster-eyes monster-eyes_top monster-eyes_animation ${monsterEyes()}"></div>
           <div class="model-monster monster-hair ${monsterHair()}"></div>

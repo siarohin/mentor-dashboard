@@ -1,0 +1,28 @@
+/* player-died */
+@-webkit-keyframes player-died {
+  from { background-position: 0px -768px; }
+  to { background-position: -512px -768px; }
+}
+@-moz-keyframes player-died {
+  from { background-position: 0px -768px; }
+  to { background-position: -512px -768px; }
+}
+@-o-keyframes player-died {
+  from { background-position: 0px -768px; }
+  to { background-position: -512px -768px; }
+}
+@keyframes player-died {
+  from { background-position: 0px -768px; }
+  to { background-position: -512px -768px; }
+}
+
+.model-player_died {
+  width: 256px;
+  height: 256px;
+  background: url('/src/assets/images/player.png') -256px -512px;
+  margin: -10px auto;
+  -webkit-animation: player-died 0.1s steps(2) forwards;
+  -moz-animation: player-died 0.1s steps(2) forwards;
+  -o-animation: player-died 0.1s steps(2) forwards;
+  animation: player-died 0.1s steps(2) forwards;
+}
