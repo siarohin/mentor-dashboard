@@ -1,119 +1,108 @@
-/* Animation changeMonster */
-@-webkit-keyframes changeMonster {
-  from { background-position: 0px -256px; }
-  to { background-position: -512px -256px; }
-}
-
-@-moz-keyframes changeMonster {
-  from { background-position: 0px -256px; }
-  to { background-position: -512px -256px; }
-}
-
-@-o-keyframes changeMonster {
-  from { background-position: 0px -256px; }
-  to { background-position: -512px -256px; }
-}
-
-@keyframes changeMonster {
-  from { background-position: 0px -256px; }
-  to { background-position: -512px -256px; }
-}
-
-/* Next Monster */
-@-webkit-keyframes changeMonsterNext {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-@-moz-keyframes changeMonsterNext {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-@-o-keyframes changeMonsterNext {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-@keyframes changeMonsterNext {
-  from { background-position: 0px 0px; }
-  to { background-position: -512px 0px; }
-}
-
-/* Animation changePlayer */
-@-webkit-keyframes changePlayer {
-  from { background-position: 0px 0px; margin: 50px auto; }
-  to { background-position: 1024px 0px; margin: -50px auto; }
-}
-
-@-moz-keyframes changePlayer {
-  from { background-position: 0px 0px; margin: 50px auto; }
-  to { background-position: 1024px 0px; margin: -50px auto; }
-}
-
-@-o-keyframes changePlayer {
-  from { background-position: 0px 0px; margin: 50px auto; }
-  to { background-position: 1024px 0px; margin: -50px auto; }
-}
-
-@keyframes changePlayer {
-  from { background-position: 0px 0px; margin: 50px auto; }
-  to { background-position: 1024px 0px; margin: -50px auto; }
-}
-
-
-/* Animation leavesButton */
-@keyframes leaves {
-  0% {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-  }
-}
-
-.model-monster-one,
-.model-monster-two,
-.model-monster-tree {
+/* model-monster-first */
+.model-monster-first {
   width: 256px;
   height: 256px;
-  background-image: url('/src/assets/images/monster.png');
-}
-
-.model-monster-one {
+  background: url('/src/assets/images/monster.png') 0 -256px;
   margin: 0 0 -90px 0;
   -moz-transform: scale(0.5);
   -webkit-transform: scale(0.5);
   -o-transform: scale(0.5);
   transform: scale(0.5);
-  -webkit-animation: changeMonster 0.5s steps(2) infinite;
-  -moz-animation: changeMonster 0.5s steps(2) infinite;
-  -o-animation: changeMonster 0.5s steps(2) infinite;
-  animation: changeMonster 0.5s steps(2) infinite;
 }
 
-.model-monster-two {
+/* model-monster-first_dance */
+@-webkit-keyframes monster-first_dance {
+  from { background-position: 0px -256px; }
+  to { background-position: -512px -256px; }
+}
+@-moz-keyframes monster-first_dance {
+  from { background-position: 0px -256px; }
+  to { background-position: -512px -256px; }
+}
+@-o-keyframes monster-first_dance {
+  from { background-position: 0px -256px; }
+  to { background-position: -512px -256px; }
+}
+@keyframes monster-first_dance {
+  from { background-position: 0px -256px; }
+  to { background-position: -512px -256px; }
+}
+
+.model-monster-first_dance {
+  -webkit-animation: monster-first_dance 0.5s steps(2) infinite;
+  -moz-animation: monster-first_dance 0.5s steps(2) infinite;
+  -o-animation: monster-first_dance 0.5s steps(2) infinite;
+  animation: monster-first_dance 0.5s steps(2) infinite;
+}
+
+/* model-monster-second */
+.model-monster-second {
+  width: 256px;
+  height: 256px;
   margin: 0 0 140px 0;
   z-index: -1;
-  -webkit-animation: changeMonsterNext 0.5s steps(2) infinite;
-  -moz-animation: changeMonsterNext 0.5s steps(2) infinite;
-  -o-animation: changeMonsterNext 0.5s steps(2) infinite;
-  animation: changeMonsterNext 0.5s steps(2) infinite;
+  background: url('/src/assets/images/monster.png') 0 0;
 }
 
+/* model-monster-second_dance */
+@-webkit-keyframes monster-second_dance {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+@-moz-keyframes monster-second_dance {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+@-o-keyframes monster-second_dance {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+@keyframes monster-second_dance {
+  from { background-position: 0px 0px; }
+  to { background-position: -512px 0px; }
+}
+
+.model-monster-second_dance {
+  -webkit-animation: monster-second_dance 0.5s steps(2) infinite;
+  -moz-animation: monster-second_dance 0.5s steps(2) infinite;
+  -o-animation: monster-second_dance 0.5s steps(2) infinite;
+  animation: monster-second_dance 0.5s steps(2) infinite;
+}
+
+/* model-player */
 .model-player {
   width: 256px;
   height: 256px;
-  background-image: url('/src/assets/images/player.png');
+  background: url('/src/assets/images/player.png') 0 0;
   margin: -20px auto;
-  -webkit-animation: changePlayer 0.6s steps(4) infinite;
-  -moz-animation: changePlayer 0.6s steps(4) infinite;
-  -o-animation: changePlayer 0.6s steps(4) infinite;
-  animation: changePlayer 0.6s steps(4) infinite;
 }
 
+/* model-player_jump */
+@-webkit-keyframes player_jump {
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
+}
+@-moz-keyframes player_jump {
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
+}
+@-o-keyframes player_jump {
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
+}
+@keyframes player_jump {
+  from { background-position: 0px 0px; margin: 50px auto; }
+  to { background-position: 1024px 0px; margin: -50px auto; }
+}
+
+.model-player_jump {
+  -webkit-animation: player_jump 0.6s steps(4) infinite;
+  -moz-animation: player_jump 0.6s steps(4) infinite;
+  -o-animation: player_jump 0.6s steps(4) infinite;
+  animation: player_jump 0.6s steps(4) infinite;
+}
+
+/* home-scene */
 .home-scene {
   display: flex;
   flex-flow: row nowrap;
@@ -124,18 +113,44 @@
   border-bottom: 0.5em solid #000;
 }
 
+/* home-scene-button */
 .home-scene-button {
   position: absolute;
   top: 30%;
   left: 50%;
   cursor: pointer;
-  animation: leaves 1s ease-in-out infinite alternate;
-  -webkit-animation: leaves 1s ease-in-out infinite alternate;
 }
 
+/* home-scene-button_scale */
+@keyframes button_scale {
+  0% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+.home-scene-button_scale {
+  -moz-animation: button_scale 1s ease-in-out infinite alternate;
+  -o-animation: button_scale 1s ease-in-out infinite alternate;
+  -webkit-animation: button_scale 1s ease-in-out infinite alternate;
+  animation: button_scale 1s ease-in-out infinite alternate;
+}
+
+/* logo */
 .logo {
   position: absolute;
   top: 0;
   left: -200px;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -o-transform: scale(0.4);
   transform: scale(0.4);
 }

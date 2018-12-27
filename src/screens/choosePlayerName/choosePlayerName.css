@@ -1,72 +1,67 @@
-/* Animation changePlayer */
-@-webkit-keyframes changePlayer__select-name {
+/* model-player_run */
+@-webkit-keyframes player_run {
   from { background-position: 0px -256px; }
   to { background-position:  -1024px -256px; }
 }
-
-@-moz-keyframes changePlayer__select-name {
+@-moz-keyframes player_run {
+  from { background-position: 0px -256px; }
+  to { background-position: -1024px -256px; }
+}
+@-o-keyframes player_run {
+  from { background-position: 0px -256px; }
+  to { background-position: -1024px -256px; }
+}
+@keyframes player_run {
   from { background-position: 0px -256px; }
   to { background-position: -1024px -256px; }
 }
 
-@-o-keyframes changePlayer__select-name {
-  from { background-position: 0px -256px; }
-  to { background-position: -1024px -256px; }
+.model-player_run {
+  background: url('/src/assets/images/player.png') 0 -256px;
+  -webkit-animation: player_run 0.7s steps(4) infinite;
+  -moz-animation: player_run 0.7s steps(4) infinite;
+  -o-animation: player_run 0.7s steps(4) infinite;
+  animation: player_run 0.7s steps(4) infinite;
 }
 
-@keyframes changePlayer__select-name {
-  from { background-position: 0px -256px; }
-  to { background-position: -1024px -256px; }
-}
-
-
-/* Animation vectorCity */
-@-webkit-keyframes moves {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -2048px 0px; }
-}
-@-moz-keyframes moves {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -2048px 0px; }
-}
-@-o-keyframes moves {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -2048px 0px; }
-}
-@keyframes moves {
-  0% { background-position: 0px 0px; }
-  100% { background-position: -2048px 0px; }
-}
-
-.model-player__select-name {
-  width: 256px;
-  height: 256px;
-  background-image: url('/src/assets/images/player.png');
-  margin: -20px auto;
-  -webkit-animation: changePlayer__select-name 0.7s steps(4) infinite;
-  -moz-animation: changePlayer__select-name 0.7s steps(4) infinite;
-  -o-animation: changePlayer__select-name 0.7s steps(4) infinite;
-  animation: changePlayer__select-name 0.7s steps(4) infinite;
-}
-
-.select-name {
+/* home-scene_flex */
+.home-scene_flex {
   display: flex;
   flex-flow: row nowrap;
-  background: url('/src/assets/images/vectorcity.png');
-  width: 1024px;
-  height: 512px;
-  align-items: flex-end;
-  border-bottom: 0.5em solid #000;
-  animation: moves 1s steps(60) infinite;
+  justify-content: center;
 }
 
+/* home-scene_move */
+@-webkit-keyframes scene_move {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+@-moz-keyframes scene_move {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+@-o-keyframes scene_move {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+@keyframes scene_move {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -2048px 0px; }
+}
+
+.home-scene_move {
+  -webkit-animation: scene_move 1s steps(60) infinite;
+  -moz-animation: scene_move 1s steps(60) infinite;
+  -o-animation: scene_move 1s steps(60) infinite;
+  animation: scene_move 1s steps(60) infinite;
+}
+
+/* card */
 .card {
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  left: 40%;
+  bottom: 4rem;
 }
 
-.js-form .button {
+/* js-form__button */
+.js-form__button {
   margin-top: 1rem;
 }

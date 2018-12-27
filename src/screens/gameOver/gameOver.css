@@ -1,4 +1,4 @@
-/* player-died */
+/* model-player_died */
 @-webkit-keyframes player-died {
   from { background-position: 0px -768px; }
   to { background-position: -512px -768px; }

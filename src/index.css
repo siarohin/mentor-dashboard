@@ -1,6 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import url('//fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
 
+/* page */
 .page {
     font: 16px 'Fira Sans Extra Condensed', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,6 +9,7 @@
     overflow: hidden;
 }
 
+/* main-template */
 .main-template {
     padding: 5rem 0 0 0;
     position: relative;

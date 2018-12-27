@@ -34,7 +34,8 @@ class GameOver {
 
   static whoDied(gameState) {
     if (gameState.monsterHealth === 0) {
-      console.log('Monster died');
+      Sound.stop();
+      this.monsterDied();
     } else {
       Sound.stop();
       this.play('gameover');
@@ -57,6 +58,28 @@ class GameOver {
       $('.model-monster-bird').hide();
       $('.model-monster').removeClass('model-monster_animation');
       $('.monster-eyes').removeClass('monster-eyes_animation');
+
+      await (pause(4000));
+      console.log('We gonna do something');
+    };
+
+    showAnimation();
+  }
+
+  static monsterDied() {
+    const showAnimation = async () => {
+      const contentEl = document.querySelector('.js-player-card');
+      if ($('.model-monster_died').length < 1) {
+        contentEl.insertAdjacentHTML('afterbegin',
+          '<div class=\'card-body model-monster_died\'></div>');
+      }
+
+      $('.model-monster').hide();
+      $('.model-monster_died').show();
+
+      await (pause(1000));
+      $('.model-monster-bird').hide();
+      $('.model-player').removeClass('model-player_animation');
 
       await (pause(4000));
       console.log('We gonna do something');

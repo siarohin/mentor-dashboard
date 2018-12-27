@@ -43,7 +43,6 @@ const getBattleResult = async (gameState) => {
 
 
 const startApp = () => {
-  window.$ = $;
   const gameState = new GameState();
   window.gameState = gameState;
   setGameState(gameState);

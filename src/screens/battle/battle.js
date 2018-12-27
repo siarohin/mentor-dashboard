@@ -21,6 +21,9 @@ class Battle {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 
+    $('.model-player').removeClass('model-player_jump');
+    $('.model-player').addClass('model-player_wait');
+
     $('.player-name').text(gameState.playerName);
     $('.monster-name').text(gameState.monsterName);
   }
@@ -78,7 +81,7 @@ class Battle {
 
     // if true -> playerAttack, if false -> monsterAttack
     if (taskName.checkResult()) {
-      window.gameState.monsterHealth -= 20;
+      window.gameState.monsterHealth -= 100;
       this.playerAttack(3000);
     } else {
       window.gameState.playerHealth -= 100;
