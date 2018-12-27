@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import { Howl } from 'howler';
 
 import template from './battle.template';
 import './battle.css';
@@ -8,19 +7,8 @@ import { pause } from '../../utils';
 // eslint-disable-next-line import/no-cycle
 import Cast from '../cast/cast';
 import GameOver from '../gameOver/gameOver';
-
-const music = new Howl({
-  src: ['./music/yeah-ooh.mp3'],
-  sprite: {
-    yeah: [0, 1500],
-    ooh: [3000, 1500],
-    yep: [5000, 1000],
-    boom: [6000, 1500],
-  },
-  autoplay: false,
-  loop: false,
-  volume: 0.5,
-});
+import PlayerAttack from './playerAttack/playerAttack';
+import MonsterAttack from './monsterAttack/monsterAttack';
 
 
 class Battle {
@@ -37,72 +25,12 @@ class Battle {
     $('.monster-name').text(gameState.monsterName);
   }
 
-  static play(sprite) {
-    if (!$('.nav-sound').hasClass('sound-off')) {
-      music.play(sprite);
-    }
-  }
-
-  static stop() {
-    music.stop();
-  }
-
   static playerAttack(time) {
-    const playSound = async () => {
-      await this.play('yeah');
-      await (pause(500));
-      await (this.play('yep'));
-    };
-
-    const showAnimation = async () => {
-      const contentEl = document.querySelector('.js-player-card');
-      if ($('.model-player_attack').length < 1) {
-        contentEl.insertAdjacentHTML('afterbegin',
-          '<div class=\'card-body model-player_attack\'></div>');
-      }
-
-      $('.model-player').hide();
-      $('.model-player_attack').show();
-      $('.model-monster').addClass('model-monster_attacked');
-
-      await (pause(time));
-      $('.model-player').show();
-      $('.model-player_attack').hide();
-      $('.model-monster').removeClass('model-monster_attacked');
-    };
-
-    playSound();
-    showAnimation(time);
+    PlayerAttack.init(time);
   }
 
   static monsterAttack(time) {
-    const playSound = async () => {
-      if (!$('.nav-sound').hasClass('sound-off')) {
-        this.play('ooh');
-        await (pause(800));
-        this.play('boom');
-      }
-    };
-
-    const showAnimation = async () => {
-      const contentEl = document.querySelector('.js-player-card');
-      if ($('.model-player_attacked').length < 1) {
-        contentEl.insertAdjacentHTML('afterbegin',
-          '<div class=\'card-body model-player_attacked\'></div>');
-      }
-
-      $('.model-monster-bird').addClass('model-monster-bird_attack');
-      $('.model-player').hide();
-      $('.model-player_attacked').show();
-
-      await (pause(time));
-      $('.model-player').show();
-      $('.model-player_attacked').hide();
-      $('.model-monster-bird').removeClass('model-monster-bird_attack');
-    };
-
-    playSound();
-    showAnimation(time);
+    MonsterAttack.init(time);
   }
 
   static empty() {

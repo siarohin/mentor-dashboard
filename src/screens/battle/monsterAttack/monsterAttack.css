@@ -1,0 +1,53 @@
+/* model-player_attacked */
+@-webkit-keyframes player-attacked {
+  from { background-position: -256px -512px; }
+  to { background-position: -768px -512px; }
+}
+@-moz-keyframes player-attacked {
+  from { background-position: -256px -512px; }
+  to { background-position: -768px -512px; }
+}
+@-o-keyframes player-attacked {
+  from { background-position: -256px -512px; }
+  to { background-position: -768px -512px; }
+}
+@keyframes player-attacked {
+  from { background-position: -256px -512px; }
+  to { background-position: -768px -512px; }
+}
+
+.model-player_attacked {
+  width: 256px;
+  height: 256px;
+  background: url('/src/assets/images/player.png') -768px -512px;
+  margin: -10px auto;
+  -webkit-animation: player-attacked 0.3s 1s steps(2) infinite;
+  -moz-animation: player-attacked 0.3s 1s steps(2) infinite;
+  -o-animation: player-attacked 0.3s 1s steps(2) infinite;
+  animation: player-attacked 0.3s 1s steps(2) infinite;
+}
+
+/* model-monster-bird_attack */
+@-webkit-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@-moz-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@-o-keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+@keyframes monster-bird_attack {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(-1500px, 40px); }
+}
+
+.model-monster-bird_attack {
+  -webkit-animation: monster-bird_attack 3.5s;
+  -moz-animation: monster-bird_attack 3.5s;
+  -o-animation: monster-bird_attack 3.5s;
+  animation: monster-bird_attack 3.5s;
+}
