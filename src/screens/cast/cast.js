@@ -1,10 +1,10 @@
 import $ from 'jquery';
 
 import template from './cast.template';
+
 // eslint-disable-next-line import/no-cycle
 import taskMath from './taskMath/taskMath';
 import { pause } from '../../utils';
-
 
 class Cast {
   static init() {
@@ -49,15 +49,14 @@ class Cast {
 
   static getPlayerCast() {
     const getTask = async (task) => {
-      this.modalHide();
       await (pause(500));
-
       task.init();
       this.modalShow();
     };
 
     $('#cast').on('click', (e) => {
       if (e.target.id === 'taskMath') {
+        this.modalHide();
         getTask(taskMath);
       }
     });

@@ -6,13 +6,12 @@ import './taskMath.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle/battle';
 
-import { pause } from '../../../utils';
-
 
 class taskMath {
   static init() {
     this.draw();
     this.generateRandom();
+    this.modalShow();
     this.closeTask();
   }
 
@@ -81,36 +80,20 @@ class taskMath {
     $('#taskMath').empty();
   }
 
-  static updateHealt() {
-    const updateState = async () => {
-      await (pause(2000));
-      Battle.update(window.gameState);
-
-      Battle.ifGameContinue(window.gameState);
-    };
-
-    // if true -> playerAttack, if false -> monsterAttack
-    if (this.checkResult()) {
-      window.gameState.monsterHealth -= 20;
-      Battle.playerAttack(3000);
-    } else {
-      window.gameState.playerHealth -= 20;
-      Battle.monsterAttack(3000);
-    }
-
-    updateState();
-  }
-
   static modalShow() {
     $('#spels').modal('show');
+  }
+
+  static modalHide() {
+    $('#spels').modal('hide');
   }
 
   static closeTask() {
     $('.input-group').on('click keypress', (e) => {
       if ((e.key === 'Enter' && e.type === 'keypress')
       || (e.target.type === 'button' && e.type === 'click')) {
-        $('#spels').modal('hide');
-        this.updateHealt();
+        this.modalHide();
+        Battle.playScene(this);
       }
     });
   }

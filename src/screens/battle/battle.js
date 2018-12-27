@@ -7,6 +7,7 @@ import { pause } from '../../utils';
 
 // eslint-disable-next-line import/no-cycle
 import Cast from '../cast/cast';
+import GameOver from '../gameOver/gameOver';
 
 const music = new Howl({
   src: ['./music/yeah-ooh.mp3'],
@@ -117,17 +118,46 @@ class Battle {
   }
 
   static ifGameContinue(gameState) {
-    const health = async () => {
-      if (gameState.monsterHealth > 0 && gameState.playerHealth > 0) {
-        await (pause(3000));
-        Cast.init();
-        Cast.modalShow();
-      } else {
-        await (pause(1000));
-        console.log('Somebody died');
-      }
+    if (gameState.monsterHealth > 0 && gameState.playerHealth > 0) {
+      this.gameContinue();
+    } else {
+      this.gameOver();
+    }
+  }
+
+  static gameContinue() {
+    const castInit = async () => {
+      await (pause(1000));
+      Cast.init();
     };
-    health();
+    castInit();
+  }
+
+  static gameOver() {
+    const dieInit = async () => {
+      await (pause(1000));
+      GameOver.whoDied(window.gameState);
+    };
+    dieInit();
+  }
+
+  static playScene(taskName) {
+    const updateState = async () => {
+      await (pause(2000));
+      this.update(window.gameState);
+      this.ifGameContinue(window.gameState);
+    };
+
+    // if true -> playerAttack, if false -> monsterAttack
+    if (taskName.checkResult()) {
+      window.gameState.monsterHealth -= 20;
+      this.playerAttack(3000);
+    } else {
+      window.gameState.playerHealth -= 20;
+      this.monsterAttack(3000);
+    }
+
+    updateState();
   }
 }
 
