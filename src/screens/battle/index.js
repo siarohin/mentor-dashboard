@@ -1,14 +1,14 @@
 import $ from 'jquery';
 
-import template from './battle.template';
-import './battle.css';
+import template from './index.template';
+import './index.css';
 import { pause } from '../../utils';
 
 // eslint-disable-next-line import/no-cycle
-import Cast from '../cast/cast';
+import Cast from '../cast';
 import GameOver from '../gameOver';
-import PlayerAttack from './playerAttack/playerAttack';
-import MonsterAttack from './monsterAttack/monsterAttack';
+import PlayerAttack from './playerAttack';
+import MonsterAttack from './monsterAttack';
 
 
 class Battle {

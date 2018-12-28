@@ -2,7 +2,7 @@ import uniqueRandomArray from 'unique-random-array';
 
 let monsterName = [];
 
-fetch('./chooseMonsterName.json')
+fetch('./index.json')
   .then(response => response.json())
   .then((data) => {
     const adjective = uniqueRandomArray(data.character);

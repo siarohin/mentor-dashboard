@@ -1,9 +1,9 @@
 import $ from 'jquery';
 
-import template from './cast.template';
+import template from './index.template';
 
 // eslint-disable-next-line import/no-cycle
-import taskMath from './taskMath/taskMath';
+import taskMath from './taskMath';
 import { pause } from '../../utils';
 
 class Cast {

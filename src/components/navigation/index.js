@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-import template from './navigation.template';
-import './navigation.css';
-import Sound from '../sound/sound';
+import template from './index.template';
+import './index.css';
+import Sound from '../sound';
 
 class Header {
   static draw() {

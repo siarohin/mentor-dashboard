@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-import template from './choosePlayerName.template';
-import './choosePlayerName.css';
+import template from './index.template';
+import './index.css';
 
 export default class ChoosePlayerName {
   static draw() {

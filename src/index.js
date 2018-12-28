@@ -4,16 +4,16 @@ import $ from 'jquery';
 
 import { GameState, setGameState } from './game';
 
-import Navigation from './components/navigation/navigation';
+import Navigation from './components/navigation';
 
 import './index.css';
-import ModalDialog from './components/modal-dialog/modal-dialog';
-import Home from './screens/home/home';
-import ChoosePlayerName from './screens/choosePlayerName/choosePlayerName';
-import ChooseMonsterName from './screens/chooseMonsterName/chooseMonsterName';
-import Battle from './screens/battle/battle';
-import Cast from './screens/cast/cast';
-import Sound from './components/sound/sound';
+import ModalDialog from './components/modal-dialog';
+import Home from './screens/home';
+import ChoosePlayerName from './screens/choosePlayerName';
+import ChooseMonsterName from './screens/chooseMonsterName';
+import Battle from './screens/battle';
+import Cast from './screens/cast';
+import Sound from './components/sound';
 
 import { pause } from './utils';
 

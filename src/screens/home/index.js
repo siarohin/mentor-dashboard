@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-import template from './home.template';
-import './home.css';
+import template from './index.template';
+import './index.css';
 
 export default class Home {
   static draw() {

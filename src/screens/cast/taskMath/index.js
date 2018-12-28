@@ -1,10 +1,10 @@
 import $ from 'jquery';
 import uniqueRandomArray from 'unique-random-array';
 
-import template from './taskMath.template';
-import './taskMath.css';
+import template from './index.template';
+import './index.css';
 // eslint-disable-next-line import/no-cycle
-import Battle from '../../battle/battle';
+import Battle from '../../battle';
 
 
 class taskMath {

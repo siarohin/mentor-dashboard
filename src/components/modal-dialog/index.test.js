@@ -1,4 +1,4 @@
-import ModalDialog from './modal-dialog';
+import ModalDialog from '.';
 
 
 describe('ModalDialog', () => {

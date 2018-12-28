@@ -2,13 +2,13 @@ import $ from 'jquery';
 import { Howl } from 'howler';
 
 import { pause } from '../../../utils';
-import './monsterAttack.css';
+import './index.css';
 
 const music = new Howl({
   src: ['./music/yeah-ooh.mp3'],
   sprite: {
-    ooh: [3000, 1500],
-    boom: [6000, 1500],
+    yeah: [0, 1500],
+    yep: [5000, 1000],
   },
   autoplay: false,
   loop: false,
@@ -16,7 +16,7 @@ const music = new Howl({
 });
 
 
-class MonsterAttack {
+class PlayerAttack {
   static play(sprite) {
     if (!$('.nav-sound').hasClass('sound-off')) {
       music.play(sprite);
@@ -29,28 +29,26 @@ class MonsterAttack {
 
   static init(time) {
     const playSound = async () => {
-      if (!$('.nav-sound').hasClass('sound-off')) {
-        this.play('ooh');
-        await (pause(800));
-        this.play('boom');
-      }
+      await this.play('yeah');
+      await (pause(500));
+      await (this.play('yep'));
     };
 
     const showAnimation = async () => {
       const contentEl = document.querySelector('.js-player-card');
-      if ($('.model-player_attacked').length < 1) {
+      if ($('.model-player_attack').length < 1) {
         contentEl.insertAdjacentHTML('afterbegin',
-          '<div class=\'card-body model-player_attacked\'></div>');
+          '<div class=\'card-body model-player_attack\'></div>');
       }
 
-      $('.model-monster-bird').addClass('model-monster-bird_attack');
       $('.model-player').hide();
-      $('.model-player_attacked').show();
+      $('.model-player_attack').show();
+      $('.model-monster').addClass('model-monster_attacked');
 
       await (pause(time));
       $('.model-player').show();
-      $('.model-player_attacked').hide();
-      $('.model-monster-bird').removeClass('model-monster-bird_attack');
+      $('.model-player_attack').hide();
+      $('.model-monster').removeClass('model-monster_attacked');
     };
 
     playSound();
@@ -59,4 +57,4 @@ class MonsterAttack {
 }
 
 
-export default MonsterAttack;
+export default PlayerAttack;

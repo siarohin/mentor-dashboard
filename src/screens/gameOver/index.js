@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { Howl } from 'howler';
 
-import Sound from '../../components/sound/sound';
+import Sound from '../../components/sound';
 import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
 

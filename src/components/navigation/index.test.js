@@ -1,4 +1,4 @@
-import Nav from './navigation';
+import Nav from '.';
 
 
 describe('Nav', () => {
