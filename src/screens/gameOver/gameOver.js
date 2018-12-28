@@ -53,9 +53,9 @@ class GameOver {
 
       $('.model-player').hide();
       $('.model-player_died').show();
+      $('.model-monster-bird').hide();
 
       await (pause(1000));
-      $('.model-monster-bird').hide();
       $('.model-monster').removeClass('model-monster_animation');
       $('.monster-eyes').removeClass('monster-eyes_animation');
 
@@ -77,7 +77,9 @@ class GameOver {
       $('.model-monster').hide();
       $('.model-monster_died').show();
 
-      await (pause(1000));
+      await (pause(3000));
+      $('.model-player').removeClass('model-player_wait');
+      $('.model-player').addClass('model-player_jump');
       $('.model-monster-bird').hide();
       $('.model-player').removeClass('model-player_animation');
 

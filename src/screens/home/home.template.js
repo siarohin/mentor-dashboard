@@ -7,5 +7,7 @@ export default `
   <div class="model-monster-first model-monster-first_dance"></div>
   <div class="model-monster-second model-monster-second_dance"></div>
 </div>
-  <button type="button" class="home-scene-button home-scene-button_scale btn-lg btn-success js-start-game">Start game</button>
+<div class="home-scene-button">
+  <button type="button" class="home-scene-button__button home-scene-button__button_scale btn-lg btn-success js-start-game">Start game</button>
+</div>
 `;

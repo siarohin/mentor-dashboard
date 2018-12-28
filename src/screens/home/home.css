@@ -115,13 +115,21 @@
 
 /* home-scene-button */
 .home-scene-button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
   position: absolute;
-  top: 30%;
-  left: 50%;
+  width: 1024px;
+  top: 50%;
+}
+
+/* home-scene-button__button */
+.home-scene-button__button {
   cursor: pointer;
 }
 
-/* home-scene-button_scale */
+/* home-scene-button__button_scale */
 @keyframes button_scale {
   0% {
     -webkit-transform: scale(0.8);
@@ -137,7 +145,7 @@
   }
 }
 
-.home-scene-button_scale {
+.home-scene-button__button_scale {
   -moz-animation: button_scale 1s ease-in-out infinite alternate;
   -o-animation: button_scale 1s ease-in-out infinite alternate;
   -webkit-animation: button_scale 1s ease-in-out infinite alternate;
