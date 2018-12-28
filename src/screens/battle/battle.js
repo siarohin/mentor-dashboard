@@ -6,7 +6,7 @@ import { pause } from '../../utils';
 
 // eslint-disable-next-line import/no-cycle
 import Cast from '../cast/cast';
-import GameOver from '../gameOver/gameOver';
+import GameOver from '../gameOver';
 import PlayerAttack from './playerAttack/playerAttack';
 import MonsterAttack from './monsterAttack/monsterAttack';
 
@@ -66,12 +66,12 @@ class Battle {
   }
 
   static gameOver() {
-    const dieInit = async () => {
+    const gameover = async () => {
       $('.model-monster-pregenerate').removeClass('model-monster-pregenerate_bombed');
       await (pause(1000));
       GameOver.init(window.gameState);
     };
-    dieInit();
+    gameover();
   }
 
   static playScene(taskName) {
