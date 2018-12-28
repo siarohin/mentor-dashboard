@@ -74,10 +74,12 @@ class GameOver {
           '<div class=\'card-body model-monster_died\'></div>');
       }
 
+      $('.model-monster-pregenerate').addClass('model-monster-pregenerate_bombed');
+      await (pause(2000));
       $('.model-monster').hide();
       $('.model-monster_died').show();
 
-      await (pause(3000));
+      await (pause(2000));
       $('.model-player').removeClass('model-player_wait');
       $('.model-player').addClass('model-player_jump');
       $('.model-monster-bird').hide();

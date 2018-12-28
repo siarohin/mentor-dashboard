@@ -25,7 +25,7 @@ export default `
     <div class="progress">
       <div class="monster-health progress-bar bg-danger" role="progressbar"></div>
     </div>
-    <div class="monster-pregenerate"></div>
+    <div class="model-monster-pregenerate"></div>
     <div id="monster">
       <div class="monster-card">
 

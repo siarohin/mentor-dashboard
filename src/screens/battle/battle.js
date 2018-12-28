@@ -21,6 +21,7 @@ class Battle {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 
+    $('.model-monster-pregenerate').addClass('model-monster-pregenerate_bombed');
     $('.model-player').removeClass('model-player_jump');
     $('.model-player').addClass('model-player_wait');
 
@@ -66,6 +67,7 @@ class Battle {
 
   static gameOver() {
     const dieInit = async () => {
+      $('.model-monster-pregenerate').removeClass('model-monster-pregenerate_bombed');
       await (pause(1000));
       GameOver.init(window.gameState);
     };
