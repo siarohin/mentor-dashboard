@@ -1,10 +1,12 @@
+/* eslint-disable import/no-cycle */
 import $ from 'jquery';
 import { Howl } from 'howler';
-
-import { pause, generatorNames } from '../../utils';
+import { pause } from '../../utils';
 import Sound from '../../components/sound';
 import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
+import Cast from '../cast';
+import Battle from '../battle';
 
 
 const music = new Howl({
@@ -18,26 +20,19 @@ const music = new Howl({
   volume: 0.5,
 });
 
-
-const generateNewMonster = async () => {
-  $('.monster-name').empty();
-
-  const monsterName = await generatorNames();
-  window.gameState.monsterName = monsterName;
-
-  await pause(2000);
-  await $('.monster-name').text(monsterName);
-};
-
 const monsterWinAnimation = async () => {
   await MonsterWin.init();
-  await (pause(3000));
+  await pause(3000);
 };
 
 const playerWinAnimation = async () => {
   await PlayerWin.init();
-  await (pause(3000));
-  await generateNewMonster();
+
+  await pause(3000);
+  await Battle.init();
+
+  await pause(2000);
+  await Cast.init();
 };
 
 export default class GameOver {

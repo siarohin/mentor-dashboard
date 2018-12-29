@@ -1,14 +1,13 @@
+/* eslint-disable import/no-cycle */
 import $ from 'jquery';
-
 import template from './index.template';
 import './index.css';
 import { pause } from '../../utils';
-
-// eslint-disable-next-line import/no-cycle
 import Cast from '../cast';
 import GameOver from '../gameOver';
 import PlayerAttack from './playerAttack';
 import MonsterAttack from './monsterAttack';
+import { GenerateMonster, GenerateMonsterName } from '../generateMonster';
 
 
 const castInit = async () => {
@@ -17,23 +16,24 @@ const castInit = async () => {
 };
 
 const gameOverInit = async () => {
-  await (pause(1000));
+  await pause(1000);
   GameOver.init();
 };
 
-
 export default class Battle {
   static init() {
-    this.draw();
-    this.update();
+    const initScene = async () => {
+      await this.draw();
+      await GenerateMonsterName.init();
+      await GenerateMonster.init();
+      await this.update();
+    };
+    initScene();
   }
 
   static draw() {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
-
-    $('.model-monster-pregenerate')
-      .addClass('model-monster-pregenerate_bombed');
 
     $('.model-player').removeClass('model-player_jump');
     $('.model-player').addClass('model-player_wait');
@@ -55,11 +55,12 @@ export default class Battle {
   }
 
   static updateState() {
-    (async () => {
+    const updateHealth = async () => {
       await (pause(2000));
       this.update();
       this.ifGameContinue();
-    })();
+    };
+    updateHealth();
   }
 
   static ifGameContinue() {

@@ -91,10 +91,10 @@ class taskMath {
   static updateState() {
     // if true -> playerAttack, if false -> monsterAttack
     if (this.checkResult()) {
-      window.gameState.monsterHealth -= 100;
+      window.gameState.monsterHealth -= 20;
       Battle.playerAttack(3000);
     } else {
-      window.gameState.playerHealth -= 100;
+      window.gameState.playerHealth -= 20;
       Battle.monsterAttack(3000);
     }
   }

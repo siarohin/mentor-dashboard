@@ -6,7 +6,7 @@ import template from './index.template';
 import taskMath from './taskMath';
 import { pause } from '../../utils';
 
-class Cast {
+export default class Cast {
   static init() {
     this.draw();
     this.initCast();
@@ -62,5 +62,3 @@ class Cast {
     });
   }
 }
-
-export default Cast;
