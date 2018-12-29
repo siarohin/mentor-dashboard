@@ -3,7 +3,7 @@ import { pause } from '../../../utils';
 
 import './index.css';
 
-class MonsterWin {
+export default class MonsterWin {
   static init() {
     this.draw();
   }
@@ -23,13 +23,8 @@ class MonsterWin {
       await (pause(2000));
       $('.model-monster').removeClass('model-monster_animation');
       $('.monster-eyes').removeClass('monster-eyes_animation');
-
-      await (pause(3000));
-      console.log('We gonna do something');
     };
 
     showAnimation();
   }
 }
-
-export default MonsterWin;

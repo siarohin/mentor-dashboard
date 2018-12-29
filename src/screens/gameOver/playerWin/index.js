@@ -2,7 +2,7 @@ import $ from 'jquery';
 import { pause } from '../../../utils';
 
 
-class PlayerWin {
+export default class PlayerWin {
   static init() {
     this.draw();
   }
@@ -35,5 +35,3 @@ class PlayerWin {
     showAnimation();
   }
 }
-
-export default PlayerWin;

@@ -1,9 +1,13 @@
 import $ from 'jquery';
 import { Howl } from 'howler';
 
+import { pause } from '../../utils';
 import Sound from '../../components/sound';
 import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
+
+import { generatorNames } from '../chooseMonsterName';
+
 
 const music = new Howl({
   src: ['./music/game-win-over.mp3'],
@@ -17,7 +21,31 @@ const music = new Howl({
 });
 
 
-class GameOver {
+const generateNewMonster = async () => {
+  $('.monster-name').empty();
+
+  window.gameState.monsterName = await generatorNames();
+
+  const name = window.gameState.monsterName;
+
+  await console.log(window.gameState.monsterName);
+
+  await pause(2000);
+  await $('.monster-name').text(name);
+};
+
+const monsterWinAnimation = async () => {
+  await MonsterWin.init();
+  await (pause(3000));
+};
+
+const playerWinAnimation = async () => {
+  await PlayerWin.init();
+  await (pause(3000));
+  await generateNewMonster();
+};
+
+export default class GameOver {
   static init() {
     this.gameOver(window.gameState);
   }
@@ -35,21 +63,11 @@ class GameOver {
   static gameOver() {
     if (window.gameState.monsterHealth === 0) {
       this.play('player_win');
-      this.playerWin();
+      playerWinAnimation();
     } else {
       Sound.stop();
       this.play('monster_win');
-      this.monsterWin();
+      monsterWinAnimation();
     }
   }
-
-  static monsterWin() {
-    MonsterWin.init();
-  }
-
-  static playerWin() {
-    PlayerWin.init();
-  }
 }
-
-export default GameOver;
