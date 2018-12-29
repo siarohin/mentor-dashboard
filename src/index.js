@@ -41,7 +41,6 @@ const getBattleResult = async (gameState) => {
   await Cast.init();
 };
 
-
 const startApp = () => {
   const gameState = new GameState();
   window.gameState = gameState;
@@ -56,12 +55,6 @@ const startApp = () => {
     Sound.play('second');
     await getBattleResult(gameState);
   });
-
-  // $('.js-choose-player-name-nav').on('click', async (e) => {
-  //   e.preventDefault();
-
-  //   await setPlayerName(gameState);
-  // });
 };
 
 startApp();

@@ -17,8 +17,8 @@ const music = new Howl({
 
 
 class GameOver {
-  static init(gameState) {
-    this.gameOver(gameState);
+  static init() {
+    this.gameOver(window.gameState);
   }
 
   static play(sprite) {
@@ -31,8 +31,8 @@ class GameOver {
     music.stop();
   }
 
-  static gameOver(gameState) {
-    if (gameState.monsterHealth === 0) {
+  static gameOver() {
+    if (window.gameState.monsterHealth === 0) {
       Sound.stop();
       this.playerWin();
     } else {

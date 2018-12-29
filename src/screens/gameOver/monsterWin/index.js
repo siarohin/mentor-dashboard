@@ -5,6 +5,10 @@ import './index.css';
 
 class MonsterWin {
   static init() {
+    this.draw();
+  }
+
+  static draw() {
     const showAnimation = async () => {
       const contentEl = document.querySelector('.js-player-card');
       if ($('.model-player_died').length < 1) {

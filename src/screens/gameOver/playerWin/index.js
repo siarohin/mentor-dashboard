@@ -1,8 +1,13 @@
 import $ from 'jquery';
 import { pause } from '../../../utils';
 
+
 class PlayerWin {
   static init() {
+    this.draw();
+  }
+
+  static draw() {
     const showAnimation = async () => {
       $('.model-monster-pregenerate').addClass('model-monster-pregenerate_bombed');
 
@@ -25,8 +30,8 @@ class PlayerWin {
 
       await (pause(3000));
       $('.model-player').removeClass('model-player_jump');
-      console.log('We gonna do something');
     };
+
     showAnimation();
   }
 }

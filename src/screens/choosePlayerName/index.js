@@ -18,14 +18,14 @@ export default class ChoosePlayerName {
   }
 
   static getNewPlayerName() {
-    ChoosePlayerName.draw();
+    this.draw();
     return new Promise((resolve) => {
       $('#choosePlayerName .js-form').on('submit', (e) => {
         e.preventDefault();
 
         const playerName = $('#choosePlayerName .js-player-name').val();
 
-        ChoosePlayerName.empty();
+        this.empty();
 
         resolve(playerName);
       });

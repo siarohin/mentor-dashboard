@@ -88,12 +88,28 @@ class taskMath {
     $('#spels').modal('hide');
   }
 
+  static updateState() {
+    // if true -> playerAttack, if false -> monsterAttack
+    if (this.checkResult()) {
+      window.gameState.monsterHealth -= 100;
+      Battle.playerAttack(3000);
+    } else {
+      window.gameState.playerHealth -= 100;
+      Battle.monsterAttack(3000);
+    }
+  }
+
+  static play() {
+    this.updateState();
+    Battle.updateState();
+  }
+
   static closeTask() {
     $('.input-group').on('click keypress', (e) => {
       if ((e.key === 'Enter' && e.type === 'keypress')
       || (e.target.type === 'button' && e.type === 'click')) {
         this.modalHide();
-        Battle.playScene(this);
+        this.play();
       }
     });
   }

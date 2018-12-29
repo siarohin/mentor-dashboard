@@ -49,7 +49,7 @@ class Cast {
 
   static getPlayerCast() {
     const getTask = async (task) => {
-      await (pause(500));
+      await pause(500);
       task.init();
       this.modalShow();
     };
