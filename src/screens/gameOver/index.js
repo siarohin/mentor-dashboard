@@ -7,6 +7,7 @@ import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
 import Cast from '../cast';
 import Battle from '../battle';
+import Score from '../score';
 
 
 const music = new Howl({
@@ -23,9 +24,11 @@ const music = new Howl({
 const monsterWinAnimation = async () => {
   await MonsterWin.init();
   await pause(3000);
+  await Score.init();
 };
 
 const playerWinAnimation = async () => {
+  window.gameState.playerScore += 100;
   await PlayerWin.init();
 
   await pause(3000);

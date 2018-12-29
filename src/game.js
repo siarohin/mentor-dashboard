@@ -2,7 +2,7 @@ export class GameState {
   constructor() {
     this.playerName = '';
     this.playerHealth = '';
-    this.monsterHealth = '';
+    this.playerScore = 0;
   }
 
   setPlayer(name = '', playerHealth = 100) {
@@ -10,9 +10,8 @@ export class GameState {
     this.playerHealth = playerHealth;
   }
 
-  setMonster(name = '', monsterHealth = 100) {
-    this.monsterName = name;
-    this.monsterHealth = monsterHealth;
+  getScore(score = 0) {
+    this.playerScore = score;
   }
 }
 
