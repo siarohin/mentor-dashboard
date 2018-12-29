@@ -1,12 +1,10 @@
 import $ from 'jquery';
 import { Howl } from 'howler';
 
-import { pause } from '../../utils';
+import { pause, generatorNames } from '../../utils';
 import Sound from '../../components/sound';
 import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
-
-import { generatorNames } from '../chooseMonsterName';
 
 
 const music = new Howl({
@@ -24,14 +22,11 @@ const music = new Howl({
 const generateNewMonster = async () => {
   $('.monster-name').empty();
 
-  window.gameState.monsterName = await generatorNames();
-
-  const name = window.gameState.monsterName;
-
-  await console.log(window.gameState.monsterName);
+  const monsterName = await generatorNames();
+  window.gameState.monsterName = monsterName;
 
   await pause(2000);
-  await $('.monster-name').text(name);
+  await $('.monster-name').text(monsterName);
 };
 
 const monsterWinAnimation = async () => {

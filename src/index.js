@@ -10,12 +10,11 @@ import './index.css';
 import ModalDialog from './components/modal-dialog';
 import Home from './screens/home';
 import ChoosePlayerName from './screens/choosePlayerName';
-import ChooseMonsterName from './screens/chooseMonsterName';
 import Battle from './screens/battle';
 import Cast from './screens/cast';
 import Sound from './components/sound';
 
-import { pause } from './utils';
+import { pause, generatorNames } from './utils';
 
 
 const setPlayerName = async (gameState) => {
@@ -25,7 +24,7 @@ const setPlayerName = async (gameState) => {
 };
 
 const setMonsterName = async (gameState) => {
-  const monsterName = await ChooseMonsterName.getNewMonsterName();
+  const monsterName = await generatorNames();
   gameState.setMonster(monsterName);
   Navigation.update(gameState);
 };
