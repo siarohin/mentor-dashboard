@@ -6,9 +6,10 @@ import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';
 
 const music = new Howl({
-  src: ['./music/game-over.mp3'],
+  src: ['./music/game-win-over.mp3'],
   sprite: {
-    gameover: [0, 7000],
+    player_win: [0, 3500],
+    monster_win: [4000, 7000],
   },
   autoplay: false,
   loop: false,
@@ -33,11 +34,11 @@ class GameOver {
 
   static gameOver() {
     if (window.gameState.monsterHealth === 0) {
-      Sound.stop();
+      this.play('player_win');
       this.playerWin();
     } else {
       Sound.stop();
-      this.play('gameover');
+      this.play('monster_win');
       this.monsterWin();
     }
   }

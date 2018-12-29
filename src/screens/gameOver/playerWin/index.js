@@ -28,7 +28,7 @@ class PlayerWin {
       $('.model-player').addClass('model-player_jump');
       $('.model-player').removeClass('model-player_animation');
 
-      await (pause(3000));
+      await (pause(2000));
       $('.model-player').removeClass('model-player_jump');
     };
 
