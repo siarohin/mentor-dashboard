@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import 'regenerator-runtime/runtime';
 import 'bootstrap';
 import $ from 'jquery';
@@ -43,3 +44,5 @@ const startApp = () => {
 };
 
 startApp();
+
+export default startApp;

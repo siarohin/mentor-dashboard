@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import template from './index.template';
 import './index.css';
+// eslint-disable-next-line import/no-cycle
+import startApp from '../../index';
 
 let playerScore = null;
 
@@ -13,6 +15,14 @@ const initPlayScore = () => {
   }
 };
 
+const playAgain = async () => {
+  await $('#content').empty();
+  await $('.navbar').remove();
+  await $('.modal-backdrop').remove();
+  await $('#spels').remove();
+  await startApp();
+};
+
 
 export default class Score {
   static init() {
@@ -22,6 +32,7 @@ export default class Score {
       await this.draw();
       await this.getResult();
       await this.modalShow();
+      await this.startGame();
     };
     initScore();
   }
@@ -80,5 +91,12 @@ export default class Score {
       </li>`;
 
     contentEl.innerHTML += scoreList;
+  }
+
+  static startGame() {
+    $('.score-footer__button').on('click', (e) => {
+      e.preventDefault();
+      playAgain();
+    });
   }
 }
