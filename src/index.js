@@ -43,6 +43,9 @@ const startApp = () => {
   });
 };
 
-startApp();
+window.onload = () => {
+  startApp();
+};
+
 
 export default startApp;

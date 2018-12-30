@@ -1,7 +1,7 @@
 import { Howl } from 'howler';
 
 
-const music = new Howl({
+export const music = new Howl({
   src: ['./music/intro.mp3'],
   sprite: {
     first: [0, 3900],
@@ -11,6 +11,7 @@ const music = new Howl({
   loop: true,
   volume: 0.5,
 });
+
 
 export default class Sound {
   static init() {
