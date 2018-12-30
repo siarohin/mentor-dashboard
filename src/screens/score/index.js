@@ -1,3 +1,7 @@
+import $ from 'jquery';
+import template from './index.template';
+import './index.css';
+
 let playerScore = null;
 
 const initPlayScore = () => {
@@ -15,8 +19,32 @@ export default class Score {
     const initScore = async () => {
       await initPlayScore();
       await this.setStorage();
+      await this.draw();
+      await this.getResult();
+      await this.modalShow();
     };
     initScore();
+  }
+
+  static draw() {
+    const contentEl = document.querySelector('#spels .modal-body');
+    contentEl.innerHTML = template;
+
+    const title = document.querySelector('.modal-title');
+    title.innerHTML = 'TOP 5 Results';
+
+    $('#spels').modal({
+      keyboard: false,
+      backdrop: 'static',
+    });
+  }
+
+  static modalShow() {
+    $('#spels').modal('show');
+  }
+
+  static modalHide() {
+    $('#spels').modal('hide');
   }
 
   static setStorage() {
@@ -31,5 +59,26 @@ export default class Score {
     } else {
       localStorage.setItem('bhRODHhb5u2W', JSON.stringify([playerScore]));
     }
+  }
+
+  static getResult() {
+    const score = JSON.parse(localStorage.getItem('bhRODHhb5u2W'));
+    score.forEach(item => this.createScore(item));
+  }
+
+  static createScore(item) {
+    const contentEl = document.querySelector('.js-score');
+
+    const scoreList = `
+      <li class='list-group-item d-flex justify-content-between align-items-center js-score__name'>
+        ${item.name}
+
+        <span class='badge badge-primary badge-pill bg-success js-score__value'>
+          ${item.result}
+        </span>
+
+      </li>`;
+
+    contentEl.innerHTML += scoreList;
   }
 }
