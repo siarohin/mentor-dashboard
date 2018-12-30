@@ -23,7 +23,7 @@ const music = new Howl({
 
 const monsterWinAnimation = async () => {
   await MonsterWin.init();
-  await pause(3000);
+  await pause(2000);
   await Score.init();
 };
 

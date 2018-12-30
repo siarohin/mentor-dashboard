@@ -70,10 +70,10 @@ export default class Score {
     const contentEl = document.querySelector('.js-score');
 
     const scoreList = `
-      <li class='list-group-item d-flex justify-content-between align-items-center js-score__name'>
+      <li class='list-group-item d-flex justify-content-between align-items-center'>
         ${item.name}
 
-        <span class='badge badge-primary badge-pill bg-success js-score__value'>
+        <span class='badge badge-primary badge-pill bg-success'>
           ${item.result}
         </span>
 
