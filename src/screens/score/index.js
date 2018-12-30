@@ -1,7 +1,7 @@
+/* eslint-disable import/no-cycle */
 import $ from 'jquery';
 import template from './index.template';
 import './index.css';
-// eslint-disable-next-line import/no-cycle
 import startApp from '../../index';
 import { music } from '../gameOver/index';
 
@@ -16,13 +16,13 @@ const initPlayScore = () => {
   }
 };
 
-const playAgain = async () => {
-  await music.stop();
-  await $('#content').empty();
-  await $('.navbar').remove();
-  await $('.modal-backdrop').remove();
-  await $('#spels').remove();
-  await startApp();
+const playAgain = () => {
+  music.stop();
+  $('#content').empty();
+  $('.navbar').remove();
+  $('.modal-backdrop').remove();
+  $('#spels').remove();
+  startApp();
 };
 
 
