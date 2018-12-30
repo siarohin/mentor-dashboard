@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
 import $ from 'jquery';
 import { Howl } from 'howler';
-import { pause } from '../../utils';
+import { pause } from '../../utils/utils';
 import Sound from '../../components/sound';
 import PlayerWin from './playerWin';
 import MonsterWin from './monsterWin';

@@ -2,7 +2,7 @@
 import $ from 'jquery';
 import template from './index.template';
 import './index.css';
-import { pause } from '../../utils';
+import { pause } from '../../utils/utils';
 import Cast from '../cast';
 import GameOver from '../gameOver';
 import PlayerAttack from './playerAttack';

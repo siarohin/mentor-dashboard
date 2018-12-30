@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { pause } from '../../../utils';
+import { pause } from '../../../utils/utils';
 
 
 export default class PlayerWin {

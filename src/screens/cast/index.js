@@ -4,7 +4,7 @@ import template from './index.template';
 
 // eslint-disable-next-line import/no-cycle
 import taskMath from './taskMath';
-import { pause } from '../../utils';
+import { pause } from '../../utils/utils';
 
 export default class Cast {
   static init() {

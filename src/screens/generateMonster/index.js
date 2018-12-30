@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { generatorMonsters, generatorNames } from '../../utils';
+import { generatorMonsters, generatorNames } from '../../utils/utils';
 import template from './index.template';
 import Navigation from '../../components/navigation';
 

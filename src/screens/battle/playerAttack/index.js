@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { Howl } from 'howler';
 
-import { pause } from '../../../utils';
+import { pause } from '../../../utils/utils';
 import './index.css';
 
 const music = new Howl({

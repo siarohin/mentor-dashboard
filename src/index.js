@@ -2,7 +2,7 @@
 import 'regenerator-runtime/runtime';
 import 'bootstrap';
 import $ from 'jquery';
-import { GameState, setGameState } from './game';
+import { GameState, setGameState } from './utils/game';
 import Navigation from './components/navigation';
 import './index.css';
 import ModalDialog from './components/modal-dialog';
@@ -11,7 +11,7 @@ import ChoosePlayerName from './screens/choosePlayerName';
 import Battle from './screens/battle';
 import Cast from './screens/cast';
 import Sound from './components/sound';
-import { pause } from './utils';
+import { pause } from './utils/utils';
 
 
 const setPlayerName = async (gameState) => {
