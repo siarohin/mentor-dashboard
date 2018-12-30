@@ -3,6 +3,7 @@ import template from './index.template';
 import './index.css';
 // eslint-disable-next-line import/no-cycle
 import startApp from '../../index';
+import { music } from '../gameOver/index';
 
 let playerScore = null;
 
@@ -16,6 +17,7 @@ const initPlayScore = () => {
 };
 
 const playAgain = async () => {
+  await music.stop();
   await $('#content').empty();
   await $('.navbar').remove();
   await $('.modal-backdrop').remove();

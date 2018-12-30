@@ -10,7 +10,7 @@ import Battle from '../battle';
 import Score from '../score';
 
 
-const music = new Howl({
+export const music = new Howl({
   src: ['./music/game-win-over.mp3'],
   sprite: {
     player_win: [0, 3500],
@@ -23,7 +23,7 @@ const music = new Howl({
 
 const monsterWinAnimation = async () => {
   await MonsterWin.init();
-  await pause(2000);
+  await pause(1000);
   await Score.init();
 };
 
