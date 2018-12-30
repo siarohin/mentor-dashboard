@@ -49,7 +49,7 @@
 .monster-eyes,
 .monster-hair,
 .monster-mouth {
-  background-image: url('/src/assets/images/ping_monster.png');
+  background-image: url('../../images/ping_monster.png');
 }
 
 .monster-eyes,
@@ -195,7 +195,7 @@
 .model-monster-bird__fly {
   width: 120px;
   height: 120px;
-  background: url('/src/assets/images/fly-monster.png') 0 0;
+  background: url('../../images/fly-monster.png') 0 0;
   -webkit-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
   -moz-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
   -o-animation: monster-bird-fly 0.7s 1s steps(4) infinite;
@@ -206,7 +206,7 @@
 .battle-scene {
   display: flex;
   flex-flow: row nowrap;
-  background-image: url('/src/assets/images/vectorcity.png');
+  background-image: url('../../images/vectorcity.png');
   width: 1024px;
   height: 512px;
   align-items: flex-end;
@@ -315,7 +315,7 @@
 }
 
 .model-monster-pregenerate_bombed {
-  background-image: url('/src/assets/images/bombed_sprites.png');
+  background-image: url('../../images/bombed_sprites.png');
   -webkit-animation: monster-pregenerate_bombed 0.7s steps(7);
   -moz-animation: monster-pregenerate_bombed 0.7s steps(7);
   -o-animation: monster-pregenerate_bombed 0.7s steps(7);

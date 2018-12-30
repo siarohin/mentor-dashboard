@@ -6,9 +6,9 @@
   width: 24px;
   height: 24px;
   margin: 5px 15px;
-  background: url('./images/icon-sound.png') no-repeat -24px 0;
+  background: url('../../images/icon-sound.png') no-repeat -24px 0;
 }
 
 .sound-off {
-  background: url('./images/icon-sound.png') no-repeat 0 0;
+  background: url('../../images/icon-sound.png') no-repeat 0 0;
 }

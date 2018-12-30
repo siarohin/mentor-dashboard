@@ -17,7 +17,7 @@
 }
 
 .model-player_run {
-  background: url('/src/assets/images/player.png') 0 -256px;
+  background: url('../../images/player.png') 0 -256px;
   -webkit-animation: player_run 0.7s steps(4) infinite;
   -moz-animation: player_run 0.7s steps(4) infinite;
   -o-animation: player_run 0.7s steps(4) infinite;

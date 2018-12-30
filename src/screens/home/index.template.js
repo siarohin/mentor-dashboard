@@ -1,6 +1,6 @@
 export default `
 <header class="page-header">
-  <img class="logo" src="./images/logo.png" alt="The Monster city">
+  <img class="logo" src="../../images/logo.png" alt="The Monster city">
 </header>
 <div class="home-scene">
   <div class="model-player"></div>

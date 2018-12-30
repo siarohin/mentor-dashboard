@@ -2,7 +2,7 @@
 .model-monster-first {
   width: 256px;
   height: 256px;
-  background: url('/src/assets/images/monster.png') 0 -256px;
+  background: url('../../images/monster.png') 0 -256px;
   margin: 0 0 -90px 0;
   -moz-transform: scale(0.5);
   -webkit-transform: scale(0.5);
@@ -41,7 +41,7 @@
   height: 256px;
   margin: 0 0 140px 0;
   z-index: -1;
-  background: url('/src/assets/images/monster.png') 0 0;
+  background: url('../../images/monster.png') 0 0;
 }
 
 /* model-monster-second_dance */
@@ -73,7 +73,7 @@
 .model-player {
   width: 256px;
   height: 256px;
-  background: url('/src/assets/images/player.png') 0 0;
+  background: url('../../images/player.png') 0 0;
   margin: -20px auto;
 }
 
@@ -106,7 +106,7 @@
 .home-scene {
   display: flex;
   flex-flow: row nowrap;
-  background-image: url('/src/assets/images/vectorcity.png');
+  background-image: url('../../images/vectorcity.png');
   width: 1024px;
   height: 512px;
   align-items: flex-end;
