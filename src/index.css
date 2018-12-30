@@ -14,3 +14,11 @@
     padding: 5rem 0 0 0;
     position: relative;
 }
+
+/* footer */
+.page__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
