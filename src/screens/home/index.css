@@ -152,13 +152,14 @@
   animation: button_scale 1s ease-in-out infinite alternate;
 }
 
-/* logo */
-.logo {
+/* page-header__logo */
+.page-header__logo {
+  width: 320px;
+  height: 119px;
+  background: url('../../images/logo.png') 0 0;
+}
+
+/* logo_top-left */
+.logo_top-left {
   position: absolute;
-  top: 0;
-  left: -200px;
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
-  -o-transform: scale(0.4);
-  transform: scale(0.4);
 }
