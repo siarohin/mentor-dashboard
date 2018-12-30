@@ -1,6 +1,8 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 
@@ -33,13 +35,24 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
+    new HtmlWebpackPlugin({
+      template: `${__dirname}/src/index.html`,
+      filename: 'index.html',
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/music/',
+        to: './music/',
+        toType: 'dir',
+      },
+    ]),
   ],
   module: {
     rules: [
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
-          'file-loader',
+          `file-loader?name=${('images/[name].[ext]')}`,
           {
             loader: 'image-webpack-loader',
             options: {
@@ -48,7 +61,7 @@ module.exports = {
                 quality: 65,
               },
               optipng: {
-                enabled: true,
+                enabled: false,
               },
               pngquant: {
                 quality: '65-90',
@@ -85,6 +98,11 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'html-loader',
+          options: {
+            minimize: false,
+            removeComments: true,
+            collapseWhitespace: false,
+          },
         },
       },
     ],
