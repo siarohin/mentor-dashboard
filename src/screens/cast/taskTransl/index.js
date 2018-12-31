@@ -39,14 +39,19 @@ export default class taskTransl {
     const randomTask = uniqueRandomArray(dataSource)();
     const getWord = randomTask.word;
     const getTranslation = randomTask.translation;
+    const getImage = randomTask.image;
 
     this.answer = getTranslation;
-    this.generateTranslTask(getWord);
+    this.generateTranslTask(getWord, getImage);
   }
 
-  static generateTranslTask(getWord) {
+  static generateTranslTask(getWord, getImage) {
     const vocabularyKey = document.querySelector('.vocabulary-key');
     vocabularyKey.textContent = getWord;
+
+    const vocabularryImg = document.querySelector('.vocabulary-img');
+    $(vocabularryImg).css('background',
+      `url('../../../images/vocabulary-img-task.png') ${getImage}`);
   }
 
   static checkResult() {

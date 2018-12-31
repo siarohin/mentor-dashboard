@@ -2,6 +2,7 @@ export default `
 <section id="taskTransl">
     <div class="alert alert-warning task-body" role="alert">
       <div class="vocabulary-key"></div>
+      <div class="vocabulary-img"></div>
     </div>
 
     <div class="input-group">

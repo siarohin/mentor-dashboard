@@ -10,3 +10,11 @@
   margin: 10px;
 }
 
+.vocabulary-img {
+  position: absolute;
+  right: 1.5rem;
+  top: -1rem;
+  width: 80px;
+  height: 80px;
+}
+
