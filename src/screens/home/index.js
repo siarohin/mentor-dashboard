@@ -22,10 +22,10 @@ modelBombedSprites.src = '../../images/bombed_sprites.png';
 export default class Home {
   static init() {
     this.draw();
-    this.readyScene();
+    this.loadSource();
   }
 
-  static readyScene() {
+  static loadSource() {
     $(modelPlayer,
       modelMonster,
       modelBackground,
@@ -33,7 +33,7 @@ export default class Home {
       modelFlyMonster,
       modelBombedSprites)
       .imagesLoaded().always(() => {
-        this.drawButton();
+        this.drawButtonStart();
       });
   }
 
@@ -45,7 +45,7 @@ export default class Home {
     $('.model-player').addClass('model-player_jump');
   }
 
-  static drawButton() {
+  static drawButtonStart() {
     $('.home-scene-button').show();
   }
 }
