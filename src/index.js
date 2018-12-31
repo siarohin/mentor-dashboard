@@ -44,6 +44,7 @@ const startApp = () => {
 };
 
 window.onload = () => {
+  $('.preload').remove();
   startApp();
 };
 

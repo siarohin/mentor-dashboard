@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 100vh;
 }
 
 /* main-template */
@@ -21,4 +22,27 @@
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 1rem;
+}
+
+/* preload */
+.preload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* preload__spiner */
+@keyframes spiner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.preload__spiner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spiner 2s linear infinite;
 }
