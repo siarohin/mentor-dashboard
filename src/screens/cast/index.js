@@ -1,9 +1,10 @@
+/* eslint-disable import/no-cycle */
 import $ from 'jquery';
 
 import template from './index.template';
 
-// eslint-disable-next-line import/no-cycle
 import taskMath from './taskMath';
+import taskTransl from './taskTransl';
 import { pause } from '../../utils/utils';
 
 export default class Cast {
@@ -58,6 +59,10 @@ export default class Cast {
       if (e.target.id === 'taskMath') {
         this.modalHide();
         getTask(taskMath);
+      }
+      if (e.target.id === 'taskTransl') {
+        this.modalHide();
+        getTask(taskTransl);
       }
     });
   }

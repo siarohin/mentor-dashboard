@@ -1,0 +1,12 @@
+.task-body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 1.5rem;
+}
+
+.task-body > div {
+  margin: 10px;
+}
+
