@@ -5,9 +5,9 @@ export default `
     </div>
 
     <div class="input-group">
-    <input type="text" class="form-control input-answer" placeholder="Your answer" aria-label="Your answer">
+    <input type="text" class="form-control input-answer" placeholder="Твой ответ">
     <div class="input-group-append">
-      <button class="btn btn-outline-secondary btn-answer" type="button">Submit</button>
+      <button class="btn btn-outline-secondary btn-answer" type="button">Проверить</button>
     </div>
   </div>
 </section>

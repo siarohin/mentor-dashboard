@@ -15,8 +15,8 @@ export default class Cast {
   }
 
   static initCast() {
-    $('#taskMath').text('Mathematics');
-    $('#taskTransl').text('Translate');
+    $('#taskMath').text('Математика');
+    $('#taskTransl').text('Перевод слов');
     $('#taskCompare').text('Compare');
     $('#taskWriting').text('Writing');
     $('#taskListen').text('Listening');
@@ -28,7 +28,7 @@ export default class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Like, what\'s your best power?';
+    title.innerHTML = 'Выбери заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.';
 
     $('#spels').modal({
       keyboard: false,

@@ -44,7 +44,7 @@ export default class Score {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'TOP 5 Results';
+    title.innerHTML = '5 лучших результатов';
 
     $('#spels').modal({
       keyboard: false,

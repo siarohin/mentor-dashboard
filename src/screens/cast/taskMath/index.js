@@ -24,7 +24,7 @@ export default class taskMath {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'I have a simple mathematics task for you:';
+    title.innerHTML = 'Посчитай, сколько получится:';
 
     $('#spels').modal({
       keyboard: false,
