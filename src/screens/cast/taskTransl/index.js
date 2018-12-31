@@ -50,8 +50,7 @@ export default class taskTransl {
     vocabularyKey.textContent = getWord;
 
     const vocabularryImg = document.querySelector('.vocabulary-img');
-    $(vocabularryImg).css('background',
-      `url('../../../images/vocabulary-img-task.png') ${getImage}`);
+    $(vocabularryImg).css('background-position', ` ${getImage}`);
   }
 
   static checkResult() {
@@ -80,10 +79,10 @@ export default class taskTransl {
   static updateState() {
     // if true -> playerAttack, if false -> monsterAttack
     if (this.checkResult()) {
-      window.gameState.monsterHealth -= 100;
+      window.gameState.monsterHealth -= 20;
       Battle.playerAttack(3000);
     } else {
-      window.gameState.playerHealth -= 100;
+      window.gameState.playerHealth -= 20;
       Battle.monsterAttack(3000);
     }
   }
