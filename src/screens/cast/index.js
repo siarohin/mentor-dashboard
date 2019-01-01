@@ -5,6 +5,7 @@ import template from './index.template';
 
 import taskMath from './taskMath';
 import taskTransl from './taskTransl';
+import taskLogic from './taskLogic';
 import { pause } from '../../utils/utils';
 
 export default class Cast {
@@ -15,9 +16,9 @@ export default class Cast {
   }
 
   static initCast() {
-    $('#taskMath').text('Математика');
-    $('#taskTransl').text('Перевод слов');
-    $('#taskCompare').text('Compare');
+    $('#taskMath').text('Посчитать');
+    $('#taskTransl').text('Перевести слово');
+    $('#taskLogic').text('Найти лишнее');
     $('#taskWriting').text('Writing');
     $('#taskListen').text('Listening');
     $('#taskSpeaking').text('Speaking');
@@ -63,6 +64,10 @@ export default class Cast {
       if (e.target.id === 'taskTransl') {
         this.modalHide();
         getTask(taskTransl);
+      }
+      if (e.target.id === 'taskLogic') {
+        this.modalHide();
+        getTask(taskLogic);
       }
     });
   }
