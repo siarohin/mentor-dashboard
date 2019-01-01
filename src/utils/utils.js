@@ -1,9 +1,9 @@
 import uniqueRandomArray from 'unique-random-array';
 
 const monsterNames = {
-  character: ['The stupid', 'The horrible', 'The toothless'],
-  type: ['ogre', 'goblin', 'scarecrow', 'freakazoid'],
-  name: ['Chupacabra', 'Loogaroo', 'Gowrow', 'Jackalope'],
+  character: ['Глупый', 'Ужасный', 'Беззубый', 'Злобный', 'Сопливый', 'Гнусный', 'Страшный', 'Клыкастый', 'Хвостатый', 'Зловонный', 'Костяной', 'Неповоротливый', 'Кошмарный', 'Рогатый', 'Жутковатый', 'Когтистый'],
+  type: ['Огр', 'Гоблин', 'Прыгун', 'Скакун', 'Лизун', 'Бармалей', 'Зомби', 'Дикарь', 'Глазаль', 'Монстр', 'Ползун', 'Обсмеюн'],
+  name: ['Алладин', 'Абу', 'Астерикс', 'Артемон', 'Бивис', 'Батхед', 'Боб', 'Грю', 'Мардж', 'Ранго', 'Майк', 'Клювклюн', 'Баюн', 'Битвохряк'],
 };
 
 const monsterClass = ['random-1', 'random-2', 'random-3'];
