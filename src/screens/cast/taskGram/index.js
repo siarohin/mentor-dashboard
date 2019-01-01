@@ -34,7 +34,8 @@ export default class taskGram {
     const dataSource = this.data;
     const randomTask = uniqueRandomArray(dataSource)();
 
-    const question = randomTask.word;
+    const groupQuestion = randomTask.word;
+    const question = uniqueRandomArray(groupQuestion)();
 
     const title = document.querySelector('.modal-title');
     title.innerHTML = `Кажется, в слове <span class="modal-title__span">${question}</span> чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
