@@ -8,7 +8,7 @@ import Battle from '../../battle';
 import vocabulary from './vocabulary';
 
 
-export default class taskLogic {
+export default class taskGram {
   static init() {
     this.draw();
     this.generateRandom();
@@ -34,22 +34,22 @@ export default class taskLogic {
     const dataSource = this.data;
     const randomTask = uniqueRandomArray(dataSource)();
 
-    this.answer = randomTask.targetImage;
-    this.generateLogicTask(randomTask);
+    const question = randomTask.word;
+
+    const title = document.querySelector('.modal-title');
+    title.innerHTML = `Кажется, в слове <span class="modal-title__span">${question}</span> чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
+
+    this.answer = randomTask.rightLetter;
+    this.generateGramTask(randomTask);
   }
 
-  static generateLogicTask(randomTask) {
-    const question = document.querySelector('.modal-title');
-    question.innerHTML = randomTask.question;
+  static generateGramTask(randomTask) {
+    const contentEl = document.querySelector('.logic-gram');
 
-    const getImage = document.querySelector('.logic-img');
-
-    $(randomTask.image).each((index, value) => {
-      getImage.innerHTML += `
-        <div class="logic-img__task-img" data-index="${index}" style="background-position: ${value}">
-          <span class="task-img__text alert alert-dark">
-            ${randomTask.imageAlt[index]}
-          </span>
+    $(randomTask.letter).each((index, value) => {
+      contentEl.innerHTML += `
+        <div class="logic-gram__task-gram" data-index="${index}">
+          ${value}
         </div>
       `;
     });
@@ -64,7 +64,7 @@ export default class taskLogic {
   }
 
   static empty() {
-    $('#taskLogic').empty();
+    $('#taskTransl').empty();
   }
 
   static modalShow() {
@@ -92,10 +92,11 @@ export default class taskLogic {
   }
 
   static closeTask() {
-    $('.logic-img').on('click keypress', (e) => {
+    $('.logic-gram').on('click keypress', (e) => {
       e.preventDefault();
-      if (e.target.className === 'logic-img__task-img') {
+      if (e.target.className === 'logic-gram__task-gram') {
         const playerAnswer = e.target;
+
         this.modalHide();
         this.play(playerAnswer);
       }

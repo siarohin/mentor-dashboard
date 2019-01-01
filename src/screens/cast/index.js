@@ -6,6 +6,7 @@ import template from './index.template';
 import taskMath from './taskMath';
 import taskTransl from './taskTransl';
 import taskLogic from './taskLogic';
+import taskGram from './taskGram';
 import { pause } from '../../utils/utils';
 
 export default class Cast {
@@ -19,6 +20,7 @@ export default class Cast {
     $('#taskMath').text('Посчитать');
     $('#taskTransl').text('Перевести слово');
     $('#taskLogic').text('Найти лишнее');
+    $('#taskGram').text('Вставить букву');
     $('#taskWriting').text('Writing');
     $('#taskListen').text('Listening');
     $('#taskSpeaking').text('Speaking');
@@ -68,6 +70,10 @@ export default class Cast {
       if (e.target.id === 'taskLogic') {
         this.modalHide();
         getTask(taskLogic);
+      }
+      if (e.target.id === 'taskGram') {
+        this.modalHide();
+        getTask(taskGram);
       }
     });
   }
