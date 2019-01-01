@@ -94,7 +94,8 @@ export default class taskLogic {
   static closeTask() {
     $('.logic-img').on('click keypress', (e) => {
       e.preventDefault();
-      if (e.target.className === 'logic-img__task-img') {
+      if (e.target.className === 'logic-img__task-img'
+          || e.target.tagName === 'SPAN') {
         const playerAnswer = e.target;
         this.modalHide();
         this.play(playerAnswer);
