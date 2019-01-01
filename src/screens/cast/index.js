@@ -2,6 +2,7 @@
 import $ from 'jquery';
 
 import template from './index.template';
+import './index.css';
 
 import taskMath from './taskMath';
 import taskTransl from './taskTransl';
@@ -31,7 +32,7 @@ export default class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Выбери заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.';
+    title.innerHTML = 'Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.';
 
     $('#spels').modal({
       keyboard: false,

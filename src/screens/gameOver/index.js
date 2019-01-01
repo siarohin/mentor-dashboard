@@ -54,7 +54,7 @@ export default class GameOver {
   }
 
   static gameOver() {
-    if (window.gameState.monsterHealth === 0) {
+    if (window.gameState.monsterHealth <= 0) {
       this.play('player_win');
       playerWinAnimation();
     } else {
