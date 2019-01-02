@@ -8,6 +8,7 @@ export const music = new Howl({
     second: [3900, 7700],
   },
   autoplay: false,
+  preload: false,
   loop: true,
   volume: 0.5,
 });
@@ -15,6 +16,7 @@ export const music = new Howl({
 
 export default class Sound {
   static init() {
+    music.load();
     const sprite = 'first';
     this.state = 'off';
     this.play(sprite);
@@ -26,6 +28,10 @@ export default class Sound {
       this.stop();
       music.play(this.sprite);
     }
+  }
+
+  static load() {
+    music.load();
   }
 
   static stop() {

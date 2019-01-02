@@ -38,6 +38,7 @@ const startApp = () => {
   ModalDialog.draw();
 
   $('.js-start-game').on('click', async () => {
+    await Sound.load();
     Sound.play('second');
     await getBattleResult(gameState);
   });
