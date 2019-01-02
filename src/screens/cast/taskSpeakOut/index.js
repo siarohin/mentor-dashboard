@@ -11,7 +11,7 @@ import Sound from '../../../components/sound';
 
 
 const speakout = new Howl({
-  src: ['./../../../music/speakout.mp3'],
+  src: ['./music/speakout.mp3'],
   sprite: {
     unit1: [5000, 16000],
     unit2: [22000, 25000],
