@@ -11,6 +11,7 @@ const music = new Howl({
     boom: [6000, 1500],
   },
   autoplay: false,
+  preload: false,
   loop: false,
   volume: 0.5,
 });
@@ -25,6 +26,10 @@ class MonsterAttack {
 
   static stop() {
     music.stop();
+  }
+
+  static load() {
+    music.load();
   }
 
   static init(time) {

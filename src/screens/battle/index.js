@@ -26,6 +26,8 @@ export default class Battle {
       await this.draw();
       await GenerateMonsterName.init();
       await GenerateMonster.init();
+      await MonsterAttack.load();
+      await PlayerAttack.load();
       await this.update();
     };
     initScene();

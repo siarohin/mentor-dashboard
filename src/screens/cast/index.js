@@ -94,6 +94,7 @@ export default class Cast {
       if (e.target.id === 'taskSpeakOut'
       || e.target.getAttribute('data-name') === 'taskSpeakOut') {
         this.modalHide();
+        taskSpeakOut.load();
         getTask(taskSpeakOut);
       }
     });

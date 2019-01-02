@@ -22,6 +22,7 @@ const speakout = new Howl({
     unit7: [115000, 7000],
   },
   autoplay: false,
+  preload: false,
   loop: false,
   volume: 1.0,
   onend() {
@@ -42,6 +43,10 @@ export default class taskSpeakOut {
   static playAudio(sprite) {
     Sound.stop();
     speakout.play(sprite);
+  }
+
+  static load() {
+    speakout.load();
   }
 
   static stopAudio() {
