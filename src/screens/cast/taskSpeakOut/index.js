@@ -19,14 +19,6 @@ const spriteSource = {
   unit7: [115000, 7000],
 };
 
-const spriteNames = [];
-$.each(spriteSource, (key) => {
-  spriteNames.push(key);
-});
-
-const randomSprite = () => {
-  return uniqueRandomArray(spriteNames)();
-};
 
 const music = new Howl({
   src: ['../../../music/speakout.mp3'],
@@ -34,6 +26,9 @@ const music = new Howl({
   autoplay: false,
   loop: false,
   volume: 1.0,
+  onend() {
+    $('.taskSpeakOut__audio-button').removeClass('audio-button_pause');
+  },
 });
 
 export default class taskSpeakOut {
@@ -42,23 +37,39 @@ export default class taskSpeakOut {
     return health;
   }
 
+  static get data() {
+    return vocabulary;
+  }
+
   static playAudio(sprite) {
-    if (!$('.nav-sound').hasClass('sound-off')) {
-      Sound.stop();
-      music.play(sprite);
-    }
+    Sound.stop();
+    music.play(sprite);
+  }
+
+  static stopAudio() {
+    music.stop();
   }
 
   static init() {
-    this.playAudio(randomSprite());
     this.draw();
+    this.initAudioButton();
     this.generateRandom();
     this.modalShow();
     this.closeTask();
   }
 
-  static get data() {
-    return vocabulary;
+  static initAudioButton() {
+    $('.taskSpeakOut__audio-button').on('click', (e) => {
+      e.preventDefault();
+
+      if ($('.taskSpeakOut__audio-button').hasClass('audio-button_pause')) {
+        $('.taskSpeakOut__audio-button').removeClass('audio-button_pause');
+        this.stopAudio();
+      } else {
+        $('.taskSpeakOut__audio-button').addClass('audio-button_pause');
+        this.playAudio(this.sprite);
+      }
+    });
   }
 
   static draw() {
@@ -78,20 +89,9 @@ export default class taskSpeakOut {
     const dataSource = this.data;
 
     const randomTask = uniqueRandomArray(dataSource)();
-    const getWord = randomTask.word;
-    const getTranslation = randomTask.translation;
-    const getImage = randomTask.image;
-
-    this.answer = getTranslation;
-    this.generateSpeakOutTask(getWord, getImage);
-  }
-
-  static generateSpeakOutTask(getWord, getImage) {
-    const vocabularyKey = document.querySelector('.vocabulary-key');
-    vocabularyKey.textContent = getWord;
-
-    const vocabularryImg = document.querySelector('.vocabulary-img');
-    $(vocabularryImg).css('background-position', ` ${getImage}`);
+    const randomSprite = randomTask.sprite;
+    this.sprite = randomSprite;
+    this.answer = randomTask.word;
   }
 
   static checkResult() {
@@ -103,10 +103,6 @@ export default class taskSpeakOut {
     if ((this.answer).includes(this.playerAnswer)) {
       return true;
     } return false;
-  }
-
-  static empty() {
-    $('#taskSpeakOut').empty();
   }
 
   static modalShow() {
@@ -139,6 +135,7 @@ export default class taskSpeakOut {
       || (e.target.type === 'button' && e.type === 'click')) {
         this.modalHide();
         music.stop();
+        Sound.play('second');
         this.play();
       }
     });
