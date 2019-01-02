@@ -27,7 +27,7 @@ const music = new Howl({
   loop: false,
   volume: 1.0,
   onend() {
-    $('.taskSpeakOut__audio-button').removeClass('audio-button_pause');
+    $('.js-speakOut__audio-button').removeClass('audio-button_pause');
   },
 });
 
@@ -59,14 +59,17 @@ export default class taskSpeakOut {
   }
 
   static initAudioButton() {
-    $('.taskSpeakOut__audio-button').on('click', (e) => {
-      e.preventDefault();
+    $('.js-speakOut__audio-button').addClass('audio-button_scale');
 
-      if ($('.taskSpeakOut__audio-button').hasClass('audio-button_pause')) {
-        $('.taskSpeakOut__audio-button').removeClass('audio-button_pause');
+    $('.js-speakOut__audio-button').on('click', (e) => {
+      e.preventDefault();
+      $('.js-speakOut__audio-button').removeClass('audio-button_scale');
+
+      if ($('.js-speakOut__audio-button').hasClass('audio-button_pause')) {
+        $('.js-speakOut__audio-button').removeClass('audio-button_pause');
         this.stopAudio();
       } else {
-        $('.taskSpeakOut__audio-button').addClass('audio-button_pause');
+        $('.js-speakOut__audio-button').addClass('audio-button_pause');
         this.playAudio(this.sprite);
       }
     });
@@ -76,8 +79,12 @@ export default class taskSpeakOut {
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
+    const description = document.querySelector('.js-speakOut__description');
+    description.innerHTML = `
+      Нажми на плеер, прослушай запись и введи имя, которое ты услышал.`;
+
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Проверим твой английский, герой! Нажми на плеер, прослушай запись и введи имя, которое ты услышал.';
+    title.innerHTML = 'Проверим твой английский, герой!';
 
     $('#spels').modal({
       keyboard: false,

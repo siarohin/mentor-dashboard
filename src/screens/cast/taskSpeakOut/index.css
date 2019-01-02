@@ -1,14 +1,27 @@
-.taskSpeakOut__audio-button {
+.js-speakOut__description {
+  width: 75%;
+  font-size: 1.25rem;
+}
+
+.js-speakOut__audio-button {
   width: 24px;
   height: 24px;
   background: url('../../../images/icon-sound.png') 0 -24px;
   cursor: pointer;
 }
 
+.js-speakOut__audio-button:hover {
+  opacity: 0.6;
+}
+
 .audio-button_pause {
   background: url('../../../images/icon-sound.png') -24px -24px;
 }
 
-.taskSpeakOut__audio-button:hover {
-  opacity: 0.6;
+/* audio-button_scale */
+.audio-button_scale {
+  -moz-animation: button_scale 1s ease-in-out infinite alternate;
+  -o-animation: button_scale 1s ease-in-out infinite alternate;
+  -webkit-animation: button_scale 1s ease-in-out infinite alternate;
+  animation: button_scale 1s ease-in-out infinite alternate;
 }

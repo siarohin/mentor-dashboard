@@ -1,8 +1,8 @@
 export default `
 <section id="taskSpeakOut">
-    <div class="alert alert-warning task-body" role="alert">
-      <div class="vocabulary-key"></div>
-      <div class="taskSpeakOut__audio-button"></div>
+    <div class="js-speakOut d-flex flex-row align-items-center alert alert-warning task-body" role="alert">
+      <div class="js-speakOut__description"></div>
+      <div class="js-speakOut__audio-button"></div>
     </div>
 
     <div class="input-group">
