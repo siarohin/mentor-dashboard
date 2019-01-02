@@ -70,7 +70,7 @@ export default class taskGram {
   }
 
   static empty() {
-    $('#taskTransl').empty();
+    $('#taskGram').empty();
   }
 
   static modalShow() {

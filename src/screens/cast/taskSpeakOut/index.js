@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { Howl } from 'howler';
 import uniqueRandomArray from 'unique-random-array';
 
 import template from './index.template';
@@ -8,17 +9,28 @@ import Battle from '../../battle';
 import vocabulary from './vocabulary';
 import Sound from '../../../components/sound';
 
+const spriteSource = {
+  unit1: [5000, 16000],
+  unit2: [22000, 25000],
+  unit3: [50000, 10000],
+  unit4: [63000, 15000],
+  unit5: [81000, 15000],
+  unit6: [99000, 17000],
+  unit7: [115000, 7000],
+};
+
+const spriteNames = [];
+$.each(spriteSource, (key) => {
+  spriteNames.push(key);
+});
+
+const randomSprite = () => {
+  return uniqueRandomArray(spriteNames)();
+};
+
 const music = new Howl({
   src: ['../../../music/speakout.mp3'],
-  sprite: {
-    unit1: [5000, 16000],
-    unit2: [22000, 25000],
-    unit3: [50000, 10000],
-    unit4: [63000, 15000],
-    unit5: [81000, 15000],
-    unit6: [99000, 17000],
-    unit7: [115000, 7000]
-  },
+  sprite: spriteSource,
   autoplay: false,
   loop: false,
   volume: 1.0,
@@ -30,20 +42,15 @@ export default class taskSpeakOut {
     return health;
   }
 
-  static play(sprite) {
+  static playAudio(sprite) {
     if (!$('.nav-sound').hasClass('sound-off')) {
       Sound.stop();
       music.play(sprite);
     }
   }
 
-  static stop() {
-    music.stop();
-  }
-
   static init() {
-    Sound.stop();
-    music.play('unit7');
+    this.playAudio(randomSprite());
     this.draw();
     this.generateRandom();
     this.modalShow();
@@ -99,7 +106,7 @@ export default class taskSpeakOut {
   }
 
   static empty() {
-    $('#taskTransl').empty();
+    $('#taskSpeakOut').empty();
   }
 
   static modalShow() {
@@ -131,6 +138,7 @@ export default class taskSpeakOut {
       if ((e.key === 'Enter' && e.type === 'keypress')
       || (e.target.type === 'button' && e.type === 'click')) {
         this.modalHide();
+        music.stop();
         this.play();
       }
     });
