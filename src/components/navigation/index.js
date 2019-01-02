@@ -6,7 +6,7 @@ import Sound from '../sound';
 
 class Header {
   static draw() {
-    $('.navbar').remove();
+    // $('.navbar').remove();
     const contentEl = document.querySelector('body');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
