@@ -9,20 +9,18 @@ import Battle from '../../battle';
 import vocabulary from './vocabulary';
 import Sound from '../../../components/sound';
 
-const spriteSource = {
-  unit1: [5000, 16000],
-  unit2: [22000, 25000],
-  unit3: [50000, 10000],
-  unit4: [63000, 15000],
-  unit5: [81000, 15000],
-  unit6: [99000, 17000],
-  unit7: [115000, 7000],
-};
 
-
-const music = new Howl({
-  src: ['../../../music/speakout.mp3'],
-  sprite: spriteSource,
+const speakout = new Howl({
+  src: ['./../../../music/speakout.mp3'],
+  sprite: {
+    unit1: [5000, 16000],
+    unit2: [22000, 25000],
+    unit3: [50000, 10000],
+    unit4: [63000, 15000],
+    unit5: [81000, 15000],
+    unit6: [99000, 17000],
+    unit7: [115000, 7000],
+  },
   autoplay: false,
   loop: false,
   volume: 1.0,
@@ -43,11 +41,11 @@ export default class taskSpeakOut {
 
   static playAudio(sprite) {
     Sound.stop();
-    music.play(sprite);
+    speakout.play(sprite);
   }
 
   static stopAudio() {
-    music.stop();
+    speakout.stop();
   }
 
   static init() {
@@ -76,6 +74,8 @@ export default class taskSpeakOut {
   }
 
   static draw() {
+    $('#spels .modal-body').empty();
+
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
@@ -141,7 +141,7 @@ export default class taskSpeakOut {
       if ((e.key === 'Enter' && e.type === 'keypress')
       || (e.target.type === 'button' && e.type === 'click')) {
         this.modalHide();
-        music.stop();
+        speakout.stop();
         Sound.play('second');
         this.play();
       }

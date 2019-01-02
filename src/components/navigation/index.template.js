@@ -6,7 +6,7 @@ export default `
         <a class="nav-link" href="#">Landing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-sound" href="#"></a>
+        <a class="nav-link nav-sound sound-off" href="#"></a>
       </li>
     </ul>
     <div class="js-show-player-name js-choose-player-name-nav"></div>

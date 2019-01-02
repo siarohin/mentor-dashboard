@@ -163,3 +163,7 @@
 .logo_top-left {
   position: absolute;
 }
+
+.source-preload {
+  display: none;
+}

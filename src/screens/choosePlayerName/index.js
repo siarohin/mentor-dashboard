@@ -5,6 +5,7 @@ import './index.css';
 
 export default class ChoosePlayerName {
   static draw() {
+    $('#content').empty();
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
   }

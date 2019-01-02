@@ -16,7 +16,7 @@ export const music = new Howl({
 export default class Sound {
   static init() {
     const sprite = 'first';
-    this.state = 'on';
+    this.state = 'off';
     this.play(sprite);
   }
 

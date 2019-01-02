@@ -6,12 +6,13 @@ import Sound from '../sound';
 
 class Header {
   static draw() {
+    $('.navbar').remove();
     const contentEl = document.querySelector('body');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
     $('.nav-sound').on('click', (e) => {
       e.preventDefault();
-      let state = 'on';
+      let state = 'off';
 
       if ($('.nav-sound').hasClass('sound-off')) {
         $('.nav-sound').removeClass('sound-off');

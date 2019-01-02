@@ -26,6 +26,7 @@ export default class taskLogic {
   }
 
   static draw() {
+    $('#spels .modal-body').empty();
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 

@@ -32,6 +32,7 @@ const startApp = () => {
   window.gameState = gameState;
   setGameState(gameState);
   Navigation.draw();
+
   Home.init();
   Sound.init();
   ModalDialog.draw();
@@ -44,8 +45,8 @@ const startApp = () => {
 
 window.onload = () => {
   $('.preload').hide();
-  startApp();
 };
 
+startApp();
 
 export default startApp;
