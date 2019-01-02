@@ -6,8 +6,12 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 
-
 export default class taskMath {
+  static get healthPoint() {
+    const health = 40;
+    return health;
+  }
+
   static init() {
     this.draw();
     this.generateRandom();
@@ -91,10 +95,10 @@ export default class taskMath {
   static updateState() {
     // if true -> playerAttack, if false -> monsterAttack
     if (this.checkResult()) {
-      window.gameState.monsterHealth -= 20;
+      window.gameState.monsterHealth -= this.healthPoint;
       Battle.playerAttack(3000);
     } else {
-      window.gameState.playerHealth -= 20;
+      window.gameState.playerHealth -= this.healthPoint;
       Battle.monsterAttack(3000);
     }
   }

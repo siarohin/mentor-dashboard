@@ -9,6 +9,11 @@ import vocabulary from './vocabulary';
 
 
 export default class taskLogic {
+  static get healthPoint() {
+    const health = 20;
+    return health;
+  }
+
   static init() {
     this.draw();
     this.generateRandom();
@@ -78,10 +83,10 @@ export default class taskLogic {
   static updateState(playerAnswer) {
     // if true -> playerAttack, if false -> monsterAttack
     if (this.checkResult(playerAnswer)) {
-      window.gameState.monsterHealth -= 20;
+      window.gameState.monsterHealth -= this.healthPoint;
       Battle.playerAttack(3000);
     } else {
-      window.gameState.playerHealth -= 20;
+      window.gameState.playerHealth -= this.healthPoint;
       Battle.monsterAttack(3000);
     }
   }

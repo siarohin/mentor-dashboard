@@ -1,3 +1,11 @@
 .p-2 {
   padding: 0rem !important;
 }
+
+.btn-group-vertical {
+  width: 50%;
+}
+
+.badge {
+  top: 0 !important;
+}

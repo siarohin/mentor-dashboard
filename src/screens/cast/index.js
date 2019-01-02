@@ -18,10 +18,15 @@ export default class Cast {
   }
 
   static initCast() {
-    $('#taskMath').text('Посчитать');
-    $('#taskTransl').text('Перевести слово');
-    $('#taskLogic').text('Найти лишнее');
-    $('#taskGram').text('Вставить букву');
+    $('#taskMath').html(`Посчитать <span data-name="taskMath" class="badge badge-light">
+      сила ${taskMath.healthPoint}</span>`);
+    $('#taskTransl').html(`Перевести слово <span data-name="taskTransl" class="badge badge-light">
+      сила ${taskTransl.healthPoint}</span>`);
+    $('#taskLogic').html(`Найти лишнее <span data-name="taskLogic" class="badge badge-light">
+      сила ${taskLogic.healthPoint}</span>`);
+    $('#taskGram').html(`Вставить букву <span data-name="taskGram" class="badge badge-light">
+      сила ${taskGram.healthPoint}</span>`);
+
     $('#taskWriting').text('Writing');
     $('#taskListen').text('Listening');
     $('#taskSpeaking').text('Speaking');
@@ -32,7 +37,8 @@ export default class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.';
+    title.innerHTML = `Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.
+      Чем больше сила, тем больший урон наносит заклинание.`;
 
     $('#spels').modal({
       keyboard: false,
@@ -60,19 +66,23 @@ export default class Cast {
     };
 
     $('#cast').on('click', (e) => {
-      if (e.target.id === 'taskMath') {
+      if (e.target.id === 'taskMath'
+      || e.target.getAttribute('data-name') === 'taskMath') {
         this.modalHide();
         getTask(taskMath);
       }
-      if (e.target.id === 'taskTransl') {
+      if (e.target.id === 'taskTransl'
+      || e.target.getAttribute('data-name') === 'taskTransl') {
         this.modalHide();
         getTask(taskTransl);
       }
-      if (e.target.id === 'taskLogic') {
+      if (e.target.id === 'taskLogic'
+      || e.target.getAttribute('data-name') === 'taskLogic') {
         this.modalHide();
         getTask(taskLogic);
       }
-      if (e.target.id === 'taskGram') {
+      if (e.target.id === 'taskGram'
+      || e.target.getAttribute('data-name') === 'taskGram') {
         this.modalHide();
         getTask(taskGram);
       }
