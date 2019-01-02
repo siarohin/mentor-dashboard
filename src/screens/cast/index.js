@@ -8,6 +8,7 @@ import taskMath from './taskMath';
 import taskTransl from './taskTransl';
 import taskLogic from './taskLogic';
 import taskGram from './taskGram';
+import taskSpeakOut from './taskSpeakOut';
 import { pause } from '../../utils/utils';
 
 export default class Cast {
@@ -18,6 +19,7 @@ export default class Cast {
   }
 
   static initCast() {
+    /* eslint-disable max-len */
     $('#taskMath').html(`Посчитать <span data-name="taskMath" class="badge badge-light">
       сила ${taskMath.healthPoint}</span>`);
     $('#taskTransl').html(`Перевести слово <span data-name="taskTransl" class="badge badge-light">
@@ -26,6 +28,8 @@ export default class Cast {
       сила ${taskLogic.healthPoint}</span>`);
     $('#taskGram').html(`Вставить букву <span data-name="taskGram" class="badge badge-light">
       сила ${taskGram.healthPoint}</span>`);
+    $('#taskSpeakOut').html(`Повторить имя <span data-name="taskSpeakOut" class="badge badge-light">
+      сила ${taskSpeakOut.healthPoint}</span>`);
 
     $('#taskWriting').text('Writing');
     $('#taskListen').text('Listening');
@@ -85,6 +89,11 @@ export default class Cast {
       || e.target.getAttribute('data-name') === 'taskGram') {
         this.modalHide();
         getTask(taskGram);
+      }
+      if (e.target.id === 'taskSpeakOut'
+      || e.target.getAttribute('data-name') === 'taskSpeakOut') {
+        this.modalHide();
+        getTask(taskSpeakOut);
       }
     });
   }
