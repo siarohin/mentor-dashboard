@@ -7,10 +7,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './game/src/index.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'game/dist'),
   },
   optimization: {
     minimizer: [
@@ -36,12 +36,12 @@ module.exports = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      template: `${__dirname}/src/index.html`,
+      template: `${__dirname}/game/src/index.html`,
       filename: 'index.html',
     }),
     new CopyWebpackPlugin([
       {
-        from: './src/music/',
+        from: './game/src/music/',
         to: './music/',
         toType: 'dir',
       },
