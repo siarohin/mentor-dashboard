@@ -167,3 +167,13 @@
 .source-preload {
   display: none;
 }
+
+.tooltip-sound {
+  width: 140px;
+  height: 100px;
+  background: url('../../images/tooltip-sound.png') 0 0;
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  transform: scale(0.8);
+}
