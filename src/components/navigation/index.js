@@ -8,7 +8,7 @@ class Header {
   static draw() {
     $('.navbar').empty();
 
-    const contentEl = document.querySelector('body');
+    const contentEl = document.querySelector('.wrapper');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
     $('.nav-sound').on('click', (e) => {
@@ -16,9 +16,11 @@ class Header {
 
       if ($('.nav-sound').hasClass('sound-off')) {
         $('.nav-sound').removeClass('sound-off');
+        $('.tooltip-sound').hide();
         Sound.setState(true);
       } else {
         $('.nav-sound').addClass('sound-off');
+        $('.tooltip-sound').show();
         Sound.setState(false);
       }
     });

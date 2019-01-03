@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 export default `
-<div class="tooltip-sound"></div>
 <header class="page-header">
   <div class="page-header__logo logo_top-left"></div>
 </header>

@@ -1,8 +1,9 @@
 export default `
+<div class="tooltip-sound"></div>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-
       <li class="nav-item">
         <a class="nav-link nav-sound sound-off" href="#"></a>
       </li>
