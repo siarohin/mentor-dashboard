@@ -4,7 +4,7 @@ export default `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item js-sound">
         <a class="nav-link nav-sound sound-off" href="#"></a>
       </li>
     </ul>

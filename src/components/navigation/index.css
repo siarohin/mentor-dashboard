@@ -7,12 +7,25 @@
   height: 24px;
   margin: 5px 15px;
   background: url('../../images/icon-sound.png') no-repeat -24px 0;
-  z-index: 1041;
 }
 
 .sound-off {
   background: url('../../images/icon-sound.png') no-repeat 0 0;
 }
+
+.navbar {
+  padding: 0 1rem !important;
+}
+
+.nav-item {
+  padding: 0.5rem 0 !important;
+  background: #28a745;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #222;
+};
 
 @media (min-width: 0) {
 .navbar-expand-lg .navbar-collapse {

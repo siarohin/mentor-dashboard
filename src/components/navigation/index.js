@@ -11,7 +11,7 @@ class Header {
     const contentEl = document.querySelector('.wrapper');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
-    $('.nav-sound').on('click', (e) => {
+    $('.js-sound').on('click', (e) => {
       e.preventDefault();
 
       if ($('.nav-sound').hasClass('sound-off')) {
