@@ -27,6 +27,7 @@ export default class taskGram {
 
   static draw() {
     $('#spels .modal-body').empty();
+
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
@@ -44,7 +45,8 @@ export default class taskGram {
     const question = uniqueRandomArray(groupQuestion)();
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = `Кажется, в слове <span class="modal-title__span">${question}</span> чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
+    title.innerHTML = `
+      Кажется, в слове <span class="modal-title__span">${question}</span> чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
 
     this.answer = randomTask.rightLetter;
     this.generateGramTask(randomTask);
@@ -68,10 +70,6 @@ export default class taskGram {
     if (this.answer === this.playerAnswer) {
       return true;
     } return false;
-  }
-
-  static empty() {
-    $('#taskGram').empty();
   }
 
   static modalShow() {

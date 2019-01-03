@@ -6,23 +6,21 @@ import Sound from '../sound';
 
 class Header {
   static draw() {
-    // $('.navbar').remove();
+    $('.navbar').empty();
+
     const contentEl = document.querySelector('body');
     contentEl.insertAdjacentHTML('afterbegin', template);
 
     $('.nav-sound').on('click', (e) => {
       e.preventDefault();
-      let state = 'off';
 
       if ($('.nav-sound').hasClass('sound-off')) {
         $('.nav-sound').removeClass('sound-off');
-        state = 'on';
+        Sound.setState(true);
       } else {
         $('.nav-sound').addClass('sound-off');
-        state = 'off';
+        Sound.setState(false);
       }
-
-      Sound.setState(state);
     });
   }
 

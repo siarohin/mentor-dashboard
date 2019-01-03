@@ -8,7 +8,6 @@ export const music = new Howl({
     second: [3900, 7700],
   },
   autoplay: false,
-  preload: false,
   loop: true,
   volume: 0.5,
 });
@@ -16,39 +15,33 @@ export const music = new Howl({
 
 export default class Sound {
   static init() {
-    this.load();
-
+    this.soundState = false;
     const sprite = 'first';
-    this.state = 'off';
     this.play(sprite);
   }
 
   static play(sprite) {
     this.sprite = sprite;
-    if (this.state === 'on') {
+    if (this.soundState === true) {
       this.stop();
       music.play(this.sprite);
     }
-  }
-
-  static load() {
-    music.load();
   }
 
   static stop() {
     music.stop();
   }
 
-  static update() {
-    if (this.state === 'off') {
+  static update(soundState) {
+    if (soundState === false) {
       this.stop();
     } else {
       this.play(this.sprite);
     }
   }
 
-  static setState(state) {
-    this.state = state;
-    this.update();
+  static setState(soundState) {
+    this.soundState = soundState;
+    this.update(soundState);
   }
 }

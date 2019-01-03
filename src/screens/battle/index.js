@@ -35,6 +35,7 @@ export default class Battle {
 
   static draw() {
     $('#content').empty();
+
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 

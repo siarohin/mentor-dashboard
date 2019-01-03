@@ -27,6 +27,7 @@ export default class taskLogic {
 
   static draw() {
     $('#spels .modal-body').empty();
+
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
@@ -67,10 +68,6 @@ export default class taskLogic {
     if (this.answer === this.playerAnswer) {
       return true;
     } return false;
-  }
-
-  static empty() {
-    $('#taskLogic').empty();
   }
 
   static modalShow() {

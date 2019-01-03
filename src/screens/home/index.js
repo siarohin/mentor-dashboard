@@ -9,6 +9,7 @@ export default class Home {
 
   static draw() {
     $('#content').empty();
+
     const contentEl = document.querySelector('#content');
     contentEl.insertAdjacentHTML('beforeend', template);
     $('.model-player').addClass('model-player_jump');

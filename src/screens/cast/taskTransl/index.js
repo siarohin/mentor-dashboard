@@ -71,10 +71,6 @@ export default class taskTransl {
     } return false;
   }
 
-  static empty() {
-    $('#taskTransl').empty();
-  }
-
   static modalShow() {
     $('#spels').modal('show');
   }

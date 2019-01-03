@@ -51,16 +51,12 @@ export class GenerateMonsterName {
   }
 
   static setMonsterState() {
-    this.empty();
+    $('.monster-name').empty();
     updateState();
   }
 
   static draw() {
     $('.monster-name').text(window.gameState.monsterName);
     Navigation.update(window.gameState);
-  }
-
-  static empty() {
-    $('.monster-name').empty();
   }
 }

@@ -32,13 +32,13 @@ const startApp = () => {
   window.gameState = gameState;
   setGameState(gameState);
   Navigation.draw();
-
   Home.init();
   Sound.init();
   ModalDialog.draw();
 
-  $('.js-start-game').on('click', async () => {
-    await Sound.load();
+  $('.js-start-game').on('click', async (e) => {
+    e.preventDefault();
+
     Sound.play('second');
     await getBattleResult(gameState);
   });
