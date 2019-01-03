@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <section id="taskTransl">
     <div class="alert alert-warning task-body" role="alert">

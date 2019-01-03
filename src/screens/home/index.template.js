@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <header class="page-header">
   <div class="page-header__logo logo_top-left"></div>

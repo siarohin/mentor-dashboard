@@ -46,7 +46,8 @@ export default class taskGram {
 
     const title = document.querySelector('.modal-title');
     title.innerHTML = `
-      Кажется, в слове <span class="modal-title__span">${question}</span> чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
+      Кажется, в слове <span class="modal-title__span">${question}</span>
+        чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
 
     this.answer = randomTask.rightLetter;
     this.generateGramTask(randomTask);

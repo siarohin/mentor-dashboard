@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <section id="taskSpeakOut">
     <div class="js-speakOut d-flex flex-row align-items-center alert alert-warning task-body" role="alert">

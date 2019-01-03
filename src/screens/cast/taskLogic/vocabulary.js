@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default [
   {
     question: 'Найди лишний транспорт! Подумай, а потом нажми на лишнюю картинку.',

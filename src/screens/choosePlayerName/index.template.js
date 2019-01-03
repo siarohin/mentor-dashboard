@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <div class="home-scene home-scene_flex home-scene_move">
   <section id="choosePlayerName">

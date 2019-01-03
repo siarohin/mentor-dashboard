@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <div class="score">
   <ul class="list-group js-score">

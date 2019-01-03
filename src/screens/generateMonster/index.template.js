@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `<div class="monster-card">
   <div class="model-monster-bird">
     <div class="model-monster-bird__fly"></div>

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <section id="cast" class="d-flex bd-highlight align-items-start">
   <div class="btn-group-vertical btn-group-lg p-2 flex-fill bd-highlight">

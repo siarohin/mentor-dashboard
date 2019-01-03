@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default `
 <section id="battle">
 <div class="row battle-scene">

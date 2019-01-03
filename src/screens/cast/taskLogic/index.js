@@ -53,10 +53,13 @@ export default class taskLogic {
 
     $(randomTask.image).each((index, value) => {
       getImage.innerHTML += `
-        <div class="logic-img__task-img" data-index="${index}" style="background-position: ${value}">
+        <div class="logic-img__task-img" data-index="${index}"
+          style="background-position: ${value}">
+
           <span class="task-img__text alert alert-dark">
             ${randomTask.imageAlt[index]}
           </span>
+
         </div>
       `;
     });

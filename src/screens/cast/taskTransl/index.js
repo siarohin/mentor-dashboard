@@ -32,7 +32,8 @@ export default class taskTransl {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Знаешь мой язык? Я говорю на английском! Попробуй, переведи на русский:';
+    title.innerHTML = `Знаешь мой язык? Я говорю на английском!
+      Попробуй, переведи на русский:`;
 
     $('#spels').modal({
       keyboard: false,

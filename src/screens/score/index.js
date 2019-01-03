@@ -1,8 +1,10 @@
-/* eslint-disable import/no-cycle */
+
 import $ from 'jquery';
 import template from './index.template';
 import './index.css';
+// eslint-disable-next-line import/no-cycle
 import startApp from '../../index';
+// eslint-disable-next-line import/no-cycle
 import { music } from '../gameOver/index';
 
 let playerScore = null;
@@ -85,7 +87,10 @@ export default class Score {
     const contentEl = document.querySelector('.js-score');
 
     const scoreList = `
-      <li class='list-group-item d-flex justify-content-between align-items-center'>
+
+      <li class='list-group-item d-flex justify-content-between
+        align-items-center'>
+
         ${item.name}
 
         <span class='badge badge-primary badge-pill bg-success'>
