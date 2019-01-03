@@ -13,3 +13,10 @@
 .sound-off {
   background: url('../../images/icon-sound.png') no-repeat 0 0;
 }
+
+@media (min-width: 0) {
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  }
+}

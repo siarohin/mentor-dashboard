@@ -89,7 +89,7 @@ export default class Score {
         ${item.name}
 
         <span class='badge badge-primary badge-pill bg-success'>
-          ${item.result}
+          ${item.result / 100}
         </span>
 
       </li>`;
