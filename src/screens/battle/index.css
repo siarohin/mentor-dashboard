@@ -208,6 +208,7 @@
   flex-flow: row nowrap;
   background-image: url('../../images/vectorcity.png');
   width: 1024px;
+  min-width: 930px;;
   height: 512px;
   align-items: flex-end;
   border-bottom: 0.5em solid #000;

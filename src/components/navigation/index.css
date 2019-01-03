@@ -34,6 +34,15 @@
   }
 }
 
+@media (min-width: 0) {
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
 /* tooltip-sound */
 .tooltip-sound {
   width: 140px;
