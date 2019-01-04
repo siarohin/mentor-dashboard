@@ -6,6 +6,7 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
+import { getButtonFocus } from '../../../utils/utils';
 
 
 export default class taskLogic {
@@ -18,6 +19,7 @@ export default class taskLogic {
     this.draw();
     this.generateRandom();
     this.modalShow();
+    getButtonFocus();
     this.closeTask();
   }
 
@@ -53,14 +55,14 @@ export default class taskLogic {
 
     $(randomTask.image).each((index, value) => {
       getImage.innerHTML += `
-        <div class="logic-img__task-img" data-index="${index}"
+        <button class="logic-img__task-img" data-index="${index}"
           style="background-position: ${value}">
 
           <span class="task-img__text alert alert-dark">
             ${randomTask.imageAlt[index]}
           </span>
 
-        </div>
+        </button>
       `;
     });
   }

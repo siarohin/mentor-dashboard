@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import uniqueRandomArray from 'unique-random-array';
 
 const monsterNames = {
@@ -17,6 +18,22 @@ export const pause = time => new Promise((resolve) => {
     resolve();
   }, time);
 });
+
+export const getInputFocus = () => {
+  $(document).ready(() => {
+    $('.modal').show(() => {
+      $('input:text:visible:first').focus();
+    });
+  });
+};
+
+export const getButtonFocus = () => {
+  $(document).ready(() => {
+    $('.modal').show(() => {
+      $('button:visible:first').focus();
+    });
+  });
+};
 
 export const generatorNames = () => {
   let monsterName = [];

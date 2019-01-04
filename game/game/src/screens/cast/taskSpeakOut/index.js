@@ -8,6 +8,7 @@ import './index.css';
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
 import Sound from '../../../components/sound';
+import { getInputFocus } from '../../../utils/utils';
 
 
 const speakout = new Howl({
@@ -58,6 +59,7 @@ export default class taskSpeakOut {
     this.initAudioButton();
     this.generateRandom();
     this.modalShow();
+    getInputFocus();
     this.closeTask();
   }
 

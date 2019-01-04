@@ -9,6 +9,8 @@ export default class ChoosePlayerName {
 
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
+
+    $('.js-player-name').focus();
   }
 
   constructor() {

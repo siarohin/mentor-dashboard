@@ -6,6 +6,7 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
+import { getButtonFocus } from '../../../utils/utils';
 
 
 export default class taskGram {
@@ -18,6 +19,7 @@ export default class taskGram {
     this.draw();
     this.generateRandom();
     this.modalShow();
+    getButtonFocus();
     this.closeTask();
   }
 
@@ -58,9 +60,9 @@ export default class taskGram {
 
     $(randomTask.letter).each((index, value) => {
       contentEl.innerHTML += `
-        <div class="logic-gram__task-gram" data-index="${index}">
+        <button class="logic-gram__task-gram" data-index="${index}">
           ${value}
-        </div>
+        </button>
       `;
     });
   }

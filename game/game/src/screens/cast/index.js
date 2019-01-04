@@ -9,11 +9,12 @@ import taskTransl from './taskTransl';
 import taskLogic from './taskLogic';
 import taskGram from './taskGram';
 import taskSpeakOut from './taskSpeakOut';
-import { pause } from '../../utils/utils';
+import { pause, getButtonFocus } from '../../utils/utils';
 
 export default class Cast {
   static init() {
     this.draw();
+    getButtonFocus();
     this.initCast();
     this.getPlayerCast();
   }

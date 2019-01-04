@@ -6,6 +6,7 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
+import { getInputFocus } from '../../../utils/utils';
 
 
 export default class taskTransl {
@@ -18,6 +19,7 @@ export default class taskTransl {
     this.draw();
     this.generateRandom();
     this.modalShow();
+    getInputFocus();
     this.closeTask();
   }
 

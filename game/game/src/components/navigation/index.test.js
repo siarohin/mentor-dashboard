@@ -38,7 +38,7 @@ describe('Nav', () => {
 
 
   it('toogle sound notificator', () => {
-    const soundNotificator =  document.querySelector('.tooltip-sound');
+    const soundNotificator = document.querySelector('.tooltip-sound');
     expect($(soundNotificator).hasClass('tooltip-sound_on')).toBeFalsy();
 
     $('.nav-sound').click();
