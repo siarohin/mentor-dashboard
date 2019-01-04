@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
+
+/* wrapper */
+.wrapper {
+    border: 2rem solid #333;
+}
+
+/* nav */
+.navbar {
+  padding: 0 !important;
+}
+
+.nav-item {
+  padding: 0.5rem 0 !important;
+  cursor: pointer;
+}
+
+.nav-item_play {
+  background: #28a745 !important;
+}
+
+.nav-item:hover {
+  background: #222;
+}
+
+.nav-link-out,
+.nav-link:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* container */
+.container {
+  min-height: 56px;
+}
+
+/* container__logo */
+.container__logo {
+  width: 230px;
+  height: 32px;
+  display: inline-block;
+  background: url('../img/logo.png') no-repeat 0 0;
+}
+
+/* section-about__article */
+.section-about__article {
+  font-size: 1.3rem;
+}
+
+/* author */
+.author__span {
+  display: block;
+  font-size: .9rem;
+}

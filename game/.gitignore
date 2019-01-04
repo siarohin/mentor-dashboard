@@ -37,7 +37,7 @@ node_modules/
 jspm_packages/
 __tests__/
 __mocks__/
-/game/dist/
+/game/psd/
 
 # TypeScript v1 declaration files
 typings/

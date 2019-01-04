@@ -16,11 +16,11 @@ class Header {
 
       if ($('.nav-sound').hasClass('sound-off')) {
         $('.nav-sound').removeClass('sound-off');
-        $('.tooltip-sound').hide();
+        $('.tooltip-sound').addClass('tooltip-sound_on');
         Sound.setState(true);
       } else {
         $('.nav-sound').addClass('sound-off');
-        $('.tooltip-sound').show();
+        $('.tooltip-sound').removeClass('tooltip-sound_on');
         Sound.setState(false);
       }
     });
