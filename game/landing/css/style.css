@@ -7,6 +7,16 @@ button:focus {
     outline: none;
 }
 
+/* reset h1 */
+.content__h1 {
+  margin-top: 4.5rem;
+}
+
+/* reset #about */
+.no-default-padding {
+  padding-top: 0;
+}
+
 /* wrapper */
 .wrapper {
     border: 2rem solid #333;
