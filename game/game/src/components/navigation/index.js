@@ -4,7 +4,7 @@ import template from './index.template';
 import './index.css';
 import Sound from '../sound';
 
-class Header {
+export default class Header {
   static draw() {
     $('.navbar').empty();
 
@@ -32,5 +32,3 @@ class Header {
         сражается с ${gameState.monsterName}`);
   }
 }
-
-export default Header;
