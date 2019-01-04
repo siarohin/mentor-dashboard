@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
 
+/* button reset */
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
 /* wrapper */
 .wrapper {
     border: 2rem solid #333;
@@ -31,6 +38,15 @@
   display: block;
 }
 
+.navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 /* container */
 .container {
   min-height: 56px;
@@ -42,6 +58,7 @@
   height: 32px;
   display: inline-block;
   background: url('../img/logo.png') no-repeat 0 0;
+  margin: 0.5rem 1rem;
 }
 
 /* section-about__article */
@@ -53,4 +70,11 @@
 .author__span {
   display: block;
   font-size: .9rem;
+}
+
+/* fix default .container */
+@media (min-width: 576px) {
+.container {
+    max-width: 100%;
+  }
 }

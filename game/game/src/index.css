@@ -1,6 +1,13 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed');
 
+/* button reset */
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
 /* page */
 .page {
     font: 16px 'Fira Sans Extra Condensed', Arial, Helvetica, sans-serif;

@@ -46,7 +46,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #28a745 !important;
 }
 
 .bg-dark {
@@ -92,7 +92,7 @@ img::-moz-selection {
   background: transparent;
 }
 
-#mainNav 
+#mainNav {
   font: 'Fira Sans Extra Condensed', Arial, Helvetica, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -111,16 +111,20 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: 1rem;
-  color: #212529;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+#mainNav .navbar-nav > li.nav-item > a.nav-link-out:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link-out:focus:hover {
   color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link-out.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link-out:focus.active {
   color: #fff !important;
   background-color: transparent;
 }
