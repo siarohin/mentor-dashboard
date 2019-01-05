@@ -8,7 +8,7 @@ import './index.css';
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
 import Sound from '../../../components/sound';
-import { getInputFocus, taskKeyControlSpeakOut } from '../../../utils/utils';
+import { getInputFocus, keyControlLeftRightUpDown } from '../../../utils/utils';
 
 
 const speakout = new Howl({
@@ -60,16 +60,13 @@ export default class taskSpeakOut {
     this.generateRandom();
     this.modalShow();
     getInputFocus();
-    taskKeyControlSpeakOut();
+    keyControlLeftRightUpDown();
     this.closeTask();
   }
 
   static initAudioButton() {
-    $('.js-speakOut__audio-button').addClass('audio-button_scale');
-
     $('.js-speakOut__audio-button').on('click', (e) => {
       e.preventDefault();
-      $('.js-speakOut__audio-button').removeClass('audio-button_scale');
 
       if ($('.js-speakOut__audio-button').hasClass('audio-button_pause')) {
         $('.js-speakOut__audio-button').removeClass('audio-button_pause');

@@ -5,7 +5,7 @@ import template from './index.template';
 import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
-import { getInputFocus, taskKeyControl } from '../../../utils/utils';
+import { getInputFocus, keyControlLeftRightInBut } from '../../../utils/utils';
 
 export default class taskMath {
   static get healthPoint() {
@@ -18,7 +18,7 @@ export default class taskMath {
     this.generateRandom();
     this.modalShow();
     getInputFocus();
-    taskKeyControl();
+    keyControlLeftRightInBut();
     this.closeTask();
   }
 

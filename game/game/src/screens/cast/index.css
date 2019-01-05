@@ -9,3 +9,11 @@
 .badge {
   top: 0 !important;
 }
+
+.cast__button:focus {
+  background: #218838;
+}
+
+.cast__button_footer:focus {
+  background: #e0a800;
+}

@@ -47,7 +47,7 @@ export const getStartButtonFocus = () => {
   });
 };
 
-export const taskKeyControl = () => {
+export const keyControlLeftRightInBut = () => {
   $('section').on('keydown', (e) => {
     if (e.key === 'ArrowRight') {
       $('.btn-answer').focus();
@@ -58,7 +58,7 @@ export const taskKeyControl = () => {
   });
 };
 
-export const taskKeyControlSpeakOut = () => {
+export const keyControlLeftRightUpDown = () => {
   $('section').on('keydown', (e) => {
     if (e.key === 'ArrowRight') {
       $('.btn-answer').focus();
@@ -72,7 +72,7 @@ export const taskKeyControlSpeakOut = () => {
   });
 };
 
-export const taskImgKeyControl = () => {
+export const keyControlLeftRight = () => {
   $('section').on('keydown', (e) => {
     if (e.key === 'ArrowRight') {
       $(e.target).next('button').focus();

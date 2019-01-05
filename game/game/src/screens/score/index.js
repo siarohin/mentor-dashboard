@@ -6,6 +6,7 @@ import './index.css';
 import startApp from '../../index';
 // eslint-disable-next-line import/no-cycle
 import { music } from '../gameOver/index';
+import { getButtonFocus } from '../../utils/utils';
 
 let playerScore = null;
 
@@ -36,6 +37,7 @@ export default class Score {
       await this.draw();
       await this.getResult();
       await this.modalShow();
+      getButtonFocus();
       await this.startGame();
     };
     initScore();
