@@ -69,10 +69,9 @@ export default class Cast {
     const contentEl = document.querySelector('#spels .modal-body');
     contentEl.innerHTML = template;
 
-    const title = document.querySelector('.modal-title');
-    // eslint-disable-next-line max-len
-    title.innerHTML = `Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтое &ndash; лечит твоего героя.
-      Чем больше сила, тем больший урон наносит заклинание.`;
+    $('.modal-title').html(`Выбери задание-заклинание.
+      Зеленые &ndash; наносят урон, желтое &ndash; лечит твоего героя.
+      Чем больше сила, тем больший урон наносит заклинание.`);
 
     $('#spels').modal({
       keyboard: false,
