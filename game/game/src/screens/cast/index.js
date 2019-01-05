@@ -13,6 +13,36 @@ import taskMystery from './taskMystery';
 import taskFunnyLogic from './taskFunnyLogic';
 import { pause, getButtonFocus } from '../../utils/utils';
 
+
+const taskList = {
+  name: [
+    taskMath,
+    taskTransl,
+    taskLogic,
+    taskGram,
+    taskSpeakOut,
+    taskFunnyLogic,
+    taskMystery,
+  ],
+  description: [
+    'Посчитать',
+    'Перевести слово',
+    'Найти лишнее',
+    'Вставить букву',
+    'Повторить имя',
+    'Отгадать загадку',
+    'Залечить раны',
+  ],
+};
+
+const showErorMessage = async (htmlElement) => {
+  const saveElementHtml = htmlElement.innerHTML;
+  $(htmlElement).text('У тебя полно здоровья! Выбирай зеленые задания.');
+  await pause(3000);
+  $(htmlElement).empty();
+  $(htmlElement).html(saveElementHtml);
+};
+
 export default class Cast {
   static init() {
     this.draw();
@@ -23,22 +53,15 @@ export default class Cast {
   }
 
   static initCast() {
-    /* eslint-disable max-len */
-    $('#taskMath').html(`Посчитать <span data-name="taskMath" class="badge badge-light">
-      сила ${taskMath.healthPoint}</span>`);
-    $('#taskTransl').html(`Перевести слово <span data-name="taskTransl" class="badge badge-light">
-      сила ${taskTransl.healthPoint}</span>`);
-    $('#taskLogic').html(`Найти лишнее <span data-name="taskLogic" class="badge badge-light">
-      сила ${taskLogic.healthPoint}</span>`);
-    $('#taskGram').html(`Вставить букву <span data-name="taskGram" class="badge badge-light">
-      сила ${taskGram.healthPoint}</span>`);
-    $('#taskSpeakOut').html(`Повторить имя <span data-name="taskSpeakOut" class="badge badge-light">
-      сила ${taskSpeakOut.healthPoint}</span>`);
-    $('#taskFunnyLogic').html(`Отгадать загадку <span data-name="taskFunnyLogic" class="badge badge-light">
-      сила ${taskFunnyLogic.healthPoint}</span>`);
+    $(taskList.name).each((key) => {
+      const task = taskList.name[key];
+      const title = taskList.description[key];
+      const id = task.name;
 
-    $('#taskMystery').html(`Залечить раны <span data-name="taskMystery" class="badge badge-light">
-      сила ${taskMystery.healthPoint}</span>`);
+      $(`#${id}`)
+        .html(`${title} <span data-name="${id}" class="badge badge-light">
+          сила ${task.healthPoint}</span>`);
+    });
   }
 
   static draw() {
@@ -47,6 +70,7 @@ export default class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
+    // eslint-disable-next-line max-len
     title.innerHTML = `Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтое &ndash; лечит твоего героя.
       Чем больше сила, тем больший урон наносит заклинание.`;
 
@@ -68,6 +92,10 @@ export default class Cast {
     $('#spels').modal('hide');
   }
 
+  static gamePause() {
+
+  }
+
   static getPlayerCast() {
     const getTask = async (task) => {
       await pause(500);
@@ -76,53 +104,19 @@ export default class Cast {
     };
 
     $('#cast').on('click', (e) => {
-      if (e.target.id === 'taskMath'
-      || e.target.getAttribute('data-name') === 'taskMath') {
-        this.modalHide();
-        getTask(taskMath);
-      }
-      if (e.target.id === 'taskTransl'
-      || e.target.getAttribute('data-name') === 'taskTransl') {
-        this.modalHide();
-        getTask(taskTransl);
-      }
-      if (e.target.id === 'taskLogic'
-      || e.target.getAttribute('data-name') === 'taskLogic') {
-        this.modalHide();
-        getTask(taskLogic);
-      }
-      if (e.target.id === 'taskGram'
-      || e.target.getAttribute('data-name') === 'taskGram') {
-        this.modalHide();
-        getTask(taskGram);
-      }
-      if (e.target.id === 'taskSpeakOut'
-      || e.target.getAttribute('data-name') === 'taskSpeakOut') {
-        this.modalHide();
-        taskSpeakOut.load();
-        getTask(taskSpeakOut);
-      }
-      if (e.target.id === 'taskFunnyLogic'
-      || e.target.getAttribute('data-name') === 'taskFunnyLogic') {
-        this.modalHide();
-        getTask(taskFunnyLogic);
-      }
-      if (e.target.id === 'taskMystery'
-      || e.target.getAttribute('data-name') === 'taskMystery') {
-        if (window.gameState.playerHealth === 100) {
-          const showErorMessage = async () => {
-            const saveElementHtml = e.target.innerHTML;
-            $(e.target).text('У тебя полно здоровья! Выбирай зеленые задания.');
-            await pause(3000);
-            $(e.target).empty();
-            $(e.target).html(saveElementHtml);
-          };
-          showErorMessage();
-        } else {
-          this.modalHide();
-          getTask(taskMystery);
+      $(taskList.name).each((key) => {
+        const task = taskList.name[key];
+        const id = task.name;
+
+        if (e.target.id === id || e.target.getAttribute('data-name') === id) {
+          if (window.gameState.playerHealth === 100 && task === taskMystery) {
+            showErorMessage(e.target);
+          } else {
+            this.modalHide();
+            getTask(task);
+          }
         }
-      }
+      });
     });
   }
 
