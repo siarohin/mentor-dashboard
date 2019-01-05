@@ -35,7 +35,7 @@ export default class Cast {
     $('#taskSpeakOut').html(`Повторить имя <span data-name="taskSpeakOut" class="badge badge-light">
       сила ${taskSpeakOut.healthPoint}</span>`);
 
-    $('#taskMystery').html(`Отгадать загадку <span data-name="taskMystery" class="badge badge-light">
+    $('#taskMystery').html(`Залечить раны <span data-name="taskMystery" class="badge badge-light">
       сила ${taskMystery.healthPoint}</span>`);
   }
 
@@ -45,7 +45,7 @@ export default class Cast {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = `Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтые &ndash; лечат твоего героя.
+    title.innerHTML = `Выбери задание-заклинание. Зеленые &ndash; наносят урон, желтое &ndash; лечит твоего героя.
       Чем больше сила, тем больший урон наносит заклинание.`;
 
     $('#spels').modal({

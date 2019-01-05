@@ -11,7 +11,7 @@ import { getInputFocus, keyControlLeftRightInBut } from '../../../utils/utils';
 
 export default class taskMystery {
   static get healthPoint() {
-    const health = 50;
+    const health = 100;
     return health;
   }
 
@@ -35,7 +35,8 @@ export default class taskMystery {
     contentEl.innerHTML = template;
 
     const title = document.querySelector('.modal-title');
-    title.innerHTML = 'Отгадай мою загадку:';
+    title.innerHTML = `Отгадай мою загадку.
+      Но если ты ответишь неправильно, то ты проиграешь!`;
 
     $('#spels').modal({
       keyboard: false,
