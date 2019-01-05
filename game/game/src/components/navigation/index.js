@@ -28,7 +28,18 @@ export default class Header {
 
   static update(gameState) {
     $('.js-show-player-name')
-      .text(`Сейчас ${gameState.playerName}
-        сражается с ${gameState.monsterName}`);
+      .html(`
+      Сейчас ${gameState.playerName} сражается с ${gameState.monsterName}
+        <div class="triangle-topright">
+          <span class="triangle-topright__score">
+            ${window.gameState.playerScore / 100}
+          </span>
+        </div>`);
+
+    $('.triangle-topright').hide();
+
+    if (window.gameState.playerScore > 0) {
+      $('.triangle-topright').show();
+    }
   }
 }

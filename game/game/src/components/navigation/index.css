@@ -60,3 +60,23 @@
 .tooltip-sound_on {
   opacity: 0;
 }
+
+/* triangle-topright */
+.triangle-topright {
+  position: fixed;
+  right: 0;
+  top: 0;
+	width: 0;
+	height: 0;
+	border-top: 80px solid #28a745; 
+  border-left: 80px solid transparent;
+}
+
+/* triangle-topright__score */
+.triangle-topright__score {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: #222;
+  font-weight: 700;
+}
