@@ -9,6 +9,7 @@ import taskTransl from './taskTransl';
 import taskLogic from './taskLogic';
 import taskGram from './taskGram';
 import taskSpeakOut from './taskSpeakOut';
+import taskMystery from './taskMystery';
 import { pause, getButtonFocus } from '../../utils/utils';
 
 
@@ -34,9 +35,8 @@ export default class Cast {
     $('#taskSpeakOut').html(`Повторить имя <span data-name="taskSpeakOut" class="badge badge-light">
       сила ${taskSpeakOut.healthPoint}</span>`);
 
-    $('#taskWriting').text('Writing');
-    $('#taskListen').text('Listening');
-    $('#taskSpeaking').text('Speaking');
+    $('#taskMystery').html(`Отгадать загадку <span data-name="taskMystery" class="badge badge-light">
+      сила ${taskMystery.healthPoint}</span>`);
   }
 
   static draw() {
@@ -99,6 +99,11 @@ export default class Cast {
         this.modalHide();
         taskSpeakOut.load();
         getTask(taskSpeakOut);
+      }
+      if (e.target.id === 'taskMystery'
+      || e.target.getAttribute('data-name') === 'taskMystery') {
+        this.modalHide();
+        getTask(taskMystery);
       }
     });
   }
