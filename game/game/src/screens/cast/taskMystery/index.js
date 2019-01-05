@@ -52,10 +52,10 @@ export default class taskMystery {
     const getTranslation = randomTask.answer;
 
     this.answer = getTranslation;
-    this.generateMysteryTask(getWord);
+    this.generateTask(getWord);
   }
 
-  static generateMysteryTask(getWord) {
+  static generateTask(getWord) {
     const vocabularyKey = document.querySelector('.vocabulary-key');
     vocabularyKey.textContent = getWord;
   }

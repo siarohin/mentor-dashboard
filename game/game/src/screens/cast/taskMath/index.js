@@ -47,10 +47,10 @@ export default class taskMath {
     const randomDataSource = uniqueRandomArray(dataSource);
     const operation = randomDataSource();
 
-    this.generateMathTask(operation);
+    this.generateTask(operation);
   }
 
-  static generateMathTask(operation) {
+  static generateTask(operation) {
     switch (operation) {
       case '+':
         this.firstNumber = Math.floor(Math.random() * 100);

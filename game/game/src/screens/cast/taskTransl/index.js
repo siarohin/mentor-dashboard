@@ -53,10 +53,10 @@ export default class taskTransl {
     const getImage = randomTask.image;
 
     this.answer = getTranslation;
-    this.generateTranslTask(getWord, getImage);
+    this.generateTask(getWord, getImage);
   }
 
-  static generateTranslTask(getWord, getImage) {
+  static generateTask(getWord, getImage) {
     const vocabularyKey = document.querySelector('.vocabulary-key');
     vocabularyKey.textContent = getWord;
 

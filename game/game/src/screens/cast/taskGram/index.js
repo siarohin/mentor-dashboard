@@ -53,10 +53,10 @@ export default class taskGram {
         чего-то не хватает. Нажми ниже на букву, которая пропущена.`;
 
     this.answer = randomTask.rightLetter;
-    this.generateGramTask(randomTask);
+    this.generateTask(randomTask);
   }
 
-  static generateGramTask(randomTask) {
+  static generateTask(randomTask) {
     const contentEl = document.querySelector('.logic-gram');
 
     $(randomTask.letter).each((index, value) => {

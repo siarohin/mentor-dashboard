@@ -45,10 +45,10 @@ export default class taskLogic {
     const randomTask = uniqueRandomArray(dataSource)();
 
     this.answer = randomTask.targetImage;
-    this.generateLogicTask(randomTask);
+    this.generateTask(randomTask);
   }
 
-  static generateLogicTask(randomTask) {
+  static generateTask(randomTask) {
     const question = document.querySelector('.modal-title');
     question.innerHTML = randomTask.question;
 
