@@ -27,11 +27,59 @@ export const getInputFocus = () => {
   });
 };
 
+export const getNameInputFocus = () => {
+  $(document).ready(() => {
+    $('input:text:visible:first').focus();
+  });
+};
+
 export const getButtonFocus = () => {
   $(document).ready(() => {
     $('.modal').show(() => {
       $('button:visible:first').focus();
     });
+  });
+};
+
+export const getStartButtonFocus = () => {
+  $(document).ready(() => {
+    $('button:visible:first').focus();
+  });
+};
+
+export const taskKeyControl = () => {
+  $('section').on('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+      $('.btn-answer').focus();
+    }
+    if (e.key === 'ArrowLeft') {
+      $('.input-answer').focus();
+    }
+  });
+};
+
+export const taskKeyControlSpeakOut = () => {
+  $('section').on('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+      $('.btn-answer').focus();
+    }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+      $('.input-answer').focus();
+    }
+    if (e.key === 'ArrowUp') {
+      $('.js-speakOut__audio-button').focus();
+    }
+  });
+};
+
+export const taskImgKeyControl = () => {
+  $('section').on('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+      $(e.target).next('button').focus();
+    }
+    if (e.key === 'ArrowLeft') {
+      $(e.target).prev('button').focus();
+    }
   });
 };
 

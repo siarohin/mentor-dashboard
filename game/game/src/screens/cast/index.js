@@ -11,10 +11,12 @@ import taskGram from './taskGram';
 import taskSpeakOut from './taskSpeakOut';
 import { pause, getButtonFocus } from '../../utils/utils';
 
+
 export default class Cast {
   static init() {
     this.draw();
     getButtonFocus();
+    this.keyControl();
     this.initCast();
     this.getPlayerCast();
   }
@@ -97,6 +99,17 @@ export default class Cast {
         this.modalHide();
         taskSpeakOut.load();
         getTask(taskSpeakOut);
+      }
+    });
+  }
+
+  static keyControl() {
+    $('#cast').on('keydown', 'button', (e) => {
+      if (e.key === 'ArrowDown') {
+        $(e.target).next('button').focus();
+      }
+      if (e.key === 'ArrowUp') {
+        $(e.target).prev('button').focus();
       }
     });
   }

@@ -9,6 +9,6 @@ export default `
   <div class="model-monster-second model-monster-second_dance"></div>
 </div>
 <div class="home-scene-button">
-  <button type="button" class="home-scene-button__button home-scene-button__button_scale btn-lg btn-success js-start-game" autofocus>Начать игру</button>
+  <button type="button" class="home-scene-button__button home-scene-button__button_scale btn-lg btn-success js-start-game">Начать игру</button>
 </div>
 `;

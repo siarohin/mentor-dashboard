@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 import template from './index.template';
 import './index.css';
+import { getNameInputFocus } from '../../utils/utils';
 
 export default class ChoosePlayerName {
   static draw() {
@@ -10,7 +11,8 @@ export default class ChoosePlayerName {
     const contentEl = document.querySelector('#content');
     contentEl.innerHTML = template;
 
-    $('.js-player-name').focus();
+    getNameInputFocus();
+    this.keyControl();
   }
 
   constructor() {
@@ -27,6 +29,17 @@ export default class ChoosePlayerName {
         $('#content').empty();
         resolve(playerName);
       });
+    });
+  }
+
+  static keyControl() {
+    $('#choosePlayerName').on('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        $('.js-form__button').focus();
+      }
+      if (e.key === 'ArrowUp') {
+        $('.js-player-name').focus();
+      }
     });
   }
 }

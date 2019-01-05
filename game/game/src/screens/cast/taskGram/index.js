@@ -6,7 +6,7 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
-import { getButtonFocus } from '../../../utils/utils';
+import { getButtonFocus, taskImgKeyControl } from '../../../utils/utils';
 
 
 export default class taskGram {
@@ -20,6 +20,7 @@ export default class taskGram {
     this.generateRandom();
     this.modalShow();
     getButtonFocus();
+    taskImgKeyControl();
     this.closeTask();
   }
 
