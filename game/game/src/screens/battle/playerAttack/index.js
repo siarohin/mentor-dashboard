@@ -37,7 +37,9 @@ export default class PlayerAttack {
     const playSound = async () => {
       await this.play('yeah');
       await (pause(500));
-      await (this.play('yep'));
+      if (this.statusAnimation) {
+        await (this.play('yep'));
+      }
     };
 
     const showAnimation = async () => {
@@ -58,7 +60,7 @@ export default class PlayerAttack {
     };
 
     playSound();
-    if (this.statusAnimation !== false) {
+    if (this.statusAnimation) {
       showAnimation();
     }
   }
