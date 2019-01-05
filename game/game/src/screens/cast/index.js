@@ -13,7 +13,6 @@ import taskMystery from './taskMystery';
 import taskFunnyLogic from './taskFunnyLogic';
 import { pause, getButtonFocus } from '../../utils/utils';
 
-
 export default class Cast {
   static init() {
     this.draw();
@@ -103,15 +102,26 @@ export default class Cast {
         taskSpeakOut.load();
         getTask(taskSpeakOut);
       }
-      if (e.target.id === 'taskMystery'
-      || e.target.getAttribute('data-name') === 'taskMystery') {
-        this.modalHide();
-        getTask(taskMystery);
-      }
       if (e.target.id === 'taskFunnyLogic'
       || e.target.getAttribute('data-name') === 'taskFunnyLogic') {
         this.modalHide();
         getTask(taskFunnyLogic);
+      }
+      if (e.target.id === 'taskMystery'
+      || e.target.getAttribute('data-name') === 'taskMystery') {
+        if (window.gameState.playerHealth === 100) {
+          const showErorMessage = async () => {
+            const saveElementHtml = e.target.innerHTML;
+            $(e.target).text('У тебя полно здоровья! Выбирай зеленые задания.');
+            await pause(3000);
+            $(e.target).empty();
+            $(e.target).html(saveElementHtml);
+          };
+          showErorMessage();
+        } else {
+          this.modalHide();
+          getTask(taskMystery);
+        }
       }
     });
   }
