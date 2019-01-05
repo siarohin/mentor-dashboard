@@ -1,0 +1,36 @@
+.logic-img_funny {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logic-img_funny__task-img {
+  height: 80px;
+  min-width: 80px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.logic-img_funny__task-img:focus {
+  border-color: #66afe9;
+  border-radius: 0.3rem;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.logic-img_funny__task-img:hover {
+  opacity: 0.6;
+}
+
+.task-img_funny__text {
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  opacity: 0.8;
+}

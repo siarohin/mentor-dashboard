@@ -10,6 +10,7 @@ import taskLogic from './taskLogic';
 import taskGram from './taskGram';
 import taskSpeakOut from './taskSpeakOut';
 import taskMystery from './taskMystery';
+import taskFunnyLogic from './taskFunnyLogic';
 import { pause, getButtonFocus } from '../../utils/utils';
 
 
@@ -34,6 +35,8 @@ export default class Cast {
       сила ${taskGram.healthPoint}</span>`);
     $('#taskSpeakOut').html(`Повторить имя <span data-name="taskSpeakOut" class="badge badge-light">
       сила ${taskSpeakOut.healthPoint}</span>`);
+    $('#taskFunnyLogic').html(`Отгадать загадку <span data-name="taskFunnyLogic" class="badge badge-light">
+      сила ${taskFunnyLogic.healthPoint}</span>`);
 
     $('#taskMystery').html(`Залечить раны <span data-name="taskMystery" class="badge badge-light">
       сила ${taskMystery.healthPoint}</span>`);
@@ -104,6 +107,11 @@ export default class Cast {
       || e.target.getAttribute('data-name') === 'taskMystery') {
         this.modalHide();
         getTask(taskMystery);
+      }
+      if (e.target.id === 'taskFunnyLogic'
+      || e.target.getAttribute('data-name') === 'taskFunnyLogic') {
+        this.modalHide();
+        getTask(taskFunnyLogic);
       }
     });
   }
