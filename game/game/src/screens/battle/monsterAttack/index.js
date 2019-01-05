@@ -17,7 +17,7 @@ const music = new Howl({
 });
 
 
-class MonsterAttack {
+export default class MonsterAttack {
   static play(sprite) {
     if (!$('.nav-sound').hasClass('sound-off')) {
       music.play(sprite);
@@ -62,6 +62,3 @@ class MonsterAttack {
     showAnimation();
   }
 }
-
-
-export default MonsterAttack;

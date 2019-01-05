@@ -89,7 +89,7 @@ export default class taskMystery {
     if (this.checkResult()) {
       window.gameState.playerHealth += this.healthPoint;
       this.limitHealth();
-      Battle.playerAttack(3000);
+      Battle.playerAttack(3000, false);
     } else {
       window.gameState.playerHealth -= this.healthPoint;
       Battle.monsterAttack(3000);

@@ -17,7 +17,7 @@ const music = new Howl({
 });
 
 
-class PlayerAttack {
+export default class PlayerAttack {
   static play(sprite) {
     if (!$('.nav-sound').hasClass('sound-off')) {
       music.play(sprite);
@@ -32,7 +32,8 @@ class PlayerAttack {
     music.load();
   }
 
-  static init(time) {
+  static init(time, statusAnimation = true) {
+    this.statusAnimation = statusAnimation;
     const playSound = async () => {
       await this.play('yeah');
       await (pause(500));
@@ -57,9 +58,8 @@ class PlayerAttack {
     };
 
     playSound();
-    showAnimation();
+    if (this.statusAnimation !== false) {
+      showAnimation();
+    }
   }
 }
-
-
-export default PlayerAttack;

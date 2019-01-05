@@ -86,8 +86,8 @@ export default class Battle {
     gameOverInit();
   }
 
-  static playerAttack(time) {
-    PlayerAttack.init(time);
+  static playerAttack(time, statusAnimation) {
+    PlayerAttack.init(time, statusAnimation);
   }
 
   static monsterAttack(time) {
