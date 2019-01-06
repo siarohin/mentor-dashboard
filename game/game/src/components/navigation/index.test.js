@@ -13,7 +13,7 @@ describe('Nav', () => {
     const body = document.querySelector('body');
 
     const wrapper = '<div class=\'wrapper\'></div>';
-    body.insertAdjacentHTML('afterbegin', wrapper);
+    $(body).append(wrapper);
 
     Nav.draw();
     const navTag = document.querySelectorAll('.wrapper > nav');

@@ -101,7 +101,8 @@ export default class taskTransl {
 
   static closeTask() {
     $('.input-group').on('click keypress', (e) => {
-      if ((e.key === 'Enter' && e.type === 'keypress')
+      if ((e.key === 'Enter' && e.type === 'keypress'
+        && e.target.type === 'text')
       || (e.target.type === 'button' && e.type === 'click')) {
         this.modalHide();
         this.play();

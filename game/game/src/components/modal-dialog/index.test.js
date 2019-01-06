@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import ModalDialog from '.';
 
 
@@ -6,7 +7,7 @@ describe('ModalDialog', () => {
     const body = document.querySelector('body');
 
     const wrapper = '<div class=\'wrapper\'></div>';
-    body.insertAdjacentHTML('beforeend', wrapper);
+    $(body).append(wrapper);
 
     ModalDialog.draw();
 
