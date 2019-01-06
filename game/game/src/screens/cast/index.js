@@ -131,6 +131,7 @@ export default class Cast {
       });
 
       if (e.target.className === 'close-window') {
+        e.preventDefault();
         this.gamePause();
       }
     });
