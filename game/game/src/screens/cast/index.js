@@ -137,6 +137,7 @@ export default class Cast {
     });
   }
 
+
   static keyControl() {
     $('#cast').on('keydown', 'button', (e) => {
       if (e.key === 'ArrowDown') {
@@ -144,6 +145,9 @@ export default class Cast {
       }
       if (e.key === 'ArrowUp') {
         $(e.target).prev('button').focus();
+      }
+      if (e.key === 'й' || e.key === 'Й' || e.key === 'q' || e.key === 'Q') {
+        $('.close-window').click();
       }
     });
   }

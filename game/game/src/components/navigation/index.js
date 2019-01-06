@@ -26,7 +26,9 @@ export default class Header {
     });
 
     $(document).on('keypress', (e) => {
-      if (e.key === 'q' || e.key === 'Q' || e.key === 'й' || e.key === 'Й') {
+      const inputHtml = $('input');
+      if ((e.key === 'ы' || e.key === 'Ы' || e.key === 's' || e.key === 'S')
+        && (!inputHtml.is(':focus'))) {
         $('.js-sound').click();
       }
     });
