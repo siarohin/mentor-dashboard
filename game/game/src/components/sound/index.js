@@ -1,4 +1,5 @@
 import { Howl } from 'howler';
+import $ from 'jquery';
 
 
 export const music = new Howl({
@@ -11,7 +12,6 @@ export const music = new Howl({
   loop: true,
   volume: 0.5,
 });
-
 
 export default class Sound {
   static init() {

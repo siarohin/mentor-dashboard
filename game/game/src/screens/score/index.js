@@ -107,6 +107,7 @@ export default class Score {
   static startGame() {
     $('.score-footer__button').on('click', (e) => {
       e.preventDefault();
+      $(document).off();
       playAgain();
     });
   }

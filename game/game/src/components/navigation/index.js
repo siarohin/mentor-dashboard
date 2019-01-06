@@ -4,6 +4,16 @@ import template from './index.template';
 import './index.css';
 import Sound from '../sound';
 
+
+const pressKeyS = (event) => {
+  const inputHtml = $('input');
+  if ((event.key === 'ы' || event.key === 'Ы'
+    || event.key === 's' || event.key === 'S')
+    && (!inputHtml.is(':focus'))) {
+    $('.js-sound').click();
+  }
+};
+
 export default class Header {
   static draw() {
     $('.navbar').empty();
@@ -26,11 +36,7 @@ export default class Header {
     });
 
     $(document).on('keypress', (e) => {
-      const inputHtml = $('input');
-      if ((e.key === 'ы' || e.key === 'Ы' || e.key === 's' || e.key === 'S')
-        && (!inputHtml.is(':focus'))) {
-        $('.js-sound').click();
-      }
+      pressKeyS(e);
     });
   }
 
