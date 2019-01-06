@@ -328,3 +328,28 @@
   height: 1.5rem;
   font-size: 1rem;
 }
+
+/* init-cast-button */
+@keyframes show-init-cast-button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.init-cast-button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 1024px;
+  top: 50%;
+}
+
+.init-cast-button__button {
+  cursor: pointer;
+  animation: show-init-cast-button 1s;
+}

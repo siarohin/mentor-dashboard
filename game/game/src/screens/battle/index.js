@@ -9,7 +9,6 @@ import PlayerAttack from './playerAttack';
 import MonsterAttack from './monsterAttack';
 import { GenerateMonster, GenerateMonsterName } from '../generateMonster';
 
-
 const castInit = async () => {
   await (pause(1000));
   Cast.init();
@@ -24,6 +23,7 @@ export default class Battle {
   static init() {
     const initScene = async () => {
       await this.draw();
+      this.initCastButton();
       await GenerateMonsterName.init();
       await GenerateMonster.init();
       await MonsterAttack.load();
@@ -44,6 +44,15 @@ export default class Battle {
 
     $('.player-name').text(window.gameState.playerName);
     $('.monster-name').text(window.gameState.monsterName);
+
+    $('.init-cast-button').hide();
+  }
+
+  static initCastButton() {
+    $('.init-cast-button').on('click', () => {
+      $('.init-cast-button').hide();
+      Cast.init();
+    });
   }
 
   static empty() {

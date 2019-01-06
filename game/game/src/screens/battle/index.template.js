@@ -23,5 +23,8 @@ export default `
     </div>
   </div>
 </div>
+<div class="init-cast-button">
+  <button type="button" class="init-cast-button__button btn-lg btn-success">Продолжить игру</button>
+</div>
 </section>
 `;

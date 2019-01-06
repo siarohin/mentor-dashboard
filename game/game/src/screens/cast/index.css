@@ -17,3 +17,19 @@
 .cast__button_footer:focus {
   background: #e0a800;
 }
+
+/* close-window */
+.close-window {
+  width: 24px;
+  height: 24px;
+  background: transparent url('../../images/close-window.png') 0 0;
+  position: absolute;
+  top: -110px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-window:hover {
+  opacity: 0.6;
+}

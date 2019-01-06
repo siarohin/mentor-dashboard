@@ -92,7 +92,12 @@ export default class Cast {
   }
 
   static gamePause() {
-
+    const setPauseCloseWindow = async () => {
+      await $('.init-cast-button').show();
+      this.modalHide();
+      await $('.init-cast-button__button').focus();
+    };
+    setPauseCloseWindow();
   }
 
   static getPlayerCast() {
@@ -116,6 +121,10 @@ export default class Cast {
           }
         }
       });
+
+      if (e.target.className === 'close-window') {
+        this.gamePause();
+      }
     });
   }
 
