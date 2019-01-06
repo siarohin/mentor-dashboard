@@ -24,6 +24,12 @@ export default class Header {
         Sound.setState(false);
       }
     });
+
+    $(document).on('keypress', (e) => {
+      if (e.key === 'q' || e.key === 'Q' || e.key === 'й' || e.key === 'Й') {
+        $('.js-sound').click();
+      }
+    });
   }
 
   static update(gameState) {
