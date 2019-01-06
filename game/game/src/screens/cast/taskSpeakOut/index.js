@@ -32,6 +32,7 @@ const speakout = new Howl({
   onload() {
     $('.speakOut-preloader').remove();
     $('.speakOut-content').show();
+    getInputFocus();
   },
 });
 
@@ -64,7 +65,6 @@ export default class taskSpeakOut {
     this.initAudioButton();
     this.generateRandom();
     this.modalShow();
-    getInputFocus();
     keyControlLeftRightUpDown();
     this.closeTask();
   }
