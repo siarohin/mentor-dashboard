@@ -46,7 +46,7 @@ const taskList = {
 
 const showErorMessage = async (htmlElement) => {
   const saveElementHtml = htmlElement.innerHTML;
-  $(htmlElement).text('У тебя полно здоровья! Выбирай зеленые задания.');
+  $(htmlElement).text('У тебя много здоровья! Выбирай зеленые задания.');
   await pause(3000);
   $(htmlElement).empty();
   $(htmlElement).html(saveElementHtml);

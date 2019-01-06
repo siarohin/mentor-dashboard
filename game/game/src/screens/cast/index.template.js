@@ -11,9 +11,11 @@ export default `
     <button type="button" id="taskFunnyLogic" class="cast__button d-flex flex-row justify-content-between align-items-center btn btn-success"></button>
     <button type="button" id="taskMystery" class="cast__button cast__button_footer d-flex flex-row justify-content-between align-items-center btn btn-warning"></button>
   </div>
-  <article class="cast__info-navigation">
-    <h5>Быстрая навигация</h5>
-    <p>Q - свернуть окно, S - вкл/выкл звук</p>
-  </article>
+  <footer class="d-flex flex-row justify-content-between cast__info-navigation">
+    <div class="col"><span>Q</span> свернуть окно</div>
+    <div class="col"><span>S</span> вкл/выкл звук</div>
+    <div class="col"><span>&uarr; &darr;</span> вверх/вниз</div>
+    <div class="col"><span>&larr; &rarr;</span> влево/вправо</div>
+  </footer>
 </section>
 `;

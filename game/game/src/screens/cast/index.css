@@ -35,3 +35,20 @@
 .close-window:hover {
   opacity: 0.6;
 }
+
+/* cast__info-navigation */
+.cast__info-navigation {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.cast__info-navigation .col {
+  text-align: center;
+}
+
+.cast__info-navigation span {
+  font-weight: 700;
+  display: block;
+  font-size: 1.3rem;
+}

@@ -49,9 +49,12 @@ export default class Battle {
   }
 
   static initCastButton() {
-    $('.init-cast-button').on('click', () => {
-      $('.init-cast-button').hide();
-      Cast.init();
+    $('.init-cast-button').on('click keydown', (e) => {
+      if (e.key === 'q' || e.key === 'Q' || e.key === 'й' || e.key === 'Й'
+        || e.type === 'click') {
+        $('.init-cast-button').hide();
+        Cast.init();
+      }
     });
   }
 
