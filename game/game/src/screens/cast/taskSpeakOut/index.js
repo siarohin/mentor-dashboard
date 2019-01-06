@@ -56,6 +56,7 @@ export default class taskSpeakOut {
 
   static init() {
     this.draw();
+    this.load();
     this.initAudioButton();
     this.generateRandom();
     this.modalShow();
