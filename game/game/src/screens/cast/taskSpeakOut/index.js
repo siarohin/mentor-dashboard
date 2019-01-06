@@ -29,6 +29,10 @@ const speakout = new Howl({
   onend() {
     $('.js-speakOut__audio-button').removeClass('audio-button_pause');
   },
+  onload() {
+    $('.speakOut-preloader').remove();
+    $('.speakOut-content').show();
+  },
 });
 
 export default class taskSpeakOut {
@@ -91,6 +95,8 @@ export default class taskSpeakOut {
 
     const title = document.querySelector('.modal-title');
     title.innerHTML = 'Проверим твой английский, герой!';
+
+    $('.speakOut-content').hide();
 
     $('#spels').modal({
       keyboard: false,

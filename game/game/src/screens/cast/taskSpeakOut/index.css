@@ -36,3 +36,36 @@
   -webkit-animation: button_scale 1s ease-in-out infinite alternate;
   animation: button_scale 1s ease-in-out infinite alternate;
 }
+
+/* preloader */
+@keyframes sk-double-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+}
+
+.sk-double-bounce  .sk-double-bounce-2 {
+  animation-delay: -1.0s;
+}
+
+.sk-double-bounce {
+  width: 4em;
+  height: 4em;
+  position: relative;
+  margin: auto;
+}
+
+.sk-double-bounce .sk-child {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #337ab7;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: sk-double-bounce 2.0s infinite ease-in-out;
+}
