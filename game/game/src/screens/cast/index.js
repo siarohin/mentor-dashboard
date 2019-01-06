@@ -15,7 +15,7 @@ import { pause, getButtonFocus } from '../../utils/utils';
 
 
 const taskList = {
-  name: [
+  taskName: [
     taskMath,
     taskTransl,
     taskLogic,
@@ -23,6 +23,15 @@ const taskList = {
     taskSpeakOut,
     taskFunnyLogic,
     taskMystery,
+  ],
+  id: [
+    'taskMath',
+    'taskTransl',
+    'taskLogic',
+    'taskGram',
+    'taskSpeakOut',
+    'taskFunnyLogic',
+    'taskMystery',
   ],
   description: [
     'Посчитать',
@@ -53,10 +62,10 @@ export default class Cast {
   }
 
   static initCast() {
-    $(taskList.name).each((key) => {
-      const task = taskList.name[key];
+    $(taskList.taskName).each((key) => {
+      const task = taskList.taskName[key];
       const title = taskList.description[key];
-      const id = task.name;
+      const id = taskList.id[key];
 
       $(`#${id}`)
         .html(`${title} <span data-name="${id}" class="badge badge-light">
@@ -108,10 +117,9 @@ export default class Cast {
     };
 
     $('#cast').on('click', (e) => {
-      $(taskList.name).each((key) => {
-        const task = taskList.name[key];
-        const id = task.name;
-
+      $(taskList.taskName).each((key) => {
+        const task = taskList.taskName[key];
+        const id = taskList.id[key];
         if (e.target.id === id || e.target.getAttribute('data-name') === id) {
           if (window.gameState.playerHealth === 100 && task === taskMystery) {
             showErorMessage(e.target);

@@ -11,6 +11,7 @@ const monsterNames = {
     'Грю', 'Мардж', 'Ранго', 'Майк', 'Клювклюн', 'Баюн', 'Битвохряк'],
 };
 
+
 const monsterClass = ['random-1', 'random-2', 'random-3'];
 
 export const pause = time => new Promise((resolve) => {
