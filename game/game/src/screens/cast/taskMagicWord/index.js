@@ -52,6 +52,8 @@ export default class taskMagicWord {
     const arrayOfWords = randomTask.word;
     const magicWord = uniqueRandomArray(arrayOfWords)();
 
+    $('.magic-word-topic').text(`Тема: ${randomTask.topic}`);
+
     this.answer = magicWord;
     this.generateTask(magicWord);
   }

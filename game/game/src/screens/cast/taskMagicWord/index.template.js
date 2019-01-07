@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 export default `
 <section id="taskMagicWord">
+  <h5 class="magic-word-topic"></h5>
     <div class="alert alert-warning task-body" role="alert">
       <div class="magic-word"></div>
     </div>
