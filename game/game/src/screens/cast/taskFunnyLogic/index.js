@@ -6,7 +6,8 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
-import { getButtonFocus, keyControlLeftRight } from '../../../utils/utils';
+/* eslint-disable-next-line max-len */
+import { getButtonFocus, keyControlLeftRight, shuffleRandom } from '../../../utils/utils';
 
 
 export default class taskFunnyLogic {
@@ -54,12 +55,25 @@ export default class taskFunnyLogic {
 
     const getImage = document.querySelector('.logic-img_funny');
 
+    // save each template into aray
+    const saveData = [];
+    saveData.length = 0;
+
     $(randomTask.answer).each((index, value) => {
-      getImage.innerHTML += `
+      const buttonElement = `
         <button class="logic-img_funny__task-img" data-index="${index}">
         ${value}
         </button>
       `;
+
+      saveData.push(buttonElement);
+    });
+
+    // shuffle random all templates and insert to html
+    saveData.sort(shuffleRandom);
+
+    $(saveData).each((index) => {
+      getImage.innerHTML += saveData[index];
     });
   }
 
