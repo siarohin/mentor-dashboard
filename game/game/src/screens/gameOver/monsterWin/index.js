@@ -19,7 +19,6 @@ export default class MonsterWin {
       $('.model-player').hide();
       $('.model-player_died').show();
       $('.model-monster-bird').hide();
-
       await (pause(2000));
       $('.model-monster').removeClass('model-monster_animation');
       $('.monster-eyes').removeClass('monster-eyes_animation');

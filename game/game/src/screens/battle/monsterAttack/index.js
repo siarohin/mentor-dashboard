@@ -36,7 +36,7 @@ export default class MonsterAttack {
     const playSound = async () => {
       if (!$('.nav-sound').hasClass('sound-off')) {
         this.play('ooh');
-        await (pause(800));
+        await (pause(700));
         this.play('boom');
       }
     };

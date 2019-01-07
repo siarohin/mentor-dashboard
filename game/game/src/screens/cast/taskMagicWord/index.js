@@ -7,12 +7,12 @@ import './index.css';
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
 /* eslint-disable-next-line max-len */
-import { getInputFocus, keyControlLeftRightInBut, shuffleRandom } from '../../../utils/utils';
+import { getInputFocus, keyControlLeftRightInBut, shuffleRandom, pause } from '../../../utils/utils';
 
 
 export default class taskMagicWord {
   static get healthPoint() {
-    const health = 40;
+    const health = 80;
     return health;
   }
 

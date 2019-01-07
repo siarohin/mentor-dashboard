@@ -14,7 +14,7 @@ export default `
     </div>
   </div>
   <div class="col-sm">
-    <h2 class="card-title monster-name"></h2>
+    <h2 class="card-title monster-name align-right"></h2>
     <div class="progress">
       <div class="monster-health progress-bar bg-danger" role="progressbar"></div>
     </div>
