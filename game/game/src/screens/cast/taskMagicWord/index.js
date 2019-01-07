@@ -58,29 +58,28 @@ export default class taskMagicWord {
 
   static generateTask(magicWord) {
     const magicWordLetters = magicWord.split('');
-
     const contentEl = document.querySelector('.magic-word');
 
-    // save each template into aray
-    const saveData = [];
-    saveData.length = 0;
+    // copy letterrs from magicWord
+    const saveData = magicWordLetters.slice(0);
 
-    $(magicWordLetters).each((index) => {
-      const divElement = `
-        <div class="magic-word__task-magic-word user-select-none">
-          ${magicWordLetters[index]}
-        </div>
-      `;
-
-      saveData.push(divElement);
-    });
-
-    // shuffle random all templates and insert to html
+    // shuffle random all letters
     saveData.sort(shuffleRandom);
 
+    // if magicWord String === shuffle magicWord String, sort again
+    while (saveData.join() === magicWordLetters.join()) {
+      saveData.sort(shuffleRandom);
+    }
+
     $(saveData).each((index) => {
-      contentEl.innerHTML += saveData[index];
+      contentEl.innerHTML += `
+        <div class="magic-word__task-magic-word user-select-none">
+          ${saveData[index]}
+        </div>
+      `;
     });
+
+    saveData.length = 0;
   }
 
   static checkResult() {
