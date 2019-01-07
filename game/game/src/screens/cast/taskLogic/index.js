@@ -6,7 +6,8 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
-import { getButtonFocus, keyControlLeftRight } from '../../../utils/utils';
+/* eslint-disable-next-line max-len */
+import { getButtonFocus, keyControlLeftRight, shuffleRandom } from '../../../utils/utils';
 
 
 export default class taskLogic {
@@ -54,17 +55,30 @@ export default class taskLogic {
 
     const getImage = document.querySelector('.logic-img');
 
+    // save each template into aray
+    const saveData = [];
+    saveData.length = 0;
+
     $(randomTask.image).each((index, value) => {
-      getImage.innerHTML += `
-        <button class="logic-img__task-img" data-index="${index}"
-          style="background-position: ${value}">
+      const buttonElement = `
+      <button class="logic-img__task-img" data-index="${index}"
+        style="background-position: ${value}">
 
-          <span class="task-img__text alert alert-dark">
-            ${randomTask.imageAlt[index]}
-          </span>
+        <span class="task-img__text alert alert-dark">
+          ${randomTask.imageAlt[index]}
+        </span>
 
-        </button>
-      `;
+      </button>
+    `;
+
+      saveData.push(buttonElement);
+    });
+
+    // shuffle random all templates and insert to html
+    saveData.sort(shuffleRandom);
+
+    $(saveData).each((index) => {
+      getImage.innerHTML += saveData[index];
     });
   }
 

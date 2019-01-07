@@ -63,8 +63,8 @@ export default [
   {
     question: 'Кто здесь лишний?',
     image: ['0 -800px', '-80px -800px', '-160px -800px', '-240px -800px'],
-    imageAlt: ['1', '2', '3', '4'],
-    targetImage: '2',
+    imageAlt: ['дима', 'ася', 'витя', 'катя'],
+    targetImage: 'ася',
   },
   {
     question: 'Что здесь лишнее?',
@@ -87,7 +87,7 @@ export default [
   {
     question: 'Найди лишний предмет.',
     image: ['0 -1120px', '-80px -1120px', '-160px -1120px', '-240px -1120px'],
-    imageAlt: ['кровать', 'парта', 'тетрадь', 'школьная доска'],
+    imageAlt: ['кровать', 'парта', 'тетрадь', 'доска'],
     targetImage: 'кровать',
   },
   {
@@ -99,8 +99,8 @@ export default [
   {
     question: 'Что здесь лишнее?',
     image: ['0 -1280px', '-80px -1280px', '-160px -1280px', '-240px -1280px'],
-    imageAlt: ['10 рублей', '10 долларов', '50 копеек', '20 евро'],
-    targetImage: '50 копеек',
+    imageAlt: ['рубль', 'доллар', 'копейка', 'евро'],
+    targetImage: 'копейка',
   },
   {
     question: 'Что здесь лишнее?',
@@ -111,13 +111,13 @@ export default [
   {
     question: 'Найди лишнюю картинку.',
     image: ['0 -1440px', '-80px -1440px', '-160px -1440px', '-240px -1440px'],
-    imageAlt: ['1', '2', '3', '4'],
-    targetImage: '4',
+    imageAlt: ['король', 'ферзь', 'ладья', 'туз'],
+    targetImage: 'туз',
   },
   {
     question: 'Найди лишнюю букву.',
     image: ['0 -1520px', '-80px -1520px', '-160px -1520px', '-240px -1520px'],
-    imageAlt: ['1', '2', '3', '4'],
-    targetImage: '2',
+    imageAlt: ['е', 'ж', 'и', 'я'],
+    targetImage: 'ж',
   },
 ];

@@ -20,6 +20,10 @@ export const pause = time => new Promise((resolve) => {
   }, time);
 });
 
+export const shuffleRandom = (() => {
+  return Math.random() - 0.5;
+});
+
 export const getInputFocus = () => {
   $(document).ready(() => {
     $('.modal').show(() => {
