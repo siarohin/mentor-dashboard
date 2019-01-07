@@ -63,18 +63,20 @@ export default class Battle {
   }
 
   static update() {
-    if (window.gameState.playerHealth < 0) {
-      window.gameState.playerHealth = 0;
-    }
-    if (window.gameState.monsterHealth < 0) {
-      window.gameState.monsterHealth = 0;
-    }
-
     $('.player-health').text(window.gameState.playerHealth);
     $('.player-health').css('width', `${window.gameState.playerHealth}%`);
 
     $('.monster-health').text(window.gameState.monsterHealth);
     $('.monster-health').css('width', `${window.gameState.monsterHealth}%`);
+
+    // player died -> hide his health
+    if (window.gameState.playerHealth < 0) {
+      const hidePlayerHealth = async () => {
+        await pause(500);
+        $('.player-health').hide();
+      };
+      hidePlayerHealth();
+    }
   }
 
   static updateState() {
