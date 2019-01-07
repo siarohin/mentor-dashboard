@@ -49,15 +49,15 @@ export default class taskMagicWord {
     const dataSource = this.data;
     const randomTask = uniqueRandomArray(dataSource)();
 
-    const arrayOfWords = randomTask.word; // array
-    const magicWord = uniqueRandomArray(arrayOfWords)(); // string
+    const arrayOfWords = randomTask.word;
+    const magicWord = uniqueRandomArray(arrayOfWords)();
 
     this.answer = magicWord;
     this.generateTask(magicWord);
   }
 
   static generateTask(magicWord) {
-    const magicWordLetters = magicWord.split(''); // array
+    const magicWordLetters = magicWord.split('');
 
     const contentEl = document.querySelector('.magic-word');
 
@@ -67,7 +67,7 @@ export default class taskMagicWord {
 
     $(magicWordLetters).each((index) => {
       const divElement = `
-        <div class="magic-word__task-magic-word">
+        <div class="magic-word__task-magic-word user-select-none">
           ${magicWordLetters[index]}
         </div>
       `;
@@ -89,7 +89,7 @@ export default class taskMagicWord {
       .trim();
 
     // ES7 includes
-    if ((this.answer).includes(this.playerAnswer)) {
+    if ((this.answer === this.playerAnswer)) {
       return true;
     } return false;
   }

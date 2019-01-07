@@ -1,2 +1,24 @@
+.magic-word {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+}
 
+.magic-word__task-magic-word {
+  margin: 0 0.15rem;
+  padding: 0.3rem 0.5rem;
+  background: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  min-width: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.user-select-none {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
 
