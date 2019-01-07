@@ -6,7 +6,8 @@ import './index.css';
 // eslint-disable-next-line import/no-cycle
 import Battle from '../../battle';
 import vocabulary from './vocabulary';
-import { getButtonFocus, keyControlLeftRight } from '../../../utils/utils';
+/* eslint-disable-next-line max-len */
+import { getButtonFocus, keyControlLeftRight, shuffleRandom } from '../../../utils/utils';
 
 
 export default class taskGram {
@@ -59,12 +60,25 @@ export default class taskGram {
   static generateTask(randomTask) {
     const contentEl = document.querySelector('.logic-gram');
 
+    // save each template into aray
+    const saveData = [];
+    saveData.length = 0;
+
     $(randomTask.letter).each((index, value) => {
-      contentEl.innerHTML += `
+      const buttonElement = `
         <button class="logic-gram__task-gram" data-index="${index}">
           ${value}
         </button>
       `;
+
+      saveData.push(buttonElement);
+    });
+
+    // shuffle random all templates and insert to html
+    saveData.sort(shuffleRandom);
+
+    $(saveData).each((index) => {
+      contentEl.innerHTML += saveData[index];
     });
   }
 
