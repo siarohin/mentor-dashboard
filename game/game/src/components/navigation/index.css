@@ -25,13 +25,6 @@
 
 .nav-item:hover {
   background: #222;
-};
-
-@media (min-width: 0) {
-.navbar-expand-lg .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-  }
 }
 
 @media (min-width: 0) {
