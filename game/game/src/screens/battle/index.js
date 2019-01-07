@@ -70,7 +70,7 @@ export default class Battle {
     $('.monster-health').css('width', `${window.gameState.monsterHealth}%`);
 
     // player died -> hide his health
-    if (window.gameState.playerHealth < 0) {
+    if (window.gameState.playerHealth <= 0) {
       const hidePlayerHealth = async () => {
         await pause(500);
         $('.player-health').hide();
