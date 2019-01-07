@@ -1,7 +1,8 @@
+/* eslint-disable max-len */
 export default [
   {
     sprite: 'unit1',
-    word: ['baecher', 'aleksandra baecher', 'alexandra baecher'],
+    word: ['alexandra', 'aleksandra', 'baecher', 'aleksandra baecher', 'alexandra baecher'],
   },
   {
     sprite: 'unit2',
@@ -26,5 +27,21 @@ export default [
   {
     sprite: 'unit7',
     word: ['kean', 'oufus kean'],
+  },
+  {
+    sprite: 'unit8',
+    word: ['yves'],
+  },
+  {
+    sprite: 'unit9',
+    word: ['johanna'],
+  },
+  {
+    sprite: 'unit10',
+    word: ['heidiho', 'heidi', 'heidi ho'],
+  },
+  {
+    sprite: 'unit11',
+    word: ['jorgelopes', 'jorge lopes', 'jorge', 'lopes'],
   },
 ];
