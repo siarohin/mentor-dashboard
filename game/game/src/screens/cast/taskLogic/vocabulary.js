@@ -110,13 +110,13 @@ export default [
   },
   {
     question: 'Найди лишнюю картинку.',
-    image: ['0 -1420px', '-80px -1420px', '-160px -1420px', '-240px -1420px'],
+    image: ['0 -1440px', '-80px -1440px', '-160px -1440px', '-240px -1440px'],
     imageAlt: ['1', '2', '3', '4'],
     targetImage: '4',
   },
   {
     question: 'Найди лишнюю букву.',
-    image: ['0 -1500px', '-80px -1500px', '-160px -1500px', '-240px -1500px'],
+    image: ['0 -1520px', '-80px -1520px', '-160px -1520px', '-240px -1520px'],
     imageAlt: ['1', '2', '3', '4'],
     targetImage: '2',
   },
