@@ -9,6 +9,7 @@ export default `
     <button type="button" id="taskGram" class="cast__button d-flex flex-row justify-content-between align-items-center btn btn-success"></button>
     <button type="button" id="taskSpeakOut" class="cast__button d-flex flex-row justify-content-between align-items-center btn btn-success"></button>
     <button type="button" id="taskFunnyLogic" class="cast__button d-flex flex-row justify-content-between align-items-center btn btn-success"></button>
+    <button type="button" id="taskMagicWord" class="cast__button d-flex flex-row justify-content-between align-items-center btn btn-success"></button>
     <button type="button" id="taskMystery" class="cast__button cast__button_footer d-flex flex-row justify-content-between align-items-center btn btn-warning"></button>
   </div>
   <footer class="d-flex flex-row justify-content-between cast__info-navigation">

@@ -12,6 +12,7 @@ import taskSpeakOut from './taskSpeakOut';
 import taskMystery from './taskMystery';
 import taskFunnyLogic from './taskFunnyLogic';
 import { pause, getButtonFocus } from '../../utils/utils';
+import taskMagicWord from './taskMagicWord';
 
 
 const taskList = {
@@ -22,6 +23,7 @@ const taskList = {
     taskGram,
     taskSpeakOut,
     taskFunnyLogic,
+    taskMagicWord,
     taskMystery,
   ],
   id: [
@@ -31,6 +33,7 @@ const taskList = {
     'taskGram',
     'taskSpeakOut',
     'taskFunnyLogic',
+    'taskMagicWord',
     'taskMystery',
   ],
   description: [
@@ -40,6 +43,7 @@ const taskList = {
     'Вставить букву',
     'Повторить имя',
     'Отгадать загадку',
+    'Собрать слово',
     'Залечить раны',
   ],
 };

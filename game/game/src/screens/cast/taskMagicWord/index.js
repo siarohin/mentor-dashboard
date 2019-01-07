@@ -1,0 +1,131 @@
+import $ from 'jquery';
+import uniqueRandomArray from 'unique-random-array';
+
+import template from './index.template';
+import './index.css';
+// eslint-disable-next-line import/no-cycle
+import Battle from '../../battle';
+import vocabulary from './vocabulary';
+/* eslint-disable-next-line max-len */
+import { getInputFocus, keyControlLeftRightInBut, shuffleRandom } from '../../../utils/utils';
+
+
+export default class taskMagicWord {
+  static get healthPoint() {
+    const health = 40;
+    return health;
+  }
+
+  static init() {
+    this.draw();
+    this.generateRandom();
+    this.modalShow();
+    getInputFocus();
+    keyControlLeftRightInBut();
+    this.closeTask();
+  }
+
+  static get data() {
+    return vocabulary;
+  }
+
+  static draw() {
+    $('#spels .modal-body').empty();
+
+    const contentEl = document.querySelector('#spels .modal-body');
+    contentEl.innerHTML = template;
+
+    const title = document.querySelector('.modal-title');
+    title.innerHTML = `Я загадал для тебя слово и перемешал в нем все буквы.
+      Попробуй, отгадай.`;
+
+    $('#spels').modal({
+      keyboard: false,
+      backdrop: 'static',
+    });
+  }
+
+  static generateRandom() {
+    const dataSource = this.data;
+    const randomTask = uniqueRandomArray(dataSource)();
+
+    const arrayOfWords = randomTask.word; // array
+    const magicWord = uniqueRandomArray(arrayOfWords)(); // string
+
+    this.answer = magicWord;
+    this.generateTask(magicWord);
+  }
+
+  static generateTask(magicWord) {
+    const magicWordLetters = magicWord.split(''); // array
+
+    const contentEl = document.querySelector('.magic-word');
+
+    // save each template into aray
+    const saveData = [];
+    saveData.length = 0;
+
+    $(magicWordLetters).each((index) => {
+      const divElement = `
+        <div class="magic-word__task-magic-word">
+          ${magicWordLetters[index]}
+        </div>
+      `;
+
+      saveData.push(divElement);
+    });
+
+    // shuffle random all templates and insert to html
+    saveData.sort(shuffleRandom);
+
+    $(saveData).each((index) => {
+      contentEl.innerHTML += saveData[index];
+    });
+  }
+
+  static checkResult() {
+    this.playerAnswer = document.querySelector('.input-answer').value
+      .toLowerCase()
+      .trim();
+
+    // ES7 includes
+    if ((this.answer).includes(this.playerAnswer)) {
+      return true;
+    } return false;
+  }
+
+  static modalShow() {
+    $('#spels').modal('show');
+  }
+
+  static modalHide() {
+    $('#spels').modal('hide');
+  }
+
+  static updateState(playerAnswer) {
+    // if true -> playerAttack, if false -> monsterAttack
+    if (this.checkResult(playerAnswer)) {
+      window.gameState.monsterHealth -= this.healthPoint;
+      Battle.playerAttack(3000);
+    } else {
+      window.gameState.playerHealth -= this.healthPoint;
+      Battle.monsterAttack(3000);
+    }
+  }
+
+  static play() {
+    this.updateState();
+    Battle.updateState();
+  }
+
+  static closeTask() {
+    $('.input-group').on('click keypress', (e) => {
+      if ((e.key === 'Enter' && e.type === 'keypress'
+        && e.target.type === 'text')
+      || (e.target.type === 'button' && e.type === 'click')) {
+        this.modalHide();
+        this.play();
+      }
+    });
+  }
+}
