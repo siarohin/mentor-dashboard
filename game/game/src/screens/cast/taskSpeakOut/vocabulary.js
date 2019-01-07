@@ -6,7 +6,7 @@ export default [
   },
   {
     sprite: 'unit2',
-    word: ['diacomo'],
+    word: ['giacomo'],
   },
   {
     sprite: 'unit3',
@@ -22,11 +22,11 @@ export default [
   },
   {
     sprite: 'unit6',
-    word: ['oufus', 'oufus kean'],
+    word: ['rufus', 'rufus kean'],
   },
   {
     sprite: 'unit7',
-    word: ['kean', 'oufus kean'],
+    word: ['kean', 'rufus kean'],
   },
   {
     sprite: 'unit8',
