@@ -88,7 +88,7 @@ export default class Cast {
       .addClass('main-title');
 
     const closeButton = `
-        <button href="#" title="закрыть" class="close-window"></button>`;
+        <a href="#" title="закрыть" class="close-window"></a>`;
     $('.modal-content').prepend(closeButton);
 
     $('.close-window').on('click', (e) => {
