@@ -1,0 +1,17 @@
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+  .modal-content {
+    max-height: 512px;
+  }
+  .modal-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (device-width: 812px) and (device-height: 375px) {
+  .modal-content {
+    max-height: 412px;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+}

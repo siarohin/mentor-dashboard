@@ -356,3 +356,16 @@
   cursor: pointer;
   animation: show-init-cast-button 1s;
 }
+
+
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+  .battle-scene {
+    height: 412px;
+  }
+}
+
+@media screen and (device-width: 812px) and (device-height: 375px) {
+  .battle-scene {
+    height: 358px;
+  }
+}

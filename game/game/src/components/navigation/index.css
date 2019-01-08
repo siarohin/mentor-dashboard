@@ -15,6 +15,7 @@
 
 .navbar {
   padding: 0 1rem !important;
+  width: 100%;
 }
 
 .nav-item {
@@ -27,15 +28,6 @@
   background: #222;
 }
 
-@media (min-width: 0) {
-.navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-}
-
 /* tooltip-sound */
 .tooltip-sound {
   width: 185px;
@@ -45,7 +37,7 @@
   z-index: 1;
   top: 2rem;
   left: 0;
-  transform: scale(0.8);
+  transform: scale(0.6);
   opacity: 1;
   transition: opacity .3s;
 }
@@ -73,3 +65,13 @@
   color: #222;
   font-weight: 700;
 }
+
+
+@media (min-width: 0) {
+  .navbar-expand-lg .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+  }

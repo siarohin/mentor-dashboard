@@ -84,7 +84,19 @@ export default class Cast {
 
     $('.modal-title').html(`Выбери задание-заклинание.
       Зеленые &ndash; наносят урон, желтое &ndash; лечит твоего героя.
-      Чем больше сила, тем больший урон наносит заклинание.`);
+      Чем больше сила, тем больший урон наносит заклинание.`)
+      .addClass('main-title');
+
+    const closeButton = `
+        <button href="#" title="закрыть" class="close-window"></button>`;
+    $('.modal-content').prepend(closeButton);
+
+    $('.close-window').on('click', (e) => {
+      e.preventDefault();
+      this.gamePause();
+      $('.close-window').remove();
+    });
+
 
     $('#spels').modal({
       keyboard: false,
@@ -121,6 +133,9 @@ export default class Cast {
     };
 
     $('#cast').on('click', (e) => {
+      $('.modal-title').removeClass('main-title');
+      $('.close-window').remove();
+
       $(taskList.taskName).each((key) => {
         const task = taskList.taskName[key];
         const id = taskList.id[key];
@@ -133,11 +148,6 @@ export default class Cast {
           }
         }
       });
-
-      if (e.target.className === 'close-window') {
-        e.preventDefault();
-        this.gamePause();
-      }
     });
   }
 

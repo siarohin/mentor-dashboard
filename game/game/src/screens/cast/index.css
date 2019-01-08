@@ -23,11 +23,12 @@
   width: 24px;
   height: 24px;
   background: transparent url('../../images/close-window.png') 0 0;
-  position: absolute;
-  top: -110px;
-  right: 10px;
   border: none;
   cursor: pointer;
+  position: fixed;
+  right: 0.5rem;
+  margin-top: 0.5rem;
+  align-self: flex-end;
 }
 
 .close-window:hover {
@@ -49,4 +50,20 @@
   font-weight: 700;
   display: block;
   font-size: 1.3rem;
+}
+
+.main-title {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+  .cast__info-navigation {
+    display: none !important;
+  }
+}
+
+@media screen and (device-width: 812px) and (device-height: 375px) {
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 1rem;
+  }
 }

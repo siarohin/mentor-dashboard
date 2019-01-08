@@ -1,4 +1,5 @@
 import template from './index.template';
+import './index.css';
 
 class ModalDialog {
   static draw() {
