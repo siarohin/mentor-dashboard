@@ -360,12 +360,12 @@
 
 @media screen and (max-width: 995px) , screen and (max-height: 700px) {
   .battle-scene {
-    height: 412px;
+    height: 402px;
   }
 }
 
 @media screen and (device-width: 812px) and (device-height: 375px) {
   .battle-scene {
-    height: 358px;
+    height: 308px;
   }
 }

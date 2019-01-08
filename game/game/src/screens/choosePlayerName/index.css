@@ -71,8 +71,15 @@
   padding: 0 0.5rem !important;
 }
 
-@media screen and (device-width: 812px) and (device-height: 375px) {
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
   .card {
     top: 4rem;
+    bottom: 0;
+  }
+}
+
+@media screen and (device-width: 812px) and (device-height: 375px) {
+  .card {
+    top: 8rem;
   }
 }

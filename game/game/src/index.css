@@ -77,19 +77,14 @@ button:focus {
         padding: 0;
         background: #fff;
     }
+    .main-template {
+        padding-top: 1rem;
+    }
     .wrapper {
-        min-height: 412px;
+        min-height: 402px;
     }
-    .page__footer {
-        display: none;
-    }
-}
-
-@media screen and (device-width: 812px) and (device-height: 375px) {
+    .page__footer,
     .tooltip-sound {
         display: none;
-    }
-    .main-template {
-        padding-top: 2rem;
     }
 }
