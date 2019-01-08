@@ -39,9 +39,9 @@
 .model-monster-second {
   width: 256px;
   height: 256px;
-  margin: 0 0 140px 0;
-  z-index: -1;
+  margin: 0 0 120px 0;
   background: url('../../images/monster.png') 0 0;
+  transform: scale(0.8) rotate(-2deg);
 }
 
 /* model-monster-second_dance */
@@ -174,6 +174,9 @@
 @media screen and (max-width: 995px) , screen and (max-height: 700px) {
   .home-scene {
     height: 402px;
+  }
+  .model-monster-second {
+    display: none;
   }
 }
 
