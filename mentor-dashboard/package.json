@@ -1,0 +1,24 @@
+{
+  "name": "mentor-dashboard",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./mentor-dashboard/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/siarohin-2018Q3.git"
+  },
+  "author": "Aleksander Seryogin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/siarohin-2018Q3/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/siarohin-2018Q3#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "react": "^16.7.0",
+    "xlsx": "^0.14.1"
+  },
+  "description": ""
+}
