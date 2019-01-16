@@ -89,11 +89,11 @@ const mentors = getMentors();
 
 // Merge Sheet1 and Sheet2 workbook ==============
 
-const result = mentors
-  .map((mentorData) => {
-    const mentorStudentPair = pairs.find(p => p.interviewer === mentorData.mentorFullName);
+const mentorStudentPairs = pairs
+  .map((mentorStudentPair) => {
+    const mentorData = mentors.find(m => m.mentorFullName === mentorStudentPair.interviewer);
 
-    if (!mentorStudentPair) return;
+    if (!mentorData) return;
 
     // eslint-disable-next-line consistent-return
     return {
@@ -105,7 +105,7 @@ const result = mentors
   })
   .filter(r => r);
 
-  console.log("results", result);
+  console.log(mentorStudentPairs.length);
 
 
 // /* count of students */
