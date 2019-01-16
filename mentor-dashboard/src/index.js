@@ -43,8 +43,8 @@ const sheet1 = getSheetData(readFile, 1);
 
 const getMentorStudentPair = (currentRow) => {
   const mentorStudentPair = {
-    interviewer: sheet1[workbook.interviewer + currentRow].v,
-    studentGithub: sheet1[workbook.studentGithub + currentRow].v,
+    interviewer: String(sheet1[workbook.interviewer + currentRow].v),
+    studentGithub: String(sheet1[workbook.studentGithub + currentRow].v),
   };
 
   return mentorStudentPair;
@@ -70,7 +70,10 @@ const mergeMentorStudentPair = pairs.reduce((acc, item) => {
   if (exsistingMentor) {
     exsistingMentor.studentGithub.push(item.studentGithub);
   } else {
-    acc.push({ interviewer: item.interviewer, studentGithub: [item.studentGithub] });
+    acc.push({
+      interviewer: item.interviewer,
+      studentGithub: [item.studentGithub],
+    });
   }
   return acc;
 }, []);
@@ -83,8 +86,8 @@ const sheet2 = getSheetData(readFile, 2);
 const getMentorData = (currentRow) => {
   const mentorData = {
     mentorFullName: `${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`,
-    mentorCity: sheet2[workbook.city + currentRow].v,
-    mentorGithub: sheet2[workbook.mentorGithub + currentRow].v,
+    mentorCity: String(sheet2[workbook.city + currentRow].v),
+    mentorGithub: String(sheet2[workbook.mentorGithub + currentRow].v),
   };
 
   return mentorData;
@@ -127,18 +130,15 @@ const result = mergeMentorStudentPair
   });
 
 
-// Write workbook ==============
+// Save workbook to JSON ==============
 
-const json = JSON.stringify(result);
+const json = JSON.stringify(result, 0, 2);
+console.log(json);
 
-fs.writeFile(pathToJSON, json, 'utf8', () => {
-  console.log('writing is done!'); // TODO: Remove
-});
+fs.writeFile(pathToJSON, json, 'utf8', () => {});
 
 
 // Test results TODO: remove ====
-
-console.log(`Pairs: ${result}`);
 
 /* count of students */
 console.log(`Students: ${pairs.length - 1}`);
