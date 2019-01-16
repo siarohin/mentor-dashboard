@@ -1,12 +1,17 @@
 const path = require('path');
 const XLSX = require('xlsx');
+const fs = require('fs');
 const getSheetData = require('./utils');
 
 /* path to raw files with data */
 const pathToFile = path.join(__dirname, './rawSource/Mentor-students pairs.xlsx');
 const readFile = XLSX.readFile(pathToFile);
 
-/* limit of rows in xlsx files */
+/* path to JSON in out  */
+const pathToJSON = path.join(__dirname, './data.json');
+
+/* range of rows in xlsx files */
+const START_ROW = 2;
 const LIMIT_ROW = 65535;
 
 
@@ -47,7 +52,7 @@ const getMentorStudentPair = (currentRow) => {
 
 const getPairs = () => {
   const rows = [];
-  for (let i = 1; i < LIMIT_ROW; i += 1) {
+  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
     if (getNextRow(sheet1, workbook.interviewer, i)) {
       rows.push(i);
     }
@@ -57,6 +62,18 @@ const getPairs = () => {
 };
 
 const pairs = getPairs();
+
+// Merge rows with mentor names
+const mergeMentorStudentPair = pairs.reduce((acc, item) => {
+  const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
+
+  if (exsistingMentor) {
+    exsistingMentor.studentGithub.push(item.studentGithub);
+  } else {
+    acc.push({ interviewer: item.interviewer, studentGithub: [item.studentGithub] });
+  }
+  return acc;
+}, []);
 
 
 // Sheet2 workbook ===============================
@@ -75,7 +92,7 @@ const getMentorData = (currentRow) => {
 
 const getMentors = () => {
   const rows = [];
-  for (let i = 1; i < LIMIT_ROW; i += 1) {
+  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
     if (getNextRow(sheet2, workbook.mentorName, i)) {
       rows.push(i);
     }
@@ -89,27 +106,42 @@ const mentors = getMentors();
 
 // Merge Sheet1 and Sheet2 workbook ==============
 
-const mentorStudentPairs = pairs
+const result = mergeMentorStudentPair
   .map((mentorStudentPair) => {
-    const mentorData = mentors.find(m => m.mentorFullName === mentorStudentPair.interviewer);
+    const mentorStudentsPairs = mentors.find(data => data.mentorFullName === mentorStudentPair.interviewer);
 
-    if (!mentorData) return;
-
-    // eslint-disable-next-line consistent-return
+    if (!mentorStudentsPairs) {
+      return {
+        mentorName: mentorStudentPair.interviewer || '',
+        mentorCity: '',
+        mentorGithub: '',
+        studentGithub: mentorStudentPair.studentGithub || '',
+      };
+    }
     return {
-      mentorName: mentorData.mentorFullName,
-      mentorCity: mentorData.mentorCity,
-      mentorGithub: mentorData.mentorGithub,
-      studentGithub: `https://github.com/${mentorStudentPair.studentGithub}`,
+      mentorName: mentorStudentsPairs.mentorFullName,
+      mentorCity: mentorStudentsPairs.mentorCity,
+      mentorGithub: mentorStudentsPairs.mentorGithub,
+      studentsGithub: mentorStudentPair.studentGithub,
     };
-  })
-  .filter(r => r);
-
-  console.log(mentorStudentPairs.length);
+  });
 
 
-// /* count of students */
-// console.log(`Students: ${pairs.length - 1}`);
+// Write workbook ==============
 
-// /* count of mentors */
-// console.log(`Mentors: ${mentors.length - 1}`);
+const json = JSON.stringify(result);
+
+fs.writeFile(pathToJSON, json, 'utf8', () => {
+  console.log('writing is done!'); // TODO: Remove
+});
+
+
+// Test results TODO: remove ====
+
+console.log(`Pairs: ${result}`);
+
+/* count of students */
+console.log(`Students: ${pairs.length - 1}`);
+
+/* count of mentors */
+console.log(`Mentors: ${mentors.length - 1}`);
