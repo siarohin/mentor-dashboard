@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint -c .eslintrc.js ./src/**/*.js",
+    "fix-lint": "eslint -c .eslintrc.js ./src/**/*.js --fix",
     "start": "nodemon ./src/index.js"
   },
   "repository": {
@@ -14,11 +16,16 @@
   "bugs": {
     "url": "https://github.com/rolling-scopes-school/siarohin-2018Q3/issues"
   },
+  "dependencies": {
+    "xlsx": "^0.14.1"
+  },
   "homepage": "https://github.com/rolling-scopes-school/siarohin-2018Q3#readme",
   "devDependencies": {
     "nodemon": "^1.18.9",
     "react": "^16.7.0",
-    "xlsx": "^0.14.1"
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   },
   "description": ""
 }
