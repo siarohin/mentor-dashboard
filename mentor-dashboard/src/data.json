@@ -13,11 +13,11 @@
     "mentorGithub": "https://github.com/lipskiy-aleh",
     "studentsGithub": [
       "agentumbrella",
-      "justforwebcoding",
       "anastasiaburlo",
       "devandscorp",
-      "qucca",
+      "justforwebcoding",
       "lexbogos",
+      "qucca",
       "zebabrat"
     ]
   },
@@ -28,9 +28,9 @@
     "studentsGithub": [
       "devildummy",
       "dzmitry-karachun-1987",
-      "serg8",
-      "nik-av",
       "kishkun",
+      "nik-av",
+      "serg8",
       "tsygancova"
     ]
   },
@@ -50,11 +50,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/shuspes",
     "studentsGithub": [
-      "prudnikov888",
-      "sergeyskakun",
-      "petersonby",
       "aliaksandrposakh",
-      "formalinfigs"
+      "formalinfigs",
+      "petersonby",
+      "prudnikov888",
+      "sergeyskakun"
     ]
   },
   {
@@ -62,12 +62,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/KukolcaAlexandra",
     "studentsGithub": [
-      "sxe2255",
-      "vovair",
-      "ingvaroldd",
       "bragodin",
       "fantom141",
-      "samo-war"
+      "ingvaroldd",
+      "samo-war",
+      "sxe2255",
+      "vovair"
     ]
   },
   {
@@ -75,9 +75,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/amelk9n",
     "studentsGithub": [
-      "vitalur",
       "jrzlve",
       "panikutysh",
+      "vitalur",
       "vlukyane"
     ]
   },
@@ -86,23 +86,11 @@
     "mentorCity": "Могилев",
     "mentorGithub": "https://github.com/famchankou",
     "studentsGithub": [
-      "vladimirdobrik",
-      "tvorchud",
+      "fcsm-andrei",
       "iharvypau",
+      "tvorchud",
       "vitalijsk",
-      "fcsm-andrei"
-    ]
-  },
-  {
-    "mentorName": "Rem Apasov",
-    "mentorCity": "",
-    "mentorGithub": "",
-    "studentGithub": [
-      "frol8612",
-      "snowwe",
-      "dongor7",
-      "zettrix",
-      "innazl"
+      "vladimirdobrik"
     ]
   },
   {
@@ -121,11 +109,572 @@
     "mentorCity": "Могилев",
     "mentorGithub": "https://github.com/mkinitcpio",
     "studentsGithub": [
-      "slayer110",
-      "quiquek007",
-      "mohax-13",
+      "artsiom-zhuk",
       "ksenia-ok",
-      "artsiom-zhuk"
+      "mohax-13",
+      "quiquek007",
+      "slayer110"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Kleshchukevich",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/sleepwalky",
+    "studentsGithub": [
+      "gattygamaun",
+      "katrin-kot",
+      "kristalys",
+      "mariyapolt",
+      "noviceblunderer",
+      "splin-shady"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Klimau",
+    "mentorCity": "Гомель",
+    "mentorGithub": "https://github.com/quantum-noise",
+    "studentsGithub": [
+      "0riac",
+      "803142",
+      "nickitasolovei",
+      "saint-artiom",
+      "terstuyahmaksim"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Krasnou",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/aliaksandrkrasnou",
+    "studentsGithub": [
+      "alexandravlasenko",
+      "andrey-lobach",
+      "painincoming",
+      "pitergtx"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Kuzniatsou",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/AliaksandrKuzniatsou",
+    "studentsGithub": [
+      "apivovarchik",
+      "artser97",
+      "iamhappy2day",
+      "katiekruchko",
+      "ruslandimitriuk",
+      "stasnegreev",
+      "temachkin11"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Mamonenka",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/AliaksandrMamonenka",
+    "studentsGithub": [
+      "cheeska",
+      "dasnein",
+      "moluram",
+      "nesteklo"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Novik",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/AlexNo",
+    "studentsGithub": [
+      "kir-22",
+      "llitrixkod",
+      "odinrossy",
+      "snaiperlod",
+      "vlad0mag0",
+      "xlopec23"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Razumovich",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/razumovich/",
+    "studentsGithub": [
+      "chernyshovaalexandra",
+      "jacksonbr87",
+      "kvatoferma",
+      "vladagaravaya"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Rudzin",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/RudikAleksandr",
+    "studentsGithub": [
+      "alexeevadaria",
+      "chekni",
+      "mrchester",
+      "mxwoodie",
+      "psevkin",
+      "shymaxer",
+      "spiritforest"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Tachko",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/aliaksandrT",
+    "studentsGithub": [
+      "19alexandr90",
+      "dgekaa",
+      "leontyevatatyana",
+      "leshich",
+      "shutya",
+      "tamefreak"
+    ]
+  },
+  {
+    "mentorName": "Aliaksandr Zayats",
+    "mentorCity": "Гомель",
+    "mentorGithub": "https://github.com/alex-zayats",
+    "studentsGithub": [
+      "alexeydavydov",
+      "melllivoracapensis",
+      "soulshaker",
+      "uniorunr"
+    ]
+  },
+  {
+    "mentorName": "Aliaksei Astafyeu",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/tr3v3r",
+    "studentsGithub": [
+      "bezchekera",
+      "driliad",
+      "grnkvch",
+      "nadinaaa",
+      "volunyshka",
+      "yanamina"
+    ]
+  },
+  {
+    "mentorName": "Aliaksei Khlebnikau",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/FallenBY1",
+    "studentsGithub": [
+      "alekengineer",
+      "katepavlovich",
+      "kottt4",
+      "walkunderrain",
+      "youngbrick"
+    ]
+  },
+  {
+    "mentorName": "ALIAKSEI KRAUCHANKA",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/aliakseikrauchanka",
+    "studentsGithub": [
+      "christinaalimova",
+      "latiertiw",
+      "sined1",
+      "vladzuev"
+    ]
+  },
+  {
+    "mentorName": "Aliaksei Makas",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/Muskos",
+    "studentsGithub": [
+      "alexandrtichon",
+      "pkutsilina",
+      "vireah",
+      "yanyan155",
+      "yarobei"
+    ]
+  },
+  {
+    "mentorName": "Aliaksei Zayats",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/alex-mnsk",
+    "studentsGithub": [
+      "artyom123",
+      "elenakhamitsevich",
+      "evamaster",
+      "kozyritskiy",
+      "lveliarl",
+      "nastyalo",
+      "spinagrblzzz"
+    ]
+  },
+  {
+    "mentorName": "Anastasiya Pryvalava",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/anastasiaprivalova",
+    "studentsGithub": [
+      "brateckrolikstudent",
+      "sergaunt",
+      "venomamd",
+      "vetal11"
+    ]
+  },
+  {
+    "mentorName": "Andrei Furs",
+    "mentorCity": "Гомель",
+    "mentorGithub": "https://github.com/yganda",
+    "studentsGithub": [
+      "inanutshell86",
+      "ishelest",
+      "juliasnoww",
+      "loori-r",
+      "sffirm",
+      "yakgjen",
+      "zetrox-x"
+    ]
+  },
+  {
+    "mentorName": "Andrei Lenkou",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/LenkouAndrei",
+    "studentsGithub": [
+      "elmavis",
+      "goner52",
+      "kirylalexandrovich",
+      "mg3442",
+      "poyuki",
+      "rafchillons",
+      "vlad9719"
+    ]
+  },
+  {
+    "mentorName": "Andrei Liaukou",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/liaukou",
+    "studentsGithub": [
+      "dimasquared",
+      "ivanmikhailenka1",
+      "kasper1999",
+      "ol4ash",
+      "smetaninpavel"
+    ]
+  },
+  {
+    "mentorName": "Andrei Markovich",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/themarkmarrone",
+    "studentsGithub": [
+      "barsolet",
+      "ener9ettt",
+      "icebergnevercries",
+      "juliamv",
+      "petromath77",
+      "tamarashautsova",
+      "yanrishbe"
+    ]
+  },
+  {
+    "mentorName": "Andrei Palchys",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/apalchys",
+    "studentsGithub": [
+      "mazhoranta",
+      "nktvlkvch",
+      "ton9q",
+      "valentinlipai",
+      "vladyaremeko"
+    ]
+  },
+  {
+    "mentorName": "Andrei Shelenhouski",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/manuminsk",
+    "studentsGithub": [
+      "blackcat1397",
+      "jstrr",
+      "kirill82",
+      "smajlichak",
+      "zm1try"
+    ]
+  },
+  {
+    "mentorName": "Andrei Shyliahin",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/Atzkdeff",
+    "studentsGithub": [
+      "antonnaumchik",
+      "bigshaqmnh",
+      "dimabog22",
+      "lazouskikiryl",
+      "olegkizz"
+    ]
+  },
+  {
+    "mentorName": "Andrei Zhuk",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/Andrei-Zhuk",
+    "studentsGithub": [
+      "antihero",
+      "artkon",
+      "karpiyeniamv",
+      "kirillzavorotni",
+      "makar1227",
+      "mudreuski",
+      "torchik-slava"
+    ]
+  },
+  {
+    "mentorName": "Andres Rios",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/rianby64",
+    "studentsGithub": [
+      "28halavach",
+      "40grivenprog",
+      "anastminsk",
+      "igordive",
+      "mayblackwood",
+      "nataliamotuz",
+      "novikovantony",
+      "yaroslav-mig"
+    ]
+  },
+  {
+    "mentorName": "Anton Bely",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/ToshaBely",
+    "studentsGithub": [
+      "abespolov",
+      "arkhipenka",
+      "dimaspivas",
+      "maxkonopelko",
+      "zzhiharevich"
+    ]
+  },
+  {
+    "mentorName": "Anton Sharapa",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/asharapa",
+    "studentsGithub": [
+      "alexanderkononok",
+      "mentos2805",
+      "mrmars20",
+      "sergeybandar"
+    ]
+  },
+  {
+    "mentorName": "Anton Stsiapanau",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/stpnvntn",
+    "studentsGithub": [
+      "anyalenko",
+      "katekosushkina",
+      "metalhammer4",
+      "northingvar",
+      "ostik266",
+      "rudlevsky",
+      "viki-klipp"
+    ]
+  },
+  {
+    "mentorName": "Anton Yatskevich",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/a-yatskevich",
+    "studentsGithub": [
+      "evgeniy121",
+      "jadgptw",
+      "mrdreaml",
+      "tsypolina"
+    ]
+  },
+  {
+    "mentorName": "Arif Mustafazade",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/mustafazadeAR",
+    "studentsGithub": [
+      "clericus",
+      "credov",
+      "dbaceko",
+      "frontsideman",
+      "sobolevyuri"
+    ]
+  },
+  {
+    "mentorName": "Arseni Shynkarenka",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/arhigod",
+    "studentsGithub": [
+      "hellsingi",
+      "mozgoen",
+      "nastya-ropot",
+      "polotenchik",
+      "tshkursk",
+      "yeilya"
+    ]
+  },
+  {
+    "mentorName": "Artsiom Haurylin",
+    "mentorCity": "Гомель",
+    "mentorGithub": "https://github.com/ahaurylin",
+    "studentsGithub": [
+      "grapeperson",
+      "groamed",
+      "olgaluk",
+      "rbarakhvostov"
+    ]
+  },
+  {
+    "mentorName": "artsiom kukharev",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/xeontem",
+    "studentsGithub": [
+      "bulbazubr",
+      "leonard1k",
+      "mariakisel",
+      "qxfisher",
+      "silichstudent",
+      "vvikota"
+    ]
+  },
+  {
+    "mentorName": "Artsiom Latyshau",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/artemlatyshev",
+    "studentsGithub": [
+      "andrewyanushkevich",
+      "dimashcherbakov",
+      "feulia",
+      "magi-a",
+      "sergeiobolevich"
+    ]
+  },
+  {
+    "mentorName": "Artsiom Lykau",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/lykovartem",
+    "studentsGithub": [
+      "alexandershaternik",
+      "glebhleb",
+      "kotukjubotuk",
+      "nikkola07",
+      "okband",
+      "segrey1989"
+    ]
+  },
+  {
+    "mentorName": "Artsiom Piakhota",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/LithiumFallen",
+    "studentsGithub": [
+      "pincherinka",
+      "spacebrains",
+      "sunrisekovalevski",
+      "victoriathebrave"
+    ]
+  },
+  {
+    "mentorName": "Artsiom Reutovich",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/Xelsoid",
+    "studentsGithub": [
+      "ivanmatsur",
+      "nikaz123",
+      "usermeme",
+      "virusss"
+    ]
+  },
+  {
+    "mentorName": "Artur Kazlouski",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/arturminsksum",
+    "studentsGithub": [
+      "a-lika",
+      "nikaneider",
+      "rebellix",
+      "sqwezzy",
+      "uniqkue"
+    ]
+  },
+  {
+    "mentorName": "Bahdan Kutas",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/AgentKB",
+    "studentsGithub": [
+      "alexnaidovich",
+      "dzmitrybabak",
+      "eugenetime",
+      "ewelai",
+      "ivanchikovvalentin",
+      "litwin90",
+      "systemghost"
+    ]
+  },
+  {
+    "mentorName": "Barys Marukhin",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/barysmarukhin",
+    "studentsGithub": [
+      "denhock",
+      "igor-provotorov",
+      "kamatozzzik",
+      "kirillgalimov"
+    ]
+  },
+  {
+    "mentorName": "Daniil Suleiman",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/sulemanof",
+    "studentsGithub": [
+      "andriva",
+      "heaveek",
+      "meearlyam",
+      "olegsabodash",
+      "veronikavasilchikova"
+    ]
+  },
+  {
+    "mentorName": "Denis Bezak",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/BezakDenis",
+    "studentsGithub": [
+      "aleks210219",
+      "alexalizurchik",
+      "dsv-sergey",
+      "krlktv",
+      "nadezhda-kotova",
+      "pavellyolya"
+    ]
+  },
+  {
+    "mentorName": "Denis Bozhyk",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/den-bozhyk",
+    "studentsGithub": [
+      "drdiman",
+      "dzmitrymashuk",
+      "ipixby",
+      "mailikey",
+      "nickprudnik",
+      "vitalitybo",
+      "vladesco"
+    ]
+  },
+  {
+    "mentorName": "Denis Kravchenko",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/Shank111",
+    "studentsGithub": [
+      "axissixa57",
+      "gemsgame",
+      "kirillfilipp",
+      "maxstarovoitov",
+      "nemkev"
+    ]
+  },
+  {
+    "mentorName": "Dmitri Bardt",
+    "mentorCity": "Минск",
+    "mentorGithub": "https://github.com/ximet",
+    "studentsGithub": [
+      "christopher-0118",
+      "dianatsevan",
+      "happy-mary",
+      "igorbyl",
+      "maksyermak",
+      "onaker",
+      "riba0017"
     ]
   },
   {
@@ -140,589 +689,17 @@
     ]
   },
   {
-    "mentorName": "Aliaksandr Kleshchukevich",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/sleepwalky",
-    "studentsGithub": [
-      "noviceblunderer",
-      "kristalys",
-      "splin-shady",
-      "katrin-kot",
-      "gattygamaun",
-      "mariyapolt"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Klimau",
-    "mentorCity": "Гомель",
-    "mentorGithub": "https://github.com/quantum-noise",
-    "studentsGithub": [
-      "0riac",
-      "terstuyahmaksim",
-      "803142",
-      "nickitasolovei",
-      "saint-artiom"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Krasnou",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/aliaksandrkrasnou",
-    "studentsGithub": [
-      "andrey-lobach",
-      "pitergtx",
-      "alexandravlasenko",
-      "painincoming"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Kuzniatsou",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/AliaksandrKuzniatsou",
-    "studentsGithub": [
-      "apivovarchik",
-      "ruslandimitriuk",
-      "temachkin11",
-      "iamhappy2day",
-      "katiekruchko",
-      "artser97",
-      "stasnegreev"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Mamonenka",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/AliaksandrMamonenka",
-    "studentsGithub": [
-      "moluram",
-      "cheeska",
-      "nesteklo",
-      "dasnein"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Novik",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/AlexNo",
-    "studentsGithub": [
-      "xlopec23",
-      "odinrossy",
-      "vlad0mag0",
-      "kir-22",
-      "snaiperlod",
-      "llitrixkod"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Razumovich",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/razumovich/",
-    "studentsGithub": [
-      "kvatoferma",
-      "vladagaravaya",
-      "chernyshovaalexandra",
-      "jacksonbr87"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Rudzin",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/RudikAleksandr",
-    "studentsGithub": [
-      "mrchester",
-      "mxwoodie",
-      "psevkin",
-      "alexeevadaria",
-      "spiritforest",
-      "chekni",
-      "shymaxer"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Tachko",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/aliaksandrT",
-    "studentsGithub": [
-      "leshich",
-      "tamefreak",
-      "shutya",
-      "dgekaa",
-      "leontyevatatyana",
-      "19alexandr90"
-    ]
-  },
-  {
-    "mentorName": "Aliaksandr Zayats",
-    "mentorCity": "Гомель",
-    "mentorGithub": "https://github.com/alex-zayats",
-    "studentsGithub": [
-      "uniorunr",
-      "alexeydavydov",
-      "melllivoracapensis",
-      "soulshaker"
-    ]
-  },
-  {
-    "mentorName": "Aliaksei Astafyeu",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/tr3v3r",
-    "studentsGithub": [
-      "bezchekera",
-      "nadinaaa",
-      "volunyshka",
-      "grnkvch",
-      "driliad",
-      "yanamina"
-    ]
-  },
-  {
-    "mentorName": "Aliaksei Khlebnikau",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/FallenBY1",
-    "studentsGithub": [
-      "katepavlovich",
-      "youngbrick",
-      "alekengineer",
-      "kottt4",
-      "walkunderrain"
-    ]
-  },
-  {
-    "mentorName": "ALIAKSEI KRAUCHANKA",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/aliakseikrauchanka",
-    "studentsGithub": [
-      "latiertiw",
-      "sined1",
-      "vladzuev",
-      "christinaalimova"
-    ]
-  },
-  {
-    "mentorName": "Aliaksei Makas",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/Muskos",
-    "studentsGithub": [
-      "vireah",
-      "yarobei",
-      "alexandrtichon",
-      "yanyan155",
-      "pkutsilina"
-    ]
-  },
-  {
-    "mentorName": "Aliaksei Zayats",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/alex-mnsk",
-    "studentsGithub": [
-      "kozyritskiy",
-      "artyom123",
-      "evamaster",
-      "elenakhamitsevich",
-      "nastyalo",
-      "lveliarl",
-      "spinagrblzzz"
-    ]
-  },
-  {
-    "mentorName": "Anastasiya Pryvalava",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/anastasiaprivalova",
-    "studentsGithub": [
-      "sergaunt",
-      "brateckrolikstudent",
-      "venomamd",
-      "vetal11"
-    ]
-  },
-  {
-    "mentorName": "Andrei Furs",
-    "mentorCity": "Гомель",
-    "mentorGithub": "https://github.com/yganda",
-    "studentsGithub": [
-      "ishelest",
-      "yakgjen",
-      "inanutshell86",
-      "sffirm",
-      "zetrox-x",
-      "juliasnoww",
-      "loori-r"
-    ]
-  },
-  {
-    "mentorName": "Maksim Kantsavy",
-    "mentorCity": "Могилев",
-    "mentorGithub": "https://github.com/clainatomi-zero",
-    "studentsGithub": [
-      "alexandrshlyaeu",
-      "nicalas93",
-      "vldmr1",
-      "shinoby85"
-    ]
-  },
-  {
-    "mentorName": "Andrei Lenkou",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/LenkouAndrei",
-    "studentsGithub": [
-      "goner52",
-      "poyuki",
-      "elmavis",
-      "rafchillons",
-      "kirylalexandrovich",
-      "vlad9719",
-      "mg3442"
-    ]
-  },
-  {
-    "mentorName": "Andrei Liaukou",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/liaukou",
-    "studentsGithub": [
-      "dimasquared",
-      "smetaninpavel",
-      "ol4ash",
-      "kasper1999",
-      "ivanmikhailenka1"
-    ]
-  },
-  {
-    "mentorName": "Andrei Markovich",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/themarkmarrone",
-    "studentsGithub": [
-      "ener9ettt",
-      "petromath77",
-      "barsolet",
-      "yanrishbe",
-      "juliamv",
-      "icebergnevercries",
-      "tamarashautsova"
-    ]
-  },
-  {
-    "mentorName": "Andrei Palchys",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/apalchys",
-    "studentsGithub": [
-      "vladyaremeko",
-      "ton9q",
-      "nktvlkvch",
-      "valentinlipai",
-      "mazhoranta"
-    ]
-  },
-  {
-    "mentorName": "Andrei Shelenhouski",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/manuminsk",
-    "studentsGithub": [
-      "smajlichak",
-      "zm1try",
-      "jstrr",
-      "kirill82",
-      "blackcat1397"
-    ]
-  },
-  {
-    "mentorName": "Andrei Shyliahin",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/Atzkdeff",
-    "studentsGithub": [
-      "olegkizz",
-      "lazouskikiryl",
-      "dimabog22",
-      "bigshaqmnh",
-      "antonnaumchik"
-    ]
-  },
-  {
-    "mentorName": "Andrei Zhuk",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/Andrei-Zhuk",
-    "studentsGithub": [
-      "torchik-slava",
-      "antihero",
-      "karpiyeniamv",
-      "kirillzavorotni",
-      "makar1227",
-      "mudreuski",
-      "artkon"
-    ]
-  },
-  {
-    "mentorName": "Andres Rios",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/rianby64",
-    "studentsGithub": [
-      "yaroslav-mig",
-      "novikovantony",
-      "mayblackwood",
-      "anastminsk",
-      "28halavach",
-      "40grivenprog",
-      "igordive",
-      "nataliamotuz"
-    ]
-  },
-  {
-    "mentorName": "Anton Bely",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/ToshaBely",
-    "studentsGithub": [
-      "arkhipenka",
-      "abespolov",
-      "zzhiharevich",
-      "dimaspivas",
-      "maxkonopelko"
-    ]
-  },
-  {
-    "mentorName": "Anton Sharapa",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/asharapa",
-    "studentsGithub": [
-      "mentos2805",
-      "sergeybandar",
-      "alexanderkononok",
-      "mrmars20"
-    ]
-  },
-  {
-    "mentorName": "Anton Stsiapanau",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/stpnvntn",
-    "studentsGithub": [
-      "metalhammer4",
-      "rudlevsky",
-      "ostik266",
-      "katekosushkina",
-      "viki-klipp",
-      "anyalenko",
-      "northingvar"
-    ]
-  },
-  {
-    "mentorName": "Anton Yatskevich",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/a-yatskevich",
-    "studentsGithub": [
-      "mrdreaml",
-      "tsypolina",
-      "evgeniy121",
-      "jadgptw"
-    ]
-  },
-  {
-    "mentorName": "Arif Mustafazade",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/mustafazadeAR",
-    "studentsGithub": [
-      "sobolevyuri",
-      "credov",
-      "clericus",
-      "dbaceko",
-      "frontsideman"
-    ]
-  },
-  {
-    "mentorName": "Arseni Shynkarenka",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/arhigod",
-    "studentsGithub": [
-      "nastya-ropot",
-      "mozgoen",
-      "hellsingi",
-      "yeilya",
-      "polotenchik",
-      "tshkursk"
-    ]
-  },
-  {
-    "mentorName": "Artsiom Haurylin",
-    "mentorCity": "Гомель",
-    "mentorGithub": "https://github.com/ahaurylin",
-    "studentsGithub": [
-      "olgaluk",
-      "groamed",
-      "grapeperson",
-      "rbarakhvostov"
-    ]
-  },
-  {
-    "mentorName": "artsiom kukharev",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/xeontem",
-    "studentsGithub": [
-      "silichstudent",
-      "vvikota",
-      "leonard1k",
-      "mariakisel",
-      "qxfisher",
-      "bulbazubr"
-    ]
-  },
-  {
-    "mentorName": "Artsiom Latyshau",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/artemlatyshev",
-    "studentsGithub": [
-      "sergeiobolevich",
-      "dimashcherbakov",
-      "feulia",
-      "magi-a",
-      "andrewyanushkevich"
-    ]
-  },
-  {
-    "mentorName": "Artsiom Lykau",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/lykovartem",
-    "studentsGithub": [
-      "glebhleb",
-      "segrey1989",
-      "kotukjubotuk",
-      "nikkola07",
-      "alexandershaternik",
-      "okband"
-    ]
-  },
-  {
-    "mentorName": "Artsiom Piakhota",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/LithiumFallen",
-    "studentsGithub": [
-      "sunrisekovalevski",
-      "spacebrains",
-      "pincherinka",
-      "victoriathebrave"
-    ]
-  },
-  {
-    "mentorName": "Artsiom Reutovich",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/Xelsoid",
-    "studentsGithub": [
-      "ivanmatsur",
-      "usermeme",
-      "virusss",
-      "nikaz123"
-    ]
-  },
-  {
-    "mentorName": "Artur Kazlouski",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/arturminsksum",
-    "studentsGithub": [
-      "a-lika",
-      "uniqkue",
-      "sqwezzy",
-      "nikaneider",
-      "rebellix"
-    ]
-  },
-  {
-    "mentorName": "Bahdan Kutas",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/AgentKB",
-    "studentsGithub": [
-      "litwin90",
-      "dzmitrybabak",
-      "systemghost",
-      "eugenetime",
-      "alexnaidovich",
-      "ivanchikovvalentin",
-      "ewelai"
-    ]
-  },
-  {
-    "mentorName": "Barys Marukhin",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/barysmarukhin",
-    "studentsGithub": [
-      "denhock",
-      "kirillgalimov",
-      "igor-provotorov",
-      "kamatozzzik"
-    ]
-  },
-  {
-    "mentorName": "Daniil Suleiman",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/sulemanof",
-    "studentsGithub": [
-      "heaveek",
-      "olegsabodash",
-      "andriva",
-      "meearlyam",
-      "veronikavasilchikova"
-    ]
-  },
-  {
-    "mentorName": "Denis Bezak",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/BezakDenis",
-    "studentsGithub": [
-      "aleks210219",
-      "krlktv",
-      "dsv-sergey",
-      "nadezhda-kotova",
-      "alexalizurchik",
-      "pavellyolya"
-    ]
-  },
-  {
-    "mentorName": "Denis Bozhyk",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/den-bozhyk",
-    "studentsGithub": [
-      "mailikey",
-      "vladesco",
-      "drdiman",
-      "dzmitrymashuk",
-      "ipixby",
-      "nickprudnik",
-      "vitalitybo"
-    ]
-  },
-  {
-    "mentorName": "Denis Kravchenko",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/Shank111",
-    "studentsGithub": [
-      "kirillfilipp",
-      "gemsgame",
-      "axissixa57",
-      "maxstarovoitov",
-      "nemkev"
-    ]
-  },
-  {
-    "mentorName": "Dmitri Bardt",
-    "mentorCity": "Минск",
-    "mentorGithub": "https://github.com/ximet",
-    "studentsGithub": [
-      "dianatsevan",
-      "christopher-0118",
-      "happy-mary",
-      "onaker",
-      "igorbyl",
-      "maksyermak",
-      "riba0017"
-    ]
-  },
-  {
     "mentorName": "Dzianis Dashkevich",
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/DenisDashkevich",
     "studentsGithub": [
-      "yevganytyurin",
-      "pofs",
       "alexeykuril0",
-      "kragov",
+      "andreisavelyev",
       "gruzinskiiartem",
+      "kragov",
       "pivchenkosv",
-      "andreisavelyev"
+      "pofs",
+      "yevganytyurin"
     ]
   },
   {
@@ -731,9 +708,9 @@
     "mentorGithub": "https://github.com/dpryshchep",
     "studentsGithub": [
       "kira2023",
-      "vvsvintsitsky",
+      "kiryllapouski",
       "molestador",
-      "kiryllapouski"
+      "vvsvintsitsky"
     ]
   },
   {
@@ -741,13 +718,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "http://github.com/dzianisreznik/",
     "studentsGithub": [
+      "egorgorbik",
       "eugene3112",
       "heat98",
-      "tanyamatesha",
-      "egorgorbik",
-      "vicrodzko",
       "ilyatrat",
+      "tanyamatesha",
       "unbelievablysmart",
+      "vicrodzko",
       "viktoryia-hrechykha"
     ]
   },
@@ -756,16 +733,16 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/davojta",
     "studentsGithub": [
-      "pavalescoba",
-      "kashapov",
-      "michaeldaineka",
-      "lesechka",
-      "vasiliyrepin",
-      "mike80by",
-      "sergeyshestak",
-      "victorbelikov",
       "auseika",
-      "iharpadbiarezski"
+      "iharpadbiarezski",
+      "kashapov",
+      "lesechka",
+      "michaeldaineka",
+      "mike80by",
+      "pavalescoba",
+      "sergeyshestak",
+      "vasiliyrepin",
+      "victorbelikov"
     ]
   },
   {
@@ -773,12 +750,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Shutya",
     "studentsGithub": [
-      "kirillstarlight",
-      "waldemar999",
-      "kushnerevich",
-      "igarok91",
       "aliakseibabko",
       "gleb7raul",
+      "igarok91",
+      "kirillstarlight",
+      "kushnerevich",
+      "waldemar999",
       "zhekaprb"
     ]
   },
@@ -787,10 +764,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/sushchenja",
     "studentsGithub": [
-      "nightman20104",
-      "irin-ka",
       "daniil-loban",
-      "misharsweb"
+      "irin-ka",
+      "misharsweb",
+      "nightman20104"
     ]
   },
   {
@@ -798,12 +775,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/alidzm",
     "studentsGithub": [
-      "devbarden",
-      "nicklevkovich",
-      "poiskull",
-      "mrio1",
       "alexkashpor",
-      "dmsomov"
+      "devbarden",
+      "dmsomov",
+      "mrio1",
+      "nicklevkovich",
+      "poiskull"
     ]
   },
   {
@@ -811,13 +788,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/sintet",
     "studentsGithub": [
+      "aleksandrmedvedev9000",
       "aspowerr",
+      "julialar4enko",
       "shchelkunchik",
       "thatcherrr",
       "torioyoshiko",
-      "julialar4enko",
-      "yasell",
-      "aleksandrmedvedev9000"
+      "yasell"
     ]
   },
   {
@@ -835,13 +812,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/falizyer",
     "studentsGithub": [
-      "bespodobno",
+      "alekseymishuk",
       "anastasia1627",
       "basch1727",
-      "lizabredberry",
-      "zartaich",
+      "bespodobno",
       "estel1591",
-      "alekseymishuk"
+      "lizabredberry",
+      "zartaich"
     ]
   },
   {
@@ -849,11 +826,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Linus2228",
     "studentsGithub": [
-      "sergeybaranovichi",
-      "karina198",
+      "6alex6kash6",
       "arturkudlo",
       "dimasofff",
-      "6alex6kash6"
+      "karina198",
+      "sergeybaranovichi"
     ]
   },
   {
@@ -861,10 +838,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/dzmitrypanamarenka",
     "studentsGithub": [
-      "stas4it",
-      "vladislavmakarevich",
       "juliankov",
-      "niksrakevich"
+      "niksrakevich",
+      "stas4it",
+      "vladislavmakarevich"
     ]
   },
   {
@@ -872,13 +849,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/diprudnikov",
     "studentsGithub": [
-      "leshka98",
-      "siarheikresik",
-      "dianakay",
-      "tvj888",
       "alexkov90",
+      "charmant",
+      "dianakay",
+      "leshka98",
       "mpot7",
-      "charmant"
+      "siarheikresik",
+      "tvj888"
     ]
   },
   {
@@ -886,11 +863,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/DmitryRomaniuk",
     "studentsGithub": [
+      "2kevink",
+      "amoyt",
       "andreikrivets",
       "lavazzakate",
-      "2kevink",
-      "vladislavrebko",
-      "amoyt"
+      "vladislavrebko"
     ]
   },
   {
@@ -898,10 +875,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Sambl4",
     "studentsGithub": [
-      "sches",
-      "simaxa7",
       "polinamoiseyenko",
-      "sashakaralchuk"
+      "sashakaralchuk",
+      "sches",
+      "simaxa7"
     ]
   },
   {
@@ -909,11 +886,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/katya-sanko",
     "studentsGithub": [
-      "kyleshovbb",
-      "yabeda79",
-      "sergmi",
       "disa0808",
-      "pulya10c"
+      "kyleshovbb",
+      "pulya10c",
+      "sergmi",
+      "yabeda79"
     ]
   },
   {
@@ -922,8 +899,8 @@
     "mentorGithub": "https://github.com/elgrebenchuk",
     "studentsGithub": [
       "andreiyasinski",
-      "duza",
       "anton23kirienko",
+      "duza",
       "gandigap"
     ]
   },
@@ -933,9 +910,9 @@
     "mentorGithub": "https://github.com/ElenaShokhanEPAM",
     "studentsGithub": [
       "aborisenok",
-      "valiantsinlopan",
       "egormiwa1",
-      "foxygirl44"
+      "foxygirl44",
+      "valiantsinlopan"
     ]
   },
   {
@@ -943,9 +920,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/ivashkovaliza",
     "studentsGithub": [
+      "kharuk",
       "stationtostation",
       "tatsianacs",
-      "kharuk",
       "wald3"
     ]
   },
@@ -954,11 +931,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/AnnaGrebenyuk",
     "studentsGithub": [
-      "yuliyahlukhatarenka",
-      "lapa17",
+      "atryomparfenenkov",
       "dmitrylutskovich",
+      "lapa17",
       "vladst90",
-      "atryomparfenenkov"
+      "yuliyahlukhatarenka"
     ]
   },
   {
@@ -966,13 +943,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Anik188",
     "studentsGithub": [
+      "aytsan",
       "horoshaya",
+      "jeka98",
       "martinkevichyana",
       "montik-pc",
-      "jeka98",
       "renardby",
-      "sergeyguchok",
-      "aytsan"
+      "sergeyguchok"
     ]
   },
   {
@@ -980,9 +957,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/sijlver",
     "studentsGithub": [
+      "artur-alexandrov",
       "metre-ray",
       "napro23",
-      "artur-alexandrov",
       "overkektus",
       "zhekix"
     ]
@@ -992,13 +969,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/IlyaLisitsin",
     "studentsGithub": [
-      "meller96",
-      "ogurez",
-      "mrlapka",
-      "olexxxey",
-      "xelson",
       "amoebiusss",
-      "megustafather"
+      "megustafather",
+      "meller96",
+      "mrlapka",
+      "ogurez",
+      "olexxxey",
+      "xelson"
     ]
   },
   {
@@ -1006,13 +983,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/AmsterGet",
     "studentsGithub": [
-      "tebeskashi",
-      "pinkrefugee",
-      "daqueze21",
       "beetle23",
+      "colambus13",
+      "daqueze21",
       "lynyx",
-      "tomsssm",
-      "colambus13"
+      "pinkrefugee",
+      "tebeskashi",
+      "tomsssm"
     ]
   },
   {
@@ -1020,10 +997,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/kbirulia",
     "studentsGithub": [
-      "vergonini",
-      "katiar",
       "anaumovich",
-      "kirillkolesnik123"
+      "katiar",
+      "kirillkolesnik123",
+      "vergonini"
     ]
   },
   {
@@ -1031,13 +1008,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/katekaranets",
     "studentsGithub": [
-      "kozelkoff",
-      "vladislavshyian",
-      "gleb-kukobnikov",
-      "sokol147",
+      "aliaksandrarybak",
       "dantewitcher",
+      "gleb-kukobnikov",
+      "kozelkoff",
       "natiedei",
-      "aliaksandrarybak"
+      "sokol147",
+      "vladislavshyian"
     ]
   },
   {
@@ -1045,11 +1022,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/etatarinovich18",
     "studentsGithub": [
-      "kaleniksasha",
-      "ue4prog",
-      "sk1ngr0s",
       "alexshumansky",
-      "margoshulpina"
+      "kaleniksasha",
+      "margoshulpina",
+      "sk1ngr0s",
+      "ue4prog"
     ]
   },
   {
@@ -1057,12 +1034,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/kirillpanov",
     "studentsGithub": [
-      "helpthewalrus",
       "aliaksandrlosich",
-      "dmsolov",
       "bogdanka",
-      "srjkaa",
+      "dmsolov",
       "godofnoobs",
+      "helpthewalrus",
+      "srjkaa",
       "uivgray"
     ]
   },
@@ -1071,12 +1048,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/CyrilShalyapin",
     "studentsGithub": [
-      "sergeyakzhik",
-      "kulinar310",
       "cropotan",
-      "vitalydmitriev",
+      "kulinar310",
       "philipsh",
+      "sergeyakzhik",
       "vero-nika",
+      "vitalydmitriev",
       "vladsemenik"
     ]
   },
@@ -1085,12 +1062,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/KVtofan",
     "studentsGithub": [
-      "thesheepman",
       "brokorenko",
-      "vovakor1",
+      "egorbudnik",
       "hentmire",
       "rubahaguy",
-      "egorbudnik"
+      "thesheepman",
+      "vovakor1"
     ]
   },
   {
@@ -1099,8 +1076,8 @@
     "mentorGithub": "https://github.com/Klim711",
     "studentsGithub": [
       "dmlaziuk",
-      "vladqqqqoo",
       "globalbobone",
+      "vladqqqqoo",
       "wushukms"
     ]
   },
@@ -1109,10 +1086,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/PredokMiF",
     "studentsGithub": [
+      "alexandrapozniak",
       "belkacraft",
       "kasatka660",
       "warryr",
-      "alexandrapozniak",
       "yuliabakhar"
     ]
   },
@@ -1121,11 +1098,22 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/KseniyaSmorshchek",
     "studentsGithub": [
+      "ankorbay",
+      "catrieona",
       "ltcolumbo",
       "veterkam",
-      "yurychajkou",
-      "catrieona",
-      "ankorbay"
+      "yurychajkou"
+    ]
+  },
+  {
+    "mentorName": "Maksim Kantsavy",
+    "mentorCity": "Могилев",
+    "mentorGithub": "https://github.com/clainatomi-zero",
+    "studentsGithub": [
+      "alexandrshlyaeu",
+      "nicalas93",
+      "shinoby85",
+      "vldmr1"
     ]
   },
   {
@@ -1133,10 +1121,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Maryia-N-N",
     "studentsGithub": [
-      "crypto-kittensseller",
-      "dyadinmax",
       "alexeynovomlinets",
-      "antonysawyer"
+      "antonysawyer",
+      "crypto-kittensseller",
+      "dyadinmax"
     ]
   },
   {
@@ -1144,10 +1132,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/shparkivozhyk",
     "studentsGithub": [
-      "sburnt",
-      "tserekhivan",
+      "eugenekhristo",
       "presidentsboyfriend",
-      "eugenekhristo"
+      "sburnt",
+      "tserekhivan"
     ]
   },
   {
@@ -1155,13 +1143,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Nikkov17",
     "studentsGithub": [
-      "artichoks",
-      "anastasiyanovikovag",
-      "margaretmint",
       "anastasiyamazura",
+      "anastasiyanovikovag",
+      "artichoks",
       "dezman66",
       "exedystyle",
-      "gaddyya"
+      "gaddyya",
+      "margaretmint"
     ]
   },
   {
@@ -1169,11 +1157,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Hirurgo",
     "studentsGithub": [
-      "tanya98",
       "mixniuk",
-      "xseniia",
       "nataligleb",
-      "valeriyager"
+      "tanya98",
+      "valeriyager",
+      "xseniia"
     ]
   },
   {
@@ -1181,12 +1169,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/mikalai-sokarau",
     "studentsGithub": [
-      "f8b23lef",
-      "yrapank",
-      "jenia-shibkova",
-      "magerrrr",
       "danila211",
-      "juliazakharik"
+      "f8b23lef",
+      "jenia-shibkova",
+      "juliazakharik",
+      "magerrrr",
+      "yrapank"
     ]
   },
   {
@@ -1194,11 +1182,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/MikhailLU",
     "studentsGithub": [
-      "elusiveway",
+      "astravukh",
       "cirillius",
+      "elusiveway",
       "eugenepochenkov",
       "lx-931203",
-      "astravukh",
       "zetorby"
     ]
   },
@@ -1207,12 +1195,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/NikitaRudy",
     "studentsGithub": [
-      "sad4itananda",
-      "kalitamih",
-      "evgenprushk",
-      "mrstalon",
       "avaprin",
+      "evgenprushk",
       "haspadarz-padmensku",
+      "kalitamih",
+      "mrstalon",
+      "sad4itananda",
       "svoboda-rabstvo"
     ]
   },
@@ -1221,12 +1209,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/nsubbot",
     "studentsGithub": [
+      "aglayasv",
       "eughene-cherepov",
+      "finnibyh",
+      "luzko",
       "moraviin",
       "petriken",
-      "luzko",
-      "finnibyh",
-      "aglayasv",
       "tonykosmos"
     ]
   },
@@ -1235,12 +1223,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/ntrukhanovets",
     "studentsGithub": [
-      "vanyatsar",
-      "lordshtein",
+      "annchapon",
+      "cruecer",
       "ekoniuh",
       "evpodrezenko",
-      "cruecer",
-      "annchapon"
+      "lordshtein",
+      "vanyatsar"
     ]
   },
   {
@@ -1248,13 +1236,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Nikitzu",
     "studentsGithub": [
-      "felalag",
-      "xixex",
-      "bumble-bee83",
-      "mikhama",
-      "angryivan",
       "alexandr-savkov",
-      "dimalinnik"
+      "angryivan",
+      "bumble-bee83",
+      "dimalinnik",
+      "felalag",
+      "mikhama",
+      "xixex"
     ]
   },
   {
@@ -1262,10 +1250,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/belousova-natallia",
     "studentsGithub": [
-      "garnich",
       "altobeyk",
-      "stigmatory15",
-      "kmetkokate"
+      "garnich",
+      "kmetkokate",
+      "stigmatory15"
     ]
   },
   {
@@ -1273,10 +1261,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/natashanekazakova",
     "studentsGithub": [
-      "wladimirmihalev",
+      "375291601334",
       "antoprokopovich",
       "iharpashkevich",
-      "375291601334"
+      "wladimirmihalev"
     ]
   },
   {
@@ -1284,9 +1272,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/NikolaiVerbitskii",
     "studentsGithub": [
-      "shanhinpavel",
       "igor82bv",
       "klimenkomaksim",
+      "shanhinpavel",
       "uladzimir-yeudakimovich"
     ]
   },
@@ -1295,12 +1283,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/PolinaBobrovnik",
     "studentsGithub": [
-      "wowprojeck",
-      "andvikvin",
       "alinkalu",
-      "marry705",
+      "andvikvin",
       "fursaleksey",
-      "hursevichsergey"
+      "hursevichsergey",
+      "marry705",
+      "wowprojeck"
     ]
   },
   {
@@ -1308,11 +1296,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/pavelglebov",
     "studentsGithub": [
-      "oaliona",
+      "alexsmyk1992",
+      "dzianiskavalionak",
       "feodorius",
       "ihar777",
-      "dzianiskavalionak",
-      "alexsmyk1992",
+      "oaliona",
       "vbkoshak"
     ]
   },
@@ -1321,13 +1309,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/PavelKuzniatsou",
     "studentsGithub": [
-      "maxbrainygame",
-      "oliver337",
-      "kotiknalune42",
       "akselatom",
-      "maryiasiamenava",
+      "kirilltovpinets",
       "kotcher1",
-      "kirilltovpinets"
+      "kotiknalune42",
+      "maryiasiamenava",
+      "maxbrainygame",
+      "oliver337"
     ]
   },
   {
@@ -1335,12 +1323,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/tibmt",
     "studentsGithub": [
-      "kasiama",
-      "magiccurlyhair",
-      "iryna-markovich",
-      "ivankirsd",
       "argaitt",
       "danteboom",
+      "iryna-markovich",
+      "ivankirsd",
+      "kasiama",
+      "magiccurlyhair",
       "passhub"
     ]
   },
@@ -1350,10 +1338,30 @@
     "mentorGithub": "https://github.com/PavelZaletski",
     "studentsGithub": [
       "andddrews",
-      "bref987",
-      "sergey496",
       "anna-sh",
-      "ilyaryabchinski"
+      "bref987",
+      "ilyaryabchinski",
+      "sergey496"
+    ]
+  },
+  {
+    "mentorName": "Petya Bockin",
+    "mentorCity": "",
+    "mentorGithub": "",
+    "studentsGithub": [
+      "fdf"
+    ]
+  },
+  {
+    "mentorName": "Rem Apasov",
+    "mentorCity": "",
+    "mentorGithub": "",
+    "studentsGithub": [
+      "dongor7",
+      "frol8612",
+      "innazl",
+      "snowwe",
+      "zettrix"
     ]
   },
   {
@@ -1361,11 +1369,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Lavitr",
     "studentsGithub": [
-      "mrdemonrush",
+      "daryz",
       "h0qw010xz",
+      "mrdemonrush",
       "nikitaklepanosov",
-      "provedenceva",
-      "daryz"
+      "provedenceva"
     ]
   },
   {
@@ -1373,12 +1381,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/korotkin",
     "studentsGithub": [
-      "pavelsab",
-      "ihartsykaka",
-      "vldshch",
-      "naijelo",
-      "tridenet",
       "darinalitvin",
+      "ihartsykaka",
+      "naijelo",
+      "pavelsab",
+      "tridenet",
+      "vldshch",
       "zhechka"
     ]
   },
@@ -1387,16 +1395,16 @@
     "mentorCity": "Брест",
     "mentorGithub": "https://github.com/maximuk",
     "studentsGithub": [
+      "alenashkr",
+      "alexdejko",
+      "alexey-1991",
       "andrei-oksentyk",
-      "wertybsd",
+      "fyr-fyrrr",
       "halaveika",
       "liodama",
-      "alexey-1991",
-      "fyr-fyrrr",
       "redgektor",
-      "alexdejko",
-      "alenashkr",
-      "uniapi"
+      "uniapi",
+      "wertybsd"
     ]
   },
   {
@@ -1405,9 +1413,9 @@
     "mentorGithub": "https://github.com/SergeyShatter",
     "studentsGithub": [
       "cuppake",
-      "pirsfrommi6",
+      "kirilltk",
       "luffi2539",
-      "kirilltk"
+      "pirsfrommi6"
     ]
   },
   {
@@ -1416,9 +1424,9 @@
     "mentorGithub": "https://github.com/Sergey-Churilin",
     "studentsGithub": [
       "gegorov",
+      "gubnich",
       "ilyakabanov",
-      "yurec0gurec",
-      "gubnich"
+      "yurec0gurec"
     ]
   },
   {
@@ -1426,10 +1434,10 @@
     "mentorCity": "Гомель",
     "mentorGithub": "https://github.com/Pristavka",
     "studentsGithub": [
-      "jamadamur",
-      "tsvetlanak",
       "alehdzmitrenka",
-      "dzhudzhi"
+      "dzhudzhi",
+      "jamadamur",
+      "tsvetlanak"
     ]
   },
   {
@@ -1437,10 +1445,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/Tanya-Bakhmatovich",
     "studentsGithub": [
-      "fogfug1",
-      "yauhenilyin",
       "dmitrigorchanin",
-      "soundmafi"
+      "fogfug1",
+      "soundmafi",
+      "yauhenilyin"
     ]
   },
   {
@@ -1457,9 +1465,9 @@
     "mentorCity": "Могилев",
     "mentorGithub": "https://github.com/stsepchanka",
     "studentsGithub": [
+      "dloz",
       "max-violent",
       "rick42morty",
-      "dloz",
       "scifsyh",
       "tgfrey"
     ]
@@ -1470,11 +1478,11 @@
     "mentorGithub": "https://github.com/forkollaider",
     "studentsGithub": [
       "aalexsoloveiko",
-      "sergeibel",
       "do100han",
-      "zhecha",
+      "mill9r",
       "odegay",
-      "mill9r"
+      "sergeibel",
+      "zhecha"
     ]
   },
   {
@@ -1482,11 +1490,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/vinfinit",
     "studentsGithub": [
+      "eauheni",
       "egoncharov",
       "elostryy",
-      "eauheni",
-      "mikhailnakanechny",
-      "maringoka"
+      "maringoka",
+      "mikhailnakanechny"
     ]
   },
   {
@@ -1495,9 +1503,9 @@
     "mentorGithub": "https://github.com/einfachvlad/",
     "studentsGithub": [
       "aleksei-bulgak-study",
-      "margharita",
+      "dyatelvudu",
       "lazovskyigor",
-      "dyatelvudu"
+      "margharita"
     ]
   },
   {
@@ -1505,13 +1513,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/valeraGorobets/",
     "studentsGithub": [
-      "ivandubrouski",
-      "mrforsyte",
-      "krisstets",
-      "yuriy17",
-      "olgakuksa",
       "eliznovo",
-      "vitalij21"
+      "ivandubrouski",
+      "krisstets",
+      "mrforsyte",
+      "olgakuksa",
+      "vitalij21",
+      "yuriy17"
     ]
   },
   {
@@ -1519,9 +1527,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/TomasSpring",
     "studentsGithub": [
+      "a11mo",
       "annakolesnikova",
       "eliendil",
-      "a11mo",
       "thecobolt"
     ]
   },
@@ -1531,10 +1539,10 @@
     "mentorGithub": "https://github.com/viachaslau-latushkin",
     "studentsGithub": [
       "alexandrasitnikova",
-      "vitalibrych333",
+      "katezhukel",
       "pavelkiru",
       "shestakoff1441",
-      "katezhukel"
+      "vitalibrych333"
     ]
   },
   {
@@ -1544,9 +1552,9 @@
     "studentsGithub": [
       "bardashevich-matvei",
       "korbann",
-      "yevgeniypy",
+      "supersmf",
       "tatyana-andreichyk",
-      "supersmf"
+      "yevgeniypy"
     ]
   },
   {
@@ -1554,11 +1562,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/ViktoriyaVorozhun",
     "studentsGithub": [
-      "toxandreev",
+      "christina-ilyushonok",
       "evgeniyaverbiczkaya",
       "martikoscoder",
       "mayinmarch",
-      "christina-ilyushonok"
+      "toxandreev"
     ]
   },
   {
@@ -1566,10 +1574,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/elkinny",
     "studentsGithub": [
-      "kottanakor",
-      "daryazel",
       "alenakharytonchyk",
+      "daryazel",
       "drizzlman",
+      "kottanakor",
       "yonguksaram"
     ]
   },
@@ -1578,11 +1586,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/candentira",
     "studentsGithub": [
-      "palessie",
-      "ustilushka",
-      "zzvipz",
       "dmitrylenko",
-      "underdoglzd"
+      "palessie",
+      "underdoglzd",
+      "ustilushka",
+      "zzvipz"
     ]
   },
   {
@@ -1590,11 +1598,11 @@
     "mentorCity": "Могилев",
     "mentorGithub": "https://github.com/ViktoryiaVerasava",
     "studentsGithub": [
-      "psychotheus",
-      "lowershotower",
+      "25kopek",
       "bn1knb",
-      "zerovers",
-      "25kopek"
+      "lowershotower",
+      "psychotheus",
+      "zerovers"
     ]
   },
   {
@@ -1602,9 +1610,9 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/error404as/",
     "studentsGithub": [
-      "robertiqk",
-      "pozharitskiy",
       "aliakseik19",
+      "pozharitskiy",
+      "robertiqk",
       "tarsupon"
     ]
   },
@@ -1613,10 +1621,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/vladislavkovaliov/",
     "studentsGithub": [
-      "roman-nareiko",
       "evilamany",
-      "xvorob",
-      "pelya98"
+      "pelya98",
+      "roman-nareiko",
+      "xvorob"
     ]
   },
   {
@@ -1624,11 +1632,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/olgamardvilko",
     "studentsGithub": [
-      "vladsanko",
-      "serzhanhelena",
       "georgyminsk",
+      "goldenkit",
       "greg1996",
-      "goldenkit"
+      "serzhanhelena",
+      "vladsanko"
     ]
   },
   {
@@ -1636,12 +1644,12 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/OlgaPoddubko",
     "studentsGithub": [
-      "shet1990",
+      "dimadk24",
+      "karsash",
       "maksagit",
       "melk0sha",
-      "tanyasamal",
-      "karsash",
-      "dimadk24"
+      "shet1990",
+      "tanyasamal"
     ]
   },
   {
@@ -1650,10 +1658,10 @@
     "mentorGithub": "https://github.com/Naooki",
     "studentsGithub": [
       "eveshad",
+      "holeil",
       "mbulldozer",
-      "starkary",
       "olgalazarevich",
-      "holeil"
+      "starkary"
     ]
   },
   {
@@ -1662,10 +1670,10 @@
     "mentorGithub": "https://github.com/yanaSelin",
     "studentsGithub": [
       "bsiropchik",
-      "scratchor",
+      "maksstef",
       "montes5",
       "mrspunki",
-      "maksstef"
+      "scratchor"
     ]
   },
   {
@@ -1673,10 +1681,10 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/YanaNeronskaya",
     "studentsGithub": [
-      "ilyay95",
       "allexblaze",
       "dekim12",
       "dimamavrin",
+      "ilyay95",
       "vitalmizevich"
     ]
   },
@@ -1686,9 +1694,9 @@
     "mentorGithub": "https://github.com/yana95",
     "studentsGithub": [
       "mikhailmaniuk",
+      "olganaranovich",
       "shakhnovapolina",
-      "yana-bashtyk",
-      "olganaranovich"
+      "yana-bashtyk"
     ]
   },
   {
@@ -1696,13 +1704,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/EugeneCh",
     "studentsGithub": [
+      "alesya-polovets",
+      "antonykor",
+      "dzmitryalfer",
+      "geek10010",
       "ivchenkopavel",
       "ruboscope",
-      "alesya-polovets",
-      "geek10010",
-      "antonykor",
-      "saniok017",
-      "dzmitryalfer"
+      "saniok017"
     ]
   },
   {
@@ -1711,12 +1719,12 @@
     "mentorGithub": "https://github.com/EvgeniiGrh",
     "studentsGithub": [
       "antonprotas",
-      "mickbetch",
-      "oconely",
-      "natalianekrashevich",
+      "garin87",
       "iryna-mazura",
       "kamenkoalexandr",
-      "garin87"
+      "mickbetch",
+      "natalianekrashevich",
+      "oconely"
     ]
   },
   {
@@ -1724,11 +1732,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/evgladkiy",
     "studentsGithub": [
-      "evgenijkorob",
       "anxair",
+      "evgenijkorob",
+      "shurpelevas",
       "siarohin",
-      "svyatlo",
-      "shurpelevas"
+      "svyatlo"
     ]
   },
   {
@@ -1736,13 +1744,13 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/pasyukevich",
     "studentsGithub": [
-      "yanachchchka",
-      "yalovikea",
-      "volhashy",
-      "crunkagator",
       "alenabde",
+      "boobaley",
+      "crunkagator",
       "maksimyakush",
-      "boobaley"
+      "volhashy",
+      "yalovikea",
+      "yanachchchka"
     ]
   },
   {
@@ -1752,8 +1760,8 @@
     "studentsGithub": [
       "anna-pronovich",
       "artemiusv",
-      "nataliakazakevich",
       "kseniyasokolovskaya",
+      "nataliakazakevich",
       "zmichgen"
     ]
   },
@@ -1762,11 +1770,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/erutkovsky",
     "studentsGithub": [
+      "boshka0",
       "hecateenitharmon",
       "mdgh",
       "mggeroff",
-      "soulos410",
-      "boshka0"
+      "soulos410"
     ]
   },
   {
@@ -1774,11 +1782,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/JuliaAlaeva",
     "studentsGithub": [
+      "ahrechushkin",
+      "huriosity",
       "mariannagarbuzova",
       "pytniza",
-      "ronavea",
-      "ahrechushkin",
-      "huriosity"
+      "ronavea"
     ]
   },
   {
@@ -1786,11 +1794,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/yuliaHope",
     "studentsGithub": [
-      "artyommakarov",
-      "levsha87",
-      "hottab9595",
       "achyrych",
       "arkadz",
+      "artyommakarov",
+      "hottab9595",
+      "levsha87",
       "maniuska",
       "sachoks"
     ]
@@ -1800,19 +1808,11 @@
     "mentorCity": "Минск",
     "mentorGithub": "https://github.com/yulia9",
     "studentsGithub": [
-      "prometei299",
-      "sergeypunko",
-      "zurzur",
       "edaineko",
-      "seidou99"
-    ]
-  },
-  {
-    "mentorName": "Petya Bockin",
-    "mentorCity": "",
-    "mentorGithub": "",
-    "studentGithub": [
-      "fdf"
+      "prometei299",
+      "seidou99",
+      "sergeypunko",
+      "zurzur"
     ]
   }
 ]
