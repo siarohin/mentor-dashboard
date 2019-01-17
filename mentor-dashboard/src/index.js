@@ -88,7 +88,12 @@ const getMentorData = (currentRow) => {
   const mentorData = {
     mentorFullName: `${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`,
     mentorCity: (sheet2[workbook.city + currentRow].v).toString(),
-    mentorGithub: (sheet2[workbook.mentorGithub + currentRow].v).toString(),
+    mentorGithub: (sheet2[workbook.mentorGithub + currentRow].v)
+      .toString()
+      .toLowerCase()
+      .replace('https://github.com/', '')
+      .replace('http://github.com/', '')
+      .replace('/', ''),
   };
 
   return mentorData;
