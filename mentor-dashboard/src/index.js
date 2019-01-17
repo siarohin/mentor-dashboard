@@ -68,13 +68,16 @@ const mergeMentorStudentPair = pairs.reduce((acc, item) => {
   const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
 
   if (exsistingMentor) {
-    exsistingMentor.studentGithub.push({ github: item.studentGithub });
-    exsistingMentor.studentGithub.sort((first, second) => (first.github).localeCompare(second.github));
+    exsistingMentor.studentGithub
+      .push({ studentGithub: item.studentGithub });
+
+    exsistingMentor.studentGithub
+      .sort((first, second) => (first.studentGithub).localeCompare(second.studentGithub));
   } else {
     acc.push({
       interviewer: item.interviewer,
       studentGithub: [
-        { github: item.studentGithub },
+        { studentGithub: item.studentGithub },
       ],
     });
   }
@@ -126,14 +129,14 @@ const result = mergeMentorStudentPair
         mentorName: mentorStudentPair.interviewer || '',
         mentorCity: '',
         mentorGithub: '',
-        studentsGithub: mentorStudentPair.studentGithub || '',
+        students: mentorStudentPair.studentGithub || '',
       };
     }
     return {
       mentorName: mentorStudentsPairs.mentorFullName,
       mentorCity: mentorStudentsPairs.mentorCity,
       mentorGithub: mentorStudentsPairs.mentorGithub,
-      studentsGithub: mentorStudentPair.studentGithub,
+      students: mentorStudentPair.studentGithub,
     };
   });
 

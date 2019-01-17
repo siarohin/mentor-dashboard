@@ -3,9 +3,9 @@
     "mentorName": "Akiaksandr Zahorski",
     "mentorCity": "Гомель",
     "mentorGithub": "aliaksandrzahorski",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "grenbork"
+        "studentGithub": "grenbork"
       }
     ]
   },
@@ -13,27 +13,27 @@
     "mentorName": "Aleh Lipski",
     "mentorCity": "Минск",
     "mentorGithub": "lipskiy-aleh",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "agentumbrella"
+        "studentGithub": "agentumbrella"
       },
       {
-        "github": "anastasiaburlo"
+        "studentGithub": "anastasiaburlo"
       },
       {
-        "github": "devandscorp"
+        "studentGithub": "devandscorp"
       },
       {
-        "github": "justforwebcoding"
+        "studentGithub": "justforwebcoding"
       },
       {
-        "github": "lexbogos"
+        "studentGithub": "lexbogos"
       },
       {
-        "github": "qucca"
+        "studentGithub": "qucca"
       },
       {
-        "github": "zebabrat"
+        "studentGithub": "zebabrat"
       }
     ]
   },
@@ -41,24 +41,24 @@
     "mentorName": "Alena Hrytsuk",
     "mentorCity": "Минск",
     "mentorGithub": "helenegritsuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "devildummy"
+        "studentGithub": "devildummy"
       },
       {
-        "github": "dzmitry-karachun-1987"
+        "studentGithub": "dzmitry-karachun-1987"
       },
       {
-        "github": "kishkun"
+        "studentGithub": "kishkun"
       },
       {
-        "github": "nik-av"
+        "studentGithub": "nik-av"
       },
       {
-        "github": "serg8"
+        "studentGithub": "serg8"
       },
       {
-        "github": "tsygancova"
+        "studentGithub": "tsygancova"
       }
     ]
   },
@@ -66,18 +66,18 @@
     "mentorName": "Alena Korachkina",
     "mentorCity": "Минск",
     "mentorGithub": "papialoushka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dmitryduk3"
+        "studentGithub": "dmitryduk3"
       },
       {
-        "github": "nikola2390"
+        "studentGithub": "nikola2390"
       },
       {
-        "github": "sashajohnson"
+        "studentGithub": "sashajohnson"
       },
       {
-        "github": "yagorka1"
+        "studentGithub": "yagorka1"
       }
     ]
   },
@@ -85,21 +85,21 @@
     "mentorName": "Alexander Spesivtsev",
     "mentorCity": "Минск",
     "mentorGithub": "shuspes",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aliaksandrposakh"
+        "studentGithub": "aliaksandrposakh"
       },
       {
-        "github": "formalinfigs"
+        "studentGithub": "formalinfigs"
       },
       {
-        "github": "petersonby"
+        "studentGithub": "petersonby"
       },
       {
-        "github": "prudnikov888"
+        "studentGithub": "prudnikov888"
       },
       {
-        "github": "sergeyskakun"
+        "studentGithub": "sergeyskakun"
       }
     ]
   },
@@ -107,24 +107,24 @@
     "mentorName": "Alexandra Kukolca",
     "mentorCity": "Минск",
     "mentorGithub": "kukolcaalexandra",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "bragodin"
+        "studentGithub": "bragodin"
       },
       {
-        "github": "fantom141"
+        "studentGithub": "fantom141"
       },
       {
-        "github": "ingvaroldd"
+        "studentGithub": "ingvaroldd"
       },
       {
-        "github": "samo-war"
+        "studentGithub": "samo-war"
       },
       {
-        "github": "sxe2255"
+        "studentGithub": "sxe2255"
       },
       {
-        "github": "vovair"
+        "studentGithub": "vovair"
       }
     ]
   },
@@ -132,18 +132,18 @@
     "mentorName": "Aliaksandr Amialkovich",
     "mentorCity": "Минск",
     "mentorGithub": "amelk9n",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "jrzlve"
+        "studentGithub": "jrzlve"
       },
       {
-        "github": "panikutysh"
+        "studentGithub": "panikutysh"
       },
       {
-        "github": "vitalur"
+        "studentGithub": "vitalur"
       },
       {
-        "github": "vlukyane"
+        "studentGithub": "vlukyane"
       }
     ]
   },
@@ -151,21 +151,21 @@
     "mentorName": "Aliaksandr Famchankou",
     "mentorCity": "Могилев",
     "mentorGithub": "famchankou",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "fcsm-andrei"
+        "studentGithub": "fcsm-andrei"
       },
       {
-        "github": "iharvypau"
+        "studentGithub": "iharvypau"
       },
       {
-        "github": "tvorchud"
+        "studentGithub": "tvorchud"
       },
       {
-        "github": "vitalijsk"
+        "studentGithub": "vitalijsk"
       },
       {
-        "github": "vladimirdobrik"
+        "studentGithub": "vladimirdobrik"
       }
     ]
   },
@@ -173,18 +173,18 @@
     "mentorName": "Aliaksandr Fiodarau",
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrfiodarau",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "burach0k"
+        "studentGithub": "burach0k"
       },
       {
-        "github": "denyingthetruth"
+        "studentGithub": "denyingthetruth"
       },
       {
-        "github": "invikto"
+        "studentGithub": "invikto"
       },
       {
-        "github": "khaliulinroman"
+        "studentGithub": "khaliulinroman"
       }
     ]
   },
@@ -192,21 +192,21 @@
     "mentorName": "Aliaksandr Kazhamiaka",
     "mentorCity": "Могилев",
     "mentorGithub": "mkinitcpio",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "artsiom-zhuk"
+        "studentGithub": "artsiom-zhuk"
       },
       {
-        "github": "ksenia-ok"
+        "studentGithub": "ksenia-ok"
       },
       {
-        "github": "mohax-13"
+        "studentGithub": "mohax-13"
       },
       {
-        "github": "quiquek007"
+        "studentGithub": "quiquek007"
       },
       {
-        "github": "slayer110"
+        "studentGithub": "slayer110"
       }
     ]
   },
@@ -214,24 +214,24 @@
     "mentorName": "Aliaksandr Kleshchukevich",
     "mentorCity": "Минск",
     "mentorGithub": "sleepwalky",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "gattygamaun"
+        "studentGithub": "gattygamaun"
       },
       {
-        "github": "katrin-kot"
+        "studentGithub": "katrin-kot"
       },
       {
-        "github": "kristalys"
+        "studentGithub": "kristalys"
       },
       {
-        "github": "mariyapolt"
+        "studentGithub": "mariyapolt"
       },
       {
-        "github": "noviceblunderer"
+        "studentGithub": "noviceblunderer"
       },
       {
-        "github": "splin-shady"
+        "studentGithub": "splin-shady"
       }
     ]
   },
@@ -239,21 +239,21 @@
     "mentorName": "Aliaksandr Klimau",
     "mentorCity": "Гомель",
     "mentorGithub": "quantum-noise",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "0riac"
+        "studentGithub": "0riac"
       },
       {
-        "github": "803142"
+        "studentGithub": "803142"
       },
       {
-        "github": "nickitasolovei"
+        "studentGithub": "nickitasolovei"
       },
       {
-        "github": "saint-artiom"
+        "studentGithub": "saint-artiom"
       },
       {
-        "github": "terstuyahmaksim"
+        "studentGithub": "terstuyahmaksim"
       }
     ]
   },
@@ -261,18 +261,18 @@
     "mentorName": "Aliaksandr Krasnou",
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrkrasnou",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandravlasenko"
+        "studentGithub": "alexandravlasenko"
       },
       {
-        "github": "andrey-lobach"
+        "studentGithub": "andrey-lobach"
       },
       {
-        "github": "painincoming"
+        "studentGithub": "painincoming"
       },
       {
-        "github": "pitergtx"
+        "studentGithub": "pitergtx"
       }
     ]
   },
@@ -280,27 +280,27 @@
     "mentorName": "Aliaksandr Kuzniatsou",
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrkuzniatsou",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "apivovarchik"
+        "studentGithub": "apivovarchik"
       },
       {
-        "github": "artser97"
+        "studentGithub": "artser97"
       },
       {
-        "github": "iamhappy2day"
+        "studentGithub": "iamhappy2day"
       },
       {
-        "github": "katiekruchko"
+        "studentGithub": "katiekruchko"
       },
       {
-        "github": "ruslandimitriuk"
+        "studentGithub": "ruslandimitriuk"
       },
       {
-        "github": "stasnegreev"
+        "studentGithub": "stasnegreev"
       },
       {
-        "github": "temachkin11"
+        "studentGithub": "temachkin11"
       }
     ]
   },
@@ -308,18 +308,18 @@
     "mentorName": "Aliaksandr Mamonenka",
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrmamonenka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "cheeska"
+        "studentGithub": "cheeska"
       },
       {
-        "github": "dasnein"
+        "studentGithub": "dasnein"
       },
       {
-        "github": "moluram"
+        "studentGithub": "moluram"
       },
       {
-        "github": "nesteklo"
+        "studentGithub": "nesteklo"
       }
     ]
   },
@@ -327,24 +327,24 @@
     "mentorName": "Aliaksandr Novik",
     "mentorCity": "Минск",
     "mentorGithub": "alexno",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "kir-22"
+        "studentGithub": "kir-22"
       },
       {
-        "github": "llitrixkod"
+        "studentGithub": "llitrixkod"
       },
       {
-        "github": "odinrossy"
+        "studentGithub": "odinrossy"
       },
       {
-        "github": "snaiperlod"
+        "studentGithub": "snaiperlod"
       },
       {
-        "github": "vlad0mag0"
+        "studentGithub": "vlad0mag0"
       },
       {
-        "github": "xlopec23"
+        "studentGithub": "xlopec23"
       }
     ]
   },
@@ -352,18 +352,18 @@
     "mentorName": "Aliaksandr Razumovich",
     "mentorCity": "Минск",
     "mentorGithub": "razumovich",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "chernyshovaalexandra"
+        "studentGithub": "chernyshovaalexandra"
       },
       {
-        "github": "jacksonbr87"
+        "studentGithub": "jacksonbr87"
       },
       {
-        "github": "kvatoferma"
+        "studentGithub": "kvatoferma"
       },
       {
-        "github": "vladagaravaya"
+        "studentGithub": "vladagaravaya"
       }
     ]
   },
@@ -371,27 +371,27 @@
     "mentorName": "Aliaksandr Rudzin",
     "mentorCity": "Минск",
     "mentorGithub": "rudikaleksandr",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexeevadaria"
+        "studentGithub": "alexeevadaria"
       },
       {
-        "github": "chekni"
+        "studentGithub": "chekni"
       },
       {
-        "github": "mrchester"
+        "studentGithub": "mrchester"
       },
       {
-        "github": "mxwoodie"
+        "studentGithub": "mxwoodie"
       },
       {
-        "github": "psevkin"
+        "studentGithub": "psevkin"
       },
       {
-        "github": "shymaxer"
+        "studentGithub": "shymaxer"
       },
       {
-        "github": "spiritforest"
+        "studentGithub": "spiritforest"
       }
     ]
   },
@@ -399,24 +399,24 @@
     "mentorName": "Aliaksandr Tachko",
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrt",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "19alexandr90"
+        "studentGithub": "19alexandr90"
       },
       {
-        "github": "dgekaa"
+        "studentGithub": "dgekaa"
       },
       {
-        "github": "leontyevatatyana"
+        "studentGithub": "leontyevatatyana"
       },
       {
-        "github": "leshich"
+        "studentGithub": "leshich"
       },
       {
-        "github": "shutya"
+        "studentGithub": "shutya"
       },
       {
-        "github": "tamefreak"
+        "studentGithub": "tamefreak"
       }
     ]
   },
@@ -424,18 +424,18 @@
     "mentorName": "Aliaksandr Zayats",
     "mentorCity": "Гомель",
     "mentorGithub": "alex-zayats",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexeydavydov"
+        "studentGithub": "alexeydavydov"
       },
       {
-        "github": "melllivoracapensis"
+        "studentGithub": "melllivoracapensis"
       },
       {
-        "github": "soulshaker"
+        "studentGithub": "soulshaker"
       },
       {
-        "github": "uniorunr"
+        "studentGithub": "uniorunr"
       }
     ]
   },
@@ -443,24 +443,24 @@
     "mentorName": "Aliaksei Astafyeu",
     "mentorCity": "Минск",
     "mentorGithub": "tr3v3r",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "bezchekera"
+        "studentGithub": "bezchekera"
       },
       {
-        "github": "driliad"
+        "studentGithub": "driliad"
       },
       {
-        "github": "grnkvch"
+        "studentGithub": "grnkvch"
       },
       {
-        "github": "nadinaaa"
+        "studentGithub": "nadinaaa"
       },
       {
-        "github": "volunyshka"
+        "studentGithub": "volunyshka"
       },
       {
-        "github": "yanamina"
+        "studentGithub": "yanamina"
       }
     ]
   },
@@ -468,21 +468,21 @@
     "mentorName": "Aliaksei Khlebnikau",
     "mentorCity": "Минск",
     "mentorGithub": "fallenby1",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alekengineer"
+        "studentGithub": "alekengineer"
       },
       {
-        "github": "katepavlovich"
+        "studentGithub": "katepavlovich"
       },
       {
-        "github": "kottt4"
+        "studentGithub": "kottt4"
       },
       {
-        "github": "walkunderrain"
+        "studentGithub": "walkunderrain"
       },
       {
-        "github": "youngbrick"
+        "studentGithub": "youngbrick"
       }
     ]
   },
@@ -490,18 +490,18 @@
     "mentorName": "ALIAKSEI KRAUCHANKA",
     "mentorCity": "Минск",
     "mentorGithub": "aliakseikrauchanka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "christinaalimova"
+        "studentGithub": "christinaalimova"
       },
       {
-        "github": "latiertiw"
+        "studentGithub": "latiertiw"
       },
       {
-        "github": "sined1"
+        "studentGithub": "sined1"
       },
       {
-        "github": "vladzuev"
+        "studentGithub": "vladzuev"
       }
     ]
   },
@@ -509,21 +509,21 @@
     "mentorName": "Aliaksei Makas",
     "mentorCity": "Минск",
     "mentorGithub": "muskos",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandrtichon"
+        "studentGithub": "alexandrtichon"
       },
       {
-        "github": "pkutsilina"
+        "studentGithub": "pkutsilina"
       },
       {
-        "github": "vireah"
+        "studentGithub": "vireah"
       },
       {
-        "github": "yanyan155"
+        "studentGithub": "yanyan155"
       },
       {
-        "github": "yarobei"
+        "studentGithub": "yarobei"
       }
     ]
   },
@@ -531,27 +531,27 @@
     "mentorName": "Aliaksei Zayats",
     "mentorCity": "Минск",
     "mentorGithub": "alex-mnsk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "artyom123"
+        "studentGithub": "artyom123"
       },
       {
-        "github": "elenakhamitsevich"
+        "studentGithub": "elenakhamitsevich"
       },
       {
-        "github": "evamaster"
+        "studentGithub": "evamaster"
       },
       {
-        "github": "kozyritskiy"
+        "studentGithub": "kozyritskiy"
       },
       {
-        "github": "lveliarl"
+        "studentGithub": "lveliarl"
       },
       {
-        "github": "nastyalo"
+        "studentGithub": "nastyalo"
       },
       {
-        "github": "spinagrblzzz"
+        "studentGithub": "spinagrblzzz"
       }
     ]
   },
@@ -559,18 +559,18 @@
     "mentorName": "Anastasiya Pryvalava",
     "mentorCity": "Минск",
     "mentorGithub": "anastasiaprivalova",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "brateckrolikstudent"
+        "studentGithub": "brateckrolikstudent"
       },
       {
-        "github": "sergaunt"
+        "studentGithub": "sergaunt"
       },
       {
-        "github": "venomamd"
+        "studentGithub": "venomamd"
       },
       {
-        "github": "vetal11"
+        "studentGithub": "vetal11"
       }
     ]
   },
@@ -578,27 +578,27 @@
     "mentorName": "Andrei Furs",
     "mentorCity": "Гомель",
     "mentorGithub": "yganda",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "inanutshell86"
+        "studentGithub": "inanutshell86"
       },
       {
-        "github": "ishelest"
+        "studentGithub": "ishelest"
       },
       {
-        "github": "juliasnoww"
+        "studentGithub": "juliasnoww"
       },
       {
-        "github": "loori-r"
+        "studentGithub": "loori-r"
       },
       {
-        "github": "sffirm"
+        "studentGithub": "sffirm"
       },
       {
-        "github": "yakgjen"
+        "studentGithub": "yakgjen"
       },
       {
-        "github": "zetrox-x"
+        "studentGithub": "zetrox-x"
       }
     ]
   },
@@ -606,27 +606,27 @@
     "mentorName": "Andrei Lenkou",
     "mentorCity": "Минск",
     "mentorGithub": "lenkouandrei",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "elmavis"
+        "studentGithub": "elmavis"
       },
       {
-        "github": "goner52"
+        "studentGithub": "goner52"
       },
       {
-        "github": "kirylalexandrovich"
+        "studentGithub": "kirylalexandrovich"
       },
       {
-        "github": "mg3442"
+        "studentGithub": "mg3442"
       },
       {
-        "github": "poyuki"
+        "studentGithub": "poyuki"
       },
       {
-        "github": "rafchillons"
+        "studentGithub": "rafchillons"
       },
       {
-        "github": "vlad9719"
+        "studentGithub": "vlad9719"
       }
     ]
   },
@@ -634,21 +634,21 @@
     "mentorName": "Andrei Liaukou",
     "mentorCity": "Минск",
     "mentorGithub": "liaukou",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dimasquared"
+        "studentGithub": "dimasquared"
       },
       {
-        "github": "ivanmikhailenka1"
+        "studentGithub": "ivanmikhailenka1"
       },
       {
-        "github": "kasper1999"
+        "studentGithub": "kasper1999"
       },
       {
-        "github": "ol4ash"
+        "studentGithub": "ol4ash"
       },
       {
-        "github": "smetaninpavel"
+        "studentGithub": "smetaninpavel"
       }
     ]
   },
@@ -656,27 +656,27 @@
     "mentorName": "Andrei Markovich",
     "mentorCity": "Минск",
     "mentorGithub": "themarkmarrone",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "barsolet"
+        "studentGithub": "barsolet"
       },
       {
-        "github": "ener9ettt"
+        "studentGithub": "ener9ettt"
       },
       {
-        "github": "icebergnevercries"
+        "studentGithub": "icebergnevercries"
       },
       {
-        "github": "juliamv"
+        "studentGithub": "juliamv"
       },
       {
-        "github": "petromath77"
+        "studentGithub": "petromath77"
       },
       {
-        "github": "tamarashautsova"
+        "studentGithub": "tamarashautsova"
       },
       {
-        "github": "yanrishbe"
+        "studentGithub": "yanrishbe"
       }
     ]
   },
@@ -684,21 +684,21 @@
     "mentorName": "Andrei Palchys",
     "mentorCity": "Минск",
     "mentorGithub": "apalchys",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "mazhoranta"
+        "studentGithub": "mazhoranta"
       },
       {
-        "github": "nktvlkvch"
+        "studentGithub": "nktvlkvch"
       },
       {
-        "github": "ton9q"
+        "studentGithub": "ton9q"
       },
       {
-        "github": "valentinlipai"
+        "studentGithub": "valentinlipai"
       },
       {
-        "github": "vladyaremeko"
+        "studentGithub": "vladyaremeko"
       }
     ]
   },
@@ -706,21 +706,21 @@
     "mentorName": "Andrei Shelenhouski",
     "mentorCity": "Минск",
     "mentorGithub": "manuminsk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "blackcat1397"
+        "studentGithub": "blackcat1397"
       },
       {
-        "github": "jstrr"
+        "studentGithub": "jstrr"
       },
       {
-        "github": "kirill82"
+        "studentGithub": "kirill82"
       },
       {
-        "github": "smajlichak"
+        "studentGithub": "smajlichak"
       },
       {
-        "github": "zm1try"
+        "studentGithub": "zm1try"
       }
     ]
   },
@@ -728,21 +728,21 @@
     "mentorName": "Andrei Shyliahin",
     "mentorCity": "Минск",
     "mentorGithub": "atzkdeff",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "antonnaumchik"
+        "studentGithub": "antonnaumchik"
       },
       {
-        "github": "bigshaqmnh"
+        "studentGithub": "bigshaqmnh"
       },
       {
-        "github": "dimabog22"
+        "studentGithub": "dimabog22"
       },
       {
-        "github": "lazouskikiryl"
+        "studentGithub": "lazouskikiryl"
       },
       {
-        "github": "olegkizz"
+        "studentGithub": "olegkizz"
       }
     ]
   },
@@ -750,27 +750,27 @@
     "mentorName": "Andrei Zhuk",
     "mentorCity": "Минск",
     "mentorGithub": "andrei-zhuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "antihero"
+        "studentGithub": "antihero"
       },
       {
-        "github": "artkon"
+        "studentGithub": "artkon"
       },
       {
-        "github": "karpiyeniamv"
+        "studentGithub": "karpiyeniamv"
       },
       {
-        "github": "kirillzavorotni"
+        "studentGithub": "kirillzavorotni"
       },
       {
-        "github": "makar1227"
+        "studentGithub": "makar1227"
       },
       {
-        "github": "mudreuski"
+        "studentGithub": "mudreuski"
       },
       {
-        "github": "torchik-slava"
+        "studentGithub": "torchik-slava"
       }
     ]
   },
@@ -778,30 +778,30 @@
     "mentorName": "Andres Rios",
     "mentorCity": "Минск",
     "mentorGithub": "rianby64",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "28halavach"
+        "studentGithub": "28halavach"
       },
       {
-        "github": "40grivenprog"
+        "studentGithub": "40grivenprog"
       },
       {
-        "github": "anastminsk"
+        "studentGithub": "anastminsk"
       },
       {
-        "github": "igordive"
+        "studentGithub": "igordive"
       },
       {
-        "github": "mayblackwood"
+        "studentGithub": "mayblackwood"
       },
       {
-        "github": "nataliamotuz"
+        "studentGithub": "nataliamotuz"
       },
       {
-        "github": "novikovantony"
+        "studentGithub": "novikovantony"
       },
       {
-        "github": "yaroslav-mig"
+        "studentGithub": "yaroslav-mig"
       }
     ]
   },
@@ -809,21 +809,21 @@
     "mentorName": "Anton Bely",
     "mentorCity": "Минск",
     "mentorGithub": "toshabely",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "abespolov"
+        "studentGithub": "abespolov"
       },
       {
-        "github": "arkhipenka"
+        "studentGithub": "arkhipenka"
       },
       {
-        "github": "dimaspivas"
+        "studentGithub": "dimaspivas"
       },
       {
-        "github": "maxkonopelko"
+        "studentGithub": "maxkonopelko"
       },
       {
-        "github": "zzhiharevich"
+        "studentGithub": "zzhiharevich"
       }
     ]
   },
@@ -831,18 +831,18 @@
     "mentorName": "Anton Sharapa",
     "mentorCity": "Минск",
     "mentorGithub": "asharapa",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexanderkononok"
+        "studentGithub": "alexanderkononok"
       },
       {
-        "github": "mentos2805"
+        "studentGithub": "mentos2805"
       },
       {
-        "github": "mrmars20"
+        "studentGithub": "mrmars20"
       },
       {
-        "github": "sergeybandar"
+        "studentGithub": "sergeybandar"
       }
     ]
   },
@@ -850,27 +850,27 @@
     "mentorName": "Anton Stsiapanau",
     "mentorCity": "Минск",
     "mentorGithub": "stpnvntn",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "anyalenko"
+        "studentGithub": "anyalenko"
       },
       {
-        "github": "katekosushkina"
+        "studentGithub": "katekosushkina"
       },
       {
-        "github": "metalhammer4"
+        "studentGithub": "metalhammer4"
       },
       {
-        "github": "northingvar"
+        "studentGithub": "northingvar"
       },
       {
-        "github": "ostik266"
+        "studentGithub": "ostik266"
       },
       {
-        "github": "rudlevsky"
+        "studentGithub": "rudlevsky"
       },
       {
-        "github": "viki-klipp"
+        "studentGithub": "viki-klipp"
       }
     ]
   },
@@ -878,18 +878,18 @@
     "mentorName": "Anton Yatskevich",
     "mentorCity": "Минск",
     "mentorGithub": "a-yatskevich",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "evgeniy121"
+        "studentGithub": "evgeniy121"
       },
       {
-        "github": "jadgptw"
+        "studentGithub": "jadgptw"
       },
       {
-        "github": "mrdreaml"
+        "studentGithub": "mrdreaml"
       },
       {
-        "github": "tsypolina"
+        "studentGithub": "tsypolina"
       }
     ]
   },
@@ -897,21 +897,21 @@
     "mentorName": "Arif Mustafazade",
     "mentorCity": "Минск",
     "mentorGithub": "mustafazadear",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "clericus"
+        "studentGithub": "clericus"
       },
       {
-        "github": "credov"
+        "studentGithub": "credov"
       },
       {
-        "github": "dbaceko"
+        "studentGithub": "dbaceko"
       },
       {
-        "github": "frontsideman"
+        "studentGithub": "frontsideman"
       },
       {
-        "github": "sobolevyuri"
+        "studentGithub": "sobolevyuri"
       }
     ]
   },
@@ -919,24 +919,24 @@
     "mentorName": "Arseni Shynkarenka",
     "mentorCity": "Минск",
     "mentorGithub": "arhigod",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "hellsingi"
+        "studentGithub": "hellsingi"
       },
       {
-        "github": "mozgoen"
+        "studentGithub": "mozgoen"
       },
       {
-        "github": "nastya-ropot"
+        "studentGithub": "nastya-ropot"
       },
       {
-        "github": "polotenchik"
+        "studentGithub": "polotenchik"
       },
       {
-        "github": "tshkursk"
+        "studentGithub": "tshkursk"
       },
       {
-        "github": "yeilya"
+        "studentGithub": "yeilya"
       }
     ]
   },
@@ -944,18 +944,18 @@
     "mentorName": "Artsiom Haurylin",
     "mentorCity": "Гомель",
     "mentorGithub": "ahaurylin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "grapeperson"
+        "studentGithub": "grapeperson"
       },
       {
-        "github": "groamed"
+        "studentGithub": "groamed"
       },
       {
-        "github": "olgaluk"
+        "studentGithub": "olgaluk"
       },
       {
-        "github": "rbarakhvostov"
+        "studentGithub": "rbarakhvostov"
       }
     ]
   },
@@ -963,24 +963,24 @@
     "mentorName": "artsiom kukharev",
     "mentorCity": "Минск",
     "mentorGithub": "xeontem",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "bulbazubr"
+        "studentGithub": "bulbazubr"
       },
       {
-        "github": "leonard1k"
+        "studentGithub": "leonard1k"
       },
       {
-        "github": "mariakisel"
+        "studentGithub": "mariakisel"
       },
       {
-        "github": "qxfisher"
+        "studentGithub": "qxfisher"
       },
       {
-        "github": "silichstudent"
+        "studentGithub": "silichstudent"
       },
       {
-        "github": "vvikota"
+        "studentGithub": "vvikota"
       }
     ]
   },
@@ -988,21 +988,21 @@
     "mentorName": "Artsiom Latyshau",
     "mentorCity": "Минск",
     "mentorGithub": "artemlatyshev",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "andrewyanushkevich"
+        "studentGithub": "andrewyanushkevich"
       },
       {
-        "github": "dimashcherbakov"
+        "studentGithub": "dimashcherbakov"
       },
       {
-        "github": "feulia"
+        "studentGithub": "feulia"
       },
       {
-        "github": "magi-a"
+        "studentGithub": "magi-a"
       },
       {
-        "github": "sergeiobolevich"
+        "studentGithub": "sergeiobolevich"
       }
     ]
   },
@@ -1010,24 +1010,24 @@
     "mentorName": "Artsiom Lykau",
     "mentorCity": "Минск",
     "mentorGithub": "lykovartem",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandershaternik"
+        "studentGithub": "alexandershaternik"
       },
       {
-        "github": "glebhleb"
+        "studentGithub": "glebhleb"
       },
       {
-        "github": "kotukjubotuk"
+        "studentGithub": "kotukjubotuk"
       },
       {
-        "github": "nikkola07"
+        "studentGithub": "nikkola07"
       },
       {
-        "github": "okband"
+        "studentGithub": "okband"
       },
       {
-        "github": "segrey1989"
+        "studentGithub": "segrey1989"
       }
     ]
   },
@@ -1035,18 +1035,18 @@
     "mentorName": "Artsiom Piakhota",
     "mentorCity": "Минск",
     "mentorGithub": "lithiumfallen",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "pincherinka"
+        "studentGithub": "pincherinka"
       },
       {
-        "github": "spacebrains"
+        "studentGithub": "spacebrains"
       },
       {
-        "github": "sunrisekovalevski"
+        "studentGithub": "sunrisekovalevski"
       },
       {
-        "github": "victoriathebrave"
+        "studentGithub": "victoriathebrave"
       }
     ]
   },
@@ -1054,18 +1054,18 @@
     "mentorName": "Artsiom Reutovich",
     "mentorCity": "Минск",
     "mentorGithub": "xelsoid",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "ivanmatsur"
+        "studentGithub": "ivanmatsur"
       },
       {
-        "github": "nikaz123"
+        "studentGithub": "nikaz123"
       },
       {
-        "github": "usermeme"
+        "studentGithub": "usermeme"
       },
       {
-        "github": "virusss"
+        "studentGithub": "virusss"
       }
     ]
   },
@@ -1073,21 +1073,21 @@
     "mentorName": "Artur Kazlouski",
     "mentorCity": "Минск",
     "mentorGithub": "arturminsksum",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "a-lika"
+        "studentGithub": "a-lika"
       },
       {
-        "github": "nikaneider"
+        "studentGithub": "nikaneider"
       },
       {
-        "github": "rebellix"
+        "studentGithub": "rebellix"
       },
       {
-        "github": "sqwezzy"
+        "studentGithub": "sqwezzy"
       },
       {
-        "github": "uniqkue"
+        "studentGithub": "uniqkue"
       }
     ]
   },
@@ -1095,27 +1095,27 @@
     "mentorName": "Bahdan Kutas",
     "mentorCity": "Минск",
     "mentorGithub": "agentkb",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexnaidovich"
+        "studentGithub": "alexnaidovich"
       },
       {
-        "github": "dzmitrybabak"
+        "studentGithub": "dzmitrybabak"
       },
       {
-        "github": "eugenetime"
+        "studentGithub": "eugenetime"
       },
       {
-        "github": "ewelai"
+        "studentGithub": "ewelai"
       },
       {
-        "github": "ivanchikovvalentin"
+        "studentGithub": "ivanchikovvalentin"
       },
       {
-        "github": "litwin90"
+        "studentGithub": "litwin90"
       },
       {
-        "github": "systemghost"
+        "studentGithub": "systemghost"
       }
     ]
   },
@@ -1123,18 +1123,18 @@
     "mentorName": "Barys Marukhin",
     "mentorCity": "Минск",
     "mentorGithub": "barysmarukhin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "denhock"
+        "studentGithub": "denhock"
       },
       {
-        "github": "igor-provotorov"
+        "studentGithub": "igor-provotorov"
       },
       {
-        "github": "kamatozzzik"
+        "studentGithub": "kamatozzzik"
       },
       {
-        "github": "kirillgalimov"
+        "studentGithub": "kirillgalimov"
       }
     ]
   },
@@ -1142,21 +1142,21 @@
     "mentorName": "Daniil Suleiman",
     "mentorCity": "Минск",
     "mentorGithub": "sulemanof",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "andriva"
+        "studentGithub": "andriva"
       },
       {
-        "github": "heaveek"
+        "studentGithub": "heaveek"
       },
       {
-        "github": "meearlyam"
+        "studentGithub": "meearlyam"
       },
       {
-        "github": "olegsabodash"
+        "studentGithub": "olegsabodash"
       },
       {
-        "github": "veronikavasilchikova"
+        "studentGithub": "veronikavasilchikova"
       }
     ]
   },
@@ -1164,24 +1164,24 @@
     "mentorName": "Denis Bezak",
     "mentorCity": "Минск",
     "mentorGithub": "bezakdenis",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aleks210219"
+        "studentGithub": "aleks210219"
       },
       {
-        "github": "alexalizurchik"
+        "studentGithub": "alexalizurchik"
       },
       {
-        "github": "dsv-sergey"
+        "studentGithub": "dsv-sergey"
       },
       {
-        "github": "krlktv"
+        "studentGithub": "krlktv"
       },
       {
-        "github": "nadezhda-kotova"
+        "studentGithub": "nadezhda-kotova"
       },
       {
-        "github": "pavellyolya"
+        "studentGithub": "pavellyolya"
       }
     ]
   },
@@ -1189,27 +1189,27 @@
     "mentorName": "Denis Bozhyk",
     "mentorCity": "Минск",
     "mentorGithub": "den-bozhyk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "drdiman"
+        "studentGithub": "drdiman"
       },
       {
-        "github": "dzmitrymashuk"
+        "studentGithub": "dzmitrymashuk"
       },
       {
-        "github": "ipixby"
+        "studentGithub": "ipixby"
       },
       {
-        "github": "mailikey"
+        "studentGithub": "mailikey"
       },
       {
-        "github": "nickprudnik"
+        "studentGithub": "nickprudnik"
       },
       {
-        "github": "vitalitybo"
+        "studentGithub": "vitalitybo"
       },
       {
-        "github": "vladesco"
+        "studentGithub": "vladesco"
       }
     ]
   },
@@ -1217,21 +1217,21 @@
     "mentorName": "Denis Kravchenko",
     "mentorCity": "Минск",
     "mentorGithub": "shank111",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "axissixa57"
+        "studentGithub": "axissixa57"
       },
       {
-        "github": "gemsgame"
+        "studentGithub": "gemsgame"
       },
       {
-        "github": "kirillfilipp"
+        "studentGithub": "kirillfilipp"
       },
       {
-        "github": "maxstarovoitov"
+        "studentGithub": "maxstarovoitov"
       },
       {
-        "github": "nemkev"
+        "studentGithub": "nemkev"
       }
     ]
   },
@@ -1239,27 +1239,27 @@
     "mentorName": "Dmitri Bardt",
     "mentorCity": "Минск",
     "mentorGithub": "ximet",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "christopher-0118"
+        "studentGithub": "christopher-0118"
       },
       {
-        "github": "dianatsevan"
+        "studentGithub": "dianatsevan"
       },
       {
-        "github": "happy-mary"
+        "studentGithub": "happy-mary"
       },
       {
-        "github": "igorbyl"
+        "studentGithub": "igorbyl"
       },
       {
-        "github": "maksyermak"
+        "studentGithub": "maksyermak"
       },
       {
-        "github": "onaker"
+        "studentGithub": "onaker"
       },
       {
-        "github": "riba0017"
+        "studentGithub": "riba0017"
       }
     ]
   },
@@ -1267,18 +1267,18 @@
     "mentorName": "Dzianis Bunchanka",
     "mentorCity": "Гомель",
     "mentorGithub": "denisbun",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "kvinto1986"
+        "studentGithub": "kvinto1986"
       },
       {
-        "github": "maksimaliakhnovich"
+        "studentGithub": "maksimaliakhnovich"
       },
       {
-        "github": "superorange"
+        "studentGithub": "superorange"
       },
       {
-        "github": "yauheni23"
+        "studentGithub": "yauheni23"
       }
     ]
   },
@@ -1286,27 +1286,27 @@
     "mentorName": "Dzianis Dashkevich",
     "mentorCity": "Минск",
     "mentorGithub": "denisdashkevich",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexeykuril0"
+        "studentGithub": "alexeykuril0"
       },
       {
-        "github": "andreisavelyev"
+        "studentGithub": "andreisavelyev"
       },
       {
-        "github": "gruzinskiiartem"
+        "studentGithub": "gruzinskiiartem"
       },
       {
-        "github": "kragov"
+        "studentGithub": "kragov"
       },
       {
-        "github": "pivchenkosv"
+        "studentGithub": "pivchenkosv"
       },
       {
-        "github": "pofs"
+        "studentGithub": "pofs"
       },
       {
-        "github": "yevganytyurin"
+        "studentGithub": "yevganytyurin"
       }
     ]
   },
@@ -1314,18 +1314,18 @@
     "mentorName": "Dzianis Pryshchep",
     "mentorCity": "Гомель",
     "mentorGithub": "dpryshchep",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "kira2023"
+        "studentGithub": "kira2023"
       },
       {
-        "github": "kiryllapouski"
+        "studentGithub": "kiryllapouski"
       },
       {
-        "github": "molestador"
+        "studentGithub": "molestador"
       },
       {
-        "github": "vvsvintsitsky"
+        "studentGithub": "vvsvintsitsky"
       }
     ]
   },
@@ -1333,30 +1333,30 @@
     "mentorName": "Dzianis Reznik",
     "mentorCity": "Минск",
     "mentorGithub": "dzianisreznik",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "egorgorbik"
+        "studentGithub": "egorgorbik"
       },
       {
-        "github": "eugene3112"
+        "studentGithub": "eugene3112"
       },
       {
-        "github": "heat98"
+        "studentGithub": "heat98"
       },
       {
-        "github": "ilyatrat"
+        "studentGithub": "ilyatrat"
       },
       {
-        "github": "tanyamatesha"
+        "studentGithub": "tanyamatesha"
       },
       {
-        "github": "unbelievablysmart"
+        "studentGithub": "unbelievablysmart"
       },
       {
-        "github": "vicrodzko"
+        "studentGithub": "vicrodzko"
       },
       {
-        "github": "viktoryia-hrechykha"
+        "studentGithub": "viktoryia-hrechykha"
       }
     ]
   },
@@ -1364,36 +1364,36 @@
     "mentorName": "Dzianis Sheka",
     "mentorCity": "Минск",
     "mentorGithub": "davojta",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "auseika"
+        "studentGithub": "auseika"
       },
       {
-        "github": "iharpadbiarezski"
+        "studentGithub": "iharpadbiarezski"
       },
       {
-        "github": "kashapov"
+        "studentGithub": "kashapov"
       },
       {
-        "github": "lesechka"
+        "studentGithub": "lesechka"
       },
       {
-        "github": "michaeldaineka"
+        "studentGithub": "michaeldaineka"
       },
       {
-        "github": "mike80by"
+        "studentGithub": "mike80by"
       },
       {
-        "github": "pavalescoba"
+        "studentGithub": "pavalescoba"
       },
       {
-        "github": "sergeyshestak"
+        "studentGithub": "sergeyshestak"
       },
       {
-        "github": "vasiliyrepin"
+        "studentGithub": "vasiliyrepin"
       },
       {
-        "github": "victorbelikov"
+        "studentGithub": "victorbelikov"
       }
     ]
   },
@@ -1401,27 +1401,27 @@
     "mentorName": "Dzianis Shutsikau",
     "mentorCity": "Минск",
     "mentorGithub": "shutya",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aliakseibabko"
+        "studentGithub": "aliakseibabko"
       },
       {
-        "github": "gleb7raul"
+        "studentGithub": "gleb7raul"
       },
       {
-        "github": "igarok91"
+        "studentGithub": "igarok91"
       },
       {
-        "github": "kirillstarlight"
+        "studentGithub": "kirillstarlight"
       },
       {
-        "github": "kushnerevich"
+        "studentGithub": "kushnerevich"
       },
       {
-        "github": "waldemar999"
+        "studentGithub": "waldemar999"
       },
       {
-        "github": "zhekaprb"
+        "studentGithub": "zhekaprb"
       }
     ]
   },
@@ -1429,18 +1429,18 @@
     "mentorName": "Dzianis Sushchenya",
     "mentorCity": "Минск",
     "mentorGithub": "sushchenja",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "daniil-loban"
+        "studentGithub": "daniil-loban"
       },
       {
-        "github": "irin-ka"
+        "studentGithub": "irin-ka"
       },
       {
-        "github": "misharsweb"
+        "studentGithub": "misharsweb"
       },
       {
-        "github": "nightman20104"
+        "studentGithub": "nightman20104"
       }
     ]
   },
@@ -1448,24 +1448,24 @@
     "mentorName": "Dzmitry Aliaksandrau",
     "mentorCity": "Минск",
     "mentorGithub": "alidzm",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexkashpor"
+        "studentGithub": "alexkashpor"
       },
       {
-        "github": "devbarden"
+        "studentGithub": "devbarden"
       },
       {
-        "github": "dmsomov"
+        "studentGithub": "dmsomov"
       },
       {
-        "github": "mrio1"
+        "studentGithub": "mrio1"
       },
       {
-        "github": "nicklevkovich"
+        "studentGithub": "nicklevkovich"
       },
       {
-        "github": "poiskull"
+        "studentGithub": "poiskull"
       }
     ]
   },
@@ -1473,27 +1473,27 @@
     "mentorName": "Dzmitry Bahachuk",
     "mentorCity": "Минск",
     "mentorGithub": "sintet",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aleksandrmedvedev9000"
+        "studentGithub": "aleksandrmedvedev9000"
       },
       {
-        "github": "aspowerr"
+        "studentGithub": "aspowerr"
       },
       {
-        "github": "julialar4enko"
+        "studentGithub": "julialar4enko"
       },
       {
-        "github": "shchelkunchik"
+        "studentGithub": "shchelkunchik"
       },
       {
-        "github": "thatcherrr"
+        "studentGithub": "thatcherrr"
       },
       {
-        "github": "torioyoshiko"
+        "studentGithub": "torioyoshiko"
       },
       {
-        "github": "yasell"
+        "studentGithub": "yasell"
       }
     ]
   },
@@ -1501,15 +1501,15 @@
     "mentorName": "Dzmitry Chuchva",
     "mentorCity": "Минск",
     "mentorGithub": "dzmitry-chuchva",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "modrix"
+        "studentGithub": "modrix"
       },
       {
-        "github": "scarletcamomile"
+        "studentGithub": "scarletcamomile"
       },
       {
-        "github": "tani4ik"
+        "studentGithub": "tani4ik"
       }
     ]
   },
@@ -1517,27 +1517,27 @@
     "mentorName": "Dzmitry Hrachou",
     "mentorCity": "Минск",
     "mentorGithub": "falizyer",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alekseymishuk"
+        "studentGithub": "alekseymishuk"
       },
       {
-        "github": "anastasia1627"
+        "studentGithub": "anastasia1627"
       },
       {
-        "github": "basch1727"
+        "studentGithub": "basch1727"
       },
       {
-        "github": "bespodobno"
+        "studentGithub": "bespodobno"
       },
       {
-        "github": "estel1591"
+        "studentGithub": "estel1591"
       },
       {
-        "github": "lizabredberry"
+        "studentGithub": "lizabredberry"
       },
       {
-        "github": "zartaich"
+        "studentGithub": "zartaich"
       }
     ]
   },
@@ -1545,21 +1545,21 @@
     "mentorName": "Dzmitry Kudla",
     "mentorCity": "Минск",
     "mentorGithub": "linus2228",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "6alex6kash6"
+        "studentGithub": "6alex6kash6"
       },
       {
-        "github": "arturkudlo"
+        "studentGithub": "arturkudlo"
       },
       {
-        "github": "dimasofff"
+        "studentGithub": "dimasofff"
       },
       {
-        "github": "karina198"
+        "studentGithub": "karina198"
       },
       {
-        "github": "sergeybaranovichi"
+        "studentGithub": "sergeybaranovichi"
       }
     ]
   },
@@ -1567,18 +1567,18 @@
     "mentorName": "Dzmitry Panamarenka",
     "mentorCity": "Минск",
     "mentorGithub": "dzmitrypanamarenka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "juliankov"
+        "studentGithub": "juliankov"
       },
       {
-        "github": "niksrakevich"
+        "studentGithub": "niksrakevich"
       },
       {
-        "github": "stas4it"
+        "studentGithub": "stas4it"
       },
       {
-        "github": "vladislavmakarevich"
+        "studentGithub": "vladislavmakarevich"
       }
     ]
   },
@@ -1586,27 +1586,27 @@
     "mentorName": "Dzmitry Prudnikau",
     "mentorCity": "Минск",
     "mentorGithub": "diprudnikov",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexkov90"
+        "studentGithub": "alexkov90"
       },
       {
-        "github": "charmant"
+        "studentGithub": "charmant"
       },
       {
-        "github": "dianakay"
+        "studentGithub": "dianakay"
       },
       {
-        "github": "leshka98"
+        "studentGithub": "leshka98"
       },
       {
-        "github": "mpot7"
+        "studentGithub": "mpot7"
       },
       {
-        "github": "siarheikresik"
+        "studentGithub": "siarheikresik"
       },
       {
-        "github": "tvj888"
+        "studentGithub": "tvj888"
       }
     ]
   },
@@ -1614,21 +1614,21 @@
     "mentorName": "Dzmitry Ramaniuk",
     "mentorCity": "Минск",
     "mentorGithub": "dmitryromaniuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "2kevink"
+        "studentGithub": "2kevink"
       },
       {
-        "github": "amoyt"
+        "studentGithub": "amoyt"
       },
       {
-        "github": "andreikrivets"
+        "studentGithub": "andreikrivets"
       },
       {
-        "github": "lavazzakate"
+        "studentGithub": "lavazzakate"
       },
       {
-        "github": "vladislavrebko"
+        "studentGithub": "vladislavrebko"
       }
     ]
   },
@@ -1636,18 +1636,18 @@
     "mentorName": "Dzmitry Samuilik",
     "mentorCity": "Минск",
     "mentorGithub": "sambl4",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "polinamoiseyenko"
+        "studentGithub": "polinamoiseyenko"
       },
       {
-        "github": "sashakaralchuk"
+        "studentGithub": "sashakaralchuk"
       },
       {
-        "github": "sches"
+        "studentGithub": "sches"
       },
       {
-        "github": "simaxa7"
+        "studentGithub": "simaxa7"
       }
     ]
   },
@@ -1655,21 +1655,21 @@
     "mentorName": "Ekaterina Sanko",
     "mentorCity": "Минск",
     "mentorGithub": "katya-sanko",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "disa0808"
+        "studentGithub": "disa0808"
       },
       {
-        "github": "kyleshovbb"
+        "studentGithub": "kyleshovbb"
       },
       {
-        "github": "pulya10c"
+        "studentGithub": "pulya10c"
       },
       {
-        "github": "sergmi"
+        "studentGithub": "sergmi"
       },
       {
-        "github": "yabeda79"
+        "studentGithub": "yabeda79"
       }
     ]
   },
@@ -1677,18 +1677,18 @@
     "mentorName": "Elena Grebenchuk",
     "mentorCity": "Гомель",
     "mentorGithub": "elgrebenchuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "andreiyasinski"
+        "studentGithub": "andreiyasinski"
       },
       {
-        "github": "anton23kirienko"
+        "studentGithub": "anton23kirienko"
       },
       {
-        "github": "duza"
+        "studentGithub": "duza"
       },
       {
-        "github": "gandigap"
+        "studentGithub": "gandigap"
       }
     ]
   },
@@ -1696,18 +1696,18 @@
     "mentorName": "Elena Shokhan",
     "mentorCity": "Минск",
     "mentorGithub": "elenashokhanepam",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aborisenok"
+        "studentGithub": "aborisenok"
       },
       {
-        "github": "egormiwa1"
+        "studentGithub": "egormiwa1"
       },
       {
-        "github": "foxygirl44"
+        "studentGithub": "foxygirl44"
       },
       {
-        "github": "valiantsinlopan"
+        "studentGithub": "valiantsinlopan"
       }
     ]
   },
@@ -1715,18 +1715,18 @@
     "mentorName": "Elizaveta Ivashkova",
     "mentorCity": "Минск",
     "mentorGithub": "ivashkovaliza",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "kharuk"
+        "studentGithub": "kharuk"
       },
       {
-        "github": "stationtostation"
+        "studentGithub": "stationtostation"
       },
       {
-        "github": "tatsianacs"
+        "studentGithub": "tatsianacs"
       },
       {
-        "github": "wald3"
+        "studentGithub": "wald3"
       }
     ]
   },
@@ -1734,21 +1734,21 @@
     "mentorName": "Hanna Hrabianiuk",
     "mentorCity": "Минск",
     "mentorGithub": "annagrebenyuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "atryomparfenenkov"
+        "studentGithub": "atryomparfenenkov"
       },
       {
-        "github": "dmitrylutskovich"
+        "studentGithub": "dmitrylutskovich"
       },
       {
-        "github": "lapa17"
+        "studentGithub": "lapa17"
       },
       {
-        "github": "vladst90"
+        "studentGithub": "vladst90"
       },
       {
-        "github": "yuliyahlukhatarenka"
+        "studentGithub": "yuliyahlukhatarenka"
       }
     ]
   },
@@ -1756,27 +1756,27 @@
     "mentorName": "Hanna Pratasevich",
     "mentorCity": "Минск",
     "mentorGithub": "anik188",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aytsan"
+        "studentGithub": "aytsan"
       },
       {
-        "github": "horoshaya"
+        "studentGithub": "horoshaya"
       },
       {
-        "github": "jeka98"
+        "studentGithub": "jeka98"
       },
       {
-        "github": "martinkevichyana"
+        "studentGithub": "martinkevichyana"
       },
       {
-        "github": "montik-pc"
+        "studentGithub": "montik-pc"
       },
       {
-        "github": "renardby"
+        "studentGithub": "renardby"
       },
       {
-        "github": "sergeyguchok"
+        "studentGithub": "sergeyguchok"
       }
     ]
   },
@@ -1784,21 +1784,21 @@
     "mentorName": "Igor Tsialiuk",
     "mentorCity": "Минск",
     "mentorGithub": "sijlver",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "artur-alexandrov"
+        "studentGithub": "artur-alexandrov"
       },
       {
-        "github": "metre-ray"
+        "studentGithub": "metre-ray"
       },
       {
-        "github": "napro23"
+        "studentGithub": "napro23"
       },
       {
-        "github": "overkektus"
+        "studentGithub": "overkektus"
       },
       {
-        "github": "zhekix"
+        "studentGithub": "zhekix"
       }
     ]
   },
@@ -1806,27 +1806,27 @@
     "mentorName": "Illia Sauchuk",
     "mentorCity": "Минск",
     "mentorGithub": "ilyalisitsin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "amoebiusss"
+        "studentGithub": "amoebiusss"
       },
       {
-        "github": "megustafather"
+        "studentGithub": "megustafather"
       },
       {
-        "github": "meller96"
+        "studentGithub": "meller96"
       },
       {
-        "github": "mrlapka"
+        "studentGithub": "mrlapka"
       },
       {
-        "github": "ogurez"
+        "studentGithub": "ogurez"
       },
       {
-        "github": "olexxxey"
+        "studentGithub": "olexxxey"
       },
       {
-        "github": "xelson"
+        "studentGithub": "xelson"
       }
     ]
   },
@@ -1834,27 +1834,27 @@
     "mentorName": "Ilya Hancharyk",
     "mentorCity": "Минск",
     "mentorGithub": "amsterget",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "beetle23"
+        "studentGithub": "beetle23"
       },
       {
-        "github": "colambus13"
+        "studentGithub": "colambus13"
       },
       {
-        "github": "daqueze21"
+        "studentGithub": "daqueze21"
       },
       {
-        "github": "lynyx"
+        "studentGithub": "lynyx"
       },
       {
-        "github": "pinkrefugee"
+        "studentGithub": "pinkrefugee"
       },
       {
-        "github": "tebeskashi"
+        "studentGithub": "tebeskashi"
       },
       {
-        "github": "tomsssm"
+        "studentGithub": "tomsssm"
       }
     ]
   },
@@ -1862,18 +1862,18 @@
     "mentorName": "Katsiaryna Birulia",
     "mentorCity": "Минск",
     "mentorGithub": "kbirulia",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "anaumovich"
+        "studentGithub": "anaumovich"
       },
       {
-        "github": "katiar"
+        "studentGithub": "katiar"
       },
       {
-        "github": "kirillkolesnik123"
+        "studentGithub": "kirillkolesnik123"
       },
       {
-        "github": "vergonini"
+        "studentGithub": "vergonini"
       }
     ]
   },
@@ -1881,27 +1881,27 @@
     "mentorName": "Katsiaryna Karanets",
     "mentorCity": "Минск",
     "mentorGithub": "katekaranets",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aliaksandrarybak"
+        "studentGithub": "aliaksandrarybak"
       },
       {
-        "github": "dantewitcher"
+        "studentGithub": "dantewitcher"
       },
       {
-        "github": "gleb-kukobnikov"
+        "studentGithub": "gleb-kukobnikov"
       },
       {
-        "github": "kozelkoff"
+        "studentGithub": "kozelkoff"
       },
       {
-        "github": "natiedei"
+        "studentGithub": "natiedei"
       },
       {
-        "github": "sokol147"
+        "studentGithub": "sokol147"
       },
       {
-        "github": "vladislavshyian"
+        "studentGithub": "vladislavshyian"
       }
     ]
   },
@@ -1909,21 +1909,21 @@
     "mentorName": "Katsiaryna Tatarynovich",
     "mentorCity": "Минск",
     "mentorGithub": "etatarinovich18",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexshumansky"
+        "studentGithub": "alexshumansky"
       },
       {
-        "github": "kaleniksasha"
+        "studentGithub": "kaleniksasha"
       },
       {
-        "github": "margoshulpina"
+        "studentGithub": "margoshulpina"
       },
       {
-        "github": "sk1ngr0s"
+        "studentGithub": "sk1ngr0s"
       },
       {
-        "github": "ue4prog"
+        "studentGithub": "ue4prog"
       }
     ]
   },
@@ -1931,27 +1931,27 @@
     "mentorName": "Kiryl Panou",
     "mentorCity": "Минск",
     "mentorGithub": "kirillpanov",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aliaksandrlosich"
+        "studentGithub": "aliaksandrlosich"
       },
       {
-        "github": "bogdanka"
+        "studentGithub": "bogdanka"
       },
       {
-        "github": "dmsolov"
+        "studentGithub": "dmsolov"
       },
       {
-        "github": "godofnoobs"
+        "studentGithub": "godofnoobs"
       },
       {
-        "github": "helpthewalrus"
+        "studentGithub": "helpthewalrus"
       },
       {
-        "github": "srjkaa"
+        "studentGithub": "srjkaa"
       },
       {
-        "github": "uivgray"
+        "studentGithub": "uivgray"
       }
     ]
   },
@@ -1959,27 +1959,27 @@
     "mentorName": "Kiryl Shaliapin",
     "mentorCity": "Минск",
     "mentorGithub": "cyrilshalyapin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "cropotan"
+        "studentGithub": "cropotan"
       },
       {
-        "github": "kulinar310"
+        "studentGithub": "kulinar310"
       },
       {
-        "github": "philipsh"
+        "studentGithub": "philipsh"
       },
       {
-        "github": "sergeyakzhik"
+        "studentGithub": "sergeyakzhik"
       },
       {
-        "github": "vero-nika"
+        "studentGithub": "vero-nika"
       },
       {
-        "github": "vitalydmitriev"
+        "studentGithub": "vitalydmitriev"
       },
       {
-        "github": "vladsemenik"
+        "studentGithub": "vladsemenik"
       }
     ]
   },
@@ -1987,24 +1987,24 @@
     "mentorName": "Kiryl Tofan",
     "mentorCity": "Минск",
     "mentorGithub": "kvtofan",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "brokorenko"
+        "studentGithub": "brokorenko"
       },
       {
-        "github": "egorbudnik"
+        "studentGithub": "egorbudnik"
       },
       {
-        "github": "hentmire"
+        "studentGithub": "hentmire"
       },
       {
-        "github": "rubahaguy"
+        "studentGithub": "rubahaguy"
       },
       {
-        "github": "thesheepman"
+        "studentGithub": "thesheepman"
       },
       {
-        "github": "vovakor1"
+        "studentGithub": "vovakor1"
       }
     ]
   },
@@ -2012,18 +2012,18 @@
     "mentorName": "Klim Shuplenkou",
     "mentorCity": "Минск",
     "mentorGithub": "klim711",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dmlaziuk"
+        "studentGithub": "dmlaziuk"
       },
       {
-        "github": "globalbobone"
+        "studentGithub": "globalbobone"
       },
       {
-        "github": "vladqqqqoo"
+        "studentGithub": "vladqqqqoo"
       },
       {
-        "github": "wushukms"
+        "studentGithub": "wushukms"
       }
     ]
   },
@@ -2031,21 +2031,21 @@
     "mentorName": "Konstantin Grigorchuk",
     "mentorCity": "Минск",
     "mentorGithub": "predokmif",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandrapozniak"
+        "studentGithub": "alexandrapozniak"
       },
       {
-        "github": "belkacraft"
+        "studentGithub": "belkacraft"
       },
       {
-        "github": "kasatka660"
+        "studentGithub": "kasatka660"
       },
       {
-        "github": "warryr"
+        "studentGithub": "warryr"
       },
       {
-        "github": "yuliabakhar"
+        "studentGithub": "yuliabakhar"
       }
     ]
   },
@@ -2053,21 +2053,21 @@
     "mentorName": "Kseniya Smorshchek",
     "mentorCity": "Минск",
     "mentorGithub": "kseniyasmorshchek",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "ankorbay"
+        "studentGithub": "ankorbay"
       },
       {
-        "github": "catrieona"
+        "studentGithub": "catrieona"
       },
       {
-        "github": "ltcolumbo"
+        "studentGithub": "ltcolumbo"
       },
       {
-        "github": "veterkam"
+        "studentGithub": "veterkam"
       },
       {
-        "github": "yurychajkou"
+        "studentGithub": "yurychajkou"
       }
     ]
   },
@@ -2075,18 +2075,18 @@
     "mentorName": "Maksim Kantsavy",
     "mentorCity": "Могилев",
     "mentorGithub": "clainatomi-zero",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandrshlyaeu"
+        "studentGithub": "alexandrshlyaeu"
       },
       {
-        "github": "nicalas93"
+        "studentGithub": "nicalas93"
       },
       {
-        "github": "shinoby85"
+        "studentGithub": "shinoby85"
       },
       {
-        "github": "vldmr1"
+        "studentGithub": "vldmr1"
       }
     ]
   },
@@ -2094,18 +2094,18 @@
     "mentorName": "Maryia Nabzdorava",
     "mentorCity": "Минск",
     "mentorGithub": "maryia-n-n",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexeynovomlinets"
+        "studentGithub": "alexeynovomlinets"
       },
       {
-        "github": "antonysawyer"
+        "studentGithub": "antonysawyer"
       },
       {
-        "github": "crypto-kittensseller"
+        "studentGithub": "crypto-kittensseller"
       },
       {
-        "github": "dyadinmax"
+        "studentGithub": "dyadinmax"
       }
     ]
   },
@@ -2113,18 +2113,18 @@
     "mentorName": "Maryna Kavetskaya",
     "mentorCity": "Минск",
     "mentorGithub": "shparkivozhyk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "eugenekhristo"
+        "studentGithub": "eugenekhristo"
       },
       {
-        "github": "presidentsboyfriend"
+        "studentGithub": "presidentsboyfriend"
       },
       {
-        "github": "sburnt"
+        "studentGithub": "sburnt"
       },
       {
-        "github": "tserekhivan"
+        "studentGithub": "tserekhivan"
       }
     ]
   },
@@ -2132,27 +2132,27 @@
     "mentorName": "Mikalai Kavaliou",
     "mentorCity": "Минск",
     "mentorGithub": "nikkov17",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "anastasiyamazura"
+        "studentGithub": "anastasiyamazura"
       },
       {
-        "github": "anastasiyanovikovag"
+        "studentGithub": "anastasiyanovikovag"
       },
       {
-        "github": "artichoks"
+        "studentGithub": "artichoks"
       },
       {
-        "github": "dezman66"
+        "studentGithub": "dezman66"
       },
       {
-        "github": "exedystyle"
+        "studentGithub": "exedystyle"
       },
       {
-        "github": "gaddyya"
+        "studentGithub": "gaddyya"
       },
       {
-        "github": "margaretmint"
+        "studentGithub": "margaretmint"
       }
     ]
   },
@@ -2160,21 +2160,21 @@
     "mentorName": "Mikalai Shchakatsikhin",
     "mentorCity": "Минск",
     "mentorGithub": "hirurgo",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "mixniuk"
+        "studentGithub": "mixniuk"
       },
       {
-        "github": "nataligleb"
+        "studentGithub": "nataligleb"
       },
       {
-        "github": "tanya98"
+        "studentGithub": "tanya98"
       },
       {
-        "github": "valeriyager"
+        "studentGithub": "valeriyager"
       },
       {
-        "github": "xseniia"
+        "studentGithub": "xseniia"
       }
     ]
   },
@@ -2182,24 +2182,24 @@
     "mentorName": "Mikalai Sokarau",
     "mentorCity": "Минск",
     "mentorGithub": "mikalai-sokarau",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "danila211"
+        "studentGithub": "danila211"
       },
       {
-        "github": "f8b23lef"
+        "studentGithub": "f8b23lef"
       },
       {
-        "github": "jenia-shibkova"
+        "studentGithub": "jenia-shibkova"
       },
       {
-        "github": "juliazakharik"
+        "studentGithub": "juliazakharik"
       },
       {
-        "github": "magerrrr"
+        "studentGithub": "magerrrr"
       },
       {
-        "github": "yrapank"
+        "studentGithub": "yrapank"
       }
     ]
   },
@@ -2207,24 +2207,24 @@
     "mentorName": "Mikhail Naharayeu",
     "mentorCity": "Минск",
     "mentorGithub": "mikhaillu",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "astravukh"
+        "studentGithub": "astravukh"
       },
       {
-        "github": "cirillius"
+        "studentGithub": "cirillius"
       },
       {
-        "github": "elusiveway"
+        "studentGithub": "elusiveway"
       },
       {
-        "github": "eugenepochenkov"
+        "studentGithub": "eugenepochenkov"
       },
       {
-        "github": "lx-931203"
+        "studentGithub": "lx-931203"
       },
       {
-        "github": "zetorby"
+        "studentGithub": "zetorby"
       }
     ]
   },
@@ -2232,27 +2232,27 @@
     "mentorName": "Mikita Rudy",
     "mentorCity": "Минск",
     "mentorGithub": "nikitarudy",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "avaprin"
+        "studentGithub": "avaprin"
       },
       {
-        "github": "evgenprushk"
+        "studentGithub": "evgenprushk"
       },
       {
-        "github": "haspadarz-padmensku"
+        "studentGithub": "haspadarz-padmensku"
       },
       {
-        "github": "kalitamih"
+        "studentGithub": "kalitamih"
       },
       {
-        "github": "mrstalon"
+        "studentGithub": "mrstalon"
       },
       {
-        "github": "sad4itananda"
+        "studentGithub": "sad4itananda"
       },
       {
-        "github": "svoboda-rabstvo"
+        "studentGithub": "svoboda-rabstvo"
       }
     ]
   },
@@ -2260,27 +2260,27 @@
     "mentorName": "Mikita Subbot",
     "mentorCity": "Минск",
     "mentorGithub": "nsubbot",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aglayasv"
+        "studentGithub": "aglayasv"
       },
       {
-        "github": "eughene-cherepov"
+        "studentGithub": "eughene-cherepov"
       },
       {
-        "github": "finnibyh"
+        "studentGithub": "finnibyh"
       },
       {
-        "github": "luzko"
+        "studentGithub": "luzko"
       },
       {
-        "github": "moraviin"
+        "studentGithub": "moraviin"
       },
       {
-        "github": "petriken"
+        "studentGithub": "petriken"
       },
       {
-        "github": "tonykosmos"
+        "studentGithub": "tonykosmos"
       }
     ]
   },
@@ -2288,24 +2288,24 @@
     "mentorName": "MIKITA TRUKHANAVETS",
     "mentorCity": "Минск",
     "mentorGithub": "ntrukhanovets",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "annchapon"
+        "studentGithub": "annchapon"
       },
       {
-        "github": "cruecer"
+        "studentGithub": "cruecer"
       },
       {
-        "github": "ekoniuh"
+        "studentGithub": "ekoniuh"
       },
       {
-        "github": "evpodrezenko"
+        "studentGithub": "evpodrezenko"
       },
       {
-        "github": "lordshtein"
+        "studentGithub": "lordshtein"
       },
       {
-        "github": "vanyatsar"
+        "studentGithub": "vanyatsar"
       }
     ]
   },
@@ -2313,27 +2313,27 @@
     "mentorName": "Mikita Zhuikou",
     "mentorCity": "Минск",
     "mentorGithub": "nikitzu",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandr-savkov"
+        "studentGithub": "alexandr-savkov"
       },
       {
-        "github": "angryivan"
+        "studentGithub": "angryivan"
       },
       {
-        "github": "bumble-bee83"
+        "studentGithub": "bumble-bee83"
       },
       {
-        "github": "dimalinnik"
+        "studentGithub": "dimalinnik"
       },
       {
-        "github": "felalag"
+        "studentGithub": "felalag"
       },
       {
-        "github": "mikhama"
+        "studentGithub": "mikhama"
       },
       {
-        "github": "xixex"
+        "studentGithub": "xixex"
       }
     ]
   },
@@ -2341,18 +2341,18 @@
     "mentorName": "Natallia Belavusava",
     "mentorCity": "Минск",
     "mentorGithub": "belousova-natallia",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "altobeyk"
+        "studentGithub": "altobeyk"
       },
       {
-        "github": "garnich"
+        "studentGithub": "garnich"
       },
       {
-        "github": "kmetkokate"
+        "studentGithub": "kmetkokate"
       },
       {
-        "github": "stigmatory15"
+        "studentGithub": "stigmatory15"
       }
     ]
   },
@@ -2360,18 +2360,18 @@
     "mentorName": "Natalya Nekazakova",
     "mentorCity": "Минск",
     "mentorGithub": "natashanekazakova",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "375291601334"
+        "studentGithub": "375291601334"
       },
       {
-        "github": "antoprokopovich"
+        "studentGithub": "antoprokopovich"
       },
       {
-        "github": "iharpashkevich"
+        "studentGithub": "iharpashkevich"
       },
       {
-        "github": "wladimirmihalev"
+        "studentGithub": "wladimirmihalev"
       }
     ]
   },
@@ -2379,18 +2379,18 @@
     "mentorName": "Nikolai Verbitskii",
     "mentorCity": "Минск",
     "mentorGithub": "nikolaiverbitskii",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "igor82bv"
+        "studentGithub": "igor82bv"
       },
       {
-        "github": "klimenkomaksim"
+        "studentGithub": "klimenkomaksim"
       },
       {
-        "github": "shanhinpavel"
+        "studentGithub": "shanhinpavel"
       },
       {
-        "github": "uladzimir-yeudakimovich"
+        "studentGithub": "uladzimir-yeudakimovich"
       }
     ]
   },
@@ -2398,24 +2398,24 @@
     "mentorName": "Palina Babrounik",
     "mentorCity": "Минск",
     "mentorGithub": "polinabobrovnik",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alinkalu"
+        "studentGithub": "alinkalu"
       },
       {
-        "github": "andvikvin"
+        "studentGithub": "andvikvin"
       },
       {
-        "github": "fursaleksey"
+        "studentGithub": "fursaleksey"
       },
       {
-        "github": "hursevichsergey"
+        "studentGithub": "hursevichsergey"
       },
       {
-        "github": "marry705"
+        "studentGithub": "marry705"
       },
       {
-        "github": "wowprojeck"
+        "studentGithub": "wowprojeck"
       }
     ]
   },
@@ -2423,24 +2423,24 @@
     "mentorName": "Pavel Glebov",
     "mentorCity": "Минск",
     "mentorGithub": "pavelglebov",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexsmyk1992"
+        "studentGithub": "alexsmyk1992"
       },
       {
-        "github": "dzianiskavalionak"
+        "studentGithub": "dzianiskavalionak"
       },
       {
-        "github": "feodorius"
+        "studentGithub": "feodorius"
       },
       {
-        "github": "ihar777"
+        "studentGithub": "ihar777"
       },
       {
-        "github": "oaliona"
+        "studentGithub": "oaliona"
       },
       {
-        "github": "vbkoshak"
+        "studentGithub": "vbkoshak"
       }
     ]
   },
@@ -2448,27 +2448,27 @@
     "mentorName": "Pavel Kuzniatsou",
     "mentorCity": "Минск",
     "mentorGithub": "pavelkuzniatsou",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "akselatom"
+        "studentGithub": "akselatom"
       },
       {
-        "github": "kirilltovpinets"
+        "studentGithub": "kirilltovpinets"
       },
       {
-        "github": "kotcher1"
+        "studentGithub": "kotcher1"
       },
       {
-        "github": "kotiknalune42"
+        "studentGithub": "kotiknalune42"
       },
       {
-        "github": "maryiasiamenava"
+        "studentGithub": "maryiasiamenava"
       },
       {
-        "github": "maxbrainygame"
+        "studentGithub": "maxbrainygame"
       },
       {
-        "github": "oliver337"
+        "studentGithub": "oliver337"
       }
     ]
   },
@@ -2476,27 +2476,27 @@
     "mentorName": "Pavel Yukhnevich",
     "mentorCity": "Минск",
     "mentorGithub": "tibmt",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "argaitt"
+        "studentGithub": "argaitt"
       },
       {
-        "github": "danteboom"
+        "studentGithub": "danteboom"
       },
       {
-        "github": "iryna-markovich"
+        "studentGithub": "iryna-markovich"
       },
       {
-        "github": "ivankirsd"
+        "studentGithub": "ivankirsd"
       },
       {
-        "github": "kasiama"
+        "studentGithub": "kasiama"
       },
       {
-        "github": "magiccurlyhair"
+        "studentGithub": "magiccurlyhair"
       },
       {
-        "github": "passhub"
+        "studentGithub": "passhub"
       }
     ]
   },
@@ -2504,21 +2504,21 @@
     "mentorName": "Pavel Zaletski",
     "mentorCity": "Минск",
     "mentorGithub": "pavelzaletski",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "andddrews"
+        "studentGithub": "andddrews"
       },
       {
-        "github": "anna-sh"
+        "studentGithub": "anna-sh"
       },
       {
-        "github": "bref987"
+        "studentGithub": "bref987"
       },
       {
-        "github": "ilyaryabchinski"
+        "studentGithub": "ilyaryabchinski"
       },
       {
-        "github": "sergey496"
+        "studentGithub": "sergey496"
       }
     ]
   },
@@ -2526,9 +2526,9 @@
     "mentorName": "Petya Bockin",
     "mentorCity": "",
     "mentorGithub": "",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "fdf"
+        "studentGithub": "fdf"
       }
     ]
   },
@@ -2536,21 +2536,21 @@
     "mentorName": "Rem Apasov",
     "mentorCity": "",
     "mentorGithub": "",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dongor7"
+        "studentGithub": "dongor7"
       },
       {
-        "github": "frol8612"
+        "studentGithub": "frol8612"
       },
       {
-        "github": "innazl"
+        "studentGithub": "innazl"
       },
       {
-        "github": "snowwe"
+        "studentGithub": "snowwe"
       },
       {
-        "github": "zettrix"
+        "studentGithub": "zettrix"
       }
     ]
   },
@@ -2558,21 +2558,21 @@
     "mentorName": "Ron Lavit",
     "mentorCity": "Минск",
     "mentorGithub": "lavitr",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "daryz"
+        "studentGithub": "daryz"
       },
       {
-        "github": "h0qw010xz"
+        "studentGithub": "h0qw010xz"
       },
       {
-        "github": "mrdemonrush"
+        "studentGithub": "mrdemonrush"
       },
       {
-        "github": "nikitaklepanosov"
+        "studentGithub": "nikitaklepanosov"
       },
       {
-        "github": "provedenceva"
+        "studentGithub": "provedenceva"
       }
     ]
   },
@@ -2580,27 +2580,27 @@
     "mentorName": "Sergeh Korotkin",
     "mentorCity": "Минск",
     "mentorGithub": "korotkin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "darinalitvin"
+        "studentGithub": "darinalitvin"
       },
       {
-        "github": "ihartsykaka"
+        "studentGithub": "ihartsykaka"
       },
       {
-        "github": "naijelo"
+        "studentGithub": "naijelo"
       },
       {
-        "github": "pavelsab"
+        "studentGithub": "pavelsab"
       },
       {
-        "github": "tridenet"
+        "studentGithub": "tridenet"
       },
       {
-        "github": "vldshch"
+        "studentGithub": "vldshch"
       },
       {
-        "github": "zhechka"
+        "studentGithub": "zhechka"
       }
     ]
   },
@@ -2608,36 +2608,36 @@
     "mentorName": "Sergey Maksimuk",
     "mentorCity": "Брест",
     "mentorGithub": "maximuk",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alenashkr"
+        "studentGithub": "alenashkr"
       },
       {
-        "github": "alexdejko"
+        "studentGithub": "alexdejko"
       },
       {
-        "github": "alexey-1991"
+        "studentGithub": "alexey-1991"
       },
       {
-        "github": "andrei-oksentyk"
+        "studentGithub": "andrei-oksentyk"
       },
       {
-        "github": "fyr-fyrrr"
+        "studentGithub": "fyr-fyrrr"
       },
       {
-        "github": "halaveika"
+        "studentGithub": "halaveika"
       },
       {
-        "github": "liodama"
+        "studentGithub": "liodama"
       },
       {
-        "github": "redgektor"
+        "studentGithub": "redgektor"
       },
       {
-        "github": "uniapi"
+        "studentGithub": "uniapi"
       },
       {
-        "github": "wertybsd"
+        "studentGithub": "wertybsd"
       }
     ]
   },
@@ -2645,18 +2645,18 @@
     "mentorName": "Siarhei Ausianik",
     "mentorCity": "Минск",
     "mentorGithub": "sergeyshatter",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "cuppake"
+        "studentGithub": "cuppake"
       },
       {
-        "github": "kirilltk"
+        "studentGithub": "kirilltk"
       },
       {
-        "github": "luffi2539"
+        "studentGithub": "luffi2539"
       },
       {
-        "github": "pirsfrommi6"
+        "studentGithub": "pirsfrommi6"
       }
     ]
   },
@@ -2664,18 +2664,18 @@
     "mentorName": "Siarhei Churylin",
     "mentorCity": "Минск",
     "mentorGithub": "sergey-churilin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "gegorov"
+        "studentGithub": "gegorov"
       },
       {
-        "github": "gubnich"
+        "studentGithub": "gubnich"
       },
       {
-        "github": "ilyakabanov"
+        "studentGithub": "ilyakabanov"
       },
       {
-        "github": "yurec0gurec"
+        "studentGithub": "yurec0gurec"
       }
     ]
   },
@@ -2683,18 +2683,18 @@
     "mentorName": "Siarhei Prystauka",
     "mentorCity": "Гомель",
     "mentorGithub": "pristavka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alehdzmitrenka"
+        "studentGithub": "alehdzmitrenka"
       },
       {
-        "github": "dzhudzhi"
+        "studentGithub": "dzhudzhi"
       },
       {
-        "github": "jamadamur"
+        "studentGithub": "jamadamur"
       },
       {
-        "github": "tsvetlanak"
+        "studentGithub": "tsvetlanak"
       }
     ]
   },
@@ -2702,18 +2702,18 @@
     "mentorName": "Tatsiana Bakhmatovich",
     "mentorCity": "Минск",
     "mentorGithub": "tanya-bakhmatovich",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dmitrigorchanin"
+        "studentGithub": "dmitrigorchanin"
       },
       {
-        "github": "fogfug1"
+        "studentGithub": "fogfug1"
       },
       {
-        "github": "soundmafi"
+        "studentGithub": "soundmafi"
       },
       {
-        "github": "yauhenilyin"
+        "studentGithub": "yauhenilyin"
       }
     ]
   },
@@ -2721,12 +2721,12 @@
     "mentorName": "Tatsiana Khinevich",
     "mentorCity": "Гродно",
     "mentorGithub": "tatsianakhinevich-epam",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "makouskiyan"
+        "studentGithub": "makouskiyan"
       },
       {
-        "github": "shest28"
+        "studentGithub": "shest28"
       }
     ]
   },
@@ -2734,21 +2734,21 @@
     "mentorName": "Tatsiana Stsepchanka",
     "mentorCity": "Могилев",
     "mentorGithub": "stsepchanka",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dloz"
+        "studentGithub": "dloz"
       },
       {
-        "github": "max-violent"
+        "studentGithub": "max-violent"
       },
       {
-        "github": "rick42morty"
+        "studentGithub": "rick42morty"
       },
       {
-        "github": "scifsyh"
+        "studentGithub": "scifsyh"
       },
       {
-        "github": "tgfrey"
+        "studentGithub": "tgfrey"
       }
     ]
   },
@@ -2756,24 +2756,24 @@
     "mentorName": "Tsikhan Shcharbakou",
     "mentorCity": "Минск",
     "mentorGithub": "forkollaider",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aalexsoloveiko"
+        "studentGithub": "aalexsoloveiko"
       },
       {
-        "github": "do100han"
+        "studentGithub": "do100han"
       },
       {
-        "github": "mill9r"
+        "studentGithub": "mill9r"
       },
       {
-        "github": "odegay"
+        "studentGithub": "odegay"
       },
       {
-        "github": "sergeibel"
+        "studentGithub": "sergeibel"
       },
       {
-        "github": "zhecha"
+        "studentGithub": "zhecha"
       }
     ]
   },
@@ -2781,21 +2781,21 @@
     "mentorName": "Uladzimir Artsemenka",
     "mentorCity": "Минск",
     "mentorGithub": "vinfinit",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "eauheni"
+        "studentGithub": "eauheni"
       },
       {
-        "github": "egoncharov"
+        "studentGithub": "egoncharov"
       },
       {
-        "github": "elostryy"
+        "studentGithub": "elostryy"
       },
       {
-        "github": "maringoka"
+        "studentGithub": "maringoka"
       },
       {
-        "github": "mikhailnakanechny"
+        "studentGithub": "mikhailnakanechny"
       }
     ]
   },
@@ -2803,18 +2803,18 @@
     "mentorName": "Uladzislau Tarasenka",
     "mentorCity": "Минск",
     "mentorGithub": "einfachvlad",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aleksei-bulgak-study"
+        "studentGithub": "aleksei-bulgak-study"
       },
       {
-        "github": "dyatelvudu"
+        "studentGithub": "dyatelvudu"
       },
       {
-        "github": "lazovskyigor"
+        "studentGithub": "lazovskyigor"
       },
       {
-        "github": "margharita"
+        "studentGithub": "margharita"
       }
     ]
   },
@@ -2822,27 +2822,27 @@
     "mentorName": "Valeri Gorobets",
     "mentorCity": "Минск",
     "mentorGithub": "valeragorobets",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "eliznovo"
+        "studentGithub": "eliznovo"
       },
       {
-        "github": "ivandubrouski"
+        "studentGithub": "ivandubrouski"
       },
       {
-        "github": "krisstets"
+        "studentGithub": "krisstets"
       },
       {
-        "github": "mrforsyte"
+        "studentGithub": "mrforsyte"
       },
       {
-        "github": "olgakuksa"
+        "studentGithub": "olgakuksa"
       },
       {
-        "github": "vitalij21"
+        "studentGithub": "vitalij21"
       },
       {
-        "github": "yuriy17"
+        "studentGithub": "yuriy17"
       }
     ]
   },
@@ -2850,18 +2850,18 @@
     "mentorName": "Vera Barysava",
     "mentorCity": "Минск",
     "mentorGithub": "tomasspring",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "a11mo"
+        "studentGithub": "a11mo"
       },
       {
-        "github": "annakolesnikova"
+        "studentGithub": "annakolesnikova"
       },
       {
-        "github": "eliendil"
+        "studentGithub": "eliendil"
       },
       {
-        "github": "thecobolt"
+        "studentGithub": "thecobolt"
       }
     ]
   },
@@ -2869,21 +2869,21 @@
     "mentorName": "Viachaslau Latushkin",
     "mentorCity": "Минск",
     "mentorGithub": "viachaslau-latushkin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alexandrasitnikova"
+        "studentGithub": "alexandrasitnikova"
       },
       {
-        "github": "katezhukel"
+        "studentGithub": "katezhukel"
       },
       {
-        "github": "pavelkiru"
+        "studentGithub": "pavelkiru"
       },
       {
-        "github": "shestakoff1441"
+        "studentGithub": "shestakoff1441"
       },
       {
-        "github": "vitalibrych333"
+        "studentGithub": "vitalibrych333"
       }
     ]
   },
@@ -2891,21 +2891,21 @@
     "mentorName": "Viktar Kurbatski",
     "mentorCity": "Минск",
     "mentorGithub": "woozzone",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "bardashevich-matvei"
+        "studentGithub": "bardashevich-matvei"
       },
       {
-        "github": "korbann"
+        "studentGithub": "korbann"
       },
       {
-        "github": "supersmf"
+        "studentGithub": "supersmf"
       },
       {
-        "github": "tatyana-andreichyk"
+        "studentGithub": "tatyana-andreichyk"
       },
       {
-        "github": "yevgeniypy"
+        "studentGithub": "yevgeniypy"
       }
     ]
   },
@@ -2913,21 +2913,21 @@
     "mentorName": "Viktoriya Vorozhun",
     "mentorCity": "Минск",
     "mentorGithub": "viktoriyavorozhun",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "christina-ilyushonok"
+        "studentGithub": "christina-ilyushonok"
       },
       {
-        "github": "evgeniyaverbiczkaya"
+        "studentGithub": "evgeniyaverbiczkaya"
       },
       {
-        "github": "martikoscoder"
+        "studentGithub": "martikoscoder"
       },
       {
-        "github": "mayinmarch"
+        "studentGithub": "mayinmarch"
       },
       {
-        "github": "toxandreev"
+        "studentGithub": "toxandreev"
       }
     ]
   },
@@ -2935,21 +2935,21 @@
     "mentorName": "Viktoryia Budzionnaya",
     "mentorCity": "Минск",
     "mentorGithub": "elkinny",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alenakharytonchyk"
+        "studentGithub": "alenakharytonchyk"
       },
       {
-        "github": "daryazel"
+        "studentGithub": "daryazel"
       },
       {
-        "github": "drizzlman"
+        "studentGithub": "drizzlman"
       },
       {
-        "github": "kottanakor"
+        "studentGithub": "kottanakor"
       },
       {
-        "github": "yonguksaram"
+        "studentGithub": "yonguksaram"
       }
     ]
   },
@@ -2957,21 +2957,21 @@
     "mentorName": "Viktoryia Klimenka",
     "mentorCity": "Минск",
     "mentorGithub": "candentira",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dmitrylenko"
+        "studentGithub": "dmitrylenko"
       },
       {
-        "github": "palessie"
+        "studentGithub": "palessie"
       },
       {
-        "github": "underdoglzd"
+        "studentGithub": "underdoglzd"
       },
       {
-        "github": "ustilushka"
+        "studentGithub": "ustilushka"
       },
       {
-        "github": "zzvipz"
+        "studentGithub": "zzvipz"
       }
     ]
   },
@@ -2979,21 +2979,21 @@
     "mentorName": "Viktoryia Verasava",
     "mentorCity": "Могилев",
     "mentorGithub": "viktoryiaverasava",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "25kopek"
+        "studentGithub": "25kopek"
       },
       {
-        "github": "bn1knb"
+        "studentGithub": "bn1knb"
       },
       {
-        "github": "lowershotower"
+        "studentGithub": "lowershotower"
       },
       {
-        "github": "psychotheus"
+        "studentGithub": "psychotheus"
       },
       {
-        "github": "zerovers"
+        "studentGithub": "zerovers"
       }
     ]
   },
@@ -3001,18 +3001,18 @@
     "mentorName": "Vitali Krasnou",
     "mentorCity": "Минск",
     "mentorGithub": "error404as",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "aliakseik19"
+        "studentGithub": "aliakseik19"
       },
       {
-        "github": "pozharitskiy"
+        "studentGithub": "pozharitskiy"
       },
       {
-        "github": "robertiqk"
+        "studentGithub": "robertiqk"
       },
       {
-        "github": "tarsupon"
+        "studentGithub": "tarsupon"
       }
     ]
   },
@@ -3020,18 +3020,18 @@
     "mentorName": "Vladislav Kovaliov",
     "mentorCity": "Минск",
     "mentorGithub": "vladislavkovaliov",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "evilamany"
+        "studentGithub": "evilamany"
       },
       {
-        "github": "pelya98"
+        "studentGithub": "pelya98"
       },
       {
-        "github": "roman-nareiko"
+        "studentGithub": "roman-nareiko"
       },
       {
-        "github": "xvorob"
+        "studentGithub": "xvorob"
       }
     ]
   },
@@ -3039,21 +3039,21 @@
     "mentorName": "Volha Mardvilka",
     "mentorCity": "Минск",
     "mentorGithub": "olgamardvilko",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "georgyminsk"
+        "studentGithub": "georgyminsk"
       },
       {
-        "github": "goldenkit"
+        "studentGithub": "goldenkit"
       },
       {
-        "github": "greg1996"
+        "studentGithub": "greg1996"
       },
       {
-        "github": "serzhanhelena"
+        "studentGithub": "serzhanhelena"
       },
       {
-        "github": "vladsanko"
+        "studentGithub": "vladsanko"
       }
     ]
   },
@@ -3061,24 +3061,24 @@
     "mentorName": "Volha Paddubka",
     "mentorCity": "Минск",
     "mentorGithub": "olgapoddubko",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "dimadk24"
+        "studentGithub": "dimadk24"
       },
       {
-        "github": "karsash"
+        "studentGithub": "karsash"
       },
       {
-        "github": "maksagit"
+        "studentGithub": "maksagit"
       },
       {
-        "github": "melk0sha"
+        "studentGithub": "melk0sha"
       },
       {
-        "github": "shet1990"
+        "studentGithub": "shet1990"
       },
       {
-        "github": "tanyasamal"
+        "studentGithub": "tanyasamal"
       }
     ]
   },
@@ -3086,21 +3086,21 @@
     "mentorName": "Yahor Sheinikau",
     "mentorCity": "Минск",
     "mentorGithub": "naooki",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "eveshad"
+        "studentGithub": "eveshad"
       },
       {
-        "github": "holeil"
+        "studentGithub": "holeil"
       },
       {
-        "github": "mbulldozer"
+        "studentGithub": "mbulldozer"
       },
       {
-        "github": "olgalazarevich"
+        "studentGithub": "olgalazarevich"
       },
       {
-        "github": "starkary"
+        "studentGithub": "starkary"
       }
     ]
   },
@@ -3108,21 +3108,21 @@
     "mentorName": "Yana Karotkina",
     "mentorCity": "Минск",
     "mentorGithub": "yanaselin",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "bsiropchik"
+        "studentGithub": "bsiropchik"
       },
       {
-        "github": "maksstef"
+        "studentGithub": "maksstef"
       },
       {
-        "github": "montes5"
+        "studentGithub": "montes5"
       },
       {
-        "github": "mrspunki"
+        "studentGithub": "mrspunki"
       },
       {
-        "github": "scratchor"
+        "studentGithub": "scratchor"
       }
     ]
   },
@@ -3130,21 +3130,21 @@
     "mentorName": "Yana Niaronskaya",
     "mentorCity": "Минск",
     "mentorGithub": "yananeronskaya",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "allexblaze"
+        "studentGithub": "allexblaze"
       },
       {
-        "github": "dekim12"
+        "studentGithub": "dekim12"
       },
       {
-        "github": "dimamavrin"
+        "studentGithub": "dimamavrin"
       },
       {
-        "github": "ilyay95"
+        "studentGithub": "ilyay95"
       },
       {
-        "github": "vitalmizevich"
+        "studentGithub": "vitalmizevich"
       }
     ]
   },
@@ -3152,18 +3152,18 @@
     "mentorName": "Yana Zaitsava",
     "mentorCity": "Минск",
     "mentorGithub": "yana95",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "mikhailmaniuk"
+        "studentGithub": "mikhailmaniuk"
       },
       {
-        "github": "olganaranovich"
+        "studentGithub": "olganaranovich"
       },
       {
-        "github": "shakhnovapolina"
+        "studentGithub": "shakhnovapolina"
       },
       {
-        "github": "yana-bashtyk"
+        "studentGithub": "yana-bashtyk"
       }
     ]
   },
@@ -3171,27 +3171,27 @@
     "mentorName": "Yauhen Chaika",
     "mentorCity": "Минск",
     "mentorGithub": "eugenech",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alesya-polovets"
+        "studentGithub": "alesya-polovets"
       },
       {
-        "github": "antonykor"
+        "studentGithub": "antonykor"
       },
       {
-        "github": "dzmitryalfer"
+        "studentGithub": "dzmitryalfer"
       },
       {
-        "github": "geek10010"
+        "studentGithub": "geek10010"
       },
       {
-        "github": "ivchenkopavel"
+        "studentGithub": "ivchenkopavel"
       },
       {
-        "github": "ruboscope"
+        "studentGithub": "ruboscope"
       },
       {
-        "github": "saniok017"
+        "studentGithub": "saniok017"
       }
     ]
   },
@@ -3199,27 +3199,27 @@
     "mentorName": "Yauheni Harokh",
     "mentorCity": "Минск",
     "mentorGithub": "evgeniigrh",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "antonprotas"
+        "studentGithub": "antonprotas"
       },
       {
-        "github": "garin87"
+        "studentGithub": "garin87"
       },
       {
-        "github": "iryna-mazura"
+        "studentGithub": "iryna-mazura"
       },
       {
-        "github": "kamenkoalexandr"
+        "studentGithub": "kamenkoalexandr"
       },
       {
-        "github": "mickbetch"
+        "studentGithub": "mickbetch"
       },
       {
-        "github": "natalianekrashevich"
+        "studentGithub": "natalianekrashevich"
       },
       {
-        "github": "oconely"
+        "studentGithub": "oconely"
       }
     ]
   },
@@ -3227,21 +3227,21 @@
     "mentorName": "Yauheni Hladki",
     "mentorCity": "Минск",
     "mentorGithub": "evgladkiy",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "anxair"
+        "studentGithub": "anxair"
       },
       {
-        "github": "evgenijkorob"
+        "studentGithub": "evgenijkorob"
       },
       {
-        "github": "shurpelevas"
+        "studentGithub": "shurpelevas"
       },
       {
-        "github": "siarohin"
+        "studentGithub": "siarohin"
       },
       {
-        "github": "svyatlo"
+        "studentGithub": "svyatlo"
       }
     ]
   },
@@ -3249,27 +3249,27 @@
     "mentorName": "Yauheni Pasiukevich",
     "mentorCity": "Минск",
     "mentorGithub": "pasyukevich",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "alenabde"
+        "studentGithub": "alenabde"
       },
       {
-        "github": "boobaley"
+        "studentGithub": "boobaley"
       },
       {
-        "github": "crunkagator"
+        "studentGithub": "crunkagator"
       },
       {
-        "github": "maksimyakush"
+        "studentGithub": "maksimyakush"
       },
       {
-        "github": "volhashy"
+        "studentGithub": "volhashy"
       },
       {
-        "github": "yalovikea"
+        "studentGithub": "yalovikea"
       },
       {
-        "github": "yanachchchka"
+        "studentGithub": "yanachchchka"
       }
     ]
   },
@@ -3277,21 +3277,21 @@
     "mentorName": "Yauheni Ralko",
     "mentorCity": "Минск",
     "mentorGithub": "yralko",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "anna-pronovich"
+        "studentGithub": "anna-pronovich"
       },
       {
-        "github": "artemiusv"
+        "studentGithub": "artemiusv"
       },
       {
-        "github": "kseniyasokolovskaya"
+        "studentGithub": "kseniyasokolovskaya"
       },
       {
-        "github": "nataliakazakevich"
+        "studentGithub": "nataliakazakevich"
       },
       {
-        "github": "zmichgen"
+        "studentGithub": "zmichgen"
       }
     ]
   },
@@ -3299,21 +3299,21 @@
     "mentorName": "Yauheni Rutkouski",
     "mentorCity": "Минск",
     "mentorGithub": "erutkovsky",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "boshka0"
+        "studentGithub": "boshka0"
       },
       {
-        "github": "hecateenitharmon"
+        "studentGithub": "hecateenitharmon"
       },
       {
-        "github": "mdgh"
+        "studentGithub": "mdgh"
       },
       {
-        "github": "mggeroff"
+        "studentGithub": "mggeroff"
       },
       {
-        "github": "soulos410"
+        "studentGithub": "soulos410"
       }
     ]
   },
@@ -3321,21 +3321,21 @@
     "mentorName": "Yuliia Alaieva",
     "mentorCity": "Минск",
     "mentorGithub": "juliaalaeva",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "ahrechushkin"
+        "studentGithub": "ahrechushkin"
       },
       {
-        "github": "huriosity"
+        "studentGithub": "huriosity"
       },
       {
-        "github": "mariannagarbuzova"
+        "studentGithub": "mariannagarbuzova"
       },
       {
-        "github": "pytniza"
+        "studentGithub": "pytniza"
       },
       {
-        "github": "ronavea"
+        "studentGithub": "ronavea"
       }
     ]
   },
@@ -3343,27 +3343,27 @@
     "mentorName": "Yuliya Haluza",
     "mentorCity": "Минск",
     "mentorGithub": "yuliahope",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "achyrych"
+        "studentGithub": "achyrych"
       },
       {
-        "github": "arkadz"
+        "studentGithub": "arkadz"
       },
       {
-        "github": "artyommakarov"
+        "studentGithub": "artyommakarov"
       },
       {
-        "github": "hottab9595"
+        "studentGithub": "hottab9595"
       },
       {
-        "github": "levsha87"
+        "studentGithub": "levsha87"
       },
       {
-        "github": "maniuska"
+        "studentGithub": "maniuska"
       },
       {
-        "github": "sachoks"
+        "studentGithub": "sachoks"
       }
     ]
   },
@@ -3371,21 +3371,21 @@
     "mentorName": "Yuliya Samuilik",
     "mentorCity": "Минск",
     "mentorGithub": "yulia9",
-    "studentsGithub": [
+    "students": [
       {
-        "github": "edaineko"
+        "studentGithub": "edaineko"
       },
       {
-        "github": "prometei299"
+        "studentGithub": "prometei299"
       },
       {
-        "github": "seidou99"
+        "studentGithub": "seidou99"
       },
       {
-        "github": "sergeypunko"
+        "studentGithub": "sergeypunko"
       },
       {
-        "github": "zurzur"
+        "studentGithub": "zurzur"
       }
     ]
   }
