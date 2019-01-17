@@ -68,12 +68,14 @@ const mergeMentorStudentPair = pairs.reduce((acc, item) => {
   const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
 
   if (exsistingMentor) {
-    exsistingMentor.studentGithub.push(item.studentGithub);
-    exsistingMentor.studentGithub.sort((first, second) => first.localeCompare(second));
+    exsistingMentor.studentGithub.push({ github: item.studentGithub });
+    exsistingMentor.studentGithub.sort((first, second) => (first.github).localeCompare(second.github));
   } else {
     acc.push({
       interviewer: item.interviewer,
-      studentGithub: [item.studentGithub],
+      studentGithub: [
+        { github: item.studentGithub },
+      ],
     });
   }
   return acc;

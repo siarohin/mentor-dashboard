@@ -4,7 +4,9 @@
     "mentorCity": "Гомель",
     "mentorGithub": "aliaksandrzahorski",
     "studentsGithub": [
-      "grenbork"
+      {
+        "github": "grenbork"
+      }
     ]
   },
   {
@@ -12,13 +14,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "lipskiy-aleh",
     "studentsGithub": [
-      "agentumbrella",
-      "anastasiaburlo",
-      "devandscorp",
-      "justforwebcoding",
-      "lexbogos",
-      "qucca",
-      "zebabrat"
+      {
+        "github": "agentumbrella"
+      },
+      {
+        "github": "anastasiaburlo"
+      },
+      {
+        "github": "devandscorp"
+      },
+      {
+        "github": "justforwebcoding"
+      },
+      {
+        "github": "lexbogos"
+      },
+      {
+        "github": "qucca"
+      },
+      {
+        "github": "zebabrat"
+      }
     ]
   },
   {
@@ -26,12 +42,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "helenegritsuk",
     "studentsGithub": [
-      "devildummy",
-      "dzmitry-karachun-1987",
-      "kishkun",
-      "nik-av",
-      "serg8",
-      "tsygancova"
+      {
+        "github": "devildummy"
+      },
+      {
+        "github": "dzmitry-karachun-1987"
+      },
+      {
+        "github": "kishkun"
+      },
+      {
+        "github": "nik-av"
+      },
+      {
+        "github": "serg8"
+      },
+      {
+        "github": "tsygancova"
+      }
     ]
   },
   {
@@ -39,10 +67,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "papialoushka",
     "studentsGithub": [
-      "dmitryduk3",
-      "nikola2390",
-      "sashajohnson",
-      "yagorka1"
+      {
+        "github": "dmitryduk3"
+      },
+      {
+        "github": "nikola2390"
+      },
+      {
+        "github": "sashajohnson"
+      },
+      {
+        "github": "yagorka1"
+      }
     ]
   },
   {
@@ -50,11 +86,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "shuspes",
     "studentsGithub": [
-      "aliaksandrposakh",
-      "formalinfigs",
-      "petersonby",
-      "prudnikov888",
-      "sergeyskakun"
+      {
+        "github": "aliaksandrposakh"
+      },
+      {
+        "github": "formalinfigs"
+      },
+      {
+        "github": "petersonby"
+      },
+      {
+        "github": "prudnikov888"
+      },
+      {
+        "github": "sergeyskakun"
+      }
     ]
   },
   {
@@ -62,12 +108,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "kukolcaalexandra",
     "studentsGithub": [
-      "bragodin",
-      "fantom141",
-      "ingvaroldd",
-      "samo-war",
-      "sxe2255",
-      "vovair"
+      {
+        "github": "bragodin"
+      },
+      {
+        "github": "fantom141"
+      },
+      {
+        "github": "ingvaroldd"
+      },
+      {
+        "github": "samo-war"
+      },
+      {
+        "github": "sxe2255"
+      },
+      {
+        "github": "vovair"
+      }
     ]
   },
   {
@@ -75,10 +133,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "amelk9n",
     "studentsGithub": [
-      "jrzlve",
-      "panikutysh",
-      "vitalur",
-      "vlukyane"
+      {
+        "github": "jrzlve"
+      },
+      {
+        "github": "panikutysh"
+      },
+      {
+        "github": "vitalur"
+      },
+      {
+        "github": "vlukyane"
+      }
     ]
   },
   {
@@ -86,11 +152,21 @@
     "mentorCity": "Могилев",
     "mentorGithub": "famchankou",
     "studentsGithub": [
-      "fcsm-andrei",
-      "iharvypau",
-      "tvorchud",
-      "vitalijsk",
-      "vladimirdobrik"
+      {
+        "github": "fcsm-andrei"
+      },
+      {
+        "github": "iharvypau"
+      },
+      {
+        "github": "tvorchud"
+      },
+      {
+        "github": "vitalijsk"
+      },
+      {
+        "github": "vladimirdobrik"
+      }
     ]
   },
   {
@@ -98,10 +174,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrfiodarau",
     "studentsGithub": [
-      "burach0k",
-      "denyingthetruth",
-      "invikto",
-      "khaliulinroman"
+      {
+        "github": "burach0k"
+      },
+      {
+        "github": "denyingthetruth"
+      },
+      {
+        "github": "invikto"
+      },
+      {
+        "github": "khaliulinroman"
+      }
     ]
   },
   {
@@ -109,11 +193,21 @@
     "mentorCity": "Могилев",
     "mentorGithub": "mkinitcpio",
     "studentsGithub": [
-      "artsiom-zhuk",
-      "ksenia-ok",
-      "mohax-13",
-      "quiquek007",
-      "slayer110"
+      {
+        "github": "artsiom-zhuk"
+      },
+      {
+        "github": "ksenia-ok"
+      },
+      {
+        "github": "mohax-13"
+      },
+      {
+        "github": "quiquek007"
+      },
+      {
+        "github": "slayer110"
+      }
     ]
   },
   {
@@ -121,12 +215,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "sleepwalky",
     "studentsGithub": [
-      "gattygamaun",
-      "katrin-kot",
-      "kristalys",
-      "mariyapolt",
-      "noviceblunderer",
-      "splin-shady"
+      {
+        "github": "gattygamaun"
+      },
+      {
+        "github": "katrin-kot"
+      },
+      {
+        "github": "kristalys"
+      },
+      {
+        "github": "mariyapolt"
+      },
+      {
+        "github": "noviceblunderer"
+      },
+      {
+        "github": "splin-shady"
+      }
     ]
   },
   {
@@ -134,11 +240,21 @@
     "mentorCity": "Гомель",
     "mentorGithub": "quantum-noise",
     "studentsGithub": [
-      "0riac",
-      "803142",
-      "nickitasolovei",
-      "saint-artiom",
-      "terstuyahmaksim"
+      {
+        "github": "0riac"
+      },
+      {
+        "github": "803142"
+      },
+      {
+        "github": "nickitasolovei"
+      },
+      {
+        "github": "saint-artiom"
+      },
+      {
+        "github": "terstuyahmaksim"
+      }
     ]
   },
   {
@@ -146,10 +262,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrkrasnou",
     "studentsGithub": [
-      "alexandravlasenko",
-      "andrey-lobach",
-      "painincoming",
-      "pitergtx"
+      {
+        "github": "alexandravlasenko"
+      },
+      {
+        "github": "andrey-lobach"
+      },
+      {
+        "github": "painincoming"
+      },
+      {
+        "github": "pitergtx"
+      }
     ]
   },
   {
@@ -157,13 +281,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrkuzniatsou",
     "studentsGithub": [
-      "apivovarchik",
-      "artser97",
-      "iamhappy2day",
-      "katiekruchko",
-      "ruslandimitriuk",
-      "stasnegreev",
-      "temachkin11"
+      {
+        "github": "apivovarchik"
+      },
+      {
+        "github": "artser97"
+      },
+      {
+        "github": "iamhappy2day"
+      },
+      {
+        "github": "katiekruchko"
+      },
+      {
+        "github": "ruslandimitriuk"
+      },
+      {
+        "github": "stasnegreev"
+      },
+      {
+        "github": "temachkin11"
+      }
     ]
   },
   {
@@ -171,10 +309,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrmamonenka",
     "studentsGithub": [
-      "cheeska",
-      "dasnein",
-      "moluram",
-      "nesteklo"
+      {
+        "github": "cheeska"
+      },
+      {
+        "github": "dasnein"
+      },
+      {
+        "github": "moluram"
+      },
+      {
+        "github": "nesteklo"
+      }
     ]
   },
   {
@@ -182,12 +328,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "alexno",
     "studentsGithub": [
-      "kir-22",
-      "llitrixkod",
-      "odinrossy",
-      "snaiperlod",
-      "vlad0mag0",
-      "xlopec23"
+      {
+        "github": "kir-22"
+      },
+      {
+        "github": "llitrixkod"
+      },
+      {
+        "github": "odinrossy"
+      },
+      {
+        "github": "snaiperlod"
+      },
+      {
+        "github": "vlad0mag0"
+      },
+      {
+        "github": "xlopec23"
+      }
     ]
   },
   {
@@ -195,10 +353,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "razumovich",
     "studentsGithub": [
-      "chernyshovaalexandra",
-      "jacksonbr87",
-      "kvatoferma",
-      "vladagaravaya"
+      {
+        "github": "chernyshovaalexandra"
+      },
+      {
+        "github": "jacksonbr87"
+      },
+      {
+        "github": "kvatoferma"
+      },
+      {
+        "github": "vladagaravaya"
+      }
     ]
   },
   {
@@ -206,13 +372,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "rudikaleksandr",
     "studentsGithub": [
-      "alexeevadaria",
-      "chekni",
-      "mrchester",
-      "mxwoodie",
-      "psevkin",
-      "shymaxer",
-      "spiritforest"
+      {
+        "github": "alexeevadaria"
+      },
+      {
+        "github": "chekni"
+      },
+      {
+        "github": "mrchester"
+      },
+      {
+        "github": "mxwoodie"
+      },
+      {
+        "github": "psevkin"
+      },
+      {
+        "github": "shymaxer"
+      },
+      {
+        "github": "spiritforest"
+      }
     ]
   },
   {
@@ -220,12 +400,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliaksandrt",
     "studentsGithub": [
-      "19alexandr90",
-      "dgekaa",
-      "leontyevatatyana",
-      "leshich",
-      "shutya",
-      "tamefreak"
+      {
+        "github": "19alexandr90"
+      },
+      {
+        "github": "dgekaa"
+      },
+      {
+        "github": "leontyevatatyana"
+      },
+      {
+        "github": "leshich"
+      },
+      {
+        "github": "shutya"
+      },
+      {
+        "github": "tamefreak"
+      }
     ]
   },
   {
@@ -233,10 +425,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "alex-zayats",
     "studentsGithub": [
-      "alexeydavydov",
-      "melllivoracapensis",
-      "soulshaker",
-      "uniorunr"
+      {
+        "github": "alexeydavydov"
+      },
+      {
+        "github": "melllivoracapensis"
+      },
+      {
+        "github": "soulshaker"
+      },
+      {
+        "github": "uniorunr"
+      }
     ]
   },
   {
@@ -244,12 +444,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "tr3v3r",
     "studentsGithub": [
-      "bezchekera",
-      "driliad",
-      "grnkvch",
-      "nadinaaa",
-      "volunyshka",
-      "yanamina"
+      {
+        "github": "bezchekera"
+      },
+      {
+        "github": "driliad"
+      },
+      {
+        "github": "grnkvch"
+      },
+      {
+        "github": "nadinaaa"
+      },
+      {
+        "github": "volunyshka"
+      },
+      {
+        "github": "yanamina"
+      }
     ]
   },
   {
@@ -257,11 +469,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "fallenby1",
     "studentsGithub": [
-      "alekengineer",
-      "katepavlovich",
-      "kottt4",
-      "walkunderrain",
-      "youngbrick"
+      {
+        "github": "alekengineer"
+      },
+      {
+        "github": "katepavlovich"
+      },
+      {
+        "github": "kottt4"
+      },
+      {
+        "github": "walkunderrain"
+      },
+      {
+        "github": "youngbrick"
+      }
     ]
   },
   {
@@ -269,10 +491,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "aliakseikrauchanka",
     "studentsGithub": [
-      "christinaalimova",
-      "latiertiw",
-      "sined1",
-      "vladzuev"
+      {
+        "github": "christinaalimova"
+      },
+      {
+        "github": "latiertiw"
+      },
+      {
+        "github": "sined1"
+      },
+      {
+        "github": "vladzuev"
+      }
     ]
   },
   {
@@ -280,11 +510,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "muskos",
     "studentsGithub": [
-      "alexandrtichon",
-      "pkutsilina",
-      "vireah",
-      "yanyan155",
-      "yarobei"
+      {
+        "github": "alexandrtichon"
+      },
+      {
+        "github": "pkutsilina"
+      },
+      {
+        "github": "vireah"
+      },
+      {
+        "github": "yanyan155"
+      },
+      {
+        "github": "yarobei"
+      }
     ]
   },
   {
@@ -292,13 +532,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "alex-mnsk",
     "studentsGithub": [
-      "artyom123",
-      "elenakhamitsevich",
-      "evamaster",
-      "kozyritskiy",
-      "lveliarl",
-      "nastyalo",
-      "spinagrblzzz"
+      {
+        "github": "artyom123"
+      },
+      {
+        "github": "elenakhamitsevich"
+      },
+      {
+        "github": "evamaster"
+      },
+      {
+        "github": "kozyritskiy"
+      },
+      {
+        "github": "lveliarl"
+      },
+      {
+        "github": "nastyalo"
+      },
+      {
+        "github": "spinagrblzzz"
+      }
     ]
   },
   {
@@ -306,10 +560,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "anastasiaprivalova",
     "studentsGithub": [
-      "brateckrolikstudent",
-      "sergaunt",
-      "venomamd",
-      "vetal11"
+      {
+        "github": "brateckrolikstudent"
+      },
+      {
+        "github": "sergaunt"
+      },
+      {
+        "github": "venomamd"
+      },
+      {
+        "github": "vetal11"
+      }
     ]
   },
   {
@@ -317,13 +579,27 @@
     "mentorCity": "Гомель",
     "mentorGithub": "yganda",
     "studentsGithub": [
-      "inanutshell86",
-      "ishelest",
-      "juliasnoww",
-      "loori-r",
-      "sffirm",
-      "yakgjen",
-      "zetrox-x"
+      {
+        "github": "inanutshell86"
+      },
+      {
+        "github": "ishelest"
+      },
+      {
+        "github": "juliasnoww"
+      },
+      {
+        "github": "loori-r"
+      },
+      {
+        "github": "sffirm"
+      },
+      {
+        "github": "yakgjen"
+      },
+      {
+        "github": "zetrox-x"
+      }
     ]
   },
   {
@@ -331,13 +607,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "lenkouandrei",
     "studentsGithub": [
-      "elmavis",
-      "goner52",
-      "kirylalexandrovich",
-      "mg3442",
-      "poyuki",
-      "rafchillons",
-      "vlad9719"
+      {
+        "github": "elmavis"
+      },
+      {
+        "github": "goner52"
+      },
+      {
+        "github": "kirylalexandrovich"
+      },
+      {
+        "github": "mg3442"
+      },
+      {
+        "github": "poyuki"
+      },
+      {
+        "github": "rafchillons"
+      },
+      {
+        "github": "vlad9719"
+      }
     ]
   },
   {
@@ -345,11 +635,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "liaukou",
     "studentsGithub": [
-      "dimasquared",
-      "ivanmikhailenka1",
-      "kasper1999",
-      "ol4ash",
-      "smetaninpavel"
+      {
+        "github": "dimasquared"
+      },
+      {
+        "github": "ivanmikhailenka1"
+      },
+      {
+        "github": "kasper1999"
+      },
+      {
+        "github": "ol4ash"
+      },
+      {
+        "github": "smetaninpavel"
+      }
     ]
   },
   {
@@ -357,13 +657,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "themarkmarrone",
     "studentsGithub": [
-      "barsolet",
-      "ener9ettt",
-      "icebergnevercries",
-      "juliamv",
-      "petromath77",
-      "tamarashautsova",
-      "yanrishbe"
+      {
+        "github": "barsolet"
+      },
+      {
+        "github": "ener9ettt"
+      },
+      {
+        "github": "icebergnevercries"
+      },
+      {
+        "github": "juliamv"
+      },
+      {
+        "github": "petromath77"
+      },
+      {
+        "github": "tamarashautsova"
+      },
+      {
+        "github": "yanrishbe"
+      }
     ]
   },
   {
@@ -371,11 +685,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "apalchys",
     "studentsGithub": [
-      "mazhoranta",
-      "nktvlkvch",
-      "ton9q",
-      "valentinlipai",
-      "vladyaremeko"
+      {
+        "github": "mazhoranta"
+      },
+      {
+        "github": "nktvlkvch"
+      },
+      {
+        "github": "ton9q"
+      },
+      {
+        "github": "valentinlipai"
+      },
+      {
+        "github": "vladyaremeko"
+      }
     ]
   },
   {
@@ -383,11 +707,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "manuminsk",
     "studentsGithub": [
-      "blackcat1397",
-      "jstrr",
-      "kirill82",
-      "smajlichak",
-      "zm1try"
+      {
+        "github": "blackcat1397"
+      },
+      {
+        "github": "jstrr"
+      },
+      {
+        "github": "kirill82"
+      },
+      {
+        "github": "smajlichak"
+      },
+      {
+        "github": "zm1try"
+      }
     ]
   },
   {
@@ -395,11 +729,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "atzkdeff",
     "studentsGithub": [
-      "antonnaumchik",
-      "bigshaqmnh",
-      "dimabog22",
-      "lazouskikiryl",
-      "olegkizz"
+      {
+        "github": "antonnaumchik"
+      },
+      {
+        "github": "bigshaqmnh"
+      },
+      {
+        "github": "dimabog22"
+      },
+      {
+        "github": "lazouskikiryl"
+      },
+      {
+        "github": "olegkizz"
+      }
     ]
   },
   {
@@ -407,13 +751,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "andrei-zhuk",
     "studentsGithub": [
-      "antihero",
-      "artkon",
-      "karpiyeniamv",
-      "kirillzavorotni",
-      "makar1227",
-      "mudreuski",
-      "torchik-slava"
+      {
+        "github": "antihero"
+      },
+      {
+        "github": "artkon"
+      },
+      {
+        "github": "karpiyeniamv"
+      },
+      {
+        "github": "kirillzavorotni"
+      },
+      {
+        "github": "makar1227"
+      },
+      {
+        "github": "mudreuski"
+      },
+      {
+        "github": "torchik-slava"
+      }
     ]
   },
   {
@@ -421,14 +779,30 @@
     "mentorCity": "Минск",
     "mentorGithub": "rianby64",
     "studentsGithub": [
-      "28halavach",
-      "40grivenprog",
-      "anastminsk",
-      "igordive",
-      "mayblackwood",
-      "nataliamotuz",
-      "novikovantony",
-      "yaroslav-mig"
+      {
+        "github": "28halavach"
+      },
+      {
+        "github": "40grivenprog"
+      },
+      {
+        "github": "anastminsk"
+      },
+      {
+        "github": "igordive"
+      },
+      {
+        "github": "mayblackwood"
+      },
+      {
+        "github": "nataliamotuz"
+      },
+      {
+        "github": "novikovantony"
+      },
+      {
+        "github": "yaroslav-mig"
+      }
     ]
   },
   {
@@ -436,11 +810,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "toshabely",
     "studentsGithub": [
-      "abespolov",
-      "arkhipenka",
-      "dimaspivas",
-      "maxkonopelko",
-      "zzhiharevich"
+      {
+        "github": "abespolov"
+      },
+      {
+        "github": "arkhipenka"
+      },
+      {
+        "github": "dimaspivas"
+      },
+      {
+        "github": "maxkonopelko"
+      },
+      {
+        "github": "zzhiharevich"
+      }
     ]
   },
   {
@@ -448,10 +832,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "asharapa",
     "studentsGithub": [
-      "alexanderkononok",
-      "mentos2805",
-      "mrmars20",
-      "sergeybandar"
+      {
+        "github": "alexanderkononok"
+      },
+      {
+        "github": "mentos2805"
+      },
+      {
+        "github": "mrmars20"
+      },
+      {
+        "github": "sergeybandar"
+      }
     ]
   },
   {
@@ -459,13 +851,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "stpnvntn",
     "studentsGithub": [
-      "anyalenko",
-      "katekosushkina",
-      "metalhammer4",
-      "northingvar",
-      "ostik266",
-      "rudlevsky",
-      "viki-klipp"
+      {
+        "github": "anyalenko"
+      },
+      {
+        "github": "katekosushkina"
+      },
+      {
+        "github": "metalhammer4"
+      },
+      {
+        "github": "northingvar"
+      },
+      {
+        "github": "ostik266"
+      },
+      {
+        "github": "rudlevsky"
+      },
+      {
+        "github": "viki-klipp"
+      }
     ]
   },
   {
@@ -473,10 +879,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "a-yatskevich",
     "studentsGithub": [
-      "evgeniy121",
-      "jadgptw",
-      "mrdreaml",
-      "tsypolina"
+      {
+        "github": "evgeniy121"
+      },
+      {
+        "github": "jadgptw"
+      },
+      {
+        "github": "mrdreaml"
+      },
+      {
+        "github": "tsypolina"
+      }
     ]
   },
   {
@@ -484,11 +898,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "mustafazadear",
     "studentsGithub": [
-      "clericus",
-      "credov",
-      "dbaceko",
-      "frontsideman",
-      "sobolevyuri"
+      {
+        "github": "clericus"
+      },
+      {
+        "github": "credov"
+      },
+      {
+        "github": "dbaceko"
+      },
+      {
+        "github": "frontsideman"
+      },
+      {
+        "github": "sobolevyuri"
+      }
     ]
   },
   {
@@ -496,12 +920,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "arhigod",
     "studentsGithub": [
-      "hellsingi",
-      "mozgoen",
-      "nastya-ropot",
-      "polotenchik",
-      "tshkursk",
-      "yeilya"
+      {
+        "github": "hellsingi"
+      },
+      {
+        "github": "mozgoen"
+      },
+      {
+        "github": "nastya-ropot"
+      },
+      {
+        "github": "polotenchik"
+      },
+      {
+        "github": "tshkursk"
+      },
+      {
+        "github": "yeilya"
+      }
     ]
   },
   {
@@ -509,10 +945,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "ahaurylin",
     "studentsGithub": [
-      "grapeperson",
-      "groamed",
-      "olgaluk",
-      "rbarakhvostov"
+      {
+        "github": "grapeperson"
+      },
+      {
+        "github": "groamed"
+      },
+      {
+        "github": "olgaluk"
+      },
+      {
+        "github": "rbarakhvostov"
+      }
     ]
   },
   {
@@ -520,12 +964,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "xeontem",
     "studentsGithub": [
-      "bulbazubr",
-      "leonard1k",
-      "mariakisel",
-      "qxfisher",
-      "silichstudent",
-      "vvikota"
+      {
+        "github": "bulbazubr"
+      },
+      {
+        "github": "leonard1k"
+      },
+      {
+        "github": "mariakisel"
+      },
+      {
+        "github": "qxfisher"
+      },
+      {
+        "github": "silichstudent"
+      },
+      {
+        "github": "vvikota"
+      }
     ]
   },
   {
@@ -533,11 +989,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "artemlatyshev",
     "studentsGithub": [
-      "andrewyanushkevich",
-      "dimashcherbakov",
-      "feulia",
-      "magi-a",
-      "sergeiobolevich"
+      {
+        "github": "andrewyanushkevich"
+      },
+      {
+        "github": "dimashcherbakov"
+      },
+      {
+        "github": "feulia"
+      },
+      {
+        "github": "magi-a"
+      },
+      {
+        "github": "sergeiobolevich"
+      }
     ]
   },
   {
@@ -545,12 +1011,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "lykovartem",
     "studentsGithub": [
-      "alexandershaternik",
-      "glebhleb",
-      "kotukjubotuk",
-      "nikkola07",
-      "okband",
-      "segrey1989"
+      {
+        "github": "alexandershaternik"
+      },
+      {
+        "github": "glebhleb"
+      },
+      {
+        "github": "kotukjubotuk"
+      },
+      {
+        "github": "nikkola07"
+      },
+      {
+        "github": "okband"
+      },
+      {
+        "github": "segrey1989"
+      }
     ]
   },
   {
@@ -558,10 +1036,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "lithiumfallen",
     "studentsGithub": [
-      "pincherinka",
-      "spacebrains",
-      "sunrisekovalevski",
-      "victoriathebrave"
+      {
+        "github": "pincherinka"
+      },
+      {
+        "github": "spacebrains"
+      },
+      {
+        "github": "sunrisekovalevski"
+      },
+      {
+        "github": "victoriathebrave"
+      }
     ]
   },
   {
@@ -569,10 +1055,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "xelsoid",
     "studentsGithub": [
-      "ivanmatsur",
-      "nikaz123",
-      "usermeme",
-      "virusss"
+      {
+        "github": "ivanmatsur"
+      },
+      {
+        "github": "nikaz123"
+      },
+      {
+        "github": "usermeme"
+      },
+      {
+        "github": "virusss"
+      }
     ]
   },
   {
@@ -580,11 +1074,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "arturminsksum",
     "studentsGithub": [
-      "a-lika",
-      "nikaneider",
-      "rebellix",
-      "sqwezzy",
-      "uniqkue"
+      {
+        "github": "a-lika"
+      },
+      {
+        "github": "nikaneider"
+      },
+      {
+        "github": "rebellix"
+      },
+      {
+        "github": "sqwezzy"
+      },
+      {
+        "github": "uniqkue"
+      }
     ]
   },
   {
@@ -592,13 +1096,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "agentkb",
     "studentsGithub": [
-      "alexnaidovich",
-      "dzmitrybabak",
-      "eugenetime",
-      "ewelai",
-      "ivanchikovvalentin",
-      "litwin90",
-      "systemghost"
+      {
+        "github": "alexnaidovich"
+      },
+      {
+        "github": "dzmitrybabak"
+      },
+      {
+        "github": "eugenetime"
+      },
+      {
+        "github": "ewelai"
+      },
+      {
+        "github": "ivanchikovvalentin"
+      },
+      {
+        "github": "litwin90"
+      },
+      {
+        "github": "systemghost"
+      }
     ]
   },
   {
@@ -606,10 +1124,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "barysmarukhin",
     "studentsGithub": [
-      "denhock",
-      "igor-provotorov",
-      "kamatozzzik",
-      "kirillgalimov"
+      {
+        "github": "denhock"
+      },
+      {
+        "github": "igor-provotorov"
+      },
+      {
+        "github": "kamatozzzik"
+      },
+      {
+        "github": "kirillgalimov"
+      }
     ]
   },
   {
@@ -617,11 +1143,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "sulemanof",
     "studentsGithub": [
-      "andriva",
-      "heaveek",
-      "meearlyam",
-      "olegsabodash",
-      "veronikavasilchikova"
+      {
+        "github": "andriva"
+      },
+      {
+        "github": "heaveek"
+      },
+      {
+        "github": "meearlyam"
+      },
+      {
+        "github": "olegsabodash"
+      },
+      {
+        "github": "veronikavasilchikova"
+      }
     ]
   },
   {
@@ -629,12 +1165,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "bezakdenis",
     "studentsGithub": [
-      "aleks210219",
-      "alexalizurchik",
-      "dsv-sergey",
-      "krlktv",
-      "nadezhda-kotova",
-      "pavellyolya"
+      {
+        "github": "aleks210219"
+      },
+      {
+        "github": "alexalizurchik"
+      },
+      {
+        "github": "dsv-sergey"
+      },
+      {
+        "github": "krlktv"
+      },
+      {
+        "github": "nadezhda-kotova"
+      },
+      {
+        "github": "pavellyolya"
+      }
     ]
   },
   {
@@ -642,13 +1190,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "den-bozhyk",
     "studentsGithub": [
-      "drdiman",
-      "dzmitrymashuk",
-      "ipixby",
-      "mailikey",
-      "nickprudnik",
-      "vitalitybo",
-      "vladesco"
+      {
+        "github": "drdiman"
+      },
+      {
+        "github": "dzmitrymashuk"
+      },
+      {
+        "github": "ipixby"
+      },
+      {
+        "github": "mailikey"
+      },
+      {
+        "github": "nickprudnik"
+      },
+      {
+        "github": "vitalitybo"
+      },
+      {
+        "github": "vladesco"
+      }
     ]
   },
   {
@@ -656,11 +1218,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "shank111",
     "studentsGithub": [
-      "axissixa57",
-      "gemsgame",
-      "kirillfilipp",
-      "maxstarovoitov",
-      "nemkev"
+      {
+        "github": "axissixa57"
+      },
+      {
+        "github": "gemsgame"
+      },
+      {
+        "github": "kirillfilipp"
+      },
+      {
+        "github": "maxstarovoitov"
+      },
+      {
+        "github": "nemkev"
+      }
     ]
   },
   {
@@ -668,13 +1240,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "ximet",
     "studentsGithub": [
-      "christopher-0118",
-      "dianatsevan",
-      "happy-mary",
-      "igorbyl",
-      "maksyermak",
-      "onaker",
-      "riba0017"
+      {
+        "github": "christopher-0118"
+      },
+      {
+        "github": "dianatsevan"
+      },
+      {
+        "github": "happy-mary"
+      },
+      {
+        "github": "igorbyl"
+      },
+      {
+        "github": "maksyermak"
+      },
+      {
+        "github": "onaker"
+      },
+      {
+        "github": "riba0017"
+      }
     ]
   },
   {
@@ -682,10 +1268,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "denisbun",
     "studentsGithub": [
-      "kvinto1986",
-      "maksimaliakhnovich",
-      "superorange",
-      "yauheni23"
+      {
+        "github": "kvinto1986"
+      },
+      {
+        "github": "maksimaliakhnovich"
+      },
+      {
+        "github": "superorange"
+      },
+      {
+        "github": "yauheni23"
+      }
     ]
   },
   {
@@ -693,13 +1287,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "denisdashkevich",
     "studentsGithub": [
-      "alexeykuril0",
-      "andreisavelyev",
-      "gruzinskiiartem",
-      "kragov",
-      "pivchenkosv",
-      "pofs",
-      "yevganytyurin"
+      {
+        "github": "alexeykuril0"
+      },
+      {
+        "github": "andreisavelyev"
+      },
+      {
+        "github": "gruzinskiiartem"
+      },
+      {
+        "github": "kragov"
+      },
+      {
+        "github": "pivchenkosv"
+      },
+      {
+        "github": "pofs"
+      },
+      {
+        "github": "yevganytyurin"
+      }
     ]
   },
   {
@@ -707,10 +1315,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "dpryshchep",
     "studentsGithub": [
-      "kira2023",
-      "kiryllapouski",
-      "molestador",
-      "vvsvintsitsky"
+      {
+        "github": "kira2023"
+      },
+      {
+        "github": "kiryllapouski"
+      },
+      {
+        "github": "molestador"
+      },
+      {
+        "github": "vvsvintsitsky"
+      }
     ]
   },
   {
@@ -718,14 +1334,30 @@
     "mentorCity": "Минск",
     "mentorGithub": "dzianisreznik",
     "studentsGithub": [
-      "egorgorbik",
-      "eugene3112",
-      "heat98",
-      "ilyatrat",
-      "tanyamatesha",
-      "unbelievablysmart",
-      "vicrodzko",
-      "viktoryia-hrechykha"
+      {
+        "github": "egorgorbik"
+      },
+      {
+        "github": "eugene3112"
+      },
+      {
+        "github": "heat98"
+      },
+      {
+        "github": "ilyatrat"
+      },
+      {
+        "github": "tanyamatesha"
+      },
+      {
+        "github": "unbelievablysmart"
+      },
+      {
+        "github": "vicrodzko"
+      },
+      {
+        "github": "viktoryia-hrechykha"
+      }
     ]
   },
   {
@@ -733,16 +1365,36 @@
     "mentorCity": "Минск",
     "mentorGithub": "davojta",
     "studentsGithub": [
-      "auseika",
-      "iharpadbiarezski",
-      "kashapov",
-      "lesechka",
-      "michaeldaineka",
-      "mike80by",
-      "pavalescoba",
-      "sergeyshestak",
-      "vasiliyrepin",
-      "victorbelikov"
+      {
+        "github": "auseika"
+      },
+      {
+        "github": "iharpadbiarezski"
+      },
+      {
+        "github": "kashapov"
+      },
+      {
+        "github": "lesechka"
+      },
+      {
+        "github": "michaeldaineka"
+      },
+      {
+        "github": "mike80by"
+      },
+      {
+        "github": "pavalescoba"
+      },
+      {
+        "github": "sergeyshestak"
+      },
+      {
+        "github": "vasiliyrepin"
+      },
+      {
+        "github": "victorbelikov"
+      }
     ]
   },
   {
@@ -750,13 +1402,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "shutya",
     "studentsGithub": [
-      "aliakseibabko",
-      "gleb7raul",
-      "igarok91",
-      "kirillstarlight",
-      "kushnerevich",
-      "waldemar999",
-      "zhekaprb"
+      {
+        "github": "aliakseibabko"
+      },
+      {
+        "github": "gleb7raul"
+      },
+      {
+        "github": "igarok91"
+      },
+      {
+        "github": "kirillstarlight"
+      },
+      {
+        "github": "kushnerevich"
+      },
+      {
+        "github": "waldemar999"
+      },
+      {
+        "github": "zhekaprb"
+      }
     ]
   },
   {
@@ -764,10 +1430,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "sushchenja",
     "studentsGithub": [
-      "daniil-loban",
-      "irin-ka",
-      "misharsweb",
-      "nightman20104"
+      {
+        "github": "daniil-loban"
+      },
+      {
+        "github": "irin-ka"
+      },
+      {
+        "github": "misharsweb"
+      },
+      {
+        "github": "nightman20104"
+      }
     ]
   },
   {
@@ -775,12 +1449,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "alidzm",
     "studentsGithub": [
-      "alexkashpor",
-      "devbarden",
-      "dmsomov",
-      "mrio1",
-      "nicklevkovich",
-      "poiskull"
+      {
+        "github": "alexkashpor"
+      },
+      {
+        "github": "devbarden"
+      },
+      {
+        "github": "dmsomov"
+      },
+      {
+        "github": "mrio1"
+      },
+      {
+        "github": "nicklevkovich"
+      },
+      {
+        "github": "poiskull"
+      }
     ]
   },
   {
@@ -788,13 +1474,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "sintet",
     "studentsGithub": [
-      "aleksandrmedvedev9000",
-      "aspowerr",
-      "julialar4enko",
-      "shchelkunchik",
-      "thatcherrr",
-      "torioyoshiko",
-      "yasell"
+      {
+        "github": "aleksandrmedvedev9000"
+      },
+      {
+        "github": "aspowerr"
+      },
+      {
+        "github": "julialar4enko"
+      },
+      {
+        "github": "shchelkunchik"
+      },
+      {
+        "github": "thatcherrr"
+      },
+      {
+        "github": "torioyoshiko"
+      },
+      {
+        "github": "yasell"
+      }
     ]
   },
   {
@@ -802,9 +1502,15 @@
     "mentorCity": "Минск",
     "mentorGithub": "dzmitry-chuchva",
     "studentsGithub": [
-      "modrix",
-      "scarletcamomile",
-      "tani4ik"
+      {
+        "github": "modrix"
+      },
+      {
+        "github": "scarletcamomile"
+      },
+      {
+        "github": "tani4ik"
+      }
     ]
   },
   {
@@ -812,13 +1518,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "falizyer",
     "studentsGithub": [
-      "alekseymishuk",
-      "anastasia1627",
-      "basch1727",
-      "bespodobno",
-      "estel1591",
-      "lizabredberry",
-      "zartaich"
+      {
+        "github": "alekseymishuk"
+      },
+      {
+        "github": "anastasia1627"
+      },
+      {
+        "github": "basch1727"
+      },
+      {
+        "github": "bespodobno"
+      },
+      {
+        "github": "estel1591"
+      },
+      {
+        "github": "lizabredberry"
+      },
+      {
+        "github": "zartaich"
+      }
     ]
   },
   {
@@ -826,11 +1546,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "linus2228",
     "studentsGithub": [
-      "6alex6kash6",
-      "arturkudlo",
-      "dimasofff",
-      "karina198",
-      "sergeybaranovichi"
+      {
+        "github": "6alex6kash6"
+      },
+      {
+        "github": "arturkudlo"
+      },
+      {
+        "github": "dimasofff"
+      },
+      {
+        "github": "karina198"
+      },
+      {
+        "github": "sergeybaranovichi"
+      }
     ]
   },
   {
@@ -838,10 +1568,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "dzmitrypanamarenka",
     "studentsGithub": [
-      "juliankov",
-      "niksrakevich",
-      "stas4it",
-      "vladislavmakarevich"
+      {
+        "github": "juliankov"
+      },
+      {
+        "github": "niksrakevich"
+      },
+      {
+        "github": "stas4it"
+      },
+      {
+        "github": "vladislavmakarevich"
+      }
     ]
   },
   {
@@ -849,13 +1587,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "diprudnikov",
     "studentsGithub": [
-      "alexkov90",
-      "charmant",
-      "dianakay",
-      "leshka98",
-      "mpot7",
-      "siarheikresik",
-      "tvj888"
+      {
+        "github": "alexkov90"
+      },
+      {
+        "github": "charmant"
+      },
+      {
+        "github": "dianakay"
+      },
+      {
+        "github": "leshka98"
+      },
+      {
+        "github": "mpot7"
+      },
+      {
+        "github": "siarheikresik"
+      },
+      {
+        "github": "tvj888"
+      }
     ]
   },
   {
@@ -863,11 +1615,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "dmitryromaniuk",
     "studentsGithub": [
-      "2kevink",
-      "amoyt",
-      "andreikrivets",
-      "lavazzakate",
-      "vladislavrebko"
+      {
+        "github": "2kevink"
+      },
+      {
+        "github": "amoyt"
+      },
+      {
+        "github": "andreikrivets"
+      },
+      {
+        "github": "lavazzakate"
+      },
+      {
+        "github": "vladislavrebko"
+      }
     ]
   },
   {
@@ -875,10 +1637,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "sambl4",
     "studentsGithub": [
-      "polinamoiseyenko",
-      "sashakaralchuk",
-      "sches",
-      "simaxa7"
+      {
+        "github": "polinamoiseyenko"
+      },
+      {
+        "github": "sashakaralchuk"
+      },
+      {
+        "github": "sches"
+      },
+      {
+        "github": "simaxa7"
+      }
     ]
   },
   {
@@ -886,11 +1656,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "katya-sanko",
     "studentsGithub": [
-      "disa0808",
-      "kyleshovbb",
-      "pulya10c",
-      "sergmi",
-      "yabeda79"
+      {
+        "github": "disa0808"
+      },
+      {
+        "github": "kyleshovbb"
+      },
+      {
+        "github": "pulya10c"
+      },
+      {
+        "github": "sergmi"
+      },
+      {
+        "github": "yabeda79"
+      }
     ]
   },
   {
@@ -898,10 +1678,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "elgrebenchuk",
     "studentsGithub": [
-      "andreiyasinski",
-      "anton23kirienko",
-      "duza",
-      "gandigap"
+      {
+        "github": "andreiyasinski"
+      },
+      {
+        "github": "anton23kirienko"
+      },
+      {
+        "github": "duza"
+      },
+      {
+        "github": "gandigap"
+      }
     ]
   },
   {
@@ -909,10 +1697,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "elenashokhanepam",
     "studentsGithub": [
-      "aborisenok",
-      "egormiwa1",
-      "foxygirl44",
-      "valiantsinlopan"
+      {
+        "github": "aborisenok"
+      },
+      {
+        "github": "egormiwa1"
+      },
+      {
+        "github": "foxygirl44"
+      },
+      {
+        "github": "valiantsinlopan"
+      }
     ]
   },
   {
@@ -920,10 +1716,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "ivashkovaliza",
     "studentsGithub": [
-      "kharuk",
-      "stationtostation",
-      "tatsianacs",
-      "wald3"
+      {
+        "github": "kharuk"
+      },
+      {
+        "github": "stationtostation"
+      },
+      {
+        "github": "tatsianacs"
+      },
+      {
+        "github": "wald3"
+      }
     ]
   },
   {
@@ -931,11 +1735,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "annagrebenyuk",
     "studentsGithub": [
-      "atryomparfenenkov",
-      "dmitrylutskovich",
-      "lapa17",
-      "vladst90",
-      "yuliyahlukhatarenka"
+      {
+        "github": "atryomparfenenkov"
+      },
+      {
+        "github": "dmitrylutskovich"
+      },
+      {
+        "github": "lapa17"
+      },
+      {
+        "github": "vladst90"
+      },
+      {
+        "github": "yuliyahlukhatarenka"
+      }
     ]
   },
   {
@@ -943,13 +1757,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "anik188",
     "studentsGithub": [
-      "aytsan",
-      "horoshaya",
-      "jeka98",
-      "martinkevichyana",
-      "montik-pc",
-      "renardby",
-      "sergeyguchok"
+      {
+        "github": "aytsan"
+      },
+      {
+        "github": "horoshaya"
+      },
+      {
+        "github": "jeka98"
+      },
+      {
+        "github": "martinkevichyana"
+      },
+      {
+        "github": "montik-pc"
+      },
+      {
+        "github": "renardby"
+      },
+      {
+        "github": "sergeyguchok"
+      }
     ]
   },
   {
@@ -957,11 +1785,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "sijlver",
     "studentsGithub": [
-      "artur-alexandrov",
-      "metre-ray",
-      "napro23",
-      "overkektus",
-      "zhekix"
+      {
+        "github": "artur-alexandrov"
+      },
+      {
+        "github": "metre-ray"
+      },
+      {
+        "github": "napro23"
+      },
+      {
+        "github": "overkektus"
+      },
+      {
+        "github": "zhekix"
+      }
     ]
   },
   {
@@ -969,13 +1807,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "ilyalisitsin",
     "studentsGithub": [
-      "amoebiusss",
-      "megustafather",
-      "meller96",
-      "mrlapka",
-      "ogurez",
-      "olexxxey",
-      "xelson"
+      {
+        "github": "amoebiusss"
+      },
+      {
+        "github": "megustafather"
+      },
+      {
+        "github": "meller96"
+      },
+      {
+        "github": "mrlapka"
+      },
+      {
+        "github": "ogurez"
+      },
+      {
+        "github": "olexxxey"
+      },
+      {
+        "github": "xelson"
+      }
     ]
   },
   {
@@ -983,13 +1835,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "amsterget",
     "studentsGithub": [
-      "beetle23",
-      "colambus13",
-      "daqueze21",
-      "lynyx",
-      "pinkrefugee",
-      "tebeskashi",
-      "tomsssm"
+      {
+        "github": "beetle23"
+      },
+      {
+        "github": "colambus13"
+      },
+      {
+        "github": "daqueze21"
+      },
+      {
+        "github": "lynyx"
+      },
+      {
+        "github": "pinkrefugee"
+      },
+      {
+        "github": "tebeskashi"
+      },
+      {
+        "github": "tomsssm"
+      }
     ]
   },
   {
@@ -997,10 +1863,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "kbirulia",
     "studentsGithub": [
-      "anaumovich",
-      "katiar",
-      "kirillkolesnik123",
-      "vergonini"
+      {
+        "github": "anaumovich"
+      },
+      {
+        "github": "katiar"
+      },
+      {
+        "github": "kirillkolesnik123"
+      },
+      {
+        "github": "vergonini"
+      }
     ]
   },
   {
@@ -1008,13 +1882,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "katekaranets",
     "studentsGithub": [
-      "aliaksandrarybak",
-      "dantewitcher",
-      "gleb-kukobnikov",
-      "kozelkoff",
-      "natiedei",
-      "sokol147",
-      "vladislavshyian"
+      {
+        "github": "aliaksandrarybak"
+      },
+      {
+        "github": "dantewitcher"
+      },
+      {
+        "github": "gleb-kukobnikov"
+      },
+      {
+        "github": "kozelkoff"
+      },
+      {
+        "github": "natiedei"
+      },
+      {
+        "github": "sokol147"
+      },
+      {
+        "github": "vladislavshyian"
+      }
     ]
   },
   {
@@ -1022,11 +1910,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "etatarinovich18",
     "studentsGithub": [
-      "alexshumansky",
-      "kaleniksasha",
-      "margoshulpina",
-      "sk1ngr0s",
-      "ue4prog"
+      {
+        "github": "alexshumansky"
+      },
+      {
+        "github": "kaleniksasha"
+      },
+      {
+        "github": "margoshulpina"
+      },
+      {
+        "github": "sk1ngr0s"
+      },
+      {
+        "github": "ue4prog"
+      }
     ]
   },
   {
@@ -1034,13 +1932,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "kirillpanov",
     "studentsGithub": [
-      "aliaksandrlosich",
-      "bogdanka",
-      "dmsolov",
-      "godofnoobs",
-      "helpthewalrus",
-      "srjkaa",
-      "uivgray"
+      {
+        "github": "aliaksandrlosich"
+      },
+      {
+        "github": "bogdanka"
+      },
+      {
+        "github": "dmsolov"
+      },
+      {
+        "github": "godofnoobs"
+      },
+      {
+        "github": "helpthewalrus"
+      },
+      {
+        "github": "srjkaa"
+      },
+      {
+        "github": "uivgray"
+      }
     ]
   },
   {
@@ -1048,13 +1960,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "cyrilshalyapin",
     "studentsGithub": [
-      "cropotan",
-      "kulinar310",
-      "philipsh",
-      "sergeyakzhik",
-      "vero-nika",
-      "vitalydmitriev",
-      "vladsemenik"
+      {
+        "github": "cropotan"
+      },
+      {
+        "github": "kulinar310"
+      },
+      {
+        "github": "philipsh"
+      },
+      {
+        "github": "sergeyakzhik"
+      },
+      {
+        "github": "vero-nika"
+      },
+      {
+        "github": "vitalydmitriev"
+      },
+      {
+        "github": "vladsemenik"
+      }
     ]
   },
   {
@@ -1062,12 +1988,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "kvtofan",
     "studentsGithub": [
-      "brokorenko",
-      "egorbudnik",
-      "hentmire",
-      "rubahaguy",
-      "thesheepman",
-      "vovakor1"
+      {
+        "github": "brokorenko"
+      },
+      {
+        "github": "egorbudnik"
+      },
+      {
+        "github": "hentmire"
+      },
+      {
+        "github": "rubahaguy"
+      },
+      {
+        "github": "thesheepman"
+      },
+      {
+        "github": "vovakor1"
+      }
     ]
   },
   {
@@ -1075,10 +2013,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "klim711",
     "studentsGithub": [
-      "dmlaziuk",
-      "globalbobone",
-      "vladqqqqoo",
-      "wushukms"
+      {
+        "github": "dmlaziuk"
+      },
+      {
+        "github": "globalbobone"
+      },
+      {
+        "github": "vladqqqqoo"
+      },
+      {
+        "github": "wushukms"
+      }
     ]
   },
   {
@@ -1086,11 +2032,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "predokmif",
     "studentsGithub": [
-      "alexandrapozniak",
-      "belkacraft",
-      "kasatka660",
-      "warryr",
-      "yuliabakhar"
+      {
+        "github": "alexandrapozniak"
+      },
+      {
+        "github": "belkacraft"
+      },
+      {
+        "github": "kasatka660"
+      },
+      {
+        "github": "warryr"
+      },
+      {
+        "github": "yuliabakhar"
+      }
     ]
   },
   {
@@ -1098,11 +2054,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "kseniyasmorshchek",
     "studentsGithub": [
-      "ankorbay",
-      "catrieona",
-      "ltcolumbo",
-      "veterkam",
-      "yurychajkou"
+      {
+        "github": "ankorbay"
+      },
+      {
+        "github": "catrieona"
+      },
+      {
+        "github": "ltcolumbo"
+      },
+      {
+        "github": "veterkam"
+      },
+      {
+        "github": "yurychajkou"
+      }
     ]
   },
   {
@@ -1110,10 +2076,18 @@
     "mentorCity": "Могилев",
     "mentorGithub": "clainatomi-zero",
     "studentsGithub": [
-      "alexandrshlyaeu",
-      "nicalas93",
-      "shinoby85",
-      "vldmr1"
+      {
+        "github": "alexandrshlyaeu"
+      },
+      {
+        "github": "nicalas93"
+      },
+      {
+        "github": "shinoby85"
+      },
+      {
+        "github": "vldmr1"
+      }
     ]
   },
   {
@@ -1121,10 +2095,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "maryia-n-n",
     "studentsGithub": [
-      "alexeynovomlinets",
-      "antonysawyer",
-      "crypto-kittensseller",
-      "dyadinmax"
+      {
+        "github": "alexeynovomlinets"
+      },
+      {
+        "github": "antonysawyer"
+      },
+      {
+        "github": "crypto-kittensseller"
+      },
+      {
+        "github": "dyadinmax"
+      }
     ]
   },
   {
@@ -1132,10 +2114,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "shparkivozhyk",
     "studentsGithub": [
-      "eugenekhristo",
-      "presidentsboyfriend",
-      "sburnt",
-      "tserekhivan"
+      {
+        "github": "eugenekhristo"
+      },
+      {
+        "github": "presidentsboyfriend"
+      },
+      {
+        "github": "sburnt"
+      },
+      {
+        "github": "tserekhivan"
+      }
     ]
   },
   {
@@ -1143,13 +2133,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "nikkov17",
     "studentsGithub": [
-      "anastasiyamazura",
-      "anastasiyanovikovag",
-      "artichoks",
-      "dezman66",
-      "exedystyle",
-      "gaddyya",
-      "margaretmint"
+      {
+        "github": "anastasiyamazura"
+      },
+      {
+        "github": "anastasiyanovikovag"
+      },
+      {
+        "github": "artichoks"
+      },
+      {
+        "github": "dezman66"
+      },
+      {
+        "github": "exedystyle"
+      },
+      {
+        "github": "gaddyya"
+      },
+      {
+        "github": "margaretmint"
+      }
     ]
   },
   {
@@ -1157,11 +2161,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "hirurgo",
     "studentsGithub": [
-      "mixniuk",
-      "nataligleb",
-      "tanya98",
-      "valeriyager",
-      "xseniia"
+      {
+        "github": "mixniuk"
+      },
+      {
+        "github": "nataligleb"
+      },
+      {
+        "github": "tanya98"
+      },
+      {
+        "github": "valeriyager"
+      },
+      {
+        "github": "xseniia"
+      }
     ]
   },
   {
@@ -1169,12 +2183,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "mikalai-sokarau",
     "studentsGithub": [
-      "danila211",
-      "f8b23lef",
-      "jenia-shibkova",
-      "juliazakharik",
-      "magerrrr",
-      "yrapank"
+      {
+        "github": "danila211"
+      },
+      {
+        "github": "f8b23lef"
+      },
+      {
+        "github": "jenia-shibkova"
+      },
+      {
+        "github": "juliazakharik"
+      },
+      {
+        "github": "magerrrr"
+      },
+      {
+        "github": "yrapank"
+      }
     ]
   },
   {
@@ -1182,12 +2208,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "mikhaillu",
     "studentsGithub": [
-      "astravukh",
-      "cirillius",
-      "elusiveway",
-      "eugenepochenkov",
-      "lx-931203",
-      "zetorby"
+      {
+        "github": "astravukh"
+      },
+      {
+        "github": "cirillius"
+      },
+      {
+        "github": "elusiveway"
+      },
+      {
+        "github": "eugenepochenkov"
+      },
+      {
+        "github": "lx-931203"
+      },
+      {
+        "github": "zetorby"
+      }
     ]
   },
   {
@@ -1195,13 +2233,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "nikitarudy",
     "studentsGithub": [
-      "avaprin",
-      "evgenprushk",
-      "haspadarz-padmensku",
-      "kalitamih",
-      "mrstalon",
-      "sad4itananda",
-      "svoboda-rabstvo"
+      {
+        "github": "avaprin"
+      },
+      {
+        "github": "evgenprushk"
+      },
+      {
+        "github": "haspadarz-padmensku"
+      },
+      {
+        "github": "kalitamih"
+      },
+      {
+        "github": "mrstalon"
+      },
+      {
+        "github": "sad4itananda"
+      },
+      {
+        "github": "svoboda-rabstvo"
+      }
     ]
   },
   {
@@ -1209,13 +2261,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "nsubbot",
     "studentsGithub": [
-      "aglayasv",
-      "eughene-cherepov",
-      "finnibyh",
-      "luzko",
-      "moraviin",
-      "petriken",
-      "tonykosmos"
+      {
+        "github": "aglayasv"
+      },
+      {
+        "github": "eughene-cherepov"
+      },
+      {
+        "github": "finnibyh"
+      },
+      {
+        "github": "luzko"
+      },
+      {
+        "github": "moraviin"
+      },
+      {
+        "github": "petriken"
+      },
+      {
+        "github": "tonykosmos"
+      }
     ]
   },
   {
@@ -1223,12 +2289,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "ntrukhanovets",
     "studentsGithub": [
-      "annchapon",
-      "cruecer",
-      "ekoniuh",
-      "evpodrezenko",
-      "lordshtein",
-      "vanyatsar"
+      {
+        "github": "annchapon"
+      },
+      {
+        "github": "cruecer"
+      },
+      {
+        "github": "ekoniuh"
+      },
+      {
+        "github": "evpodrezenko"
+      },
+      {
+        "github": "lordshtein"
+      },
+      {
+        "github": "vanyatsar"
+      }
     ]
   },
   {
@@ -1236,13 +2314,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "nikitzu",
     "studentsGithub": [
-      "alexandr-savkov",
-      "angryivan",
-      "bumble-bee83",
-      "dimalinnik",
-      "felalag",
-      "mikhama",
-      "xixex"
+      {
+        "github": "alexandr-savkov"
+      },
+      {
+        "github": "angryivan"
+      },
+      {
+        "github": "bumble-bee83"
+      },
+      {
+        "github": "dimalinnik"
+      },
+      {
+        "github": "felalag"
+      },
+      {
+        "github": "mikhama"
+      },
+      {
+        "github": "xixex"
+      }
     ]
   },
   {
@@ -1250,10 +2342,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "belousova-natallia",
     "studentsGithub": [
-      "altobeyk",
-      "garnich",
-      "kmetkokate",
-      "stigmatory15"
+      {
+        "github": "altobeyk"
+      },
+      {
+        "github": "garnich"
+      },
+      {
+        "github": "kmetkokate"
+      },
+      {
+        "github": "stigmatory15"
+      }
     ]
   },
   {
@@ -1261,10 +2361,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "natashanekazakova",
     "studentsGithub": [
-      "375291601334",
-      "antoprokopovich",
-      "iharpashkevich",
-      "wladimirmihalev"
+      {
+        "github": "375291601334"
+      },
+      {
+        "github": "antoprokopovich"
+      },
+      {
+        "github": "iharpashkevich"
+      },
+      {
+        "github": "wladimirmihalev"
+      }
     ]
   },
   {
@@ -1272,10 +2380,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "nikolaiverbitskii",
     "studentsGithub": [
-      "igor82bv",
-      "klimenkomaksim",
-      "shanhinpavel",
-      "uladzimir-yeudakimovich"
+      {
+        "github": "igor82bv"
+      },
+      {
+        "github": "klimenkomaksim"
+      },
+      {
+        "github": "shanhinpavel"
+      },
+      {
+        "github": "uladzimir-yeudakimovich"
+      }
     ]
   },
   {
@@ -1283,12 +2399,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "polinabobrovnik",
     "studentsGithub": [
-      "alinkalu",
-      "andvikvin",
-      "fursaleksey",
-      "hursevichsergey",
-      "marry705",
-      "wowprojeck"
+      {
+        "github": "alinkalu"
+      },
+      {
+        "github": "andvikvin"
+      },
+      {
+        "github": "fursaleksey"
+      },
+      {
+        "github": "hursevichsergey"
+      },
+      {
+        "github": "marry705"
+      },
+      {
+        "github": "wowprojeck"
+      }
     ]
   },
   {
@@ -1296,12 +2424,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "pavelglebov",
     "studentsGithub": [
-      "alexsmyk1992",
-      "dzianiskavalionak",
-      "feodorius",
-      "ihar777",
-      "oaliona",
-      "vbkoshak"
+      {
+        "github": "alexsmyk1992"
+      },
+      {
+        "github": "dzianiskavalionak"
+      },
+      {
+        "github": "feodorius"
+      },
+      {
+        "github": "ihar777"
+      },
+      {
+        "github": "oaliona"
+      },
+      {
+        "github": "vbkoshak"
+      }
     ]
   },
   {
@@ -1309,13 +2449,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "pavelkuzniatsou",
     "studentsGithub": [
-      "akselatom",
-      "kirilltovpinets",
-      "kotcher1",
-      "kotiknalune42",
-      "maryiasiamenava",
-      "maxbrainygame",
-      "oliver337"
+      {
+        "github": "akselatom"
+      },
+      {
+        "github": "kirilltovpinets"
+      },
+      {
+        "github": "kotcher1"
+      },
+      {
+        "github": "kotiknalune42"
+      },
+      {
+        "github": "maryiasiamenava"
+      },
+      {
+        "github": "maxbrainygame"
+      },
+      {
+        "github": "oliver337"
+      }
     ]
   },
   {
@@ -1323,13 +2477,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "tibmt",
     "studentsGithub": [
-      "argaitt",
-      "danteboom",
-      "iryna-markovich",
-      "ivankirsd",
-      "kasiama",
-      "magiccurlyhair",
-      "passhub"
+      {
+        "github": "argaitt"
+      },
+      {
+        "github": "danteboom"
+      },
+      {
+        "github": "iryna-markovich"
+      },
+      {
+        "github": "ivankirsd"
+      },
+      {
+        "github": "kasiama"
+      },
+      {
+        "github": "magiccurlyhair"
+      },
+      {
+        "github": "passhub"
+      }
     ]
   },
   {
@@ -1337,11 +2505,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "pavelzaletski",
     "studentsGithub": [
-      "andddrews",
-      "anna-sh",
-      "bref987",
-      "ilyaryabchinski",
-      "sergey496"
+      {
+        "github": "andddrews"
+      },
+      {
+        "github": "anna-sh"
+      },
+      {
+        "github": "bref987"
+      },
+      {
+        "github": "ilyaryabchinski"
+      },
+      {
+        "github": "sergey496"
+      }
     ]
   },
   {
@@ -1349,7 +2527,9 @@
     "mentorCity": "",
     "mentorGithub": "",
     "studentsGithub": [
-      "fdf"
+      {
+        "github": "fdf"
+      }
     ]
   },
   {
@@ -1357,11 +2537,21 @@
     "mentorCity": "",
     "mentorGithub": "",
     "studentsGithub": [
-      "dongor7",
-      "frol8612",
-      "innazl",
-      "snowwe",
-      "zettrix"
+      {
+        "github": "dongor7"
+      },
+      {
+        "github": "frol8612"
+      },
+      {
+        "github": "innazl"
+      },
+      {
+        "github": "snowwe"
+      },
+      {
+        "github": "zettrix"
+      }
     ]
   },
   {
@@ -1369,11 +2559,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "lavitr",
     "studentsGithub": [
-      "daryz",
-      "h0qw010xz",
-      "mrdemonrush",
-      "nikitaklepanosov",
-      "provedenceva"
+      {
+        "github": "daryz"
+      },
+      {
+        "github": "h0qw010xz"
+      },
+      {
+        "github": "mrdemonrush"
+      },
+      {
+        "github": "nikitaklepanosov"
+      },
+      {
+        "github": "provedenceva"
+      }
     ]
   },
   {
@@ -1381,13 +2581,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "korotkin",
     "studentsGithub": [
-      "darinalitvin",
-      "ihartsykaka",
-      "naijelo",
-      "pavelsab",
-      "tridenet",
-      "vldshch",
-      "zhechka"
+      {
+        "github": "darinalitvin"
+      },
+      {
+        "github": "ihartsykaka"
+      },
+      {
+        "github": "naijelo"
+      },
+      {
+        "github": "pavelsab"
+      },
+      {
+        "github": "tridenet"
+      },
+      {
+        "github": "vldshch"
+      },
+      {
+        "github": "zhechka"
+      }
     ]
   },
   {
@@ -1395,16 +2609,36 @@
     "mentorCity": "Брест",
     "mentorGithub": "maximuk",
     "studentsGithub": [
-      "alenashkr",
-      "alexdejko",
-      "alexey-1991",
-      "andrei-oksentyk",
-      "fyr-fyrrr",
-      "halaveika",
-      "liodama",
-      "redgektor",
-      "uniapi",
-      "wertybsd"
+      {
+        "github": "alenashkr"
+      },
+      {
+        "github": "alexdejko"
+      },
+      {
+        "github": "alexey-1991"
+      },
+      {
+        "github": "andrei-oksentyk"
+      },
+      {
+        "github": "fyr-fyrrr"
+      },
+      {
+        "github": "halaveika"
+      },
+      {
+        "github": "liodama"
+      },
+      {
+        "github": "redgektor"
+      },
+      {
+        "github": "uniapi"
+      },
+      {
+        "github": "wertybsd"
+      }
     ]
   },
   {
@@ -1412,10 +2646,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "sergeyshatter",
     "studentsGithub": [
-      "cuppake",
-      "kirilltk",
-      "luffi2539",
-      "pirsfrommi6"
+      {
+        "github": "cuppake"
+      },
+      {
+        "github": "kirilltk"
+      },
+      {
+        "github": "luffi2539"
+      },
+      {
+        "github": "pirsfrommi6"
+      }
     ]
   },
   {
@@ -1423,10 +2665,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "sergey-churilin",
     "studentsGithub": [
-      "gegorov",
-      "gubnich",
-      "ilyakabanov",
-      "yurec0gurec"
+      {
+        "github": "gegorov"
+      },
+      {
+        "github": "gubnich"
+      },
+      {
+        "github": "ilyakabanov"
+      },
+      {
+        "github": "yurec0gurec"
+      }
     ]
   },
   {
@@ -1434,10 +2684,18 @@
     "mentorCity": "Гомель",
     "mentorGithub": "pristavka",
     "studentsGithub": [
-      "alehdzmitrenka",
-      "dzhudzhi",
-      "jamadamur",
-      "tsvetlanak"
+      {
+        "github": "alehdzmitrenka"
+      },
+      {
+        "github": "dzhudzhi"
+      },
+      {
+        "github": "jamadamur"
+      },
+      {
+        "github": "tsvetlanak"
+      }
     ]
   },
   {
@@ -1445,10 +2703,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "tanya-bakhmatovich",
     "studentsGithub": [
-      "dmitrigorchanin",
-      "fogfug1",
-      "soundmafi",
-      "yauhenilyin"
+      {
+        "github": "dmitrigorchanin"
+      },
+      {
+        "github": "fogfug1"
+      },
+      {
+        "github": "soundmafi"
+      },
+      {
+        "github": "yauhenilyin"
+      }
     ]
   },
   {
@@ -1456,8 +2722,12 @@
     "mentorCity": "Гродно",
     "mentorGithub": "tatsianakhinevich-epam",
     "studentsGithub": [
-      "makouskiyan",
-      "shest28"
+      {
+        "github": "makouskiyan"
+      },
+      {
+        "github": "shest28"
+      }
     ]
   },
   {
@@ -1465,11 +2735,21 @@
     "mentorCity": "Могилев",
     "mentorGithub": "stsepchanka",
     "studentsGithub": [
-      "dloz",
-      "max-violent",
-      "rick42morty",
-      "scifsyh",
-      "tgfrey"
+      {
+        "github": "dloz"
+      },
+      {
+        "github": "max-violent"
+      },
+      {
+        "github": "rick42morty"
+      },
+      {
+        "github": "scifsyh"
+      },
+      {
+        "github": "tgfrey"
+      }
     ]
   },
   {
@@ -1477,12 +2757,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "forkollaider",
     "studentsGithub": [
-      "aalexsoloveiko",
-      "do100han",
-      "mill9r",
-      "odegay",
-      "sergeibel",
-      "zhecha"
+      {
+        "github": "aalexsoloveiko"
+      },
+      {
+        "github": "do100han"
+      },
+      {
+        "github": "mill9r"
+      },
+      {
+        "github": "odegay"
+      },
+      {
+        "github": "sergeibel"
+      },
+      {
+        "github": "zhecha"
+      }
     ]
   },
   {
@@ -1490,11 +2782,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "vinfinit",
     "studentsGithub": [
-      "eauheni",
-      "egoncharov",
-      "elostryy",
-      "maringoka",
-      "mikhailnakanechny"
+      {
+        "github": "eauheni"
+      },
+      {
+        "github": "egoncharov"
+      },
+      {
+        "github": "elostryy"
+      },
+      {
+        "github": "maringoka"
+      },
+      {
+        "github": "mikhailnakanechny"
+      }
     ]
   },
   {
@@ -1502,10 +2804,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "einfachvlad",
     "studentsGithub": [
-      "aleksei-bulgak-study",
-      "dyatelvudu",
-      "lazovskyigor",
-      "margharita"
+      {
+        "github": "aleksei-bulgak-study"
+      },
+      {
+        "github": "dyatelvudu"
+      },
+      {
+        "github": "lazovskyigor"
+      },
+      {
+        "github": "margharita"
+      }
     ]
   },
   {
@@ -1513,13 +2823,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "valeragorobets",
     "studentsGithub": [
-      "eliznovo",
-      "ivandubrouski",
-      "krisstets",
-      "mrforsyte",
-      "olgakuksa",
-      "vitalij21",
-      "yuriy17"
+      {
+        "github": "eliznovo"
+      },
+      {
+        "github": "ivandubrouski"
+      },
+      {
+        "github": "krisstets"
+      },
+      {
+        "github": "mrforsyte"
+      },
+      {
+        "github": "olgakuksa"
+      },
+      {
+        "github": "vitalij21"
+      },
+      {
+        "github": "yuriy17"
+      }
     ]
   },
   {
@@ -1527,10 +2851,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "tomasspring",
     "studentsGithub": [
-      "a11mo",
-      "annakolesnikova",
-      "eliendil",
-      "thecobolt"
+      {
+        "github": "a11mo"
+      },
+      {
+        "github": "annakolesnikova"
+      },
+      {
+        "github": "eliendil"
+      },
+      {
+        "github": "thecobolt"
+      }
     ]
   },
   {
@@ -1538,11 +2870,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "viachaslau-latushkin",
     "studentsGithub": [
-      "alexandrasitnikova",
-      "katezhukel",
-      "pavelkiru",
-      "shestakoff1441",
-      "vitalibrych333"
+      {
+        "github": "alexandrasitnikova"
+      },
+      {
+        "github": "katezhukel"
+      },
+      {
+        "github": "pavelkiru"
+      },
+      {
+        "github": "shestakoff1441"
+      },
+      {
+        "github": "vitalibrych333"
+      }
     ]
   },
   {
@@ -1550,11 +2892,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "woozzone",
     "studentsGithub": [
-      "bardashevich-matvei",
-      "korbann",
-      "supersmf",
-      "tatyana-andreichyk",
-      "yevgeniypy"
+      {
+        "github": "bardashevich-matvei"
+      },
+      {
+        "github": "korbann"
+      },
+      {
+        "github": "supersmf"
+      },
+      {
+        "github": "tatyana-andreichyk"
+      },
+      {
+        "github": "yevgeniypy"
+      }
     ]
   },
   {
@@ -1562,11 +2914,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "viktoriyavorozhun",
     "studentsGithub": [
-      "christina-ilyushonok",
-      "evgeniyaverbiczkaya",
-      "martikoscoder",
-      "mayinmarch",
-      "toxandreev"
+      {
+        "github": "christina-ilyushonok"
+      },
+      {
+        "github": "evgeniyaverbiczkaya"
+      },
+      {
+        "github": "martikoscoder"
+      },
+      {
+        "github": "mayinmarch"
+      },
+      {
+        "github": "toxandreev"
+      }
     ]
   },
   {
@@ -1574,11 +2936,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "elkinny",
     "studentsGithub": [
-      "alenakharytonchyk",
-      "daryazel",
-      "drizzlman",
-      "kottanakor",
-      "yonguksaram"
+      {
+        "github": "alenakharytonchyk"
+      },
+      {
+        "github": "daryazel"
+      },
+      {
+        "github": "drizzlman"
+      },
+      {
+        "github": "kottanakor"
+      },
+      {
+        "github": "yonguksaram"
+      }
     ]
   },
   {
@@ -1586,11 +2958,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "candentira",
     "studentsGithub": [
-      "dmitrylenko",
-      "palessie",
-      "underdoglzd",
-      "ustilushka",
-      "zzvipz"
+      {
+        "github": "dmitrylenko"
+      },
+      {
+        "github": "palessie"
+      },
+      {
+        "github": "underdoglzd"
+      },
+      {
+        "github": "ustilushka"
+      },
+      {
+        "github": "zzvipz"
+      }
     ]
   },
   {
@@ -1598,11 +2980,21 @@
     "mentorCity": "Могилев",
     "mentorGithub": "viktoryiaverasava",
     "studentsGithub": [
-      "25kopek",
-      "bn1knb",
-      "lowershotower",
-      "psychotheus",
-      "zerovers"
+      {
+        "github": "25kopek"
+      },
+      {
+        "github": "bn1knb"
+      },
+      {
+        "github": "lowershotower"
+      },
+      {
+        "github": "psychotheus"
+      },
+      {
+        "github": "zerovers"
+      }
     ]
   },
   {
@@ -1610,10 +3002,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "error404as",
     "studentsGithub": [
-      "aliakseik19",
-      "pozharitskiy",
-      "robertiqk",
-      "tarsupon"
+      {
+        "github": "aliakseik19"
+      },
+      {
+        "github": "pozharitskiy"
+      },
+      {
+        "github": "robertiqk"
+      },
+      {
+        "github": "tarsupon"
+      }
     ]
   },
   {
@@ -1621,10 +3021,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "vladislavkovaliov",
     "studentsGithub": [
-      "evilamany",
-      "pelya98",
-      "roman-nareiko",
-      "xvorob"
+      {
+        "github": "evilamany"
+      },
+      {
+        "github": "pelya98"
+      },
+      {
+        "github": "roman-nareiko"
+      },
+      {
+        "github": "xvorob"
+      }
     ]
   },
   {
@@ -1632,11 +3040,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "olgamardvilko",
     "studentsGithub": [
-      "georgyminsk",
-      "goldenkit",
-      "greg1996",
-      "serzhanhelena",
-      "vladsanko"
+      {
+        "github": "georgyminsk"
+      },
+      {
+        "github": "goldenkit"
+      },
+      {
+        "github": "greg1996"
+      },
+      {
+        "github": "serzhanhelena"
+      },
+      {
+        "github": "vladsanko"
+      }
     ]
   },
   {
@@ -1644,12 +3062,24 @@
     "mentorCity": "Минск",
     "mentorGithub": "olgapoddubko",
     "studentsGithub": [
-      "dimadk24",
-      "karsash",
-      "maksagit",
-      "melk0sha",
-      "shet1990",
-      "tanyasamal"
+      {
+        "github": "dimadk24"
+      },
+      {
+        "github": "karsash"
+      },
+      {
+        "github": "maksagit"
+      },
+      {
+        "github": "melk0sha"
+      },
+      {
+        "github": "shet1990"
+      },
+      {
+        "github": "tanyasamal"
+      }
     ]
   },
   {
@@ -1657,11 +3087,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "naooki",
     "studentsGithub": [
-      "eveshad",
-      "holeil",
-      "mbulldozer",
-      "olgalazarevich",
-      "starkary"
+      {
+        "github": "eveshad"
+      },
+      {
+        "github": "holeil"
+      },
+      {
+        "github": "mbulldozer"
+      },
+      {
+        "github": "olgalazarevich"
+      },
+      {
+        "github": "starkary"
+      }
     ]
   },
   {
@@ -1669,11 +3109,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "yanaselin",
     "studentsGithub": [
-      "bsiropchik",
-      "maksstef",
-      "montes5",
-      "mrspunki",
-      "scratchor"
+      {
+        "github": "bsiropchik"
+      },
+      {
+        "github": "maksstef"
+      },
+      {
+        "github": "montes5"
+      },
+      {
+        "github": "mrspunki"
+      },
+      {
+        "github": "scratchor"
+      }
     ]
   },
   {
@@ -1681,11 +3131,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "yananeronskaya",
     "studentsGithub": [
-      "allexblaze",
-      "dekim12",
-      "dimamavrin",
-      "ilyay95",
-      "vitalmizevich"
+      {
+        "github": "allexblaze"
+      },
+      {
+        "github": "dekim12"
+      },
+      {
+        "github": "dimamavrin"
+      },
+      {
+        "github": "ilyay95"
+      },
+      {
+        "github": "vitalmizevich"
+      }
     ]
   },
   {
@@ -1693,10 +3153,18 @@
     "mentorCity": "Минск",
     "mentorGithub": "yana95",
     "studentsGithub": [
-      "mikhailmaniuk",
-      "olganaranovich",
-      "shakhnovapolina",
-      "yana-bashtyk"
+      {
+        "github": "mikhailmaniuk"
+      },
+      {
+        "github": "olganaranovich"
+      },
+      {
+        "github": "shakhnovapolina"
+      },
+      {
+        "github": "yana-bashtyk"
+      }
     ]
   },
   {
@@ -1704,13 +3172,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "eugenech",
     "studentsGithub": [
-      "alesya-polovets",
-      "antonykor",
-      "dzmitryalfer",
-      "geek10010",
-      "ivchenkopavel",
-      "ruboscope",
-      "saniok017"
+      {
+        "github": "alesya-polovets"
+      },
+      {
+        "github": "antonykor"
+      },
+      {
+        "github": "dzmitryalfer"
+      },
+      {
+        "github": "geek10010"
+      },
+      {
+        "github": "ivchenkopavel"
+      },
+      {
+        "github": "ruboscope"
+      },
+      {
+        "github": "saniok017"
+      }
     ]
   },
   {
@@ -1718,13 +3200,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "evgeniigrh",
     "studentsGithub": [
-      "antonprotas",
-      "garin87",
-      "iryna-mazura",
-      "kamenkoalexandr",
-      "mickbetch",
-      "natalianekrashevich",
-      "oconely"
+      {
+        "github": "antonprotas"
+      },
+      {
+        "github": "garin87"
+      },
+      {
+        "github": "iryna-mazura"
+      },
+      {
+        "github": "kamenkoalexandr"
+      },
+      {
+        "github": "mickbetch"
+      },
+      {
+        "github": "natalianekrashevich"
+      },
+      {
+        "github": "oconely"
+      }
     ]
   },
   {
@@ -1732,11 +3228,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "evgladkiy",
     "studentsGithub": [
-      "anxair",
-      "evgenijkorob",
-      "shurpelevas",
-      "siarohin",
-      "svyatlo"
+      {
+        "github": "anxair"
+      },
+      {
+        "github": "evgenijkorob"
+      },
+      {
+        "github": "shurpelevas"
+      },
+      {
+        "github": "siarohin"
+      },
+      {
+        "github": "svyatlo"
+      }
     ]
   },
   {
@@ -1744,13 +3250,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "pasyukevich",
     "studentsGithub": [
-      "alenabde",
-      "boobaley",
-      "crunkagator",
-      "maksimyakush",
-      "volhashy",
-      "yalovikea",
-      "yanachchchka"
+      {
+        "github": "alenabde"
+      },
+      {
+        "github": "boobaley"
+      },
+      {
+        "github": "crunkagator"
+      },
+      {
+        "github": "maksimyakush"
+      },
+      {
+        "github": "volhashy"
+      },
+      {
+        "github": "yalovikea"
+      },
+      {
+        "github": "yanachchchka"
+      }
     ]
   },
   {
@@ -1758,11 +3278,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "yralko",
     "studentsGithub": [
-      "anna-pronovich",
-      "artemiusv",
-      "kseniyasokolovskaya",
-      "nataliakazakevich",
-      "zmichgen"
+      {
+        "github": "anna-pronovich"
+      },
+      {
+        "github": "artemiusv"
+      },
+      {
+        "github": "kseniyasokolovskaya"
+      },
+      {
+        "github": "nataliakazakevich"
+      },
+      {
+        "github": "zmichgen"
+      }
     ]
   },
   {
@@ -1770,11 +3300,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "erutkovsky",
     "studentsGithub": [
-      "boshka0",
-      "hecateenitharmon",
-      "mdgh",
-      "mggeroff",
-      "soulos410"
+      {
+        "github": "boshka0"
+      },
+      {
+        "github": "hecateenitharmon"
+      },
+      {
+        "github": "mdgh"
+      },
+      {
+        "github": "mggeroff"
+      },
+      {
+        "github": "soulos410"
+      }
     ]
   },
   {
@@ -1782,11 +3322,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "juliaalaeva",
     "studentsGithub": [
-      "ahrechushkin",
-      "huriosity",
-      "mariannagarbuzova",
-      "pytniza",
-      "ronavea"
+      {
+        "github": "ahrechushkin"
+      },
+      {
+        "github": "huriosity"
+      },
+      {
+        "github": "mariannagarbuzova"
+      },
+      {
+        "github": "pytniza"
+      },
+      {
+        "github": "ronavea"
+      }
     ]
   },
   {
@@ -1794,13 +3344,27 @@
     "mentorCity": "Минск",
     "mentorGithub": "yuliahope",
     "studentsGithub": [
-      "achyrych",
-      "arkadz",
-      "artyommakarov",
-      "hottab9595",
-      "levsha87",
-      "maniuska",
-      "sachoks"
+      {
+        "github": "achyrych"
+      },
+      {
+        "github": "arkadz"
+      },
+      {
+        "github": "artyommakarov"
+      },
+      {
+        "github": "hottab9595"
+      },
+      {
+        "github": "levsha87"
+      },
+      {
+        "github": "maniuska"
+      },
+      {
+        "github": "sachoks"
+      }
     ]
   },
   {
@@ -1808,11 +3372,21 @@
     "mentorCity": "Минск",
     "mentorGithub": "yulia9",
     "studentsGithub": [
-      "edaineko",
-      "prometei299",
-      "seidou99",
-      "sergeypunko",
-      "zurzur"
+      {
+        "github": "edaineko"
+      },
+      {
+        "github": "prometei299"
+      },
+      {
+        "github": "seidou99"
+      },
+      {
+        "github": "sergeypunko"
+      },
+      {
+        "github": "zurzur"
+      }
     ]
   }
 ]
