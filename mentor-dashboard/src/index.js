@@ -8,8 +8,8 @@ const tasks = require('./tasks.js');
 
 mentorStudentsPairs.forEach((mentorStudentsPair) => {
   mentorStudentsPair.students.forEach((student) => {
-    // eslint-disable-next-line no-param-reassign
-    student.tasks = tasks;
+    const currentStudent = student;
+    currentStudent.tasks = tasks;
   });
 });
 
