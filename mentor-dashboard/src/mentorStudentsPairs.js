@@ -41,6 +41,10 @@ const getMentorStudentPair = (currentRow) => {
   const mentorStudentPair = {
     interviewer: (sheet1[workbook.interviewer + currentRow].v)
       .toString()
+      .toLowerCase()
+      .split(/\s+/)
+      .map(word => word[0].toUpperCase() + word.substring(1))
+      .join(' ')
       .trim(),
     studentGithub: (sheet1[workbook.studentGithub + currentRow].v)
       .toString()
@@ -91,7 +95,11 @@ const sheet2 = getSheetData(readFile, 2);
 
 const getMentorData = (currentRow) => {
   const mentorData = {
-    mentorFullName: `${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`,
+    mentorFullName: (`${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`)
+      .toLowerCase()
+      .split(/\s+/)
+      .map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
+      .trim(),
 
     mentorCity: (sheet2[workbook.city + currentRow].v)
       .toString()
@@ -146,7 +154,8 @@ const result = mergeMentorStudentPair
   });
 
 // Sort result by name
-const resultSortByName = result.sort((first, second) => first.mentorName.localeCompare(second.mentorName));
+const resultSortByName = result
+  .sort((first, second) => first.mentorName.localeCompare(second.mentorName));
 
 
 module.exports = resultSortByName;

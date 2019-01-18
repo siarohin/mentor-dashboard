@@ -1,6 +1,7 @@
 const path = require('path');
 const XLSX = require('xlsx');
 const getSheetData = require('./utils');
+const vocabularies = require('./vocabularies');
 
 /* path to raw files with data */
 const pathToFile = path.join(__dirname, './rawSource/Tasks.xlsx');
@@ -27,15 +28,16 @@ const workbook = {
   status: 'C',
 };
 
-
-// Sheet1 workbook ===============================
-
 const sheet1 = getSheetData(readFile);
+
+
+// get tasks, statuses, links ==============
 
 const getTask = (currentRow) => {
   let link = '';
   if (sheet1[workbook.link + currentRow]) {
     link = (sheet1[workbook.link + currentRow].v)
+      .toLowerCase()
       .trim();
   }
 
@@ -43,12 +45,17 @@ const getTask = (currentRow) => {
     name: (sheet1[workbook.name + currentRow].v)
       .toString()
       .replace('-', ' ')
+      .replace(/"/gi, '\'')
       .trim(),
     link,
     status: (sheet1[workbook.status + currentRow].v)
       .toString()
+      .toLowerCase()
       .trim(),
   };
+
+  const currentStatus = vocabularies.find(data => data.legend === task.status);
+  task.statusDescription = currentStatus.legendDescription;
 
   return task;
 };
@@ -65,6 +72,5 @@ const getTasks = () => {
 };
 
 const tasks = getTasks();
-
 
 module.exports = tasks;
