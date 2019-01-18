@@ -35,13 +35,19 @@ const sheet1 = getSheetData(readFile);
 const getTask = (currentRow) => {
   let link = '';
   if (sheet1[workbook.link + currentRow]) {
-    link = (sheet1[workbook.link + currentRow].v).toString().trim();
+    link = (sheet1[workbook.link + currentRow].v)
+      .trim();
   }
 
   const task = {
-    name: (sheet1[workbook.name + currentRow].v).toString().trim(),
+    name: (sheet1[workbook.name + currentRow].v)
+      .toString()
+      .replace('-', ' ')
+      .trim(),
     link,
-    status: (sheet1[workbook.status + currentRow].v).toString().trim(),
+    status: (sheet1[workbook.status + currentRow].v)
+      .toString()
+      .trim(),
   };
 
   return task;
@@ -59,33 +65,6 @@ const getTasks = () => {
 };
 
 const tasks = getTasks();
-
-// // Merge rows with mentor names
-// const mergeMentorStudentPair = pairs.reduce((acc, item) => {
-//   const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
-
-//   if (exsistingMentor) {
-//     exsistingMentor.studentGithub
-//       .push({ studentGithub: item.studentGithub });
-
-//     exsistingMentor.studentGithub
-//       .sort((first, second) => (first.studentGithub).localeCompare(second.studentGithub));
-//   } else {
-//     acc.push({
-//       interviewer: item.interviewer,
-//       studentGithub: [
-//         { studentGithub: item.studentGithub },
-//       ],
-//     });
-//   }
-//   return acc;
-// }, []);
-
-
-
-
-// // Sort result by name
-// const resultSortByName = result.sort((first, second) => first.mentorName.localeCompare(second.mentorName));
 
 
 module.exports = tasks;

@@ -39,8 +39,12 @@ const sheet1 = getSheetData(readFile, 1);
 
 const getMentorStudentPair = (currentRow) => {
   const mentorStudentPair = {
-    interviewer: (sheet1[workbook.interviewer + currentRow].v).toString().trim(),
-    studentGithub: (sheet1[workbook.studentGithub + currentRow].v).toString().trim(),
+    interviewer: (sheet1[workbook.interviewer + currentRow].v)
+      .toString()
+      .trim(),
+    studentGithub: (sheet1[workbook.studentGithub + currentRow].v)
+      .toString()
+      .trim(),
   };
 
   return mentorStudentPair;
@@ -88,7 +92,11 @@ const sheet2 = getSheetData(readFile, 2);
 const getMentorData = (currentRow) => {
   const mentorData = {
     mentorFullName: `${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`,
-    mentorCity: (sheet2[workbook.city + currentRow].v).toString().trim(),
+
+    mentorCity: (sheet2[workbook.city + currentRow].v)
+      .toString()
+      .trim(),
+
     mentorGithub: (sheet2[workbook.mentorGithub + currentRow].v)
       .toString()
       .trim()
