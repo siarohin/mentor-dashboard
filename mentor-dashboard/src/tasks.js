@@ -20,6 +20,17 @@ const getNextRow = (sheet, column, row) => {
   } return false;
 };
 
+/* Get rows array */
+const getSheetRows = (sheet, workbookName) => {
+  const rows = [];
+  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
+    if (getNextRow(sheet, workbookName, i)) {
+      rows.push(i);
+    }
+  }
+  return rows;
+};
+
 
 const workbook = {
   // Sheet1
@@ -55,20 +66,16 @@ const getTask = (currentRow) => {
   };
 
   const currentStatus = vocabularies.find(data => data.legend === task.status);
-  task.statusDescription = currentStatus.legendDescription;
+  if (currentStatus) {
+    task.statusDescription = currentStatus.legendDescription;
+  }
 
   return task;
 };
 
 const getTasks = () => {
-  const rows = [];
-  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
-    if (getNextRow(sheet1, workbook.name, i)) {
-      rows.push(i);
-    }
-  }
-  const dataRow = rows.map(row => getTask(row));
-  return dataRow;
+  return getSheetRows(sheet1, workbook.name)
+    .map(row => getTask(row));
 };
 
 const tasks = getTasks();

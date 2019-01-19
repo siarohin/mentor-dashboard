@@ -19,6 +19,17 @@ const getNextRow = (sheet, column, row) => {
   } return false;
 };
 
+/* Get rows array */
+const getSheetRows = (sheet, workbookName) => {
+  const rows = [];
+  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
+    if (getNextRow(sheet, workbookName, i)) {
+      rows.push(i);
+    }
+  }
+  return rows;
+};
+
 
 const workbook = {
   // Sheet1
@@ -52,14 +63,8 @@ const getVocabulary = (currentRow) => {
 };
 
 const getVocabularies = () => {
-  const rows = [];
-  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
-    if (getNextRow(sheet1, workbook.legend, i)) {
-      rows.push(i);
-    }
-  }
-  const dataRow = rows.map(row => getVocabulary(row));
-  return dataRow;
+  return getSheetRows(sheet1, workbook.legend)
+    .map(row => getVocabulary(row));
 };
 
 const vocabularies = getVocabularies();

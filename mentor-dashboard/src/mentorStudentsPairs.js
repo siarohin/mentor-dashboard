@@ -19,6 +19,17 @@ const getNextRow = (sheet, column, row) => {
   } return false;
 };
 
+/* Get rows array */
+const getSheetRows = (sheet, workbookName) => {
+  const rows = [];
+  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
+    if (getNextRow(sheet, workbookName, i)) {
+      rows.push(i);
+    }
+  }
+  return rows;
+};
+
 
 const workbook = {
   // Sheet1
@@ -55,14 +66,8 @@ const getMentorStudentPair = (currentRow) => {
 };
 
 const getPairs = () => {
-  const rows = [];
-  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
-    if (getNextRow(sheet1, workbook.interviewer, i)) {
-      rows.push(i);
-    }
-  }
-  const dataRow = rows.map(row => getMentorStudentPair(row));
-  return dataRow;
+  return getSheetRows(sheet1, workbook.interviewer)
+    .map(row => getMentorStudentPair(row));
 };
 
 const pairs = getPairs();
@@ -118,14 +123,8 @@ const getMentorData = (currentRow) => {
 };
 
 const getMentors = () => {
-  const rows = [];
-  for (let i = START_ROW; i < LIMIT_ROW; i += 1) {
-    if (getNextRow(sheet2, workbook.mentorName, i)) {
-      rows.push(i);
-    }
-  }
-  const dataRow = rows.map(row => getMentorData(row));
-  return dataRow;
+  return getSheetRows(sheet2, workbook.mentorName)
+    .map(row => getMentorData(row));
 };
 
 const mentors = getMentors();

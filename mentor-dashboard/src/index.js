@@ -13,7 +13,6 @@ mentorStudentsPairs.forEach((mentorStudentsPair) => {
   });
 });
 
-
 /* path to JSON in out  */
 const pathToJSON = path.join(__dirname, './data.json');
 
