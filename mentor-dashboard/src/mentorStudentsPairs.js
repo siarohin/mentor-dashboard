@@ -65,10 +65,8 @@ const getMentorStudentPair = (currentRow) => {
   return mentorStudentPair;
 };
 
-const getPairs = () => {
-  return getSheetRows(sheet1, workbook.interviewer)
-    .map(row => getMentorStudentPair(row));
-};
+const getPairs = () => getSheetRows(sheet1, workbook.interviewer)
+  .map(row => getMentorStudentPair(row));
 
 const pairs = getPairs();
 
@@ -122,10 +120,8 @@ const getMentorData = (currentRow) => {
   return mentorData;
 };
 
-const getMentors = () => {
-  return getSheetRows(sheet2, workbook.mentorName)
-    .map(row => getMentorData(row));
-};
+const getMentors = () => getSheetRows(sheet2, workbook.mentorName)
+  .map(row => getMentorData(row));
 
 const mentors = getMentors();
 

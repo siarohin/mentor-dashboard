@@ -73,10 +73,8 @@ const getTask = (currentRow) => {
   return task;
 };
 
-const getTasks = () => {
-  return getSheetRows(sheet1, workbook.name)
-    .map(row => getTask(row));
-};
+const getTasks = () => getSheetRows(sheet1, workbook.name)
+  .map(row => getTask(row));
 
 const tasks = getTasks();
 
