@@ -73,9 +73,7 @@ const getTask = (currentRow) => {
   return task;
 };
 
-const getTasks = () => getSheetRows(sheet1, workbook.name)
+const tasks = () => getSheetRows(sheet1, workbook.name)
   .map(row => getTask(row));
 
-const tasks = getTasks();
-
-module.exports = tasks;
+module.exports = tasks();

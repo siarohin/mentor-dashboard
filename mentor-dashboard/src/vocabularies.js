@@ -62,10 +62,8 @@ const getVocabulary = (currentRow) => {
   return vocabulary;
 };
 
-const getVocabularies = () => getSheetRows(sheet1, workbook.legend)
+const vocabularies = () => getSheetRows(sheet1, workbook.legend)
   .map(row => getVocabulary(row));
 
-const vocabularies = getVocabularies();
 
-
-module.exports = vocabularies;
+module.exports = vocabularies();
