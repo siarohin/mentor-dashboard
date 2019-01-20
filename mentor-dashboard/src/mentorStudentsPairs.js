@@ -97,6 +97,14 @@ const sheet2 = getSheetData(readFile, 2);
 
 const getMentorData = (currentRow) => {
   const mentorData = {
+    mentorName: (sheet2[workbook.mentorName + currentRow].v)
+      .toLowerCase()
+      .trim(),
+
+    mentorSername: (sheet2[workbook.mentorSername + currentRow].v)
+      .toLowerCase()
+      .trim(),
+
     mentorFullName: (`${sheet2[workbook.mentorName + currentRow].v} ${sheet2[workbook.mentorSername + currentRow].v}`)
       .toLowerCase()
       .split(/\s+/)
@@ -132,13 +140,29 @@ const result = mergeMentorStudentPair
     const mentorStudentsPairs = mentors.find(data => data.mentorFullName === mentorStudentPair.interviewer);
 
     if (!mentorStudentsPairs) {
+      const mentorStudentsPairsSearchAgain = mentors
+        .find(data => data.mentorSername === mentorStudentPair.interviewer.split(' ')[1].toLowerCase());
+
+      // if mentorName + mentorSername !== mentorFullname (mistakes in exel)
+      if (!mentorStudentsPairsSearchAgain) {
+        return {
+          mentorGithub: '',
+          mentorName: '',
+          mentorCity: '',
+          students: mentorStudentPair.studentGithub || '',
+        };
+      }
+
+      // searching mentor by lastName
       return {
-        mentorGithub: '',
-        mentorName: mentorStudentPair.interviewer || '',
-        mentorCity: '',
+        mentorGithub: mentorStudentsPairsSearchAgain.mentorGithub,
+        mentorName: mentorStudentsPairsSearchAgain.mentorFullName,
+        mentorCity: mentorStudentsPairsSearchAgain.mentorCity,
         students: mentorStudentPair.studentGithub || '',
       };
     }
+
+    // mentorName + mentorSername === mentorFullname (it's OK)
     return {
       mentorGithub: mentorStudentsPairs.mentorGithub,
       mentorName: mentorStudentsPairs.mentorFullName,

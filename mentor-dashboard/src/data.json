@@ -1,332 +1,5 @@
 [
   {
-    "mentorGithub": "",
-    "mentorName": "Rem Apasov",
-    "mentorCity": "",
-    "students": [
-      {
-        "studentGithub": "dongor7",
-        "tasks": [
-          {
-            "name": "Code Jam 'CV'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'CoreJS'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'DOM, DOM Events'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "RS Activist",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "YouTube",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "CodeJam 'Scoreboard'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Game",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Course work",
-            "link": "",
-            "status": "todo",
-            "statusDescription": "надо будет скоро сделать"
-          },
-          {
-            "name": "test",
-            "link": "",
-            "status": "be future"
-          }
-        ]
-      },
-      {
-        "studentGithub": "frol8612",
-        "tasks": [
-          {
-            "name": "Code Jam 'CV'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'CoreJS'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'DOM, DOM Events'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "RS Activist",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "YouTube",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "CodeJam 'Scoreboard'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Game",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Course work",
-            "link": "",
-            "status": "todo",
-            "statusDescription": "надо будет скоро сделать"
-          },
-          {
-            "name": "test",
-            "link": "",
-            "status": "be future"
-          }
-        ]
-      },
-      {
-        "studentGithub": "innazl",
-        "tasks": [
-          {
-            "name": "Code Jam 'CV'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'CoreJS'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'DOM, DOM Events'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "RS Activist",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "YouTube",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "CodeJam 'Scoreboard'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Game",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Course work",
-            "link": "",
-            "status": "todo",
-            "statusDescription": "надо будет скоро сделать"
-          },
-          {
-            "name": "test",
-            "link": "",
-            "status": "be future"
-          }
-        ]
-      },
-      {
-        "studentGithub": "snowwe",
-        "tasks": [
-          {
-            "name": "Code Jam 'CV'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'CoreJS'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'DOM, DOM Events'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "RS Activist",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "YouTube",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "CodeJam 'Scoreboard'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Game",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Course work",
-            "link": "",
-            "status": "todo",
-            "statusDescription": "надо будет скоро сделать"
-          },
-          {
-            "name": "test",
-            "link": "",
-            "status": "be future"
-          }
-        ]
-      },
-      {
-        "studentGithub": "zettrix",
-        "tasks": [
-          {
-            "name": "Code Jam 'CV'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'CoreJS'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Code Jam 'DOM, DOM Events'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "RS Activist",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "YouTube",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "CodeJam 'Scoreboard'",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Game",
-            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Course work",
-            "link": "",
-            "status": "todo",
-            "statusDescription": "надо будет скоро сделать"
-          },
-          {
-            "name": "test",
-            "link": "",
-            "status": "be future"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "mentorGithub": "a-yatskevich",
     "mentorName": "Anton Yatskevich",
     "mentorCity": "Минск",
@@ -37349,6 +37022,333 @@
       },
       {
         "studentGithub": "vladagaravaya",
+        "tasks": [
+          {
+            "name": "Code Jam 'CV'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'CoreJS'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'DOM, DOM Events'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Markup #1",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "RS Activist",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "YouTube",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "CodeJam 'Scoreboard'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "Game",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "Course work",
+            "link": "",
+            "status": "todo",
+            "statusDescription": "надо будет скоро сделать"
+          },
+          {
+            "name": "test",
+            "link": "",
+            "status": "be future"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "mentorGithub": "remapasov",
+    "mentorName": "Dzianis Apasov",
+    "mentorCity": "Гомель",
+    "students": [
+      {
+        "studentGithub": "dongor7",
+        "tasks": [
+          {
+            "name": "Code Jam 'CV'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'CoreJS'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'DOM, DOM Events'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Markup #1",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "RS Activist",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "YouTube",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "CodeJam 'Scoreboard'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "Game",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "Course work",
+            "link": "",
+            "status": "todo",
+            "statusDescription": "надо будет скоро сделать"
+          },
+          {
+            "name": "test",
+            "link": "",
+            "status": "be future"
+          }
+        ]
+      },
+      {
+        "studentGithub": "frol8612",
+        "tasks": [
+          {
+            "name": "Code Jam 'CV'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'CoreJS'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'DOM, DOM Events'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Markup #1",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "RS Activist",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "YouTube",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "CodeJam 'Scoreboard'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "Game",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "Course work",
+            "link": "",
+            "status": "todo",
+            "statusDescription": "надо будет скоро сделать"
+          },
+          {
+            "name": "test",
+            "link": "",
+            "status": "be future"
+          }
+        ]
+      },
+      {
+        "studentGithub": "innazl",
+        "tasks": [
+          {
+            "name": "Code Jam 'CV'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'CoreJS'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'DOM, DOM Events'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Markup #1",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "RS Activist",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "YouTube",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "CodeJam 'Scoreboard'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "Game",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "Course work",
+            "link": "",
+            "status": "todo",
+            "statusDescription": "надо будет скоро сделать"
+          },
+          {
+            "name": "test",
+            "link": "",
+            "status": "be future"
+          }
+        ]
+      },
+      {
+        "studentGithub": "snowwe",
+        "tasks": [
+          {
+            "name": "Code Jam 'CV'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'CoreJS'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Code Jam 'DOM, DOM Events'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
+            "status": "checked",
+            "statusDescription": "ментор уже проверил"
+          },
+          {
+            "name": "Markup #1",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "RS Activist",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "YouTube",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "CodeJam 'Scoreboard'",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
+            "status": "checking",
+            "statusDescription": "ментор сейчас проверяет"
+          },
+          {
+            "name": "Game",
+            "link": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/game.md",
+            "status": "in progress",
+            "statusDescription": "студенты выполняют"
+          },
+          {
+            "name": "Course work",
+            "link": "",
+            "status": "todo",
+            "statusDescription": "надо будет скоро сделать"
+          },
+          {
+            "name": "test",
+            "link": "",
+            "status": "be future"
+          }
+        ]
+      },
+      {
+        "studentGithub": "zettrix",
         "tasks": [
           {
             "name": "Code Jam 'CV'",

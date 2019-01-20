@@ -1,7 +1,6 @@
 const path = require('path');
 const XLSX = require('xlsx');
 const getSheetData = require('./utils');
-const vocabularies = require('./vocabularies');
 
 /* path to raw files with data */
 const pathToFile = path.join(__dirname, './rawSource/Mentor score.xlsx');
