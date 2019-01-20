@@ -4,7 +4,7 @@ const getSheetData = require('./utils');
 const vocabularies = require('./vocabularies');
 
 /* path to raw files with data */
-const pathToFile = path.join(__dirname, './rawSource/Tasks.xlsx');
+const pathToFile = path.join(__dirname, '../rawSource/Tasks.xlsx');
 const readFile = XLSX.readFile(pathToFile);
 
 /* range of rows in xlsx files */

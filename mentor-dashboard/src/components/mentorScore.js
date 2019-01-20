@@ -3,7 +3,7 @@ const XLSX = require('xlsx');
 const getSheetData = require('./utils');
 
 /* path to raw files with data */
-const pathToFile = path.join(__dirname, './rawSource/Mentor score.xlsx');
+const pathToFile = path.join(__dirname, '../rawSource/Mentor score.xlsx');
 const readFile = XLSX.readFile(pathToFile);
 
 /* range of rows in xlsx files */

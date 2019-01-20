@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-const mentorStudentsPairs = require('./mentorStudentsPairs.js');
-const tasks = require('./tasks.js');
-const mentorScore = require('./mentorScore.js');
+const mentorStudentsPairs = require('./components/mentorStudentsPairs');
+const tasks = require('./components/tasks');
+const mentorScore = require('./components/mentorScore');
 
 
 // Merge mentorStudentsPairs and Tasks workbook ========

@@ -3,7 +3,7 @@ const XLSX = require('xlsx');
 const getSheetData = require('./utils');
 
 /* path to raw files with data */
-const pathToFile = path.join(__dirname, './rawSource/Mentor-students pairs.xlsx');
+const pathToFile = path.join(__dirname, '../rawSource/Mentor-students pairs.xlsx');
 const readFile = XLSX.readFile(pathToFile);
 
 /* range of rows in xlsx files */
@@ -140,8 +140,11 @@ const result = mergeMentorStudentPair
     const mentorStudentsPairs = mentors.find(data => data.mentorFullName === mentorStudentPair.interviewer);
 
     if (!mentorStudentsPairs) {
+      const interviewerFullname = mentorStudentPair.interviewer.split(' ');
+      const interviewerSername = interviewerFullname[interviewerFullname.length - 1];
+
       const mentorStudentsPairsSearchAgain = mentors
-        .find(data => data.mentorSername === mentorStudentPair.interviewer.split(' ')[1].toLowerCase());
+        .find(data => data.mentorSername === interviewerSername.toLowerCase());
 
       // if mentorName + mentorSername !== mentorFullname (mistakes in exel)
       if (!mentorStudentsPairsSearchAgain) {
