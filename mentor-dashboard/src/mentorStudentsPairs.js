@@ -68,28 +68,27 @@ const getMentorStudentPair = (currentRow) => {
 const getPairs = () => getSheetRows(sheet1, workbook.interviewer)
   .map(row => getMentorStudentPair(row));
 
-const pairs = getPairs();
-
 // Merge rows with mentor names
-const mergeMentorStudentPair = pairs.reduce((acc, item) => {
-  const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
+const mergeMentorStudentPair = getPairs()
+  .reduce((acc, item) => {
+    const exsistingMentor = acc.find(accItem => accItem.interviewer === item.interviewer);
 
-  if (exsistingMentor) {
-    exsistingMentor.studentGithub
-      .push({ studentGithub: item.studentGithub });
+    if (exsistingMentor) {
+      exsistingMentor.studentGithub
+        .push({ studentGithub: item.studentGithub });
 
-    exsistingMentor.studentGithub
-      .sort((first, second) => (first.studentGithub).localeCompare(second.studentGithub));
-  } else {
-    acc.push({
-      interviewer: item.interviewer,
-      studentGithub: [
-        { studentGithub: item.studentGithub },
-      ],
-    });
-  }
-  return acc;
-}, []);
+      exsistingMentor.studentGithub
+        .sort((first, second) => (first.studentGithub).localeCompare(second.studentGithub));
+    } else {
+      acc.push({
+        interviewer: item.interviewer,
+        studentGithub: [
+          { studentGithub: item.studentGithub },
+        ],
+      });
+    }
+    return acc;
+  }, []);
 
 
 // Sheet2 workbook ===============================
@@ -134,23 +133,23 @@ const result = mergeMentorStudentPair
 
     if (!mentorStudentsPairs) {
       return {
+        mentorGithub: '',
         mentorName: mentorStudentPair.interviewer || '',
         mentorCity: '',
-        mentorGithub: '',
         students: mentorStudentPair.studentGithub || '',
       };
     }
     return {
+      mentorGithub: mentorStudentsPairs.mentorGithub,
       mentorName: mentorStudentsPairs.mentorFullName,
       mentorCity: mentorStudentsPairs.mentorCity,
-      mentorGithub: mentorStudentsPairs.mentorGithub,
       students: mentorStudentPair.studentGithub,
     };
   });
 
-// Sort result by name
-const resultSortByName = result
-  .sort((first, second) => first.mentorName.localeCompare(second.mentorName));
+// Sort result by mentorGithub
+const resultSortByMentorGithub = result
+  .sort((first, second) => first.mentorGithub.localeCompare(second.mentorGithub));
 
 
-module.exports = resultSortByName;
+module.exports = resultSortByMentorGithub;

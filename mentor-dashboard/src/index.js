@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const mentorStudentsPairs = require('./mentorStudentsPairs.js');
 const tasks = require('./tasks.js');
-const mentorScores = require('./mentorScore.js');
+const mentorScore = require('./mentorScore.js');
 
 
 // Merge mentorStudentsPairs and Tasks workbook ========
@@ -15,16 +15,12 @@ mentorStudentsPairs.forEach((mentorStudentsPair) => {
 });
 
 
-// MentorScores ========================================
-
-
-
 /* path to JSON */
 const pathToJSON = path.join(__dirname, './data.json');
 
 /* TODO: for test only, delete */
 const pathToJSON2 = path.join(__dirname, './data_test.json');
-const resultToJson2 = JSON.stringify(mentorScores, 0, 2);
+const resultToJson2 = JSON.stringify(mentorScore, 0, 2);
 fs.writeFile(pathToJSON2, resultToJson2, 'utf8', () => {});
 /* ==================== */
 

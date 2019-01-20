@@ -1,6 +1,7 @@
 const path = require('path');
 const XLSX = require('xlsx');
 const getSheetData = require('./utils');
+const vocabularies = require('./vocabularies');
 
 /* path to raw files with data */
 const pathToFile = path.join(__dirname, './rawSource/Mentor score.xlsx');
@@ -45,7 +46,7 @@ const workbook = {
 const sheet1 = getSheetData(readFile);
 
 
-// get tasks, statuses, links ==============
+// Get tasks, statuses, links ==============
 
 const getMentorScore = (currentRow) => {
   let taskPR = '';
@@ -64,7 +65,6 @@ const getMentorScore = (currentRow) => {
   if (sheet1[workbook.action + currentRow]) {
     action = sheet1[workbook.action + currentRow].v;
   }
-
 
   const mentorScore = {
     mentorGithub: (sheet1[workbook.mentorGithub + currentRow].v)
@@ -94,7 +94,76 @@ const getMentorScore = (currentRow) => {
   return mentorScore;
 };
 
-const mentorScores = () => getSheetRows(sheet1, workbook.mentorGithub)
+const result = () => getSheetRows(sheet1, workbook.mentorGithub)
   .map(row => getMentorScore(row));
 
-module.exports = mentorScores();
+
+// Merge student, mentors and tasks ==============
+
+/* Merge students and tasks */
+const mergeStudentTasks = result()
+  .reduce((acc, item) => {
+    const exsistingStudent = acc.find(accItem => accItem.studentGithub === item.studentGithub);
+
+    if (exsistingStudent) {
+      exsistingStudent.tasks
+        .push({
+          name: item.taskName,
+          pullReq: item.taskPR,
+          score: item.taskScore,
+          mentorComment: item.mentorComment,
+          action: item.action,
+        });
+    } else {
+      acc.push({
+        mentorGithub: item.mentorGithub,
+        studentGithub: item.studentGithub,
+        tasks: [
+          {
+            name: item.taskName,
+            pullReq: item.taskPR,
+            score: item.taskScore,
+            mentorComment: item.mentorComment,
+            action: item.action,
+          },
+        ],
+      });
+    }
+    return acc;
+  }, []);
+
+/* Sort result by mentorGithub */
+const resultSortByStudentGithub = mergeStudentTasks
+  .sort((first, second) => first.studentGithub.localeCompare(second.studentGithub));
+
+
+/* Merge mentors and students */
+const mergeMentorStudentPair = resultSortByStudentGithub
+  .reduce((acc, item) => {
+    const exsistingMentor = acc.find(accItem => accItem.mentorGithub === item.mentorGithub);
+
+    if (exsistingMentor) {
+      exsistingMentor.students
+        .push({
+          studentGithub: item.studentGithub,
+          tasks: item.tasks,
+        });
+    } else {
+      acc.push({
+        mentorGithub: item.mentorGithub,
+        students: [
+          {
+            studentGithub: item.studentGithub,
+            tasks: item.tasks,
+          },
+        ],
+
+      });
+    }
+    return acc;
+  }, []);
+
+const resultSortByMentorGithub = mergeMentorStudentPair
+  .sort((first, second) => first.mentorGithub.localeCompare(second.mentorGithub));
+
+module.exports = resultSortByMentorGithub;
