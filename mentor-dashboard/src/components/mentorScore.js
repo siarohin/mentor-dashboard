@@ -77,6 +77,9 @@ const getMentorScore = (currentRow) => {
       .toString()
       .replace('https://github.com/', '')
       .replace('http://github.com/', '')
+      .replace('rolling-scopes-school', '')
+      .replace(/\//gi, '')
+      .replace(/-2018Q3/, '')
       .toLowerCase()
       .trim(),
     taskName: (sheet1[workbook.taskName + currentRow].v)
@@ -150,13 +153,14 @@ const mergeMentorStudentPair = resultSortByStudentGithub
     } else {
       acc.push({
         mentorGithub: item.mentorGithub,
+        mentorName: '',
+        mentorCity: '',
         students: [
           {
             studentGithub: item.studentGithub,
             tasks: item.tasks,
           },
         ],
-
       });
     }
     return acc;
@@ -164,5 +168,6 @@ const mergeMentorStudentPair = resultSortByStudentGithub
 
 const resultSortByMentorGithub = mergeMentorStudentPair
   .sort((first, second) => first.mentorGithub.localeCompare(second.mentorGithub));
+
 
 module.exports = resultSortByMentorGithub;
