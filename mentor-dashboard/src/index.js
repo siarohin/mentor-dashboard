@@ -5,29 +5,22 @@ const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 
 
-// Merge mentorStudentsPairs and Tasks workbook ========
+// TODO: add future tasks!!!
 
-mentorStudentsPairs.forEach((mentorStudentsPair) => {
-  mentorStudentsPair.students.forEach((student) => {
-    const currentStudent = student;
-    currentStudent.tasks = tasks;
-  });
-});
+// mutate mentorStudentsPairs-> add tasks ================
 
-
-// const findStudent = (data) => {
-//   let currentStudent = '';
-
-//   data.students.forEach((student) => {
-//     currentStudent = student.studentGithub;
-//     return currentStudent;
+// mentorStudentsPairs.forEach((mentorStudentsPair) => {
+//   mentorStudentsPair.students.forEach((student) => {
+//     const currentStudent = student;
+//     currentStudent.tasks = tasks;
 //   });
-// };
+// });
 
-/* find Mentor name and city in template (mentorStudentsPairs) */
+
+// find mentor's name & city in mentorStudentsPairs =======
+
 const findMentorData = (data) => {
   const existingMentor = mentorStudentsPairs.find(mentor => data.mentorGithub === mentor.mentorGithub);
-
 
   if (existingMentor) {
     return {
@@ -41,9 +34,49 @@ const findMentorData = (data) => {
   };
 };
 
-/* add data to out file from template (mentorStudentsPairs) */
+
+// find mentor's name & city in mentorStudentsPairs =======
+
+const findTask = (data) => {
+
+  const existingTask = tasks.find(task => task.name === data.name);
+
+  if (existingTask) {
+    return {
+      name: existingTask.name,
+      link: existingTask.link,
+      pullReq: data.pullReq,
+      score: data.score,
+      mentorComment: data.mentorComment,
+      status: existingTask.status,
+      statusDescription: existingTask.statusDescription,
+      action: data.action,
+    };
+  }
+  return {
+    name: data.name,
+    link: data.link,
+    pullReq: '',
+    score: data.score,
+    mentorComment: data.mentorComment,
+    status: '',
+    statusDescription: '',
+    action: '',
+  };
+};
+
+
+// mutate mentorScore -> add mentor's name & city ========
+
 mentorScore.forEach((mentor) => {
   const result = findMentorData(mentor);
+
+  mentor.students.forEach((student) => {
+    student.tasks.forEach((task) => {
+      Object.assign(task, findTask(task));
+    });
+  });
+
 
   mentor.mentorName += result.mentorName;
   mentor.mentorCity += result.mentorCity;
