@@ -9,12 +9,12 @@ const mentorScore = require('./components/mentorScore');
 
 // mutate mentorStudentsPairs-> add tasks ================
 
-// mentorStudentsPairs.forEach((mentorStudentsPair) => {
-//   mentorStudentsPair.students.forEach((student) => {
-//     const currentStudent = student;
-//     currentStudent.tasks = tasks;
-//   });
-// });
+mentorStudentsPairs.forEach((mentorStudentsPair) => {
+  mentorStudentsPair.students.forEach((student) => {
+    const currentStudent = student;
+    currentStudent.tasks = tasks;
+  });
+});
 
 
 // find mentor's name & city in mentorStudentsPairs =======
@@ -78,8 +78,8 @@ mentorScore.forEach((mentor) => {
   });
 
 
-  mentor.mentorName += result.mentorName;
-  mentor.mentorCity += result.mentorCity;
+  mentor.mentorName = result.mentorName;
+  mentor.mentorCity = result.mentorCity;
 });
 
 

@@ -56,7 +56,13 @@ const getTask = (currentRow) => {
     name: (sheet1[workbook.name + currentRow].v)
       .toString()
       .replace('-', ' ')
-      .replace(/"/gi, '\'')
+      .replace(/"/gi, ' ')
+      .trim()
+      .toLowerCase()
+      .replace('code jam', 'codejam')
+      .split(/\s+/)
+      .map(word => word[0].toUpperCase() + word.substring(1))
+      .join(' ')
       .trim(),
     link,
     status: (sheet1[workbook.status + currentRow].v)

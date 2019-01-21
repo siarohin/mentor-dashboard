@@ -85,7 +85,13 @@ const getMentorScore = (currentRow) => {
     taskName: (sheet1[workbook.taskName + currentRow].v)
       .toString()
       .replace('-', ' ')
-      .replace(/"/gi, '\'')
+      .replace(/"/gi, ' ')
+      .trim()
+      .toLowerCase()
+      .replace('code jam', 'codejam')
+      .split(/\s+/)
+      .map(word => word[0].toUpperCase() + word.substring(1))
+      .join(' ')
       .trim(),
     taskPR,
     taskScore: sheet1[workbook.taskScore + currentRow].v,
