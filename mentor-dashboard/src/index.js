@@ -5,9 +5,11 @@ const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 
 
+// ??? task Presentatin don't exist in tpl -> students have 9 or 10 tasks.
+
 // find mentor's name & city in mentorStudentsPairs =======
 
-const findMentorData = (data) => {
+const spreadMentorData = (data) => {
   const existingMentor = mentorStudentsPairs.find(mentor => data.mentorGithub === mentor.mentorGithub);
 
   if (existingMentor) {
@@ -23,9 +25,10 @@ const findMentorData = (data) => {
 };
 
 
-// mutate mentorScore -> concat task params with template ====
+// mutate mentorScore -> add link, status, description
+// to existing tasks from Tasks template ===================
 
-const findTask = (data) => {
+const spreadStudentTasks = (data) => {
   const existingTask = tasks.find(task => task.name === data.name);
 
   if (existingTask) {
@@ -43,19 +46,42 @@ const findTask = (data) => {
 };
 
 
-// mutate mentorScore -> add mentor's name & city ========
+// mutate mentorScore -> add mentor's name & city =========
 
 mentorScore.forEach((mentor) => {
-  const result = findMentorData(mentor);
+  const result = spreadMentorData(mentor);
 
   mentor.students.forEach((student) => {
     student.tasks.forEach((task) => {
-      Object.assign(task, findTask(task));
+      Object.assign(task, spreadStudentTasks(task));
     });
   });
 
   mentor.mentorName = result.mentorName;
   mentor.mentorCity = result.mentorCity;
+});
+
+
+// mutate mentorScore -> add tpl tasks to lazy students ====
+
+const completeStudentTasks = (data) => {
+  mentorScore.forEach((mentor) => {
+    mentor.students.forEach((student) => {
+
+      const sourceTasks = [data];
+      const existingTask = student.tasks.find(task => task.name === data.name);
+
+      if (existingTask) {
+        sourceTasks.splice(sourceTasks.indexOf(data), 1);
+      }
+
+      student.tasks.push(...sourceTasks);
+    });
+  });
+};
+
+tasks.forEach((task) => {
+  completeStudentTasks(task);
 });
 
 
