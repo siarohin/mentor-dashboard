@@ -105,7 +105,6 @@ const getMentorScore = (currentRow) => {
 const result = () => getSheetRows(sheet1, workbook.mentorGithub)
   .map(row => getMentorScore(row));
 
-
 // Merge student, mentors and tasks ==============
 
 /* Merge students and tasks */
@@ -139,6 +138,7 @@ const mergeStudentTasks = result()
     }
     return acc;
   }, []);
+
 
 /* Sort result by mentorGithub */
 const resultSortByStudentGithub = mergeStudentTasks
