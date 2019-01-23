@@ -1,11 +1,11 @@
+/* eslint-disable no-param-reassign */
 const path = require('path');
 const fs = require('fs');
 const mentorStudentsPairs = require('./components/mentorStudentsPairs');
 const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
+const vocabularies = require('./components/vocabularies');
 
-
-// TODO: change status if mentor push points
 
 // find mentor's name & city in mentorStudentsPairs =======
 
@@ -156,6 +156,28 @@ completeTemplate.forEach((task) => {
   completeStudentTasks(task);
 });
 
+
+// check and change task's status ==================
+
+mentorScore.forEach((mentor) => {
+  mentor.students.forEach((student) => {
+    student.tasks.forEach((task) => {
+
+      if (task.score !== '') {
+        task.status = 'checked';
+      } else if (task.status === '' && task.action !== '') {
+        task.status = 'checking';
+      } else {
+        task.status = 'in progress';
+      }
+
+      const vocabulary = vocabularies.find(word => word.legend === task.status);
+      if (vocabulary) {
+        task.statusDescription = vocabulary.legendDescription;
+      }
+    });
+  });
+});
 
 // Save result to JSON =============================
 
