@@ -122,41 +122,51 @@ tasks.forEach((task) => {
 
 // find student with max count of tasks ===========
 
+let superStudent;
 const getSuperStudent = () => {
   // the first student is super by default,
   // then check other =============================
   const startMentor = mentorScore.find(mentor => mentor.students.length > 0);
-  let superStudent = startMentor.students[0];
+  let bestStudent = startMentor.students[0];
 
   mentorScore.forEach((mentor) => {
     mentor.students.forEach((student) => {
-      if (student.tasks.length > superStudent.tasks.length) {
-        superStudent = student;
+      if (student.tasks.length > bestStudent.tasks.length) {
+        bestStudent = student;
       }
     });
   });
-
+  superStudent = bestStudent;
   return superStudent;
 };
-
-const superStudent = getSuperStudent();
 
 
 // create task template and add this tasks to all
 // students ========================================
 
-const completeTemplate = [];
-superStudent.tasks.forEach((task) => {
-  const data = {
-    name: task.name,
-    action: task.action,
-  };
-  completeTemplate.push(data);
-});
+const copyToAllSuperStudentTasks = () => {
+  const completeTemplate = [];
+  superStudent.tasks.forEach((task) => {
+    const data = {
+      name: task.name,
+      action: task.action,
+    };
+    completeTemplate.push(data);
+  });
 
-completeTemplate.forEach((task) => {
-  completeStudentTasks(task);
-});
+  completeTemplate.forEach((task) => {
+    completeStudentTasks(task);
+  });
+
+  const newSuperStudent = getSuperStudent();
+  if (superStudent.tasks.length !== newSuperStudent.tasks.length) {
+    superStudent = newSuperStudent;
+    copyToAllSuperStudentTasks();
+  }
+};
+
+getSuperStudent();
+copyToAllSuperStudentTasks();
 
 
 // check and change task's status ==================
