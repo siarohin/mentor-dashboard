@@ -45,9 +45,9 @@ const sheet1 = getSheetData(readFile);
 // get tasks, statuses, links ==============
 
 const getTask = (currentRow) => {
-  let link = '';
+  let specification = '';
   if (sheet1[workbook.link + currentRow]) {
-    link = (sheet1[workbook.link + currentRow].v)
+    specification = (sheet1[workbook.link + currentRow].v)
       .toLowerCase()
       .trim();
   }
@@ -64,7 +64,7 @@ const getTask = (currentRow) => {
       .map(word => word[0].toUpperCase() + word.substring(1))
       .join(' ')
       .trim(),
-    link,
+    specification,
     status: (sheet1[workbook.status + currentRow].v)
       .toString()
       .toLowerCase()

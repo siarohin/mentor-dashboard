@@ -6,6 +6,9 @@ const mentorScore = require('./components/mentorScore');
 
 
 // ??? task Presentatin don't exist in tpl -> students have 9 or 10 tasks.
+// TODO: fix double tasks
+// change status if mentor push points
+// sort all tasks by abc
 
 // find mentor's name & city in mentorStudentsPairs =======
 
@@ -25,21 +28,21 @@ const spreadMentorData = (data) => {
 };
 
 
-// mutate mentorScore -> add link, status, description
-// to existing tasks from Tasks template ===================
+// mutate mentorScore -> add specification, status,
+// description to existing tasks from Tasks template =======
 
 const spreadStudentTasks = (data) => {
   const existingTask = tasks.find(task => task.name === data.name);
 
   if (existingTask) {
     return {
-      link: existingTask.link,
+      specification: existingTask.specification,
       status: existingTask.status,
       statusDescription: existingTask.statusDescription,
     };
   }
   return {
-    link: '',
+    specification: '',
     status: '',
     statusDescription: '',
   };
@@ -67,10 +70,20 @@ mentorScore.forEach((mentor) => {
 const completeStudentTasks = (data) => {
   mentorScore.forEach((mentor) => {
     mentor.students.forEach((student) => {
+      const template = {
+        name: '',
+        pullReq: '',
+        score: '',
+        mentorComment: '',
+        action: '',
+        specification: '',
+        status: '',
+        statusDescription: '',
+      };
+      const completeTplData = Object.assign(template, data);
 
-      const sourceTasks = [data];
+      const sourceTasks = [completeTplData];
       const existingTask = student.tasks.find(task => task.name === data.name);
-
       if (existingTask) {
         sourceTasks.splice(sourceTasks.indexOf(data), 1);
       }
