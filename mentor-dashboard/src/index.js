@@ -6,6 +6,8 @@ const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
+// TODO: add students from mentorStudents Pairs if they dont exist in Mentor Score
+
 
 // find mentor's name & city in mentorStudentsPairs =======
 
@@ -115,7 +117,7 @@ tasks.forEach((task) => {
 
 
 // mutate mentorScore -> add tasks which missed
-// in template Task, but present in
+// in template Task, but present into
 // some students ==================================
 
 // find student with max count of tasks ===========
@@ -162,12 +164,11 @@ completeTemplate.forEach((task) => {
 mentorScore.forEach((mentor) => {
   mentor.students.forEach((student) => {
     student.tasks.forEach((task) => {
-
       if (task.score !== '') {
         task.status = 'checked';
       } else if (task.status === '' && task.action !== '') {
         task.status = 'checking';
-      } else {
+      } else if (task.status === '' && task.action === '') {
         task.status = 'in progress';
       }
 
@@ -178,6 +179,7 @@ mentorScore.forEach((mentor) => {
     });
   });
 });
+
 
 // Save result to JSON =============================
 
