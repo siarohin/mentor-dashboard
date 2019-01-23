@@ -121,32 +121,20 @@ tasks.forEach((task) => {
 // find student with max count of tasks ===========
 
 const getSuperStudent = () => {
-  const superStudent = [];
+  // the first student is super by default,
+  // then check other =============================
+  const startMentor = mentorScore.find(mentor => mentor.students.length > 0);
+  let superStudent = startMentor.students[0];
+
   mentorScore.forEach((mentor) => {
-    let bestMentorStudent = null;
-    mentor.students.forEach((student, index) => {
-      if ((student[index + 1]) && student[index + 1].tasks.length > student.tasks.length) {
-        bestMentorStudent = student[index + 1];
-      } else {
-        bestMentorStudent = student;
+    mentor.students.forEach((student) => {
+      if (student.tasks.length > superStudent.tasks.length) {
+        superStudent = student;
       }
     });
-
-    superStudent.push(bestMentorStudent);
   });
 
-  while (superStudent.length > 1) {
-    superStudent.forEach((student, index) => {
-      if ((student[index + 1]) && student.tasks.length >= student[index + 1].tasks.length) {
-        superStudent.splice(superStudent.indexOf(student[index + 1]), 1);
-      } else {
-        superStudent.splice(superStudent.indexOf(student), 1);
-      }
-    });
-  }
-
-  const [result] = superStudent;
-  return result;
+  return superStudent;
 };
 
 const superStudent = getSuperStudent();
