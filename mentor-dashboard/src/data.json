@@ -949,16 +949,6 @@
           {
             "name": "Codejam Dom, Dom Events",
             "pullReq": "https://github.com/rolling-scopes-school/olgaluk-2018q3/pull/2",
-            "score": 100,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/olgaluk-2018q3/pull/2",
             "score": 95,
             "mentorComment": "",
             "action": "",
@@ -2334,16 +2324,6 @@
           {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/painincoming/rsschool-codejam/pull/1",
-            "score": 120,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/painincoming/rsschool-codejam/pull/1",
             "score": 110,
             "mentorComment": "Отправил в форму певый раз 120 баллов, не заметил дедлайн",
             "action": "",
@@ -3407,16 +3387,6 @@
             "statusDescription": ""
           },
           {
-            "name": "Presentation",
-            "pullReq": "https://github.com/rolling-scopes-school/nicklevkovich-2018q3/pull/4",
-            "score": 120,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "",
-            "status": "",
-            "statusDescription": ""
-          },
-          {
             "name": "Rs Activist",
             "pullReq": "",
             "score": "",
@@ -4346,16 +4316,6 @@
             "name": "Presentation",
             "pullReq": "https://github.com/rolling-scopes-school/brateckrolikstudent-2018q3/tree/presentation",
             "score": 80,
-            "mentorComment": "Нет транскрипта и не было прогона + опоздание на 3 дня",
-            "action": "Выставить оценку",
-            "specification": "",
-            "status": "",
-            "statusDescription": ""
-          },
-          {
-            "name": "Presentation",
-            "pullReq": "https://github.com/rolling-scopes-school/brateckrolikstudent-2018q3/tree/presentation",
-            "score": 80,
             "mentorComment": "Не было транскрипта и прогона + опоздание на 3 дня",
             "action": "Выставить оценку",
             "specification": "",
@@ -4692,16 +4652,6 @@
           {
             "name": "Codejam Cv",
             "pullReq": "https://github.com/kirillzavorotni/rsschool-codejam1-cv/pull/1",
-            "score": 87,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/kirillzavorotni/rsschool-codejam1-cv/pull/1",
             "score": 90,
             "mentorComment": "",
             "action": "",
@@ -4794,16 +4744,6 @@
       {
         "studentGithub": "makar1227",
         "tasks": [
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/makar1227/rsschool-codejam1-cv/pull/1",
-            "score": 95,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
           {
             "name": "Codejam Cv",
             "pullReq": "https://github.com/makar1227/rsschool-codejam1-cv/pull/1",
@@ -4994,16 +4934,6 @@
       {
         "studentGithub": "torchik-slava",
         "tasks": [
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/torchik-slava/rsschool-codejam1-cv/pull/1",
-            "score": 77,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
           {
             "name": "Codejam Cv",
             "pullReq": "https://github.com/torchik-slava/rsschool-codejam1-cv/pull/1",
@@ -5747,26 +5677,6 @@
             "statusDescription": "ментор уже проверил"
           },
           {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/sergeyguchok",
-            "score": 0,
-            "mentorComment": "работа не выполнена",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/sergeyguchok",
-            "score": 0,
-            "mentorComment": "работа не выполнена",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/sergeyguchok/rsschool-codejam/pull/1",
             "score": 83,
@@ -6267,16 +6177,6 @@
         "tasks": [
           {
             "name": "Codejam Corejs",
-            "pullReq": "https://github.com/ton9q/rsschool-codejam1-cv/pull/1",
-            "score": 100,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
             "pullReq": "https://github.com/ton9q/rsschool-codejam/pull/1",
             "score": 110,
             "mentorComment": "Very good result",
@@ -6514,16 +6414,6 @@
           },
           {
             "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/hellsingi-2018q3/pull/3",
-            "score": 90,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
             "pullReq": "https://www.youtube.com/watch?v=5j3-i_4ztl0&feature=youtu.be",
             "score": 100,
             "mentorComment": "",
@@ -6735,40 +6625,10 @@
           {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/nastya-ropot-2018q3/pull/1",
-            "score": 73,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/nastya-ropot-2018q3/pull/1",
             "score": 70,
             "mentorComment": "",
             "action": "Выставить оценку",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/nastya-ropot-2018q3/pull/3",
-            "score": 10,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/nastya-ropot-2018q3/pull/4",
-            "score": 90,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
           },
@@ -6866,16 +6726,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/polotenchik-2018q3/pull/1",
-            "score": 93,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Markup #1",
@@ -7997,32 +7847,12 @@
           {
             "name": "Codejam Dom, Dom Events",
             "pullReq": "https://github.com/rolling-scopes-school/igor-provotorov-2018q3/pull/2",
-            "score": 80,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/igor-provotorov-2018q3/pull/2",
             "score": 95,
             "mentorComment": "Эта оценка актуальна. Предыдущая выставленная ошибочна.",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/igor-provotorov-2018q3/tree/youtube-client/youtube-client",
-            "score": 80,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Youtube",
@@ -8118,26 +7948,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/kamatozzzik-2018q3/pull/2",
-            "score": 90,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/kamatozzzik-2018q3/pull/2",
-            "score": 90,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
           },
           {
             "name": "Codejam Dom, Dom Events",
@@ -8746,16 +8556,6 @@
           {
             "name": "Codejam Dom, Dom Events",
             "pullReq": "https://github.com/rolling-scopes-school/pavellyolya-2018q3/pull/2",
-            "score": 105,
-            "mentorComment": "Все комменты были даны в коммент секции к PR",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/pavellyolya-2018q3/pull/2",
             "score": 100,
             "mentorComment": "Отнял 5 лишних баллов, которые ставил по невнимательности",
             "action": "Выставить оценку",
@@ -8842,16 +8642,6 @@
             "mentorComment": "Есть замечания по именованию коммитов, а так же по html/css (не соответствие гайдлайну)",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/dmitrylenko/rsschool-codejam/pull/1",
-            "score": 120,
-            "mentorComment": "отличная работа",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -8963,16 +8753,6 @@
           {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/underdoglzd/rsschool-codejam/pull/1",
-            "score": 100,
-            "mentorComment": "Everything good, but: no eslint, issues with code style, committed node_modules",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/underdoglzd/rsschool-codejam/pull/1",
             "score": 90,
             "mentorComment": "\r\nEverything good, but: no eslint, issues with code style, committed node_modules",
             "action": "Выставить оценку",
@@ -9062,16 +8842,6 @@
             "mentorComment": "Не все требования задания выполнены, есть замечания по именованию коммитов, а так же по html/css (не соответствие гайдлайну)",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/zzvipz/rsschool-codejam/pull/1",
-            "score": 60,
-            "mentorComment": "реализована только sumOfOther, подключен eslint, сделано до дедлайна",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -9613,16 +9383,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Rs Activist",
-            "pullReq": "https://gitter.im/rolling-scopes-school/announcements",
-            "score": 25,
-            "mentorComment": "Помощь студентам в гиттере",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
           },
           {
             "name": "Rs Activist",
@@ -11082,16 +10842,6 @@
           {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/2kevink/rsschool-codejam/pull/1",
-            "score": 115,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/2kevink/rsschool-codejam/pull/1",
             "score": 120,
             "mentorComment": "",
             "action": "Выставить оценку",
@@ -11106,16 +10856,6 @@
             "mentorComment": "",
             "action": "Выставить оценку",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/2kevink-2018q3/pull/3",
-            "score": 60,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
           },
@@ -11213,16 +10953,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/amoyt/rsschool-codejam/pull/1",
-            "score": 80,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
           },
           {
             "name": "Codejam Corejs",
@@ -12672,32 +12402,12 @@
           {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/dyatelvudu-2018q3/pull/1",
-            "score": 40,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/dyatelvudu-2018q3/pull/1",
             "score": 45,
             "mentorComment": "",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/dyatelvudu-2018q3/pull/2/",
-            "score": 72,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
           },
           {
             "name": "Codejam Dom, Dom Events",
@@ -12913,26 +12623,6 @@
             "mentorComment": "Не делал",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/egormiwa1",
-            "score": 0,
-            "mentorComment": "Не делал",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/egormiwa1-2018q3/tree/codejam-dom/codejam-dom",
-            "score": 83,
-            "mentorComment": "Нет PR (но таск сделан)",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -13229,16 +12919,6 @@
             "statusDescription": "ментор уже проверил"
           },
           {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/anton23kirienko/rsschool-codejam1-cv/pull/1",
-            "score": 100,
-            "mentorComment": "Креативное cv, поругала за контент. Требования выполнены все,  педантично. И еще кг мемасиков в плечи. ",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/anton23kirienko-2018q3/pull/2",
             "score": 95,
@@ -13369,16 +13049,6 @@
             "specification": "",
             "status": "",
             "statusDescription": ""
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/alenakharytonchyk-2018q3/pull/2",
-            "score": 100,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
           },
           {
             "name": "Codejam Dom, Dom Events",
@@ -15673,16 +15343,6 @@
           {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/iryna-mazura/rsschool-codejam/pull/1",
-            "score": 100,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/iryna-mazura/rsschool-codejam/pull/1",
             "score": 110,
             "mentorComment": "",
             "action": "",
@@ -16116,16 +15776,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/siarohin-2018q3/pull/3",
-            "score": 95,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Youtube",
@@ -17032,16 +16682,6 @@
           },
           {
             "name": "Presentation",
-            "pullReq": "https://github.com/rolling-scopes-school/devildummy-2018q3/pull/5",
-            "score": 120,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "",
-            "status": "",
-            "statusDescription": ""
-          },
-          {
-            "name": "Presentation",
             "pullReq": "https://www.youtube.com/watch?v=bywab4spz_4",
             "score": 120,
             "mentorComment": "",
@@ -17239,16 +16879,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Presentation",
-            "pullReq": "https://github.com/rolling-scopes-school/serg8-2018q3/pull/5",
-            "score": 120,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "",
-            "status": "",
-            "statusDescription": ""
           },
           {
             "name": "Presentation",
@@ -18205,16 +17835,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/ronavea-2018q3/pull/3",
-            "score": 45,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Youtube",
@@ -20232,26 +19852,6 @@
             "mentorComment": "First task and partly third task done",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/nikitaklepanosov",
-            "score": 0,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/nikitaklepanosov/markup-2018q3",
-            "score": 55,
-            "mentorComment": "No Pull Request, not in private Repo, not so Pixel Perfect and so on",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -24730,16 +24330,6 @@
         "tasks": [
           {
             "name": "Codejam Corejs",
-            "pullReq": "https://github.com/kirilltk/rsschool-codejam/pull/1/files",
-            "score": 90,
-            "mentorComment": "Хорошая работа! -10 баллов в связи с тем, что не успел за 4 часа.",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
             "pullReq": "https://github.com/kirilltk/rsschool-codejam/pull/1",
             "score": 110,
             "mentorComment": "Хорошая работа! -10 баллов за то что не успел за 4 часа.",
@@ -24767,16 +24357,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/kirilltk-2018q3/pull/2",
-            "score": 100,
-            "mentorComment": "Отличная работа! Все критерии выполнены.",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
           },
           {
             "name": "Codejam Dom, Dom Events",
@@ -26130,16 +25710,6 @@
           },
           {
             "name": "Rs Activist",
-            "pullReq": "https://gitter.im/rolling-scopes-school/announcements",
-            "score": 25,
-            "mentorComment": "активно отвечает на вопросы в чате",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Rs Activist",
             "pullReq": "https://docs.google.com/spreadsheets/d/1a0ekj_4io8otsxniyte1dg2wt_los-vv4qv-ueos-bi/edit#gid=0",
             "score": 75,
             "mentorComment": "много помогает - отвечает на вопросы, записал видео для помощи студентам\r\n\r\nХочу поблагодарить @Dzmitry Tsebruk (@mikhama)  за отличное видео по ChartJs,  в котором он доходчиво показал что необходимо для начала использования библиотеки и показал отличный пример использования.",
@@ -26334,16 +25904,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/anastasiyamazura-2018q3/pull/3",
-            "score": 88,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Youtube",
@@ -26639,16 +26199,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/gaddyya-2018q3/pull/3",
-            "score": 92,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Youtube",
@@ -27041,26 +26591,6 @@
             "mentorComment": "Недурно, очень даже, верстка на гридах порадовала",
             "action": "Выставить оценку",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/eughene-cherepov/rsschool-codejam/pull/1#pullrequestreview-180531360",
-            "score": 100,
-            "mentorComment": "Все задания были выполнены",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/rolling-scopes-school/lectures/blob/master/lectures/promises-game-dev.md",
-            "score": 95,
-            "mentorComment": ".eslintrc не подключен, хотя пакеты установлены ",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -28385,16 +27915,6 @@
           },
           {
             "name": "Codejam Corejs",
-            "pullReq": "https://github.com/victoriathebrave/rsschool-codejam1-cv/pull/1",
-            "score": 110,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
             "pullReq": "https://github.com/victoriathebrave/rsschool-codejam/pull/1",
             "score": 110,
             "mentorComment": "",
@@ -28837,16 +28357,6 @@
             "mentorComment": "Требования выполнены. Есть незначительные погрешности.",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Dom, Dom Events",
-            "pullReq": "https://github.com/rolling-scopes-school/tanyasamal-2018q3/pull/2",
-            "score": 100,
-            "mentorComment": "все требовани выполнены",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -30225,16 +29735,6 @@
             "mentorComment": "Требования по заданию, репозиторию, коммитам и PR выполнены. Есть недочеты по использованию семантики и гайдлайну",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/sergey496/rsschool-codejam/pull/1",
-            "score": 95,
-            "mentorComment": "Все критерии выполнены. Есть замечания по поводу оформления кода и eslint'a",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -31685,16 +31185,6 @@
         "tasks": [
           {
             "name": "Markup #1",
-            "pullReq": "https://github.com/yaroslav-mig/rsschool-codejam1-cv/pull/1",
-            "score": 95,
-            "mentorComment": "background-color можно было убрать. А так, сайт хорошо получился.",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
             "pullReq": "https://github.com/yaroslav-mig/rsschool-markup/pull/1/",
             "score": 70,
             "mentorComment": "Сайт не responsive и не идет по центру.",
@@ -32100,16 +31590,6 @@
           {
             "name": "Codejam Corejs",
             "pullReq": "https://github.com/spiritforest/rsschool-codejam/pull/1",
-            "score": 108,
-            "mentorComment": "Все требования не сделаны за 4 до конца. Есть комит с папкой node_modules. ",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
-            "pullReq": "https://github.com/spiritforest/rsschool-codejam/pull/1",
             "score": 102,
             "mentorComment": "В комите содержится папка node_modules. eslint подключен некорректно. Все критерии не выполнены за 4 часа",
             "action": "",
@@ -32209,16 +31689,6 @@
       {
         "studentGithub": "polinamoiseyenko",
         "tasks": [
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/polinamoiseyenko/rsschool-codejam1-cv/pull/1",
-            "score": 87,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
           {
             "name": "Codejam Cv",
             "pullReq": "https://github.com/polinamoiseyenko/rsschool-codejam1-cv/pull/1",
@@ -32689,16 +32159,6 @@
           {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/yurec_0gurec-2018q3/pull/1",
-            "score": 80,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/yurec_0gurec-2018q3/pull/1",
             "score": 70,
             "mentorComment": "",
             "action": "Выставить оценку",
@@ -32795,16 +32255,6 @@
             "mentorComment": "",
             "action": "Выставить оценку",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/gemsgame/rsschool-codejam1-cv/pull/1",
-            "score": 80,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -33277,16 +32727,6 @@
             "mentorComment": "",
             "action": "",
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Cv",
-            "pullReq": "https://github.com/tserekhivan/rsschool-codejam1-cv/pull/2",
-            "score": 100,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-cv.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
           },
@@ -35398,26 +34838,6 @@
           },
           {
             "name": "Rs Activist",
-            "pullReq": "https://gitter.im/rolling-scopes-school/announcements",
-            "score": 25,
-            "mentorComment": "За создание и суппорт телеграмм чата ",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Rs Activist",
-            "pullReq": "https://gitter.im/rolling-scopes-school/announcements",
-            "score": 75,
-            "mentorComment": "помогал с организизацией лайф кодинга по тестам в ютубе, дискордом, скинул ссылка на статьи по тестам + много активничает, дает полезные ссылки, отвечает на вопросы + другие тоже благодарят",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
-          },
-          {
-            "name": "Rs Activist",
             "pullReq": "https://docs.google.com/spreadsheets/d/1a0ekj_4io8otsxniyte1dg2wt_los-vv4qv-ueos-bi/edit#gid=0",
             "score": 100,
             "mentorComment": "спасибо за организацию групп и бесчисленные советы по таскам, всего не счесть. Объясняет лучше всех, материалы и ссылки всегда нужные.",
@@ -36341,26 +35761,6 @@
           },
           {
             "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/annakolesnikova-2018q3/pull/3#pullrequestreview-181806388",
-            "score": 35,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://www.youtube.com/watch?v=0vofesc89d4&feature=share",
-            "score": 85,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
             "pullReq": "https://www.youtube.com/watch?v=0vofesc89d4&feature=share",
             "score": 85,
             "mentorComment": "",
@@ -37197,16 +36597,6 @@
           {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/alexandrasitnikova-2018q3/pull/1",
-            "score": 89,
-            "mentorComment": "",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/alexandrasitnikova-2018q3/pull/1",
             "score": 92,
             "mentorComment": "",
             "action": "Выставить оценку",
@@ -37621,16 +37011,6 @@
           {
             "name": "Youtube",
             "pullReq": "https://github.com/rolling-scopes-school/zerovers-2018q3/pull/3",
-            "score": 100,
-            "mentorComment": "well done",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/zerovers-2018q3/pull/3",
             "score": 130,
             "mentorComment": "well done + unit tests",
             "action": "Выставить оценку",
@@ -37667,16 +37047,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-scoreboard.md",
             "status": "checking",
             "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Rs Activist",
-            "pullReq": "https://gitter.im/rolling-scopes-school/announcements",
-            "score": 25,
-            "mentorComment": "помогал @davojta советами с трансляцией",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/rs-school-activist.md",
-            "status": "in progress",
-            "statusDescription": "студенты выполняют"
           },
           {
             "name": "Rs Activist",
@@ -39135,16 +38505,6 @@
           },
           {
             "name": "Codejam Corejs",
-            "pullReq": "https://github.com/happy-mary/rsschool-codejam",
-            "score": 0,
-            "mentorComment": "Нет ничего",
-            "action": "",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-corejs.md",
-            "status": "checked",
-            "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Codejam Corejs",
             "pullReq": "https://github.com/happy-mary/rsschool-codejam/pull/1",
             "score": 100,
             "mentorComment": "Все работает. Сделано вовремя. PR замечаний нет",
@@ -39987,16 +39347,6 @@
           {
             "name": "Markup #1",
             "pullReq": "https://github.com/rolling-scopes-school/mrspunki-2018q3/pull/1",
-            "score": 71,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/mrspunki-2018q3/pull/1",
             "score": 56,
             "mentorComment": "updated",
             "action": "Выставить оценку",
@@ -40120,16 +39470,6 @@
             "statusDescription": "ментор сейчас проверяет"
           },
           {
-            "name": "Youtube",
-            "pullReq": "https://github.com/rolling-scopes-school/scratchor-2018q3/pull/2",
-            "score": 65,
-            "mentorComment": "",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/youtube.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
-          },
-          {
             "name": "Rs Activist",
             "pullReq": "",
             "score": "",
@@ -40200,16 +39540,6 @@
             "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/codejam-notification.md",
             "status": "checked",
             "statusDescription": "ментор уже проверил"
-          },
-          {
-            "name": "Markup #1",
-            "pullReq": "https://github.com/rolling-scopes-school/anna-pronovich-2018q3/pull/1",
-            "score": 70,
-            "mentorComment": "Non responsive",
-            "action": "Выставить оценку",
-            "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-q3/tasks/markup-2018q3.md",
-            "status": "checking",
-            "statusDescription": "ментор сейчас проверяет"
           },
           {
             "name": "Markup #1",

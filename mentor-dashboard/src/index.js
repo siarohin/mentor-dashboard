@@ -6,8 +6,7 @@ const mentorScore = require('./components/mentorScore');
 
 
 // ??? task Presentatin don't exist in tpl -> students have 9 or 10 tasks.
-// TODO: fix double tasks
-// change status if mentor push points
+// TODO: change status if mentor push points
 // sort all tasks by abc
 
 // find mentor's name & city in mentorStudentsPairs =======
@@ -65,7 +64,8 @@ mentorScore.forEach((mentor) => {
 });
 
 
-// mutate mentorScore -> add tpl tasks to lazy students ====
+// mutate mentorScore -> add tpl tasks to lazy students,
+// fix tasks with same names ====================
 
 const completeStudentTasks = (data) => {
   mentorScore.forEach((mentor) => {
@@ -81,6 +81,22 @@ const completeStudentTasks = (data) => {
         statusDescription: '',
       };
       const completeTplData = Object.assign(template, data);
+
+
+      // check and fix double tasks, if student has
+      // tasks with same names in source exel;
+      // Rule: last task is right ================
+
+      student.tasks.forEach((taskItem, index) => {
+        if ((student.tasks[index + 1]) && taskItem.name === student.tasks[index + 1].name) {
+          const doubleItem = taskItem;
+          student.tasks.splice((student.tasks).indexOf(doubleItem), 1);
+        }
+      });
+
+
+      // add taskTemplate to `lazy` student;
+      // `lazy` student = student without task ====
 
       const sourceTasks = [completeTplData];
       const existingTask = student.tasks.find(task => task.name === data.name);
