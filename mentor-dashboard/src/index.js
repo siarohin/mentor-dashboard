@@ -5,9 +5,7 @@ const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 
 
-// ??? task Presentatin don't exist in tpl -> students have 9 or 10 tasks.
 // TODO: change status if mentor push points
-// sort all tasks by abc
 
 // find mentor's name & city in mentorStudentsPairs =======
 
@@ -87,6 +85,8 @@ const completeStudentTasks = (data) => {
       // tasks with same names in source exel;
       // Rule: last task is right ================
 
+      student.tasks.sort((first, second) => first.name.localeCompare(second.name));
+
       student.tasks.forEach((taskItem, index) => {
         if ((student.tasks[index + 1]) && taskItem.name === student.tasks[index + 1].name) {
           const doubleItem = taskItem;
@@ -114,7 +114,62 @@ tasks.forEach((task) => {
 });
 
 
-// Save result to JSON ======================
+// mutate mentorScore -> add tasks which missed
+// in template Task, but present in
+// some students ==================================
+
+// find student with max count of tasks ===========
+
+const getSuperStudent = () => {
+  const superStudent = [];
+  mentorScore.forEach((mentor) => {
+    let bestMentorStudent = null;
+    mentor.students.forEach((student, index) => {
+      if ((student[index + 1]) && student[index + 1].tasks.length > student.tasks.length) {
+        bestMentorStudent = student[index + 1];
+      } else {
+        bestMentorStudent = student;
+      }
+    });
+
+    superStudent.push(bestMentorStudent);
+  });
+
+  while (superStudent.length > 1) {
+    superStudent.forEach((student, index) => {
+      if ((student[index + 1]) && student.tasks.length >= student[index + 1].tasks.length) {
+        superStudent.splice(superStudent.indexOf(student[index + 1]), 1);
+      } else {
+        superStudent.splice(superStudent.indexOf(student), 1);
+      }
+    });
+  }
+
+  const [result] = superStudent;
+  return result;
+};
+
+const superStudent = getSuperStudent();
+
+
+// create task template and add this tasks to all
+// students ========================================
+
+const completeTemplate = [];
+superStudent.tasks.forEach((task) => {
+  const data = {
+    name: task.name,
+    action: task.action,
+  };
+  completeTemplate.push(data);
+});
+
+completeTemplate.forEach((task) => {
+  completeStudentTasks(task);
+});
+
+
+// Save result to JSON =============================
 
 const pathToJSON = path.join(__dirname, './data.json');
 

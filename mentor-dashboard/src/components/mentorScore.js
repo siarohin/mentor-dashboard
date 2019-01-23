@@ -57,7 +57,8 @@ const getMentorScore = (currentRow) => {
 
   let mentorComment = '';
   if (sheet1[workbook.mentorComment + currentRow]) {
-    mentorComment = sheet1[workbook.mentorComment + currentRow].v;
+    mentorComment = (sheet1[workbook.mentorComment + currentRow].v)
+      .trim();
   }
 
   let action = '';
