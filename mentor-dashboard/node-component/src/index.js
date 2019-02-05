@@ -7,6 +7,26 @@ const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
 
+const copyMentorStudentsPairs = mentorStudentsPairs.map(data => data);
+
+copyMentorStudentsPairs.forEach((mentor) => {
+  const existingMentor = mentorScore.find(({ mentorGithub }) => mentorGithub === mentor.mentorGithub);
+
+  if (existingMentor) {
+    mentor.students.forEach((student) => {
+      const existingStudent = existingMentor.students.find(({ studentGithub }) => studentGithub === student.studentGithub);
+
+      if (existingStudent) {
+        student.tasks = existingStudent.tasks;
+      }
+
+    });
+
+  }
+});
+
+
+// console.log(mentorScore);
 // find mentor's name & city in mentorStudentsPairs =======
 
 const spreadMentorData = (data) => {
@@ -196,5 +216,5 @@ mentorScore.forEach((mentor) => {
 
 const pathToJSON = path.join(__dirname, './data.json');
 
-const resultToJson = JSON.stringify(mentorScore, 0, 2);
+const resultToJson = JSON.stringify(copyMentorStudentsPairs, 0, 2);
 fs.writeFile(pathToJSON, resultToJson, 'utf8', () => {});
