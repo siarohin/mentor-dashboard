@@ -6,8 +6,6 @@ const tasks = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
-// TODO: add students from mentorStudents Pairs if they dont exist in Mentor Score
-
 
 // find mentor's name & city in mentorStudentsPairs =======
 
@@ -176,6 +174,9 @@ mentorScore.forEach((mentor) => {
     student.tasks.forEach((task) => {
       if (task.score !== '') {
         task.status = 'checked';
+      } else if (task.score === '' && task.status === 'checked') {
+        task.status = 'nochecked';
+        task.statusDescription = 'нет оценки ментора';
       } else if (task.status === '' && task.action !== '') {
         task.status = 'checking';
       } else if (task.status === '' && task.action === '') {

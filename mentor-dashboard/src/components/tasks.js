@@ -48,7 +48,6 @@ const getTask = (currentRow) => {
   let specification = '';
   if (sheet1[workbook.link + currentRow]) {
     specification = (sheet1[workbook.link + currentRow].v)
-      .toLowerCase()
       .trim();
   }
 

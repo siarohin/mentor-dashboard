@@ -73,6 +73,8 @@ const getMentorScore = (currentRow) => {
       .toLowerCase()
       .replace('https://github.com/', '')
       .replace('http://github.com/', '')
+      .replace('rolling-scopes-', '')
+      .replace('-2018q3', '')
       .replace('/', ''),
     studentGithub: (sheet1[workbook.studentGithub + currentRow].v)
       .toString()
