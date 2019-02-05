@@ -1,0 +1,14 @@
+.students__data {
+  margin: 10px 5px;
+  color: #8d8173;
+  font-weight: 300;
+  background: #e1e3e0;
+  border-radius: 0 18px;
+  width: 24%;
+}
+
+.students__title {
+  margin: 0 5px 12px 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
