@@ -6,12 +6,13 @@ const tasksTemplate = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
-
 const copyMentorStudentsPairs = JSON.parse(JSON.stringify(mentorStudentsPairs));
 const copyMentorScore = JSON.parse(JSON.stringify(mentorScore));
 
 
+// ============================================================================================
 // delete existing students from copyMentorScore
+// ============================================================================================
 const deleteExistingStudents = (student) => {
   copyMentorScore.forEach(({ students }) => {
     const exStudent = students.find(({ studentGithub }) => studentGithub === student.studentGithub);
@@ -22,7 +23,10 @@ const deleteExistingStudents = (student) => {
 };
 
 
+// ============================================================================================
 // delete empty mentors from copyMentorScore
+// ============================================================================================
+
 const deleteEmptyMentor = () => {
   const emptyMentor = copyMentorScore.find(mentor => mentor.students.length === 0);
   if (emptyMentor) {
@@ -32,6 +36,8 @@ const deleteEmptyMentor = () => {
 };
 
 
+// ============================================================================================
+// copy tasks to existing students
 // ============================================================================================
 
 copyMentorStudentsPairs.forEach((mentor) => {
@@ -53,9 +59,12 @@ deleteEmptyMentor();
 
 
 // ============================================================================================
+// copy tasks to other students
+// ============================================================================================
 
 const findStudent = (myStudent) => {
   const myStudentGithub = myStudent.studentGithub;
+
   const copyMentorScoreFind = () => {
     copyMentorScore.forEach(({ students }) => {
       students.forEach((student) => {
@@ -85,6 +94,8 @@ deleteEmptyMentor();
 
 
 // ============================================================================================
+// copy new students to existing mentors
+// ============================================================================================
 
 const findMentor = (mentor) => {
   const existingMentor = copyMentorStudentsPairs.find(({ mentorGithub }) => mentorGithub === mentor.mentorGithub);
@@ -101,6 +112,8 @@ copyMentorScore.forEach((mentor) => {
 deleteEmptyMentor();
 
 
+// ============================================================================================
+// add specifications to existing tasks
 // ============================================================================================
 
 const addTaskSpecification = (data) => {
@@ -133,6 +146,8 @@ copyMentorStudentsPairs.forEach(({ students }) => {
 });
 
 
+// ============================================================================================
+// autocomplete tasks
 // ============================================================================================
 
 const autocompleteTasks = (data) => {
@@ -178,10 +193,11 @@ tasksTemplate.forEach((task) => {
 
 
 // ============================================================================================
+// find the best student and autocomplete tasks to other
+// ============================================================================================
 
 let superStudent;
 const getSuperStudent = () => {
-
   const startMentor = copyMentorStudentsPairs.find(mentor => mentor.students.length > 0);
   let bestStudent = startMentor.students[0];
 
@@ -223,6 +239,8 @@ copyToAllSuperStudentTasks();
 
 
 // ============================================================================================
+// check and change legends to tasks
+// ============================================================================================
 
 copyMentorStudentsPairs.forEach((mentor) => {
   mentor.students.forEach((student) => {
@@ -247,6 +265,8 @@ copyMentorStudentsPairs.forEach((mentor) => {
 });
 
 
+// ============================================================================================
+// write json
 // ============================================================================================
 
 const pathToJSON = path.join(__dirname, './data.json');
