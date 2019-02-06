@@ -7,8 +7,8 @@ const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
 
-const copyMentorStudentsPairs = mentorStudentsPairs.map(data => data);
-const copyMentorScore = mentorScore.map(data => data);
+const copyMentorStudentsPairs = JSON.parse(JSON.stringify(mentorStudentsPairs));
+const copyMentorScore = JSON.parse(JSON.stringify(mentorScore));
 
 
 // delete existing students from copyMentorScore
