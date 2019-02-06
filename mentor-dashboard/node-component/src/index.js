@@ -2,15 +2,40 @@
 const path = require('path');
 const fs = require('fs');
 const mentorStudentsPairs = require('./components/mentorStudentsPairs');
-const tasks = require('./components/tasks');
+const tasksTemplate = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
 
 
 const copyMentorStudentsPairs = mentorStudentsPairs.map(data => data);
+const copyMentorScore = mentorScore.map(data => data);
+
+
+// delete existing students from copyMentorScore
+const deleteExistingStudents = (student) => {
+  copyMentorScore.forEach(({ students }) => {
+    const exStudent = students.find(({ studentGithub }) => studentGithub === student.studentGithub);
+    if (exStudent) {
+      students.splice(students.indexOf(exStudent), 1);
+    }
+  });
+};
+
+
+// delete empty mentors from copyMentorScore
+const deleteEmptyMentor = () => {
+  const emptyMentor = copyMentorScore.find(mentor => mentor.students.length === 0);
+  if (emptyMentor) {
+    copyMentorScore.splice(copyMentorScore.indexOf(emptyMentor), 1);
+    deleteEmptyMentor();
+  }
+};
+
+
+// ============================================================================================
 
 copyMentorStudentsPairs.forEach((mentor) => {
-  const existingMentor = mentorScore.find(({ mentorGithub }) => mentorGithub === mentor.mentorGithub);
+  const existingMentor = copyMentorScore.find(({ mentorGithub }) => mentorGithub === mentor.mentorGithub);
 
   if (existingMentor) {
     mentor.students.forEach((student) => {
@@ -18,38 +43,68 @@ copyMentorStudentsPairs.forEach((mentor) => {
 
       if (existingStudent) {
         student.tasks = existingStudent.tasks;
+        deleteExistingStudents(existingStudent);
       }
-
     });
-
   }
 });
 
+deleteEmptyMentor();
 
-// console.log(mentorScore);
-// find mentor's name & city in mentorStudentsPairs =======
 
-const spreadMentorData = (data) => {
-  const existingMentor = mentorStudentsPairs.find(mentor => data.mentorGithub === mentor.mentorGithub);
+// ============================================================================================
 
-  if (existingMentor) {
-    return {
-      mentorName: existingMentor.mentorName,
-      mentorCity: existingMentor.mentorCity,
-    };
-  }
-  return {
-    mentorName: '',
-    mentorCity: '',
+const findStudent = (myStudent) => {
+  const myStudentGithub = myStudent.studentGithub;
+  const copyMentorScoreFind = () => {
+    copyMentorScore.forEach(({ students }) => {
+      students.forEach((student) => {
+        findStudent(student);
+      });
+    });
   };
+
+  copyMentorStudentsPairs.forEach(({ students }) => {
+    const existingStudent = students.find(student => student.studentGithub === myStudentGithub);
+    if (existingStudent) {
+      existingStudent.tasks = myStudent.tasks;
+
+      deleteExistingStudents(myStudent);
+      copyMentorScoreFind();
+    }
+  });
 };
 
+copyMentorScore.forEach(({ students }) => {
+  students.forEach((student) => {
+    findStudent(student);
+  });
+});
 
-// mutate mentorScore -> add specification, status,
-// description to existing tasks from Tasks template =======
+deleteEmptyMentor();
 
-const spreadStudentTasks = (data) => {
-  const existingTask = tasks.find(task => task.name === data.name);
+
+// ============================================================================================
+
+const findMentor = (mentor) => {
+  const existingMentor = copyMentorStudentsPairs.find(({ mentorGithub }) => mentorGithub === mentor.mentorGithub);
+  if (existingMentor) {
+    existingMentor.students = existingMentor.students.concat(mentor.students);
+    mentor.students = [];
+  }
+};
+
+copyMentorScore.forEach((mentor) => {
+  findMentor(mentor);
+});
+
+deleteEmptyMentor();
+
+
+// ============================================================================================
+
+const addTaskSpecification = (data) => {
+  const existingTask = tasksTemplate.find(task => task.name === data.name);
 
   if (existingTask) {
     return {
@@ -65,29 +120,24 @@ const spreadStudentTasks = (data) => {
   };
 };
 
+copyMentorStudentsPairs.forEach(({ students }) => {
+  students.forEach((student) => {
+    if (!student.tasks) {
+      student.tasks = [];
+    }
 
-// mutate mentorScore -> add mentor's name & city =========
-
-mentorScore.forEach((mentor) => {
-  const result = spreadMentorData(mentor);
-
-  mentor.students.forEach((student) => {
     student.tasks.forEach((task) => {
-      Object.assign(task, spreadStudentTasks(task));
+      Object.assign(task, addTaskSpecification(task));
     });
   });
-
-  mentor.mentorName = result.mentorName;
-  mentor.mentorCity = result.mentorCity;
 });
 
 
-// mutate mentorScore -> add tpl tasks to lazy students,
-// fix tasks with same names ====================
+// ============================================================================================
 
-const completeStudentTasks = (data) => {
-  mentorScore.forEach((mentor) => {
-    mentor.students.forEach((student) => {
+const autocompleteTasks = (data) => {
+  copyMentorStudentsPairs.forEach(({ students }) => {
+    students.forEach((student) => {
       const template = {
         name: '',
         pullReq: '',
@@ -98,12 +148,8 @@ const completeStudentTasks = (data) => {
         status: '',
         statusDescription: '',
       };
+
       const completeTplData = Object.assign(template, data);
-
-
-      // check and fix double tasks, if student has
-      // tasks with same names in source exel;
-      // Rule: last task is right ================
 
       student.tasks.sort((first, second) => first.name.localeCompare(second.name));
 
@@ -114,9 +160,6 @@ const completeStudentTasks = (data) => {
         }
       });
 
-
-      // add taskTemplate to `lazy` student;
-      // `lazy` student = student without task ====
 
       const sourceTasks = [completeTplData];
       const existingTask = student.tasks.find(task => task.name === data.name);
@@ -129,25 +172,20 @@ const completeStudentTasks = (data) => {
   });
 };
 
-tasks.forEach((task) => {
-  completeStudentTasks(task);
+tasksTemplate.forEach((task) => {
+  autocompleteTasks(task);
 });
 
 
-// mutate mentorScore -> add tasks which missed
-// in template Task, but present into
-// some students ==================================
-
-// find student with max count of tasks ===========
+// ============================================================================================
 
 let superStudent;
 const getSuperStudent = () => {
-  // the first student is super by default,
-  // then check other =============================
-  const startMentor = mentorScore.find(mentor => mentor.students.length > 0);
+
+  const startMentor = copyMentorStudentsPairs.find(mentor => mentor.students.length > 0);
   let bestStudent = startMentor.students[0];
 
-  mentorScore.forEach((mentor) => {
+  copyMentorStudentsPairs.forEach((mentor) => {
     mentor.students.forEach((student) => {
       if (student.tasks.length > bestStudent.tasks.length) {
         bestStudent = student;
@@ -158,9 +196,6 @@ const getSuperStudent = () => {
   return superStudent;
 };
 
-
-// create task template and add this tasks to all
-// students ========================================
 
 const copyToAllSuperStudentTasks = () => {
   const completeTemplate = [];
@@ -173,7 +208,7 @@ const copyToAllSuperStudentTasks = () => {
   });
 
   completeTemplate.forEach((task) => {
-    completeStudentTasks(task);
+    autocompleteTasks(task);
   });
 
   const newSuperStudent = getSuperStudent();
@@ -187,9 +222,9 @@ getSuperStudent();
 copyToAllSuperStudentTasks();
 
 
-// check and change task's status ==================
+// ============================================================================================
 
-mentorScore.forEach((mentor) => {
+copyMentorStudentsPairs.forEach((mentor) => {
   mentor.students.forEach((student) => {
     student.tasks.forEach((task) => {
       if (task.score !== '') {
@@ -212,7 +247,7 @@ mentorScore.forEach((mentor) => {
 });
 
 
-// Save result to JSON =============================
+// ============================================================================================
 
 const pathToJSON = path.join(__dirname, './data.json');
 
