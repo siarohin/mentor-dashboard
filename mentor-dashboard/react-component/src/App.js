@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from 'react';
-import Data from '../../data.json';
-import { StudentCard } from '../StudentCard/';
-import { SelectForm } from '../SelectForm/';
-import { CONSTANT } from '../constant';
-import './index.css';
+import Data from './data.json';
+import { StudentCard } from './components/StudentCard';
+import { SelectForm } from './components/SelectForm';
+import { CONSTANT } from './components/constant';
+import './App.css';
 
 console.log(Data);
 
 
-export class Mentors extends Component {
+export class App extends Component {
   state = {
     data: Data,
     title: CONSTANT.root,
