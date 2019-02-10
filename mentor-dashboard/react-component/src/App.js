@@ -3,10 +3,12 @@ import Data from './data.json';
 import { StudentCard } from './components/StudentCard';
 import { SelectForm } from './components/SelectForm';
 import { CONSTANT } from './components/constant';
+import GitHubLogin from 'react-github-login';
 import './App.css';
 
-console.log(Data);
 
+const onSuccess = response => console.log(response);
+const onFailure = response => console.error(response);
 
 export class App extends Component {
   state = {
@@ -20,6 +22,11 @@ export class App extends Component {
     return (
       <Fragment>
       <h1 className="root__title">{ title }</h1>
+
+      <GitHubLogin
+      clientId="7f772eb46164221790f5"
+      onSuccess={onSuccess}
+      onFailure={onFailure}/>
 
         <SelectForm data={ data } isDisabled={ false } />
 
