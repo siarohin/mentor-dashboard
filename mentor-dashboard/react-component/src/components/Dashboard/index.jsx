@@ -1,33 +1,21 @@
-import React, { Component, Fragment } from 'react';
-import Data from './data.json';
-import { StudentCard } from './components/StudentCard';
-import { SelectForm } from './components/SelectForm';
-import { CONSTANT } from './components/constant';
-import GitHubLogin from 'react-github-login';
-import './App.css';
+import React, { Component } from 'react';
+import Layout from '../../containers/Layout';
+import Data from '../../data.json';
+import { StudentCard } from '../StudentCard';
+import { SelectForm } from '../SelectForm';
+import './index.css';
 
-
-const onSuccess = response => console.log(response);
-const onFailure = response => console.error(response);
-
-export class App extends Component {
+class Dashboard extends Component {
   state = {
     data: Data,
-    title: CONSTANT.root,
   }
 
+
   render() {
-    const { data, title } = this.state;
+    const { data } = this.state;
 
     return (
-      <Fragment>
-      <h1 className="root__title">{ title }</h1>
-
-      <GitHubLogin
-      clientId="7f772eb46164221790f5"
-      onSuccess={onSuccess}
-      onFailure={onFailure}/>
-
+      <Layout>
         <SelectForm data={ data } isDisabled={ false } />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
@@ -48,8 +36,9 @@ export class App extends Component {
             </article>
           </section>
         ))}
-
-      </Fragment>
+      </Layout>
     );
   }
 }
+
+export default Dashboard;
