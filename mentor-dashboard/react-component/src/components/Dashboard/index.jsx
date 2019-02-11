@@ -36,7 +36,7 @@ class Dashboard extends Component {
     const { data } = this.state;
 
     return (
-      <Layout contentTitle={ `Welcome, ${displayName}` }>
+      <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
 
         <SelectForm data={ data } isDisabled={ this.state.isDisabled } />
 

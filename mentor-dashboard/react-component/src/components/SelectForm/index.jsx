@@ -44,12 +44,14 @@ export const SelectForm = ({ data, isDisabled }) => {
   });
 
   return (
-    <section className ="find-form">
-      <Select
-          onChange={ handleChange }
-          options={ options }
-          isDisabled={ isDisabled }
+    <div className ="find-form">
+      <section className="select-form">
+        <Select
+            onChange={ handleChange }
+            options={ options }
+            isDisabled={ isDisabled }
         />
-    </section>
+      </section>
+    </div>
   )
 }
