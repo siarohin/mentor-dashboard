@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SocialButtonList from '../SocialButton/SocialButtonList';
-import Layout from '../../containers/Layout';
+import SocialButton from '../SocialButton/';
+import Layout from '../../containers/Layout/';
 import { auth } from '../../firebase';
 
 const buttonList = {
@@ -10,8 +10,8 @@ const buttonList = {
       const provider = auth.githubOAuth();
       provider.addScope('user');
       return provider;
-    }
-  }
+    },
+  },
 };
 
 class Login extends Component {
@@ -25,8 +25,8 @@ class Login extends Component {
 
   render() {
     return (
-      <Layout contentCenter={true}>
-        <SocialButtonList buttonList={buttonList} auth={auth.getAuth} />
+      <Layout contentCenter={false}>
+        <SocialButton buttonList={buttonList} auth={auth.getAuth} />
       </Layout>
     );
   }

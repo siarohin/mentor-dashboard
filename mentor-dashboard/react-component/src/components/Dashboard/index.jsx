@@ -1,22 +1,45 @@
 import React, { Component } from 'react';
-import Layout from '../../containers/Layout';
+import Layout from '../../containers/Layout/';
 import Data from '../../data.json';
-import { StudentCard } from '../StudentCard';
-import { SelectForm } from '../SelectForm';
+import { StudentCard } from '../StudentCard/';
+import { SelectForm } from '../SelectForm/';
+import PropTypes from 'prop-types';
+import { auth } from '../../firebase';
+
 import './index.css';
 
+
 class Dashboard extends Component {
+  static propTypes = {
+    providerData: PropTypes.arrayOf(PropTypes.object).isRequired
+  };
+
+
   state = {
     data: Data,
+    buttonList: {
+      github: {
+        visible: true,
+        provider: () => {
+          const provider = auth.githubOAuth();
+          provider.addScope('user');
+          return provider;
+        }
+      },
+    providerData: this.props.providerData,
+    },
+    isDisabled: false,
   }
 
-
   render() {
+    const { displayName } = this.state.buttonList.providerData[0];
+    console.log(displayName);
     const { data } = this.state;
 
     return (
       <Layout>
-        <SelectForm data={ data } isDisabled={ false } />
+
+        <SelectForm data={ data } isDisabled={ this.state.isDisabled } />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
           <section className="mentor__github hidden" data-name={ mentorGithub } key={ mentorGithub }>

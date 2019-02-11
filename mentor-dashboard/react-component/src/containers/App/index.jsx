@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Login from '../../components/Login';
-import Dashboard from '../../components/Dashboard';
+import Login from '../../components/Login/';
+import Dashboard from '../../components/Dashboard/';
 import oAuth from '../oAuth/';
 
 import './index.css';
@@ -11,10 +11,10 @@ import './index.css';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/" exact component={ Login } />
-          <Route path="/dashboard" component={ oAuth(Dashboard) } />
+          <Route path='/' exact component={ Login } />
+          <Route path='/dashboard' component={ oAuth(Dashboard) } />
         </Switch>
       </Router>
     );

@@ -13,13 +13,15 @@ const defaultProps = {
   contentCenter: false
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children, contentCenter }) => {
   const  { root } = CONSTANT;
   return (
-    <main>
+    <section>
       <h1 className="root__title">{ root }</h1>
-      {children}
-    </main>
+      <main className={contentCenter ? 'content-center' : ''}>
+        {children}
+      </main>
+    </section>
   );
 };
 

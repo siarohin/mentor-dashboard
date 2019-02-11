@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-import './SocialButtonList.css';
+import './index.css';
 
 const propTypes = {
   buttonList: PropTypes.shape({
@@ -19,7 +19,7 @@ const defaultProps = {
   currentProviders: null
 };
 
-const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
+const SocialButton = ({ history, buttonList, auth, currentProviders }) => {
   const authHandler = authData => {
     if (authData) {
       if (currentProviders === null) {
@@ -46,7 +46,7 @@ const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
     }
   };
 
-  const renderButtonList = provder => {
+  const renderSocialButton = provder => {
     const visible = buttonList[provder].visible;
 
     return (
@@ -62,12 +62,12 @@ const SocialButtonList = ({ history, buttonList, auth, currentProviders }) => {
 
   return (
     <div className="btn__social--list">
-      {Object.keys(buttonList).map(renderButtonList)}
+      {Object.keys(buttonList).map(renderSocialButton)}
     </div>
   );
 };
 
-SocialButtonList.propTypes = propTypes;
-SocialButtonList.defaultProps = defaultProps;
+SocialButton.propTypes = propTypes;
+SocialButton.defaultProps = defaultProps;
 
-export default withRouter(SocialButtonList);
+export default withRouter(SocialButton);
