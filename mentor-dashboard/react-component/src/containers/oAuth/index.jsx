@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Delay from 'react-delay';
-
+import Layout from '../Layout/';
 import { auth } from '../../firebase/';
+
+import './index.css';
 
 
 export default HOCComponent => {
@@ -29,7 +31,9 @@ export default HOCComponent => {
         />
       ) : (
         <Delay wait={250}>
-          <p>Loading...</p>
+          <Layout contentTitle={'Please, wait'} contentCenter={true}>
+            <div class="lds-dual-ring"></div>
+          </Layout>
         </Delay>
       );
     }
