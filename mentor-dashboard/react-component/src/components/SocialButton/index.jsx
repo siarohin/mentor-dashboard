@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FaGithub from 'react-icons/lib/fa/github';
 import { withRouter } from 'react-router-dom';
 
 import './index.css';
@@ -46,16 +47,17 @@ const SocialButton = ({ history, buttonList, auth, currentProviders }) => {
     }
   };
 
-  const renderSocialButton = provder => {
-    const visible = buttonList[provder].visible;
+
+  const renderSocialButton = provider => {
+    const visible = buttonList[provider].visible;
 
     return (
       <button
-        key={provder}
-        className={`btn__social btn--${provder} ${!visible && 'hidden'}`}
-        onClick={e => authenticate(e, provder)}
+        key={provider}
+        className={`minimal minimal-indent btn__social-${provider} ${!visible && 'hidden'}`}
+        onClick={e => authenticate(e, provider)}
       >
-        {provder}
+        Login with {provider === 'github'? (<FaGithub style={{fontSize: '24px'}} />) : provider}
       </button>
     );
   };

@@ -20,12 +20,10 @@ const Title = ({ contentTitle }) => {
 
 const Layout = ({ contentTitle, children, contentCenter }) => {
   return (
-    <section>
-      <Title contentTitle={ contentTitle } />
-      <main className={contentCenter ? 'content-center' : ''}>
+      <main className={contentCenter ? 'text--center' : ''}>
+        <Title contentTitle={ contentTitle } />
         {children}
       </main>
-    </section>
   );
 };
 
