@@ -32,7 +32,7 @@ export default HOCComponent => {
       ) : (
         <Delay wait={250}>
           <Layout contentTitle={'Please, wait'} contentCenter={true}>
-            <div class="lds-dual-ring"></div>
+            <div className="lds-dual-ring"></div>
           </Layout>
         </Delay>
       );
