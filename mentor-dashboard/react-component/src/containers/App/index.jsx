@@ -5,8 +5,6 @@ import Login from '../../components/Login/';
 import Dashboard from '../../components/Dashboard/';
 import oAuth from '../oAuth/';
 
-import './index.css';
-
 
 class App extends Component {
   render() {

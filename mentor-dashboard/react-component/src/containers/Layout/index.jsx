@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CONSTANT } from '../../components/constant';
 
 import './index.css';
 
@@ -13,11 +12,16 @@ const defaultProps = {
   contentCenter: false
 };
 
-const Layout = ({ children, contentCenter }) => {
-  const  { root } = CONSTANT;
+const Title = ({ contentTitle }) => {
+  return (
+    <h1 className='root__title'>{ contentTitle }</h1>
+  )
+};
+
+const Layout = ({ contentTitle, children, contentCenter }) => {
   return (
     <section>
-      <h1 className="root__title">{ root }</h1>
+      <Title contentTitle={ contentTitle } />
       <main className={contentCenter ? 'content-center' : ''}>
         {children}
       </main>

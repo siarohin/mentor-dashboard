@@ -25,7 +25,7 @@ class Login extends Component {
 
   render() {
     return (
-      <Layout contentCenter={false}>
+      <Layout contentTitle={'Mentor Dashboard'} contentCenter={true}>
         <SocialButton buttonList={buttonList} auth={auth.getAuth} />
       </Layout>
     );

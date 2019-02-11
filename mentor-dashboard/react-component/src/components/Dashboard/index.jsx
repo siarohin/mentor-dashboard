@@ -33,11 +33,10 @@ class Dashboard extends Component {
 
   render() {
     const { displayName } = this.state.buttonList.providerData[0];
-    console.log(displayName);
     const { data } = this.state;
 
     return (
-      <Layout>
+      <Layout contentTitle={ `Welcome, ${displayName}` }>
 
         <SelectForm data={ data } isDisabled={ this.state.isDisabled } />
 
