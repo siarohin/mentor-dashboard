@@ -27,6 +27,7 @@ const handleChange = ({ value }) => {
   if (!!mentor) {
     hiddenSectionAll(mentors);
     showSection(mentor);
+    localStorage.setItem('mentor', value);
   } else {
     showSectionAll(mentors);
   }

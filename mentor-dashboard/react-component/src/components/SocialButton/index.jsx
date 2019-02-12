@@ -22,9 +22,7 @@ const defaultProps = {
 const SocialButton = ({ buttonList, auth, currentProviders }) => {
   const authHandler = authData => {
     if (authData) {
-      if (currentProviders === null) {
-        console.log('Authentificate...')
-      } else {
+      if (currentProviders !== null) {
         currentProviders(authData.user.providerData);
       }
     }
@@ -46,10 +44,8 @@ const SocialButton = ({ buttonList, auth, currentProviders }) => {
     }
   };
 
-
   const renderSocialButton = provider => {
     const visible = buttonList[provider].visible;
-
     return (
       <button
         key={provider}

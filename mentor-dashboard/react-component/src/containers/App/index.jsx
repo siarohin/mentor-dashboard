@@ -38,7 +38,7 @@ class App extends Component {
         <Dashboard
           {...this.props}
           providerData={this.state.providerData}
-      />
+        />
       )
     } return (
         <Login />
