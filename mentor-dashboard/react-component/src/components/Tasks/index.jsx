@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { CONSTANT } from '../constant';
 import './index.css';
 
@@ -43,15 +43,23 @@ const TaskStatus = ({ status, statusDescription }) => {
 };
 
 
-const TaskComponent = ({ props }) => {
-  const { name, status, specification, statusDescription } = props;
+const TaskComponent = ({ tasks }) => {
   return (
-    <div className="task" key={ name }>
-      <div className="task__title">
-        <TaskName specification={ specification } name={ name } />
-      </div>
-        <TaskStatus status={ status } statusDescription={ statusDescription } />
-    </div>
+    <Fragment>
+
+      {[...tasks].map(
+        ({ name, status, specification, statusDescription }) => (
+
+          <div className="task" key={ name }>
+            <div className="task__title">
+              <TaskName specification={ specification } name={ name } />
+            </div>
+              <TaskStatus status={ status } statusDescription={ statusDescription } />
+          </div>
+
+        ))}
+
+    </Fragment>
   )
 };
 

@@ -49,11 +49,7 @@ class Dashboard extends Component {
                 <span className="mentor__data-tooltip">{ mentorCity }</span>
               </div>
 
-              <div className="students">
-                { students.map(({ studentGithub, tasks }) => (
-                  <StudentCard key={ studentGithub } studentGithub={ studentGithub } tasks={ tasks } />
-                )) }
-              </div>
+              <StudentCard students={ students } />
 
             </article>
           </section>

@@ -24,13 +24,20 @@ const Header = ({ studentGithub }) => {
     )
 };
 
-export const StudentCard = ({ studentGithub, tasks }) => {
+export const StudentCard = ({ students }) => {
   return (
-    <article className="students__data" key={ studentGithub }>
-      <Header studentGithub={ studentGithub } className="students__title" />
-        {tasks.map(({ name, status, specification, statusDescription }) => (
-          <TaskComponent key={ name } props={{ tasks, name, status, specification, statusDescription }} />
-        ))}
-    </article>
+    <div className="students">
+
+      {[...students].map(
+        ({ studentGithub, tasks }) => (
+
+          <article className="students__data" key={ studentGithub }>
+            <Header studentGithub={ studentGithub } className="students__title" />
+            <TaskComponent tasks={ tasks } />
+          </article>
+
+      ))}
+
+    </div>
   )
 };
