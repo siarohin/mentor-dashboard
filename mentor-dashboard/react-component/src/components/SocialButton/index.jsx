@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FaGithub from 'react-icons/lib/fa/github';
-import { withRouter } from 'react-router-dom';
 
 import './index.css';
 
@@ -20,11 +19,11 @@ const defaultProps = {
   currentProviders: null
 };
 
-const SocialButton = ({ history, buttonList, auth, currentProviders }) => {
+const SocialButton = ({ buttonList, auth, currentProviders }) => {
   const authHandler = authData => {
     if (authData) {
       if (currentProviders === null) {
-        history.push('/dashboard');
+        console.log('Authentificate...')
       } else {
         currentProviders(authData.user.providerData);
       }
@@ -72,4 +71,4 @@ const SocialButton = ({ history, buttonList, auth, currentProviders }) => {
 SocialButton.propTypes = propTypes;
 SocialButton.defaultProps = defaultProps;
 
-export default withRouter(SocialButton);
+export default SocialButton;

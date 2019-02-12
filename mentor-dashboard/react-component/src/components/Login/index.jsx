@@ -15,14 +15,6 @@ const buttonList = {
 };
 
 class Login extends Component {
-  componentDidMount() {
-    auth.getAuth().onAuthStateChanged(user => {
-      if (user) {
-        this.props.history.push('/dashboard');
-      }
-    });
-  }
-
   render() {
     return (
       <Layout contentTitle={'Mentor Dashboard'} contentCenter={true}>

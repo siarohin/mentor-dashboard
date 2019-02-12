@@ -1,21 +1,52 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-
 import Login from '../../components/Login/';
 import Dashboard from '../../components/Dashboard/';
-import oAuth from '../oAuth/';
+import Layout from '../Layout/';
+import { auth } from '../../firebase/';
+
+import './index.css';
 
 
 class App extends Component {
-  render() {
+  state = {
+    providerData: [],
+    isLoading: true,
+  };
+
+  componentDidMount() {
+    auth.getAuth().onAuthStateChanged(user => {
+      if (user) {
+        this.setState({ providerData: user.providerData });
+        this.setState({ isLoading: false });
+      } else {
+        this.setState({ isLoading: false });
+      }
+    });
+  }
+
+  preloader = () => {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path='/' exact component={ Login } />
-          <Route path='/dashboard' component={ oAuth(Dashboard) } />
-        </Switch>
-      </Router>
-    );
+      <Layout contentTitle={'Please, wait'} contentCenter={true}>
+        <div className="lds-dual-ring"></div>
+      </Layout>
+    )
+  };
+
+  liveComponent = () => {
+    if (this.state.providerData.length > 0) {
+      return (
+        <Dashboard
+          {...this.props}
+          providerData={this.state.providerData}
+      />
+      )
+    } return (
+        <Login />
+      )
+  }
+
+  render() {
+    return this.state.isLoading ? this.preloader() : this.liveComponent()
   }
 }
 
