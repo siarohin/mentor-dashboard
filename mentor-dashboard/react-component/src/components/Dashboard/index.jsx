@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../../containers/Layout/';
 import Data from '../../data.json';
+import { MentorCard } from '../MentorCard/';
 import { StudentCard } from '../StudentCard/';
 import { SelectForm } from '../SelectForm/';
 import PropTypes from 'prop-types';
@@ -41,18 +42,14 @@ class Dashboard extends Component {
         <SelectForm data={ data } isDisabled={ this.state.isDisabled } />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
+
           <section className="mentor__github hidden" data-name={ mentorGithub } key={ mentorGithub }>
             <article className="mentor">
-              <h2 className="mentor__title">@{ mentorGithub }</h2>
-              <div className="mentor__data">
-                { mentorName }
-                <span className="mentor__data-tooltip">{ mentorCity }</span>
-              </div>
-
+              <MentorCard mentorGithub={ mentorGithub } mentorName={ mentorName } mentorCity={ mentorCity } />
               <StudentCard students={ students } />
-
             </article>
           </section>
+
         ))}
       </Layout>
     );
