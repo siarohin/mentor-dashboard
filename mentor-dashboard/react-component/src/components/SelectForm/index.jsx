@@ -33,17 +33,9 @@ const handleChange = ({ value }) => {
   }
 };
 
-const options = [{ value: 'All', label: 'All' }];
 
-export const SelectForm = ({ data, isDisabled }) => {
-  data.map(({ mentorGithub }) => {
-    return options.push(
-    {
-      value: mentorGithub,
-      label: mentorGithub,
-    })
-  });
 
+export const SelectForm = ({ options, isDisabled }) => {
   return (
     <div className ="find-form">
       <section className="select-form">

@@ -3,12 +3,14 @@ import Login from '../../components/Login/';
 import Dashboard from '../../components/Dashboard/';
 import Layout from '../Layout/';
 import { auth } from '../../firebase/';
+import JsonData from '../../data.json';
 
 import './index.css';
 
 
 class App extends Component {
   state = {
+    data: [],
     providerData: [],
     isLoading: true,
   };
@@ -16,10 +18,15 @@ class App extends Component {
   componentDidMount() {
     auth.getAuth().onAuthStateChanged(user => {
       if (user) {
-        this.setState({ providerData: user.providerData });
-        this.setState({ isLoading: false });
+        this.setState({
+          providerData: user.providerData,
+          isLoading: false,
+          data: JsonData,
+        });
       } else {
-        this.setState({ isLoading: false });
+        this.setState({
+          isLoading: false,
+        });
       }
     });
   }
@@ -38,11 +45,12 @@ class App extends Component {
         <Dashboard
           {...this.props}
           providerData={this.state.providerData}
+          data={this.state.data}
         />
       )
     } return (
-        <Login />
-      )
+    <Login />
+    )
   }
 
   render() {

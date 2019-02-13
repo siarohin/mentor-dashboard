@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Layout from '../../containers/Layout/';
-import Data from '../../data.json';
 import { MentorCard } from '../MentorCard/';
 import { StudentCard } from '../StudentCard/';
 import { SelectForm } from '../SelectForm/';
@@ -12,12 +11,13 @@ import './index.css';
 
 class Dashboard extends Component {
   static propTypes = {
-    providerData: PropTypes.arrayOf(PropTypes.object).isRequired
+    providerData: PropTypes.arrayOf(PropTypes.object).isRequired,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
 
 
   state = {
-    data: Data,
+    data: this.props.data,
     buttonList: {
       github: {
         visible: true,
@@ -30,16 +30,31 @@ class Dashboard extends Component {
     providerData: this.props.providerData,
     },
     isDisabled: false,
+    mentorList: [],
+    mentorStore: '',
   }
+
+
+  componentDidMount() {
+    let mentorList = [{ value: 'All', label: 'All' }];
+    this.state.data.map(({ mentorGithub }) => {
+      return mentorList.push({ value: mentorGithub, label: mentorGithub });
+    });
+    this.setState({ mentorList: mentorList })
+    if (localStorage.getItem('mentor')) {
+      this.setState({ mentorStore: localStorage.getItem('mentor') })
+    }
+  }
+
 
   render() {
     const { displayName } = this.state.buttonList.providerData[0];
-    const { data } = this.state;
+    const { data, isDisabled, mentorList } = this.state;
+    console.log(this.state.mentorStore);
 
     return (
       <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
-
-        <SelectForm data={ data } isDisabled={ this.state.isDisabled } />
+        <SelectForm isDisabled={ isDisabled } options={ mentorList } />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
 
@@ -51,6 +66,7 @@ class Dashboard extends Component {
           </section>
 
         ))}
+
       </Layout>
     );
   }
