@@ -32,20 +32,36 @@ class Dashboard extends Component {
     isDisabled: false,
     mentorList: [],
     mentorStore: '',
-    defaultMentor: {},
+    localStorageMentor: {},
+    mentorListName: [],
   }
 
 
   componentWillMount() {
-    let mentorList = [{ value: 'All', label: 'All' }];
-    this.state.data.map(({ mentorGithub }) => {
-      return mentorList.push({ value: mentorGithub, label: mentorGithub });
+    const { data } = this.state;
+    const mentorData = {
+      mentorList: [{
+        value: 'All',
+        label: 'All',
+      }],
+      mentorListName: [],
+    };
+
+    // eslint-disable-next-line
+    data.map(({ mentorGithub, mentorName }) => {
+      mentorData.mentorList.push({ value: mentorGithub, label: mentorGithub });
+      mentorData.mentorListName.push(mentorName);
     });
-    this.setState({ mentorList: mentorList })
+
+    this.setState({
+        mentorList: mentorData.mentorList,
+        mentorListName: mentorData.mentorListName,
+      });
+
     if (localStorage.getItem('mentor')) {
       this.setState({
         mentorStore: localStorage.getItem('mentor'),
-        defaultMentor: {
+        localStorageMentor: {
           value: localStorage.getItem('mentor'),
           label: localStorage.getItem('mentor')
         },
@@ -56,22 +72,27 @@ class Dashboard extends Component {
 
   render() {
     const { displayName } = this.state.buttonList.providerData[0];
-    const { data, isDisabled, mentorList, defaultMentor, mentorStore } = this.state;
+    const { data, isDisabled, mentorList, localStorageMentor, mentorListName } = this.state;
 
     return (
       <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
         <SelectForm
           mentorList={ mentorList }
           isDisabled={ isDisabled }
-          defaultMentor={ defaultMentor }
-          mentorStore={ mentorStore }
+          localStorageMentor={ localStorageMentor }
+          authMentorName={ displayName }
+          mentorListName={ mentorListName }
         />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
 
           <section className="mentor__github hidden" data-name={ mentorGithub } key={ mentorGithub }>
             <article className="mentor">
-              <MentorCard mentorGithub={ mentorGithub } mentorName={ mentorName } mentorCity={ mentorCity } />
+              <MentorCard
+                mentorGithub={ mentorGithub }
+                mentorName={ mentorName }
+                mentorCity={ mentorCity }
+              />
               <StudentCard students={ students } />
             </article>
           </section>

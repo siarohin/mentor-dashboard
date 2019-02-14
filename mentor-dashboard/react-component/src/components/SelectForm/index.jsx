@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
+import PropTypes from 'prop-types';
 import './index.css';
 
 
@@ -23,6 +24,7 @@ const showSection = (target) => {
 const handleChange = ({ value }) => {
   const mentors = document.querySelectorAll('.mentor__github');
   const mentor = document.querySelector(`[data-name=${value}]`);
+  console.log(mentor);
 
   if (!!mentor) {
     hiddenSectionAll(mentors);
@@ -30,35 +32,56 @@ const handleChange = ({ value }) => {
     localStorage.setItem('mentor', value);
   } else {
     showSectionAll(mentors);
+    localStorage.setItem('mentor', '');
   }
 };
 
 
 
 export class SelectForm extends Component {
+  static propTypes = {
+    isDisabled: PropTypes.bool,
+    mentorList: PropTypes.arrayOf(PropTypes.object).isRequired,
+    mentorListName: PropTypes.array,
+  };
+
+
   state = {
     isDisabled: this.props.isDisabled,
     mentorList: this.props.mentorList,
-    mentorStore: this.props.mentorStore,
-    defaultMentor: this.props.defaultMentor,
+    localStorageMentor: this.props.localStorageMentor,
+    mentorListName: this.props.mentorListName,
+    authMentorName: this.props.authMentorName,
   }
 
 
   componentDidMount() {
-    const { value } = this.state.defaultMentor;
-    handleChange({ value });
+    const { value } = this.state.localStorageMentor;
+
+    const findAuthMentor = () => {
+      const { mentorListName, authMentorName } = this.state;
+      const authMentor = mentorListName.find(m => m === authMentorName);
+      if (authMentor) {
+        console.log(`Find auth mentor: ${authMentorName}`)
+        handleChange({ value });
+      } else {
+        console.log('Dont find auth mentor');
+        handleChange({ value });
+      }
+    }
+    findAuthMentor();
   }
 
 
   render() {
-  const { isDisabled, mentorList, defaultMentor } = this.state;
+  const { isDisabled, mentorList, localStorageMentor } = this.state;
   return (
     <div className ="find-form">
       <section className="select-form">
         <Select
             isDisabled={ isDisabled }
             options={ mentorList }
-            defaultValue={ defaultMentor }
+            defaultValue={ localStorageMentor }
             onChange={ handleChange }
         />
       </section>
