@@ -32,29 +32,40 @@ class Dashboard extends Component {
     isDisabled: false,
     mentorList: [],
     mentorStore: '',
+    defaultMentor: {},
   }
 
 
-  componentDidMount() {
+  componentWillMount() {
     let mentorList = [{ value: 'All', label: 'All' }];
     this.state.data.map(({ mentorGithub }) => {
       return mentorList.push({ value: mentorGithub, label: mentorGithub });
     });
     this.setState({ mentorList: mentorList })
     if (localStorage.getItem('mentor')) {
-      this.setState({ mentorStore: localStorage.getItem('mentor') })
+      this.setState({
+        mentorStore: localStorage.getItem('mentor'),
+        defaultMentor: {
+          value: localStorage.getItem('mentor'),
+          label: localStorage.getItem('mentor')
+        },
+      });
     }
   }
 
 
   render() {
     const { displayName } = this.state.buttonList.providerData[0];
-    const { data, isDisabled, mentorList } = this.state;
-    console.log(this.state.mentorStore);
+    const { data, isDisabled, mentorList, defaultMentor, mentorStore } = this.state;
 
     return (
       <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
-        <SelectForm isDisabled={ isDisabled } options={ mentorList } />
+        <SelectForm
+          mentorList={ mentorList }
+          isDisabled={ isDisabled }
+          defaultMentor={ defaultMentor }
+          mentorStore={ mentorStore }
+        />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
 

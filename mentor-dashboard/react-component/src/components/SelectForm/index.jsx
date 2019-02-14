@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Select from 'react-select';
 import './index.css';
 
@@ -35,16 +35,34 @@ const handleChange = ({ value }) => {
 
 
 
-export const SelectForm = ({ options, isDisabled }) => {
+export class SelectForm extends Component {
+  state = {
+    isDisabled: this.props.isDisabled,
+    mentorList: this.props.mentorList,
+    mentorStore: this.props.mentorStore,
+    defaultMentor: this.props.defaultMentor,
+  }
+
+
+  componentDidMount() {
+    const { value } = this.state.defaultMentor;
+    handleChange({ value });
+  }
+
+
+  render() {
+  const { isDisabled, mentorList, defaultMentor } = this.state;
   return (
     <div className ="find-form">
       <section className="select-form">
         <Select
-            onChange={ handleChange }
-            options={ options }
             isDisabled={ isDisabled }
+            options={ mentorList }
+            defaultValue={ defaultMentor }
+            onChange={ handleChange }
         />
       </section>
     </div>
-  )
+    )
+  }
 }
