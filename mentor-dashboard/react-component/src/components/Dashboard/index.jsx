@@ -30,35 +30,24 @@ class Dashboard extends Component {
     providerData: this.props.providerData,
     },
     isDisabled: false,
-    mentorList: [],
+    mentorList: [{value: 'All', label: 'All'}],
     localStorageMentor: {},
   }
 
+  getMentorList(data) {
+    return data.map(({ mentorGithub, mentorName }) => {
+      return { value: mentorGithub, label: mentorName };
+    });
+  }
 
   componentWillMount() {
-    const { data } = this.state;
-    const mentorData = {
-      mentorList: [{
-        value: 'All',
-        label: 'All',
-      }],
-    };
-
-    // eslint-disable-next-line
-    data.map(({ mentorGithub, mentorName }) => {
-      mentorData.mentorList.push({ value: mentorGithub, label: mentorName });
-    });
-
     this.setState({
-        mentorList: mentorData.mentorList,
+        mentorList: [...this.state.mentorList, ...this.getMentorList(this.state.data)],
       });
 
     if (localStorage.getItem('mentor') && localStorage.getItem('value')) {
       this.setState({
-        localStorageMentor: {
-          value: localStorage.getItem('mentor'),
-          label: localStorage.getItem('value')
-        },
+        localStorageMentor: { value: localStorage.getItem('mentor'), label: localStorage.getItem('value') },
       });
     }
   }
