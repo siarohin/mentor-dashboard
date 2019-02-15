@@ -32,7 +32,6 @@ class Dashboard extends Component {
     isDisabled: false,
     mentorList: [],
     localStorageMentor: {},
-    mentorListName: [],
   }
 
 
@@ -43,18 +42,15 @@ class Dashboard extends Component {
         value: 'All',
         label: 'All',
       }],
-      mentorListName: [],
     };
 
     // eslint-disable-next-line
     data.map(({ mentorGithub, mentorName }) => {
       mentorData.mentorList.push({ value: mentorGithub, label: mentorName });
-      mentorData.mentorListName.push(mentorName);
     });
 
     this.setState({
         mentorList: mentorData.mentorList,
-        mentorListName: mentorData.mentorListName,
       });
 
     if (localStorage.getItem('mentor') && localStorage.getItem('value')) {
@@ -70,7 +66,7 @@ class Dashboard extends Component {
 
   render() {
     const { displayName } = this.state.buttonList.providerData[0];
-    const { data, isDisabled, mentorList, localStorageMentor, mentorListName } = this.state;
+    const { data, isDisabled, mentorList, localStorageMentor } = this.state;
 
     return (
       <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
@@ -79,7 +75,6 @@ class Dashboard extends Component {
           isDisabled={ isDisabled }
           localStorageMentor={ localStorageMentor }
           authMentorName={ displayName }
-          mentorListName={ mentorListName }
         />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (

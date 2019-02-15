@@ -50,7 +50,6 @@ export class SelectForm extends Component {
   static propTypes = {
     isDisabled: PropTypes.bool,
     mentorList: PropTypes.arrayOf(PropTypes.object).isRequired,
-    mentorListName: PropTypes.array,
   };
 
 
@@ -58,7 +57,6 @@ export class SelectForm extends Component {
     isDisabled: this.props.isDisabled,
     mentorList: this.props.mentorList,
     localStorageMentor: this.props.localStorageMentor,
-    mentorListName: this.props.mentorListName,
     authMentorName: this.props.authMentorName,
     authStorageMentor: null,
   }
