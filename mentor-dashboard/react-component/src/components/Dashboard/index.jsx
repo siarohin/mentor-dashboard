@@ -31,7 +31,6 @@ class Dashboard extends Component {
     },
     isDisabled: false,
     mentorList: [],
-    mentorStore: '',
     localStorageMentor: {},
     mentorListName: [],
   }
@@ -49,7 +48,7 @@ class Dashboard extends Component {
 
     // eslint-disable-next-line
     data.map(({ mentorGithub, mentorName }) => {
-      mentorData.mentorList.push({ value: mentorGithub, label: mentorGithub });
+      mentorData.mentorList.push({ value: mentorGithub, label: mentorName });
       mentorData.mentorListName.push(mentorName);
     });
 
@@ -58,12 +57,11 @@ class Dashboard extends Component {
         mentorListName: mentorData.mentorListName,
       });
 
-    if (localStorage.getItem('mentor')) {
+    if (localStorage.getItem('mentor') && localStorage.getItem('value')) {
       this.setState({
-        mentorStore: localStorage.getItem('mentor'),
         localStorageMentor: {
           value: localStorage.getItem('mentor'),
-          label: localStorage.getItem('mentor')
+          label: localStorage.getItem('value')
         },
       });
     }
@@ -85,18 +83,22 @@ class Dashboard extends Component {
         />
 
         {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
+          <section
+            className='mentor__github hidden'
+            data-name={ mentorGithub }
+            mentor-name={ mentorName.toLowerCase().split(' ').join('').trim() }
+            key={ mentorGithub }>
 
-          <section className="mentor__github hidden" data-name={ mentorGithub } key={ mentorGithub }>
-            <article className="mentor">
-              <MentorCard
-                mentorGithub={ mentorGithub }
-                mentorName={ mentorName }
-                mentorCity={ mentorCity }
-              />
-              <StudentCard students={ students } />
-            </article>
+              <article className="mentor">
+                <MentorCard
+                  mentorGithub={ mentorGithub }
+                  mentorName={ mentorName }
+                  mentorCity={ mentorCity }
+                />
+                <StudentCard students={ students } />
+              </article>
+
           </section>
-
         ))}
 
       </Layout>
