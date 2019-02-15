@@ -24,16 +24,15 @@ const showSection = (target) => {
 const handleChange = ({ value, label }) => {
   const mentors = document.querySelectorAll('.mentor__github');
   const mentor = document.querySelector(`[data-name=${value}]`);
+  const myLocalStorage = { 'mentor': value, 'value': label };
 
   if (!!mentor) {
     hiddenSectionAll(mentors);
     showSection(mentor);
-    localStorage.setItem('mentor', value);
-    localStorage.setItem('value', label);
+    localStorage.setItem('mentor-dashboard', JSON.stringify(myLocalStorage));
   } else {
     showSectionAll(mentors);
-    localStorage.clear('mentor');
-    localStorage.clear('value');
+    localStorage.clear('mentor-dashboard');
   }
 };
 
@@ -49,13 +48,13 @@ const mentorInitChange = ({ authMentorLabel }) => {
 export class SelectForm extends Component {
   static propTypes = {
     isDisabled: PropTypes.bool,
-    mentorList: PropTypes.arrayOf(PropTypes.object).isRequired,
+    options: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
 
 
   state = {
     isDisabled: this.props.isDisabled,
-    mentorList: this.props.mentorList,
+    options: this.props.options,
     localStorageMentor: this.props.localStorageMentor,
     authMentorName: this.props.authMentorName,
     authStorageMentor: null,
@@ -63,8 +62,8 @@ export class SelectForm extends Component {
 
 
   componentWillMount() {
-    const { mentorList, authMentorName } = this.state;
-    const authMentor = mentorList.find(m => m.label === authMentorName);
+    const { options, authMentorName } = this.state;
+    const authMentor = options.find(m => m.label === authMentorName);
     if (authMentor) {
       this.setState({
         authStorageMentor: {
@@ -78,8 +77,8 @@ export class SelectForm extends Component {
   componentDidMount() {
     const { value, label } = this.state.localStorageMentor;
     const findAuthMentor = () => {
-      const { mentorList, authMentorName } = this.state;
-      const authMentor = mentorList.find(m => m.label === authMentorName);
+      const { options, authMentorName } = this.state;
+      const authMentor = options.find(m => m.label === authMentorName);
       if (authMentor) {
         const authMentorLabel = authMentor.label.toLowerCase().split(' ').join('').trim();
         mentorInitChange({ authMentorLabel });
@@ -100,13 +99,13 @@ export class SelectForm extends Component {
   }
 
   render() {
-  const { isDisabled, mentorList } = this.state;
+  const { isDisabled, options } = this.state;
   return (
     <div className ="find-form">
       <section className="select-form">
         <Select
             isDisabled={ isDisabled }
-            options={ mentorList }
+            options={ options }
             defaultValue={ this.getDefaultValue() }
             onChange={ handleChange }
         />

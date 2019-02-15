@@ -45,9 +45,13 @@ class Dashboard extends Component {
         mentorList: [...this.state.mentorList, ...this.getMentorList(this.state.data)],
       });
 
-    if (localStorage.getItem('mentor') && localStorage.getItem('value')) {
+    if (localStorage.getItem('mentor-dashboard')) {
+      const myLocalStorage = JSON.parse(localStorage.getItem('mentor-dashboard'));
       this.setState({
-        localStorageMentor: { value: localStorage.getItem('mentor'), label: localStorage.getItem('value') },
+        localStorageMentor: {
+          value: myLocalStorage.mentor,
+          label:myLocalStorage.value,
+        },
       });
     }
   }
@@ -60,7 +64,7 @@ class Dashboard extends Component {
     return (
       <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
         <SelectForm
-          mentorList={ mentorList }
+          options={ mentorList }
           isDisabled={ isDisabled }
           localStorageMentor={ localStorageMentor }
           authMentorName={ displayName }
