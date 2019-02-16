@@ -34,6 +34,7 @@ class Dashboard extends Component {
     localStorageMentor: {},
     nameFromProvider: null,
     sectionsForRender: [],
+    isLoading: true,
   }
 
   getOptionsList(data) {
@@ -91,22 +92,31 @@ class Dashboard extends Component {
     const myLocalStorage = { 'mentor': value, 'value': label };
     const existingMentor = this.state.data.find(mentor => mentor.mentorGithub === value);
     if (existingMentor) {
-      this.setState({ sectionsForRender: [existingMentor]});
+      this.setState({ sectionsForRender: [existingMentor] });
       localStorage.setItem('mentor-dashboard', JSON.stringify(myLocalStorage));
     } else {
-      this.setState({ sectionsForRender: this.state.data});
+      this.setState({ sectionsForRender: this.state.data });
       localStorage.clear('mentor-dashboard');
     }
   }
 
   componentDidMount() {
     this.getMentorSections(this.getDefaultSelectValue());
+    this.setState({ isLoading: false });
   }
+
+  preloader = () => {
+    return (
+      <Layout contentTitle={'Please, wait'} contentCenter={true}>
+        <div className="lds-dual-ring"></div>
+      </Layout>
+    )
+  };
 
 
   render() {
     const { isDisabled, options, nameFromProvider, sectionsForRender } = this.state;
-    return (
+    return this.state.isLoading ? this.preloader() : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
         <SelectForm
           options={ options }
@@ -121,18 +131,17 @@ class Dashboard extends Component {
             data-name={ mentorGithub }
             key={ mentorGithub }>
 
-              <article className="mentor">
-                <MentorCard
-                  mentorGithub={ mentorGithub }
-                  mentorName={ mentorName }
-                  mentorCity={ mentorCity }
-                />
-                <StudentCard students={ students } />
-              </article>
+            <article className="mentor">
+              <MentorCard
+                mentorGithub={ mentorGithub }
+                mentorName={ mentorName }
+                mentorCity={ mentorCity }
+              />
+              <StudentCard students={ students } />
+            </article>
 
           </section>
         ))}
-
       </Layout>
     );
   }
