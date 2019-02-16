@@ -22,7 +22,7 @@
 .task__process {
   text-align: center;
   height: 20px;
-  width: 40%;
+  min-width: 40%;
   position: relative;
 }
 
