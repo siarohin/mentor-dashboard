@@ -34,7 +34,8 @@ class Dashboard extends Component {
     localStorageMentor: {},
     nameFromProvider: null,
     sectionsForRender: [],
-    isLoading: true,
+    isLoading: false,
+    selectValue: {},
   }
 
   getOptionsList(data) {
@@ -65,15 +66,25 @@ class Dashboard extends Component {
     }
   }
 
+  preloader = () => {
+    return (
+      <Layout contentTitle={'Please, wait'} contentCenter={true}>
+        <div className="lds-dual-ring"></div>
+      </Layout>
+    )
+  };
+
   getDefaultSelectValue() {
     const { options, nameFromProvider, localStorageMentor } = this.state;
     const authenticateMentor = options.find(mentor => mentor.label === nameFromProvider);
     if (authenticateMentor) {
+      this.setState({ selectValue: {value: authenticateMentor.value, label: authenticateMentor.label} });
       return {
         value: authenticateMentor.value,
         label: authenticateMentor.label,
       }
     }
+    this.setState({ selectValue: localStorageMentor })
     return localStorageMentor;
   }
 
@@ -88,41 +99,39 @@ class Dashboard extends Component {
     return this.state.data;
   }
 
+
   handleChange = ({ value, label }) => {
+    this.setState({ selectValue: { value, label } });
     const myLocalStorage = { 'mentor': value, 'value': label };
     const existingMentor = this.state.data.find(mentor => mentor.mentorGithub === value);
     if (existingMentor) {
-      this.setState({ sectionsForRender: [existingMentor] });
+      this.setState( { sectionsForRender: [existingMentor] });
       localStorage.setItem('mentor-dashboard', JSON.stringify(myLocalStorage));
     } else {
       this.setState({ sectionsForRender: this.state.data });
       localStorage.clear('mentor-dashboard');
     }
+    this.setState({ isLoading: true });
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 0);
   }
 
   componentDidMount() {
-    this.getMentorSections(this.getDefaultSelectValue());
     this.setState({ isLoading: false });
+    this.getMentorSections(this.getDefaultSelectValue());
   }
-
-  preloader = () => {
-    return (
-      <Layout contentTitle={'Please, wait'} contentCenter={true}>
-        <div className="lds-dual-ring"></div>
-      </Layout>
-    )
-  };
 
 
   render() {
-    const { isDisabled, options, nameFromProvider, sectionsForRender } = this.state;
+    const { isDisabled, options, nameFromProvider, sectionsForRender, selectValue } = this.state;
     return this.state.isLoading ? this.preloader() : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
         <SelectForm
           options={ options }
           isDisabled={ isDisabled }
-          defaultValue={ this.getDefaultSelectValue() }
           onChange={ this.handleChange }
+          value={ selectValue }
         />
 
         {sectionsForRender.map(({ mentorGithub, mentorName, mentorCity, students }) => (
@@ -139,7 +148,6 @@ class Dashboard extends Component {
               />
               <StudentCard students={ students } />
             </article>
-
           </section>
         ))}
       </Layout>

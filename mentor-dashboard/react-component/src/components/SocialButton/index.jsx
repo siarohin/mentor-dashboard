@@ -35,12 +35,12 @@ const SocialButton = ({ buttonList, auth, currentProviders }) => {
       auth()
         .signInWithPopup(providerOAuth)
         .then(authHandler)
-        .catch(err => console.error(err))
+        .catch(err => err)
     } else {
       auth()
         .currentUser.linkWithPopup(providerOAuth)
         .then(authHandler)
-        .catch(err => console.error(err))
+        .catch(err => err)
     }
   };
 
