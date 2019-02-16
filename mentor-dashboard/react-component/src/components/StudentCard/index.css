@@ -8,6 +8,18 @@
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .students__data {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  .students__data {
+    width: 48%;
+  }
+}
+
 .students__title {
   margin: 10px 5px;
   font-size: 16px;

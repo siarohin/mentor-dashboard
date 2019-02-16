@@ -1,24 +1,4 @@
-[{
-  "mentorGithub": "siarohin",
-  "mentorName": "Aleksander Seryogin",
-  "mentorCity": "Минск",
-  "students": [
-    {
-      "studentGithub": "evgeniy121",
-      "tasks": [
-        {
-          "name": "Codejam Corejs",
-          "pullReq": "https://github.com/evgeniy121/rsschool-codejam/pull/1",
-          "score": 95,
-          "mentorComment": "eslint подключен, но не используется",
-          "action": "",
-          "specification": "https://github.com/rolling-scopes-school/tasks/blob/2018-Q3/tasks/codejam-corejs.md",
-          "status": "checked",
-          "statusDescription": "ментор уже проверил"
-        }
-      ]
-    }]
-  },
+[
   {
     "mentorGithub": "a-yatskevich",
     "mentorName": "Anton Yatskevich",
