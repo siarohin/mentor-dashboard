@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import Login from '../../components/Login/';
 import Dashboard from '../../components/Dashboard/';
-import Layout from '../Layout/';
 import { auth } from '../../firebase/';
 import JsonData from '../../data.json';
-
-import './index.css';
+import { Preloader } from '../../components/Preloader/';
 
 
 class App extends Component {
@@ -31,14 +29,6 @@ class App extends Component {
     });
   }
 
-  preloader = () => {
-    return (
-      <Layout contentTitle={'Please, wait'} contentCenter={true}>
-        <div className="lds-dual-ring"></div>
-      </Layout>
-    )
-  };
-
   liveComponent = () => {
     if (this.state.providerData.length > 0) {
       return (
@@ -54,7 +44,7 @@ class App extends Component {
   }
 
   render() {
-    return this.state.isLoading ? this.preloader() : this.liveComponent()
+    return this.state.isLoading ? <Preloader /> : this.liveComponent()
   }
 }
 

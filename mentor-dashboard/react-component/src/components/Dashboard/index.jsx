@@ -5,6 +5,7 @@ import { StudentCard } from '../StudentCard/';
 import { SelectForm } from '../SelectForm/';
 import PropTypes from 'prop-types';
 import { auth } from '../../firebase';
+import { Preloader } from '../Preloader/';
 
 import './index.css';
 
@@ -66,14 +67,6 @@ class Dashboard extends Component {
     }
   }
 
-  preloader = () => {
-    return (
-      <Layout contentTitle={'Please, wait'} contentCenter={true}>
-        <div className="lds-dual-ring"></div>
-      </Layout>
-    )
-  };
-
   getDefaultSelectValue() {
     const { options, nameFromProvider, localStorageMentor } = this.state;
     const authenticateMentor = options.find(mentor => mentor.label === nameFromProvider);
@@ -118,14 +111,13 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
-    this.setState({ isLoading: false });
     this.getMentorSections(this.getDefaultSelectValue());
   }
 
 
   render() {
     const { isDisabled, options, nameFromProvider, sectionsForRender, selectValue } = this.state;
-    return this.state.isLoading ? this.preloader() : (
+    return this.state.isLoading ? <Preloader /> : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
         <SelectForm
           options={ options }
