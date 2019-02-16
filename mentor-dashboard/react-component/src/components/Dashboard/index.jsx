@@ -119,7 +119,6 @@ class Dashboard extends Component {
           <section
             className='mentor__github'
             data-name={ mentorGithub }
-            mentor-name={ mentorName.toLowerCase().split(' ').join('').trim() }
             key={ mentorGithub }>
 
               <article className="mentor">

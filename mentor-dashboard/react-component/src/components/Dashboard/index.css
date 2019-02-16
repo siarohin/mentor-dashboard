@@ -15,10 +15,6 @@ section {
   width: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 .btn__logout {
   width: 70px;
   height: 33px;
