@@ -8,6 +8,24 @@
   position: relative;
 }
 
+@media screen and (min-width: 1580px) {
+  .students__data {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .students__data {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .students__data {
+    width: 48%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .students__data {
     width: 100%;
