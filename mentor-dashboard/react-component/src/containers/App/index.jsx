@@ -29,22 +29,16 @@ class App extends Component {
     });
   }
 
-  liveComponent = () => {
-    if (this.state.providerData.length > 0) {
-      return (
-        <Dashboard
+  render() {
+    return this.state.isLoading ? <Preloader /> : (
+      this.state.providerData.length > 0 ?
+        (<Dashboard
           {...this.props}
           providerData={this.state.providerData}
           data={this.state.data}
-        />
-      )
-    } return (
-    <Login />
+        /> )
+        : (<Login />)
     )
-  }
-
-  render() {
-    return this.state.isLoading ? <Preloader /> : this.liveComponent()
   }
 }
 
