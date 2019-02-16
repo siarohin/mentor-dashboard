@@ -103,11 +103,9 @@ class Dashboard extends Component {
     } else {
       this.setState({ sectionsForRender: this.state.data });
       localStorage.clear('mentor-dashboard');
+      this.setState({ isLoading: true });
+      setTimeout(() => { this.setState({ isLoading: false }) }, 0);
     }
-    this.setState({ isLoading: true });
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 0);
   }
 
   componentDidMount() {
