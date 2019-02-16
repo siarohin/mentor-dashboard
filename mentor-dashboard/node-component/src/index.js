@@ -269,7 +269,7 @@ copyMentorStudentsPairs.forEach((mentor) => {
 // write json
 // ============================================================================================
 
-const pathToJSON = path.join(__dirname, './data.json');
+const pathToJSON = path.join(__dirname, '../../react-component/src/data.json');
 
 const resultToJson = JSON.stringify(copyMentorStudentsPairs, 0, 2);
 fs.writeFile(pathToJSON, resultToJson, 'utf8', () => {});

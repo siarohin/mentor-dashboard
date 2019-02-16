@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { CONSTANT } from '../constant';
 import './index.css';
 
@@ -45,8 +45,7 @@ const TaskStatus = ({ status, statusDescription }) => {
 
 const TaskComponent = ({ tasks }) => {
   return (
-    <Fragment>
-
+    <>
       {[...tasks].map(
         ({ name, status, specification, statusDescription }) => (
 
@@ -58,8 +57,7 @@ const TaskComponent = ({ tasks }) => {
           </div>
 
         ))}
-
-    </Fragment>
+    </>
   )
 };
 

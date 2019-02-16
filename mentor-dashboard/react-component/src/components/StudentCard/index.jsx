@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import FaGithub from 'react-icons/lib/fa/github';
 import TaskComponent from '../Tasks/';
 import { CONSTANT } from '../constant';
@@ -10,7 +10,7 @@ const Header = ({ studentGithub }) => {
   const publicGit = `${ gitHubURL }/${ studentGithub }`;
   const privateGit = `${ gitHubURL }/${ rssGithub }/${ studentGithub }-${ privatePrefix }`;
     return (
-      <Fragment>
+      <>
         <h2 className="students__title">@{ studentGithub }</h2>
           <div className="students__github">
             <a className="students__github-link" href={ publicGit } title="public">
@@ -20,14 +20,13 @@ const Header = ({ studentGithub }) => {
               <FaGithub />
             </a>
           </div>
-      </Fragment>
+      </>
     )
 };
 
 export const StudentCard = ({ students }) => {
   return (
     <div className="students">
-
       {[...students].map(
         ({ studentGithub, tasks }) => (
 
@@ -37,7 +36,6 @@ export const StudentCard = ({ students }) => {
           </article>
 
       ))}
-
     </div>
   )
 };
