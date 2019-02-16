@@ -30,20 +30,28 @@ class Dashboard extends Component {
     providerData: this.props.providerData,
     },
     isDisabled: false,
-    mentorList: [{value: 'All', label: 'All'}],
+    options: [{value: 'All', label: 'All'}],
     localStorageMentor: {},
+    nameFromProvider: null,
+    sectionsForRender: [],
   }
 
-  getMentorList(data) {
+  getOptionsList(data) {
     return data.map(({ mentorGithub, mentorName }) => {
       return { value: mentorGithub, label: mentorName };
     });
   }
 
+  getNameFromProvider() {
+    const { displayName } = this.state.buttonList.providerData[0];
+    return displayName;
+  }
+
   componentWillMount() {
     this.setState({
-        mentorList: [...this.state.mentorList, ...this.getMentorList(this.state.data)],
-      });
+      options: [...this.state.options, ...this.getOptionsList(this.state.data)],
+      nameFromProvider: this.getNameFromProvider(),
+    });
 
     if (localStorage.getItem('mentor-dashboard')) {
       const myLocalStorage = JSON.parse(localStorage.getItem('mentor-dashboard'));
@@ -56,23 +64,60 @@ class Dashboard extends Component {
     }
   }
 
+  getDefaultSelectValue() {
+    const { options, nameFromProvider, localStorageMentor } = this.state;
+    const authenticateMentor = options.find(mentor => mentor.label === nameFromProvider);
+    if (authenticateMentor) {
+      return {
+        value: authenticateMentor.value,
+        label: authenticateMentor.label,
+      }
+    }
+    return localStorageMentor;
+  }
+
+  getMentorSections({ value, label }) {
+    const defaultMentor = { value, label };
+    const existingMentor = this.state.data.find(mentor => mentor.mentorGithub === defaultMentor.value);
+    if (existingMentor) {
+      this.setState({ sectionsForRender: [existingMentor] })
+      return [existingMentor];
+    }
+    this.setState({ sectionsForRender: this.state.data })
+    return this.state.data;
+  }
+
+  handleChange = ({ value, label }) => {
+    const myLocalStorage = { 'mentor': value, 'value': label };
+    const existingMentor = this.state.data.find(mentor => mentor.mentorGithub === value);
+    if (existingMentor) {
+      this.setState({ sectionsForRender: [existingMentor]});
+      localStorage.setItem('mentor-dashboard', JSON.stringify(myLocalStorage));
+    } else {
+      this.setState({ sectionsForRender: this.state.data});
+      localStorage.clear('mentor-dashboard');
+    }
+  }
+
+  componentDidMount() {
+    this.getMentorSections(this.getDefaultSelectValue());
+  }
+
 
   render() {
-    const { displayName } = this.state.buttonList.providerData[0];
-    const { data, isDisabled, mentorList, localStorageMentor } = this.state;
-
+    const { isDisabled, options, nameFromProvider, sectionsForRender } = this.state;
     return (
-      <Layout contentTitle={ `Welcome, ${displayName}` } contentCenter={true}>
+      <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
         <SelectForm
-          options={ mentorList }
+          options={ options }
           isDisabled={ isDisabled }
-          localStorageMentor={ localStorageMentor }
-          authMentorName={ displayName }
+          defaultValue={ this.getDefaultSelectValue() }
+          onChange={ this.handleChange }
         />
 
-        {data.map(({ mentorGithub, mentorName, mentorCity, students }) => (
+        {sectionsForRender.map(({ mentorGithub, mentorName, mentorCity, students }) => (
           <section
-            className='mentor__github hidden'
+            className='mentor__github'
             data-name={ mentorGithub }
             mentor-name={ mentorName.toLowerCase().split(' ').join('').trim() }
             key={ mentorGithub }>
