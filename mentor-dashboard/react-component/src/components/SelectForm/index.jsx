@@ -12,6 +12,13 @@ export const SelectForm = ({ isDisabled, options, onChange, value }) => {
           options={ options }
           onChange={ onChange }
           value={ value }
+          theme={(theme) => ({
+            ...theme,
+            colors: {
+            ...theme.colors,
+            primary: '#f56433',
+            },
+          })}
         />
       </section>
     </div>
