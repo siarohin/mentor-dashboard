@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Login from '../../components/Login/';
 import Dashboard from '../../components/Dashboard/';
 import { auth } from '../../firebase/';
-import JsonData from '../../data.json';
 import { Preloader } from '../../components/Preloader/';
+import { CONSTANT } from '../../components/constant';
 
-
+const { sourceJsonURL, fileJsonName } = CONSTANT;
 class App extends Component {
   state = {
     data: [],
@@ -19,7 +19,6 @@ class App extends Component {
         this.setState({
           providerData: user.providerData,
           isLoading: false,
-          data: JsonData,
         });
       } else {
         this.setState({
@@ -27,6 +26,10 @@ class App extends Component {
         });
       }
     });
+
+    fetch(`${sourceJsonURL}/${fileJsonName}`)
+    .then(res => res.json())
+    .then((data) => {this.setState({ data: data })});
   }
 
   render() {

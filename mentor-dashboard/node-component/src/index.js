@@ -5,6 +5,7 @@ const mentorStudentsPairs = require('./components/mentorStudentsPairs');
 const tasksTemplate = require('./components/tasks');
 const mentorScore = require('./components/mentorScore');
 const vocabularies = require('./components/vocabularies');
+const { pathToSaveJSON, nameToSaveJSON } = require('./settings');
 
 const copyMentorStudentsPairs = JSON.parse(JSON.stringify(mentorStudentsPairs));
 const copyMentorScore = JSON.parse(JSON.stringify(mentorScore));
@@ -269,7 +270,7 @@ copyMentorStudentsPairs.forEach((mentor) => {
 // write json
 // ============================================================================================
 
-const pathToJSON = path.join(__dirname, '../../react-component/src/data.json');
+const pathToJSON = path.join(__dirname, `${pathToSaveJSON}/${nameToSaveJSON}`);
 
-const resultToJson = JSON.stringify(copyMentorStudentsPairs, 0, 2);
+const resultToJson = JSON.stringify(copyMentorStudentsPairs, null, 2);
 fs.writeFile(pathToJSON, resultToJson, 'utf8', () => {});
