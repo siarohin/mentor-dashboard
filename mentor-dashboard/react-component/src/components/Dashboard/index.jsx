@@ -6,6 +6,7 @@ import { SelectForm } from '../SelectForm/';
 import PropTypes from 'prop-types';
 import { auth } from '../../firebase';
 import { Preloader } from '../Preloader/';
+import Login from '../Login/';
 
 import './index.css';
 
@@ -28,7 +29,7 @@ class Dashboard extends Component {
           return provider;
         }
       },
-    providerData: this.props.providerData,
+      providerData: this.props.providerData,
     },
     isDisabled: false,
     options: [{value: 'All', label: 'All'}],
@@ -37,6 +38,7 @@ class Dashboard extends Component {
     sectionsForRender: [],
     isLoading: false,
     selectValue: {},
+    actionExit: false,
   }
 
   getOptionsList(data) {
@@ -112,11 +114,20 @@ class Dashboard extends Component {
     this.getMentorSections(this.getDefaultSelectValue());
   }
 
+  handleLogout = () => {
+    auth
+    .getAuth()
+    .signOut()
+    .then(() => this.setState({ actionExit: true }))
+    .catch(err => err)
+    };
+
 
   render() {
     const { isDisabled, options, nameFromProvider, sectionsForRender, selectValue } = this.state;
-    return this.state.isLoading ? <Preloader /> : (
+    return this.state.isLoading ? <Preloader /> : this.state.actionExit ? <Login /> : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
+      <button onClick={ this.handleLogout }>exit</button>
         <SelectForm
           options={ options }
           isDisabled={ isDisabled }
