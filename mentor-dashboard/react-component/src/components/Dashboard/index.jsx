@@ -6,8 +6,8 @@ import { SelectForm } from '../SelectForm/';
 import PropTypes from 'prop-types';
 import { auth } from '../../firebase';
 import { Preloader } from '../Preloader/';
-import Login from '../Login/';
 import Logout from '../Logout/';
+import App from '../../containers/App/';
 
 import './index.css';
 
@@ -129,7 +129,7 @@ class Dashboard extends Component {
 
   render() {
     const { isDisabled, options, nameFromProvider, sectionsForRender, selectValue } = this.state;
-    return this.state.isLoading ? <Preloader /> : this.state.actionExit ? <Login /> : (
+    return this.state.isLoading ? <Preloader /> : this.state.actionExit ? <App /> : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
         <Logout photoURL={ this.getImgFromProvider() } onClick={ this.handleLogout } />
 
