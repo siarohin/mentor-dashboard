@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import { auth } from '../../firebase';
 import { Preloader } from '../Preloader/';
 import Login from '../Login/';
+import Logout from '../Logout/';
 
 import './index.css';
 
@@ -52,6 +53,11 @@ class Dashboard extends Component {
     return displayName;
   }
 
+  getImgFromProvider() {
+    const { photoURL } = this.state.buttonList.providerData[0];
+    return photoURL;
+  }
+
   componentWillMount() {
     this.setState({
       options: [...this.state.options, ...this.getOptionsList(this.state.data)],
@@ -94,7 +100,6 @@ class Dashboard extends Component {
     return this.state.data;
   }
 
-
   handleChange = ({ value, label }) => {
     this.setState({ selectValue: { value, label } });
     const myLocalStorage = { 'mentor': value, 'value': label };
@@ -110,24 +115,24 @@ class Dashboard extends Component {
     }
   }
 
-  componentDidMount() {
-    this.getMentorSections(this.getDefaultSelectValue());
-  }
-
   handleLogout = () => {
     auth
     .getAuth()
     .signOut()
     .then(() => this.setState({ actionExit: true }))
     .catch(err => err)
-    };
+  }
 
+  componentDidMount() {
+    this.getMentorSections(this.getDefaultSelectValue());
+  }
 
   render() {
     const { isDisabled, options, nameFromProvider, sectionsForRender, selectValue } = this.state;
     return this.state.isLoading ? <Preloader /> : this.state.actionExit ? <Login /> : (
       <Layout contentTitle={ `Welcome, ${nameFromProvider}` } contentCenter={true}>
-      <button onClick={ this.handleLogout }>exit</button>
+        <Logout photoURL={ this.getImgFromProvider() } onClick={ this.handleLogout } />
+
         <SelectForm
           options={ options }
           isDisabled={ isDisabled }
